@@ -2741,21 +2741,6 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </library>
 <library name="keves">
 <packages>
-<package name="TE-292304-1">
-<description>&lt;b&gt;BERG&lt;/b&gt;</description>
-<wire x1="-6.02" y1="5.6" x2="-6.02" y2="-10.15" width="0.254" layer="21"/>
-<wire x1="-6.02" y1="-10.15" x2="6.02" y2="-10.15" width="0.254" layer="21"/>
-<wire x1="6.02" y1="-10.15" x2="6.02" y2="5.6" width="0.254" layer="21"/>
-<wire x1="6.02" y1="5.6" x2="-6.02" y2="5.6" width="0.254" layer="21"/>
-<pad name="1" x="1.25" y="4.71" drill="0.95" shape="octagon"/>
-<pad name="2" x="-1.25" y="4.71" drill="0.95" shape="octagon"/>
-<pad name="3" x="-1.25" y="2.71" drill="0.95" shape="octagon"/>
-<pad name="4" x="1.25" y="2.71" drill="0.95" shape="octagon"/>
-<pad name="P$1" x="6.02" y="0" drill="2.3"/>
-<pad name="P$2" x="-6.02" y="0" drill="2.3"/>
-<text x="-6.096" y="6.096" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.62" y="-8.89" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="B3W-9000-X2X">
 <wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
 <wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="21"/>
@@ -2838,30 +2823,6 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="USB_DEVICE_B">
-<wire x1="0" y1="7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<text x="5.08" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
-<pin name="1" x="-2.54" y="5.08" visible="pad" length="short"/>
-<pin name="2" x="-2.54" y="2.54" visible="pad" length="short"/>
-<pin name="3" x="-2.54" y="0" visible="pad" length="short"/>
-<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short"/>
-</symbol>
-<symbol name="SHIELD2">
-<wire x1="2.54" y1="-8.89" x2="0" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="-8.89" x2="-3.81" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-7.62" width="0.254" layer="94" style="shortdash" curve="-90"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94" style="shortdash"/>
-<wire x1="2.54" y1="6.35" x2="-3.81" y2="6.35" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-3.81" y1="6.35" x2="-5.08" y2="5.08" width="0.254" layer="94" style="shortdash" curve="90"/>
-<wire x1="2.54" y1="-10.16" x2="2.54" y2="-8.89" width="0.1524" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="-8.89" width="0.1524" layer="94"/>
-<pin name="S1" x="2.54" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="S2" x="0" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
 <symbol name="B3W-900X-X2X">
 <wire x1="0" y1="-3.81" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -2966,28 +2927,6 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TE-292304-1" prefix="X" uservalue="yes">
-<description>USB A Female connector</description>
-<gates>
-<gate name="_CONN" symbol="USB_DEVICE_B" x="-2.54" y="0"/>
-<gate name="SHIELD" symbol="SHIELD2" x="-2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="TE-292304-1">
-<connects>
-<connect gate="SHIELD" pin="S1" pad="P$1"/>
-<connect gate="SHIELD" pin="S2" pad="P$2"/>
-<connect gate="_CONN" pin="1" pad="1"/>
-<connect gate="_CONN" pin="2" pad="2"/>
-<connect gate="_CONN" pin="3" pad="3"/>
-<connect gate="_CONN" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="B3W-9000-RG2N" prefix="BTN">
 <gates>
 <gate name="G$1" symbol="B3W-900X-X2X" x="-7.62" y="5.08"/>
@@ -4593,8 +4532,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="U$16" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R12" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
-<part name="X1" library="keves" deviceset="TE-292304-1" device=""/>
-<part name="U$18" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
 <part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="22"/>
 <part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="22"/>
@@ -4603,11 +4540,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="JTAG" library="microbuilder" deviceset="HEADER-1X5" device="76MIL" value="jtag"/>
 <part name="U$21" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
-<part name="JP3" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="JP4" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
-<part name="U$23" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$25" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="U$26" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U1" library="microbuilder" deviceset="LM1117" device="SOT223-REFLOW" value="LM1117IMPX-3.3/NOPB"/>
 <part name="C15" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10uF 603-CC206KKX5R7BB106"/>
@@ -4622,8 +4556,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="C18" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10uF 603-CC206KKX5R7BB106"/>
 <part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$31" library="microbuilder" deviceset="AVDD" device=""/>
-<part name="B2" library="microbuilder" deviceset="SWITCH_TACT_SMT" device=""/>
-<part name="B1" library="microbuilder" deviceset="SWITCH_TACT_SMT" device=""/>
+<part name="RST" library="microbuilder" deviceset="SWITCH_TACT_SMT" device=""/>
+<part name="USR" library="microbuilder" deviceset="SWITCH_TACT_SMT" device=""/>
 <part name="U$32" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
 <part name="C16" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
@@ -4763,6 +4697,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="U$1" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="U$36" library="microbuilder" deviceset="GND" device=""/>
 <part name="JP5" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
+<part name="USB" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
 </parts>
 <sheets>
 <sheet>
@@ -4797,9 +4732,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="U$16" gate="G$1" x="91.44" y="116.84" rot="R270"/>
 <instance part="R12" gate="G$1" x="88.9" y="101.6"/>
 <instance part="U$17" gate="G$1" x="99.06" y="101.6" rot="R90"/>
-<instance part="X1" gate="_CONN" x="142.24" y="109.22"/>
-<instance part="X1" gate="SHIELD" x="142.24" y="111.76"/>
-<instance part="U$18" gate="G$1" x="144.78" y="96.52"/>
 <instance part="U$19" gate="G$1" x="137.16" y="96.52"/>
 <instance part="R15" gate="G$1" x="129.54" y="111.76"/>
 <instance part="R16" gate="G$1" x="129.54" y="109.22"/>
@@ -4808,11 +4740,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="JTAG" gate="A" x="180.34" y="111.76"/>
 <instance part="U$21" gate="G$1" x="167.64" y="116.84" rot="R90"/>
 <instance part="U$22" gate="G$1" x="167.64" y="106.68" rot="R270"/>
-<instance part="JP3" gate="G$1" x="180.34" y="93.98"/>
 <instance part="JP4" gate="G$1" x="180.34" y="81.28"/>
-<instance part="U$23" gate="G$1" x="165.1" y="93.98" rot="R270"/>
 <instance part="U$24" gate="G$1" x="165.1" y="81.28" rot="R270"/>
-<instance part="U$25" gate="G$1" x="170.18" y="96.52" rot="R90"/>
 <instance part="U$26" gate="G$1" x="170.18" y="83.82" rot="R90"/>
 <instance part="U1" gate="G$1" x="149.86" y="60.96"/>
 <instance part="C15" gate="G$1" x="137.16" y="58.42" rot="R180"/>
@@ -4827,8 +4756,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="C18" gate="G$1" x="200.66" y="55.88" rot="R180"/>
 <instance part="C19" gate="G$1" x="205.74" y="53.34"/>
 <instance part="U$31" gate="G$1" x="213.36" y="60.96" rot="R270"/>
-<instance part="B2" gate="G$1" x="147.32" y="27.94" rot="R90"/>
-<instance part="B1" gate="G$1" x="127" y="27.94" rot="R90"/>
+<instance part="RST" gate="G$1" x="147.32" y="27.94" rot="R90"/>
+<instance part="USR" gate="G$1" x="127" y="27.94" rot="R90"/>
 <instance part="U$32" gate="G$1" x="149.86" y="20.32"/>
 <instance part="U$33" gate="G$1" x="129.54" y="20.32"/>
 <instance part="C16" gate="G$1" x="154.94" y="25.4"/>
@@ -4905,6 +4834,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="U$1" gate="G$1" x="5.08" y="-7.62" rot="R270"/>
 <instance part="U$36" gate="G$1" x="5.08" y="0" rot="R90"/>
 <instance part="JP5" gate="A" x="-2.54" y="-2.54" rot="R180"/>
+<instance part="USB" gate="A" x="142.24" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -5145,22 +5075,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="96.52" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="SHIELD" pin="S1"/>
-<pinref part="U$18" gate="G$1" pin="GND"/>
-<pinref part="X1" gate="SHIELD" pin="S2"/>
-<wire x1="142.24" y1="99.06" x2="144.78" y2="99.06" width="0.2032" layer="91"/>
-<junction x="144.78" y="99.06"/>
-</segment>
-<segment>
-<pinref part="X1" gate="_CONN" pin="4"/>
 <pinref part="U$19" gate="G$1" pin="GND"/>
 <wire x1="139.7" y1="106.68" x2="137.16" y2="106.68" width="0.2032" layer="91"/>
 <wire x1="137.16" y1="106.68" x2="137.16" y2="99.06" width="0.2032" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<pinref part="U$23" gate="G$1" pin="GND"/>
-<wire x1="167.64" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="USB" gate="A" pin="4"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
@@ -5200,18 +5118,18 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="177.8" y1="106.68" x2="170.18" y2="106.68" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<pinref part="B2" gate="G$1" pin="P1"/>
+<pinref part="RST" gate="G$1" pin="P1"/>
 <pinref part="U$32" gate="G$1" pin="GND"/>
-<pinref part="B2" gate="G$1" pin="P"/>
+<pinref part="RST" gate="G$1" pin="P"/>
 <wire x1="147.32" y1="22.86" x2="149.86" y2="22.86" width="0.2032" layer="91"/>
 <pinref part="C16" gate="G$1" pin="P$2"/>
 <wire x1="149.86" y1="22.86" x2="154.94" y2="22.86" width="0.2032" layer="91"/>
 <junction x="149.86" y="22.86"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="P1"/>
+<pinref part="USR" gate="G$1" pin="P1"/>
 <pinref part="U$33" gate="G$1" pin="GND"/>
-<pinref part="B1" gate="G$1" pin="P"/>
+<pinref part="USR" gate="G$1" pin="P"/>
 <wire x1="127" y1="22.86" x2="129.54" y2="22.86" width="0.2032" layer="91"/>
 <junction x="129.54" y="22.86"/>
 </segment>
@@ -5314,10 +5232,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="C16" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="30.48" x2="154.94" y2="33.02" width="0.2032" layer="91"/>
 <wire x1="154.94" y1="33.02" x2="149.86" y2="33.02" width="0.2032" layer="91"/>
-<pinref part="B2" gate="G$1" pin="S1"/>
+<pinref part="RST" gate="G$1" pin="S1"/>
 <junction x="149.86" y="33.02"/>
 <wire x1="149.86" y1="33.02" x2="147.32" y2="33.02" width="0.2032" layer="91"/>
-<pinref part="B2" gate="G$1" pin="S"/>
+<pinref part="RST" gate="G$1" pin="S"/>
 <junction x="147.32" y="33.02"/>
 <wire x1="147.32" y1="33.02" x2="139.7" y2="33.02" width="0.2032" layer="91"/>
 <label x="139.7" y="33.02" size="1.778" layer="95"/>
@@ -5395,16 +5313,16 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="X1" gate="_CONN" pin="2"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="111.76" x2="134.62" y2="111.76" width="0.2032" layer="91"/>
+<pinref part="USB" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="X1" gate="_CONN" pin="3"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="109.22" x2="134.62" y2="109.22" width="0.2032" layer="91"/>
+<pinref part="USB" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="USB_DM" class="0">
@@ -5433,13 +5351,13 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="USB_VBUS" class="0">
 <segment>
-<pinref part="X1" gate="_CONN" pin="1"/>
 <wire x1="139.7" y1="114.3" x2="132.08" y2="114.3" width="0.2032" layer="91"/>
 <label x="114.3" y="114.3" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="132.08" y1="114.3" x2="116.84" y2="114.3" width="0.2032" layer="91"/>
 <wire x1="132.08" y1="121.92" x2="132.08" y2="114.3" width="0.2032" layer="91"/>
 <junction x="132.08" y="114.3"/>
+<pinref part="USB" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA9/UART1_TX"/>
@@ -5452,11 +5370,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="U$20" gate="G$1" pin="5.0V"/>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="124.46" y1="121.92" x2="129.54" y2="121.92" width="0.2032" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<pinref part="U$25" gate="G$1" pin="5.0V"/>
-<wire x1="172.72" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
@@ -5489,10 +5402,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <label x="12.7" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="S1"/>
+<pinref part="USR" gate="G$1" pin="S1"/>
 <wire x1="129.54" y1="33.02" x2="127" y2="33.02" width="0.2032" layer="91"/>
 <label x="116.84" y="33.02" size="1.778" layer="95"/>
-<pinref part="B1" gate="G$1" pin="S"/>
+<pinref part="USR" gate="G$1" pin="S"/>
 <junction x="127" y="33.02"/>
 <wire x1="127" y1="33.02" x2="119.38" y2="33.02" width="0.2032" layer="91"/>
 </segment>
