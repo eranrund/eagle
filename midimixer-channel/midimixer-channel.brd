@@ -8,7 +8,7 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,14 +28,14 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -1030,85 +1030,176 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="CPU1" library="SparkFun-DigitalIC" package="TQFP64" value="STM32F405RG" x="34.29" y="15.24" rot="R90"/>
-<element name="Y1" library="microbuilder" package="HC49UP" value="8MHz 695-HCM49-8-U" x="44.45" y="13.97" rot="R270"/>
+<element name="Y1" library="microbuilder" package="HC49UP" value="8MHz 695-HCM49-8-U" x="44.45" y="13.97" smashed="yes" rot="R270">
+<attribute name="VALUE" x="42.672" y="17.272" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
 <element name="C5" library="microbuilder" package="0603" value="18pf" x="48.26" y="10.16" rot="R270"/>
 <element name="C6" library="microbuilder" package="0603" value="18pf" x="48.26" y="17.78" rot="R90"/>
 <element name="C8" library="microbuilder" package="0603" value="0.1uF" x="38.481" y="22.733"/>
 <element name="C7" library="microbuilder" package="0805" value="2.2uF 810-CGJ4J2X7R1A225K" x="29.718" y="23.876" rot="R180"/>
 <element name="C9" library="microbuilder" package="0603" value="0.1uF" x="27.94" y="21.59"/>
-<element name="C13" library="microbuilder" package="0805" value="2.2uF 810-CGJ4J2X7R1A225K" x="25.273" y="10.795" rot="R270"/>
+<element name="C13" library="microbuilder" package="0805" value="2.2uF 810-CGJ4J2X7R1A225K" x="25.273" y="10.795" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.241" y="12.065" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="27.051" y="11.049" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="C12" library="microbuilder" package="0603" value="0.1uF" x="28.067" y="9.144" rot="R90"/>
-<element name="C11" library="microbuilder" package="0603" value="0.1uF" x="39.497" y="8.001"/>
+<element name="C11" library="microbuilder" package="0603" value="0.1uF" x="39.497" y="8.001" smashed="yes">
+<attribute name="NAME" x="37.846" y="8.89" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="37.592" y="7.112" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
 <element name="R12" library="microbuilder" package="_0603" value="10k" x="34.544" y="7.874" rot="R180"/>
 <element name="R15" library="microbuilder" package="0603" value="22" x="24.892" y="15.494" rot="R180"/>
 <element name="R16" library="microbuilder" package="0603" value="22" x="24.892" y="13.716" rot="R180"/>
-<element name="JP1" library="microbuilder" package="JUMPER2" value="" x="3.937" y="26.162" rot="R270"/>
-<element name="JTAG" library="microbuilder" package="1X05_ROUND_76" value="jtag" x="33.909" y="2.032" rot="R180"/>
-<element name="PWR3.3V" library="microbuilder" package="1X02_ROUND" value="" x="1.651" y="28.702" rot="R270"/>
-<element name="U1" library="microbuilder" package="SOT223-R" value="LM1117IMPX-3.3/NOPB" x="9.271" y="18.415" rot="MR90"/>
-<element name="C15" library="SparkFun-Passives" package="1206" value="10uF 603-CC206KKX5R7BB106" x="7.747" y="23.368" rot="MR0"/>
-<element name="C17" library="SparkFun-Passives" package="1206" value="10uF 603-CC206KKX5R7BB106" x="5.842" y="11.684" rot="MR90"/>
+<element name="VBUS" library="microbuilder" package="JUMPER2" value="" x="3.937" y="26.162" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.191" y="21.971" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="3.302" y="21.971" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="JTAG" library="microbuilder" package="1X05_ROUND_76" value="jtag" x="33.909" y="2.032" smashed="yes" rot="R180">
+<attribute name="NAME" x="43.8912" y="2.1082" size="0.8128" layer="25" ratio="18" rot="R180"/>
+</element>
+<element name="PWR3.3V" library="microbuilder" package="1X02_ROUND" value="" x="1.651" y="28.702" smashed="yes" rot="R270">
+<attribute name="NAME" x="1.0668" y="36.1442" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="-1.524" y="31.242" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="U1" library="microbuilder" package="SOT223-R" value="LM1117IMPX-3.3/NOPB" x="9.271" y="18.415" smashed="yes" rot="MR90">
+<attribute name="NAME" x="11.684" y="14.859" size="0.8128" layer="26" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="10.287" y="15.367" size="0.4064" layer="28" ratio="10" rot="MR90"/>
+</element>
+<element name="C15" library="SparkFun-Passives" package="1206" value="10uF 603-CC206KKX5R7BB106" x="7.747" y="23.368" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.017" y="24.511" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="9.144" y="21.844" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="C17" library="SparkFun-Passives" package="1206" value="10uF 603-CC206KKX5R7BB106" x="5.842" y="11.684" smashed="yes" rot="MR90">
+<attribute name="NAME" x="6.985" y="10.414" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="4.699" y="11.684" size="0.4064" layer="28" rot="MR270"/>
+</element>
 <element name="R17" library="microbuilder" package="0603" value="330" x="35.306" y="31.75" rot="R180"/>
-<element name="LED1" library="microbuilder" package="CHIPLED_0603" value="" x="38.862" y="31.75" rot="R270"/>
+<element name="LED1" library="microbuilder" package="CHIPLED_0603" value="" x="38.862" y="31.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.846" y="29.972" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="37.592" y="30.48" size="0.4064" layer="27" ratio="10"/>
+</element>
 <element name="L1" library="SparkFun-Passives" package="0805" value="" x="31.496" y="18.542" rot="MR270"/>
-<element name="C18" library="SparkFun-Passives" package="1206" value="10uF 603-CC206KKX5R7BB106" x="33.274" y="19.05" rot="MR270"/>
-<element name="C19" library="microbuilder" package="0603" value="0.1uF" x="35.306" y="18.542" rot="MR90"/>
+<element name="C18" library="SparkFun-Passives" package="1206" value="10uF 603-CC206KKX5R7BB106" x="33.274" y="19.05" smashed="yes" rot="MR270">
+<attribute name="NAME" x="31.623" y="21.717" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="34.036" y="21.59" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="C19" library="microbuilder" package="0603" value="0.1uF" x="35.306" y="18.542" smashed="yes" rot="MR90">
+<attribute name="NAME" x="36.576" y="20.066" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="36.322" y="18.161" size="0.4064" layer="28" font="vector" ratio="10" rot="MR90"/>
+</element>
 <element name="RST" library="microbuilder" package="EVQ-Q2" value="" x="43.942" y="9.271" rot="MR270"/>
 <element name="USR" library="microbuilder" package="EVQ-Q2" value="" x="44.831" y="30.988" rot="MR270"/>
-<element name="C16" library="microbuilder" package="0603" value="0.1uF" x="44.323" y="3.048" rot="MR180"/>
+<element name="C16" library="microbuilder" package="0603" value="0.1uF" x="44.323" y="3.048" smashed="yes" rot="MR180">
+<attribute name="NAME" x="41.656" y="1.651" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="43.053" y="1.905" size="0.4064" layer="28" font="vector" ratio="10" rot="MR180"/>
+</element>
 <element name="C14" library="microbuilder" package="0603" value="0.1uF" x="20.701" y="236.22" rot="MR0"/>
-<element name="BTN1" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="38.1" y="62.23"/>
+<element name="BTN4" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="38.1" y="62.23"/>
 <element name="R18" library="microbuilder" package="0603" value="330" x="39.497" y="62.611" rot="MR270"/>
 <element name="R19" library="microbuilder" package="0603" value="330" x="36.703" y="62.103" rot="MR270"/>
-<element name="C20" library="microbuilder" package="0603" value="0.1uF" x="40.767" y="66.294" rot="MR0"/>
+<element name="C20" library="microbuilder" package="0603" value="0.1uF" x="40.767" y="66.294" smashed="yes" rot="MR0">
+<attribute name="NAME" x="44.831" y="66.167" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="43.942" y="65.405" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
 <element name="D1" library="SparkFun-LED" package="LED_BARGAPH_10" value="DC7G3HWA" x="12.7" y="97.79" rot="R90"/>
-<element name="RN1" library="resistor-sil" package="SIL6" value="4606X-101-101LF" x="5.08" y="87.63" rot="R90">
+<element name="RN1" library="resistor-sil" package="SIL6" value="4606X-101-101LF" x="5.08" y="87.63" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="5.08" y="87.63" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.08" y="87.63" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="5.08" y="87.63" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="5.08" y="87.63" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="NAME" x="3.81" y="80.01" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="RN2" library="resistor-sil" package="SIL6" value="4606X-101-101LF" x="5.08" y="104.14" rot="R90">
+<element name="RN2" library="resistor-sil" package="SIL6" value="4606X-101-101LF" x="5.08" y="104.14" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="5.08" y="104.14" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.08" y="104.14" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="5.08" y="104.14" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="5.08" y="104.14" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="NAME" x="3.81" y="96.52" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="FADER1" library="keves" package="PTA6043-2015CPB103" value="PTA6043-2015CPB103" x="12.7" y="44.45" rot="R90"/>
-<element name="BTN2" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="25.4" y="76.2"/>
-<element name="R20" library="microbuilder" package="0603" value="330" x="29.718" y="72.009" rot="MR0"/>
-<element name="R21" library="microbuilder" package="0603" value="330" x="24.003" y="75.311" rot="MR270"/>
-<element name="C21" library="microbuilder" package="0603" value="0.1uF" x="20.447" y="78.867" rot="MR90"/>
-<element name="BTN4" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="25.4" y="48.26"/>
-<element name="R24" library="microbuilder" package="0603" value="330" x="29.591" y="52.324" rot="MR0"/>
-<element name="R25" library="microbuilder" package="0603" value="330" x="23.876" y="49.276" rot="MR90"/>
-<element name="C23" library="microbuilder" package="0603" value="0.1uF" x="22.733" y="52.324" rot="MR0"/>
-<element name="BTN5" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="38.1" y="48.26"/>
-<element name="R26" library="microbuilder" package="0603" value="330" x="38.735" y="46.355" rot="MR0"/>
-<element name="R27" library="microbuilder" package="0603" value="330" x="36.195" y="48.26" rot="MR90"/>
-<element name="C24" library="microbuilder" package="0603" value="0.1uF" x="39.497" y="49.403" rot="MR90"/>
-<element name="BTN3" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="38.1" y="76.2"/>
-<element name="R22" library="microbuilder" package="0603" value="330" x="39.243" y="75.311" rot="MR270"/>
-<element name="R23" library="microbuilder" package="0603" value="330" x="36.703" y="75.311" rot="MR270"/>
-<element name="C22" library="microbuilder" package="0603" value="0.1uF" x="41.275" y="80.391" rot="MR0"/>
-<element name="BTN6" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="25.4" y="62.23"/>
-<element name="R28" library="microbuilder" package="0603" value="330" x="28.829" y="57.023" rot="MR270"/>
-<element name="R29" library="microbuilder" package="0603" value="330" x="23.876" y="62.865" rot="MR90"/>
-<element name="C25" library="microbuilder" package="0603" value="0.1uF" x="22.733" y="66.294" rot="MR0"/>
+<element name="BTN1" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="25.4" y="76.2"/>
+<element name="R20" library="microbuilder" package="0603" value="330" x="29.718" y="72.009" smashed="yes" rot="MR0">
+<attribute name="NAME" x="33.782" y="72.136" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="33.02" y="71.374" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
+<element name="R21" library="microbuilder" package="0603" value="330" x="24.003" y="75.311" smashed="yes" rot="MR270">
+<attribute name="NAME" x="23.749" y="73.533" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="24.384" y="73.406" size="0.4064" layer="28" font="vector" ratio="10" rot="MR270"/>
+</element>
+<element name="C21" library="microbuilder" package="0603" value="0.1uF" x="20.447" y="78.867" smashed="yes" rot="MR90">
+<attribute name="NAME" x="20.828" y="76.073" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="19.177" y="77.343" size="0.4064" layer="28" font="vector" ratio="10" rot="MR90"/>
+</element>
+<element name="BTN5" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="25.4" y="48.26"/>
+<element name="R24" library="microbuilder" package="0603" value="330" x="29.591" y="52.324" smashed="yes" rot="MR0">
+<attribute name="NAME" x="33.528" y="52.451" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="32.639" y="51.689" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
+<element name="R25" library="microbuilder" package="0603" value="330" x="23.876" y="49.276" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.892" y="48.387" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="25.019" y="47.117" size="0.4064" layer="28" font="vector" ratio="10" rot="MR90"/>
+</element>
+<element name="C23" library="microbuilder" package="0603" value="0.1uF" x="22.733" y="52.324" smashed="yes" rot="MR0">
+<attribute name="NAME" x="25.146" y="53.213" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="22.479" y="53.34" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
+<element name="BTN6" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="38.1" y="48.26"/>
+<element name="R26" library="microbuilder" package="0603" value="330" x="38.735" y="46.355" smashed="yes" rot="MR0">
+<attribute name="NAME" x="38.989" y="45.339" size="0.8128" layer="26" font="vector" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="36.83" y="45.847" size="0.4064" layer="28" font="vector" ratio="10" rot="MR270"/>
+</element>
+<element name="R27" library="microbuilder" package="0603" value="330" x="36.195" y="48.26" smashed="yes" rot="MR90">
+<attribute name="NAME" x="36.322" y="50.165" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="35.814" y="50.165" size="0.4064" layer="28" font="vector" ratio="10" rot="MR90"/>
+</element>
+<element name="C24" library="microbuilder" package="0603" value="0.1uF" x="39.497" y="49.403" smashed="yes" rot="MR90">
+<attribute name="NAME" x="39.37" y="51.181" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="38.227" y="48.514" size="0.4064" layer="28" font="vector" ratio="10" rot="MR90"/>
+</element>
+<element name="BTN2" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="38.1" y="76.2"/>
+<element name="R22" library="microbuilder" package="0603" value="330" x="39.243" y="75.311" smashed="yes" rot="MR270">
+<attribute name="NAME" x="39.624" y="73.533" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="40.259" y="73.533" size="0.4064" layer="28" font="vector" ratio="10" rot="MR270"/>
+</element>
+<element name="R23" library="microbuilder" package="0603" value="330" x="36.703" y="75.311" smashed="yes" rot="MR270">
+<attribute name="NAME" x="36.449" y="73.406" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="37.211" y="73.406" size="0.4064" layer="28" font="vector" ratio="10" rot="MR270"/>
+</element>
+<element name="C22" library="microbuilder" package="0603" value="0.1uF" x="41.275" y="80.391" smashed="yes" rot="MR0">
+<attribute name="NAME" x="45.212" y="80.391" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="44.831" y="79.629" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
+<element name="BTN3" library="keves" package="B3W-9000-X2X" value="B3W-9000-RG2N" x="25.4" y="62.23"/>
+<element name="R28" library="microbuilder" package="0603" value="330" x="28.829" y="57.023" smashed="yes" rot="MR270">
+<attribute name="NAME" x="30.734" y="59.436" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="30.099" y="56.896" size="0.4064" layer="28" font="vector" ratio="10" rot="MR270"/>
+</element>
+<element name="R29" library="microbuilder" package="0603" value="330" x="23.876" y="62.865" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.892" y="62.23" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="25.019" y="60.833" size="0.4064" layer="28" font="vector" ratio="10" rot="MR90"/>
+</element>
+<element name="C25" library="microbuilder" package="0603" value="0.1uF" x="22.733" y="66.294" smashed="yes" rot="MR0">
+<attribute name="NAME" x="20.955" y="66.167" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="20.955" y="65.532" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
 <element name="ROTENC1" library="keves" package="PEC111-4XXXK-SXXXX" value="PEC11-4215K-S0024" x="38.1" y="198.12"/>
 <element name="ROTENC2" library="keves" package="PEC111-4XXXK-SXXXX" value="PEC11-4215K-S0024" x="12.7" y="198.12"/>
-<element name="POT1" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="88.9"/>
-<element name="POT2" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="12.7" y="114.3"/>
+<element name="POT7" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="88.9"/>
+<element name="POT5" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="12.7" y="114.3"/>
 <element name="POT3" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="12.7" y="139.7"/>
-<element name="POT4" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="12.7" y="165.1"/>
-<element name="POT5" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="165.1"/>
-<element name="POT6" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="139.7"/>
-<element name="POT7" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="114.3"/>
-<element name="IC3" library="SparkFun-DigitalIC" package="SO16" value="74LS595D" x="22.352" y="97.536" rot="R270">
+<element name="POT1" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="12.7" y="165.1"/>
+<element name="POT2" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="165.1"/>
+<element name="POT4" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="139.7"/>
+<element name="POT6" library="keves" package="PTV111-4" value="PTV111-4220A-B104" x="38.1" y="114.3"/>
+<element name="IC3" library="SparkFun-DigitalIC" package="SO16" value="74LS595D" x="22.352" y="97.536" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-07875" x="22.352" y="97.536" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" x="21.717" y="101.6" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="26.797" y="96.901" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="IC2" library="SparkFun-DigitalIC" package="SO16" value="74LS595D" x="23.622" y="86.868" rot="R270">
+<element name="IC2" library="SparkFun-DigitalIC" package="SO16" value="74LS595D" x="23.622" y="86.868" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-07875" x="23.622" y="86.868" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" x="22.987" y="90.932" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="28.448" y="86.614" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="IC1" library="SparkFun-DigitalIC" package="SO16" value="74LS595D" x="30.988" y="37.592" rot="R180">
 <attribute name="PROD_ID" value="IC-07875" x="30.988" y="37.592" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
@@ -1119,40 +1210,112 @@ Please make sure your boards conform to these design rules.</description>
 <element name="H2" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="238.76"/>
 <element name="C4" library="microbuilder" package="0603" value="0.1uF" x="28.321" y="93.726" rot="R180"/>
 <element name="C3" library="microbuilder" package="0603" value="0.1uF" x="37.211" y="36.068" rot="R270"/>
-<element name="C2" library="microbuilder" package="0603" value="0.1uF" x="24.257" y="103.759" rot="R180"/>
-<element name="IC4" library="SparkFun-DigitalIC" package="SO16" value="74165D" x="12.7" y="183.515" rot="MR270"/>
+<element name="C2" library="microbuilder" package="0603" value="0.1uF" x="24.257" y="103.759" smashed="yes" rot="R180">
+<attribute name="NAME" x="27.559" y="104.013" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="27.94" y="104.775" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
+</element>
+<element name="IC4" library="SparkFun-DigitalIC" package="SO16" value="74165D" x="12.7" y="183.515" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="13.335" y="187.579" size="1.27" layer="28" ratio="10" rot="MR270"/>
+<attribute name="NAME" x="13.843" y="177.038" size="1.27" layer="26" ratio="10" rot="MR0"/>
+</element>
 <element name="C1" library="microbuilder" package="0603" value="0.1uF" x="8.255" y="186.69" rot="MR90"/>
 <element name="R1" library="microbuilder" package="_0603" value="10k" x="7.112" y="180.34" rot="MR0"/>
 <element name="R9" library="microbuilder" package="_0603" value="10k" x="18.161" y="181.356" rot="MR180"/>
 <element name="R8" library="microbuilder" package="_0603" value="10k" x="43.18" y="190.5" rot="MR180"/>
 <element name="R7" library="microbuilder" package="_0603" value="10k" x="33.02" y="190.373" rot="MR0"/>
-<element name="R6" library="microbuilder" package="_0603" value="10k" x="39.878" y="203.327" rot="MR0"/>
-<element name="R5" library="microbuilder" package="_0603" value="10k" x="7.493" y="184.023" rot="MR0"/>
-<element name="R4" library="microbuilder" package="_0603" value="10k" x="15.875" y="203.327" rot="MR180"/>
-<element name="R3" library="microbuilder" package="_0603" value="10k" x="16.129" y="192.659" rot="MR180"/>
-<element name="R2" library="microbuilder" package="_0603" value="10k" x="9.398" y="192.786" rot="MR0"/>
-<element name="D2" library="omc" package="SO8" value="SN65HVD230" x="20.066" y="5.842" rot="MR270"/>
-<element name="C10" library="microbuilder" package="0603" value="0.1uF" x="20.066" y="2.286" rot="MR0"/>
-<element name="R10" library="microbuilder" package="_0603" value="0" x="18.034" y="9.398" rot="MR180"/>
+<element name="R6" library="microbuilder" package="_0603" value="10k" x="39.878" y="203.327" smashed="yes" rot="MR0">
+<attribute name="NAME" x="37.846" y="202.7555" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="41.148" y="201.8347" size="0.4064" layer="28" ratio="10" rot="MR0"/>
+</element>
+<element name="R5" library="microbuilder" package="_0603" value="10k" x="7.493" y="184.023" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.7785" y="184.658" size="0.8128" layer="26" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="8.763" y="182.5307" size="0.4064" layer="28" ratio="10" rot="MR0"/>
+</element>
+<element name="R4" library="microbuilder" package="_0603" value="10k" x="15.875" y="203.327" smashed="yes" rot="MR180">
+<attribute name="NAME" x="14.605" y="202.3745" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="17.8117" y="202.819" size="0.4064" layer="28" ratio="10" rot="MR90"/>
+</element>
+<element name="R3" library="microbuilder" package="_0603" value="10k" x="16.129" y="192.659" smashed="yes" rot="MR180">
+<attribute name="NAME" x="14.859" y="191.7065" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="14.859" y="194.1513" size="0.4064" layer="28" ratio="10" rot="MR180"/>
+</element>
+<element name="R2" library="microbuilder" package="_0603" value="10k" x="9.398" y="192.786" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.668" y="193.7385" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="10.668" y="191.2937" size="0.4064" layer="28" ratio="10" rot="MR0"/>
+</element>
+<element name="D2" library="omc" package="SO8" value="SN65HVD230" x="20.066" y="5.842" smashed="yes" rot="MR270">
+<attribute name="NAME" x="21.971" y="8.636" size="0.635" layer="26" font="vector" ratio="16" rot="MR0"/>
+<attribute name="VALUE" x="20.193" y="9.652" size="0.635" layer="28" font="vector" ratio="16" rot="MR270"/>
+</element>
+<element name="C10" library="microbuilder" package="0603" value="0.1uF" x="20.066" y="2.286" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.288" y="2.159" size="0.8128" layer="26" font="vector" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="18.288" y="1.524" size="0.4064" layer="28" font="vector" ratio="10" rot="MR0"/>
+</element>
+<element name="R10" library="microbuilder" package="_0603" value="0" x="18.034" y="9.398" smashed="yes" rot="MR180">
+<attribute name="NAME" x="13.97" y="10.0965" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="18.542" y="10.7633" size="0.4064" layer="28" ratio="10" rot="MR180"/>
+</element>
 <element name="R11" library="microbuilder" package="_0603" value="120" x="14.986" y="4.826" rot="MR270"/>
-<element name="R14" library="microbuilder" package="_0603" value="0" x="25.146" y="7.112"/>
-<element name="R13" library="microbuilder" package="_0603" value="0" x="25.146" y="5.334"/>
+<element name="R14" library="microbuilder" package="_0603" value="0" x="25.146" y="7.112" smashed="yes">
+<attribute name="NAME" x="21.336" y="6.7945" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="22.86" y="7.7787" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="R13" library="microbuilder" package="_0603" value="0" x="25.146" y="5.334" smashed="yes">
+<attribute name="NAME" x="21.336" y="5.1435" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="22.987" y="4.4767" size="0.4064" layer="27" ratio="10"/>
+</element>
 <element name="LCD1" library="keves" package="SSD1306-ALI" value="SSD1306-ALI" x="25.4" y="226.06"/>
-<element name="JP2" library="microbuilder" package="1X04_ROUND" value="" x="10.668" y="1.524"/>
-<element name="JP5" library="microbuilder" package="1X04_ROUND" value="" x="1.27" y="9.906" rot="R90"/>
+<element name="BUS1" library="microbuilder" package="1X04_ROUND" value="" x="10.668" y="1.524" smashed="yes">
+<attribute name="NAME" x="5.3848" y="2.4638" size="0.8128" layer="25" ratio="18"/>
+<attribute name="VALUE" x="5.588" y="-1.651" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="BUS2" library="microbuilder" package="1X04_ROUND" value="" x="1.27" y="9.906" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.2512" y="4.8768" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="4.445" y="4.826" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="USB" library="microbuilder" package="1X04_ROUND" value="" x="19.304" y="17.653" rot="R270"/>
-<element name="IC5" library="SparkFun-DigitalIC" package="SO16" value="74165D" x="14.605" y="52.578" rot="MR90"/>
+<element name="IC5" library="SparkFun-DigitalIC" package="SO16" value="74165D" x="14.605" y="52.578" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="13.97" y="48.514" size="1.27" layer="28" ratio="10" rot="MR90"/>
+<attribute name="NAME" x="13.208" y="59.309" size="1.27" layer="26" ratio="10" rot="MR180"/>
+</element>
 <element name="C26" library="microbuilder" package="0603" value="0.1uF" x="16.129" y="46.228" rot="MR180"/>
-<element name="R30" library="microbuilder" package="_0603" value="10k" x="9.017" y="55.118" rot="MR0"/>
-<element name="R31" library="microbuilder" package="_0603" value="10k" x="9.017" y="53.467" rot="MR0"/>
-<element name="R32" library="microbuilder" package="_0603" value="10k" x="9.017" y="51.816" rot="MR0"/>
-<element name="R33" library="microbuilder" package="_0603" value="10k" x="9.017" y="50.165" rot="MR0"/>
-<element name="R34" library="microbuilder" package="_0603" value="10k" x="20.32" y="48.895" rot="MR270"/>
-<element name="R35" library="microbuilder" package="_0603" value="10k" x="41.275" y="53.213" rot="MR90"/>
-<element name="R36" library="microbuilder" package="_0603" value="10k" x="40.64" y="68.453" rot="MR180"/>
-<element name="R37" library="microbuilder" package="_0603" value="10k" x="19.685" y="81.534" rot="MR0"/>
+<element name="R30" library="microbuilder" package="_0603" value="10k" x="9.017" y="55.118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.366" y="55.1815" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="11.1443" y="55.499" size="0.4064" layer="28" ratio="10" rot="MR270"/>
+</element>
+<element name="R31" library="microbuilder" package="_0603" value="10k" x="9.017" y="53.467" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.239" y="53.4035" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="11.1443" y="53.975" size="0.4064" layer="28" ratio="10" rot="MR270"/>
+</element>
+<element name="R32" library="microbuilder" package="_0603" value="10k" x="9.017" y="51.816" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.239" y="51.7525" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="11.1443" y="52.324" size="0.4064" layer="28" ratio="10" rot="MR270"/>
+</element>
+<element name="R33" library="microbuilder" package="_0603" value="10k" x="9.017" y="50.165" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.366" y="50.1015" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="10.6997" y="49.784" size="0.4064" layer="28" ratio="10" rot="MR90"/>
+</element>
+<element name="R34" library="microbuilder" package="_0603" value="10k" x="20.32" y="48.895" smashed="yes" rot="MR270">
+<attribute name="NAME" x="19.3675" y="50.8" size="0.8128" layer="26" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="18.288" y="48.1013" size="0.4064" layer="28" ratio="10" rot="MR180"/>
+</element>
+<element name="R35" library="microbuilder" package="_0603" value="10k" x="41.275" y="53.213" smashed="yes" rot="MR90">
+<attribute name="NAME" x="42.2275" y="51.943" size="0.8128" layer="26" ratio="18" rot="MR90"/>
+<attribute name="VALUE" x="42.037" y="55.0227" size="0.4064" layer="28" ratio="10" rot="MR0"/>
+</element>
+<element name="R36" library="microbuilder" package="_0603" value="10k" x="40.64" y="68.453" smashed="yes" rot="MR180">
+<attribute name="NAME" x="40.767" y="70.1675" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="39.37" y="69.9453" size="0.4064" layer="28" ratio="10" rot="MR180"/>
+</element>
+<element name="R37" library="microbuilder" package="_0603" value="10k" x="19.685" y="81.534" smashed="yes" rot="MR0">
+<attribute name="NAME" x="17.653" y="81.7245" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="17.653" y="81.1847" size="0.4064" layer="28" ratio="10" rot="MR0"/>
+</element>
 <element name="R38" library="microbuilder" package="_0603" value="10k" x="18.923" y="56.515" rot="MR90"/>
-<element name="JP3" library="microbuilder" package="1X03_ROUND" value="" x="35.941" y="4.191" rot="R180"/>
+<element name="SER" library="microbuilder" package="1X03_ROUND" value="" x="35.941" y="4.191" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.3672" y="4.5212" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="39.751" y="7.366" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -1195,13 +1358,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C10" pad="1"/>
 <contactref element="D2" pad="3"/>
 <contactref element="FADER1" pad="P3"/>
+<contactref element="POT7" pad="P3"/>
+<contactref element="POT5" pad="P3"/>
+<contactref element="POT3" pad="P3"/>
 <contactref element="POT1" pad="P3"/>
 <contactref element="POT2" pad="P3"/>
-<contactref element="POT3" pad="P3"/>
 <contactref element="POT4" pad="P3"/>
-<contactref element="POT5" pad="P3"/>
 <contactref element="POT6" pad="P3"/>
-<contactref element="POT7" pad="P3"/>
 <contactref element="LCD1" pad="P$1"/>
 <polygon width="0.254" layer="16">
 <vertex x="0.381" y="240.792"/>
@@ -1348,30 +1511,30 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C14" pad="1"/>
 <contactref element="R19" pad="2"/>
 <contactref element="R18" pad="2"/>
-<contactref element="BTN1" pad="SW1"/>
-<contactref element="BTN1" pad="SW2"/>
+<contactref element="BTN4" pad="SW1"/>
+<contactref element="BTN4" pad="SW2"/>
 <contactref element="C20" pad="1"/>
 <contactref element="RN1" pad="1"/>
 <contactref element="RN2" pad="1"/>
 <contactref element="R21" pad="2"/>
 <contactref element="R20" pad="2"/>
-<contactref element="BTN2" pad="SW2"/>
+<contactref element="BTN1" pad="SW2"/>
 <contactref element="R25" pad="2"/>
 <contactref element="R24" pad="2"/>
-<contactref element="BTN4" pad="SW2"/>
+<contactref element="BTN5" pad="SW2"/>
 <contactref element="R27" pad="2"/>
 <contactref element="R26" pad="2"/>
-<contactref element="BTN5" pad="SW1"/>
-<contactref element="BTN5" pad="SW2"/>
+<contactref element="BTN6" pad="SW1"/>
+<contactref element="BTN6" pad="SW2"/>
 <contactref element="C24" pad="1"/>
 <contactref element="R23" pad="2"/>
 <contactref element="R22" pad="2"/>
-<contactref element="BTN3" pad="SW1"/>
-<contactref element="BTN3" pad="SW2"/>
+<contactref element="BTN2" pad="SW1"/>
+<contactref element="BTN2" pad="SW2"/>
 <contactref element="C22" pad="1"/>
 <contactref element="R29" pad="2"/>
 <contactref element="R28" pad="2"/>
-<contactref element="BTN6" pad="SW2"/>
+<contactref element="BTN3" pad="SW2"/>
 <contactref element="IC3" pad="8"/>
 <contactref element="IC2" pad="8"/>
 <contactref element="IC2" pad="13"/>
@@ -1388,13 +1551,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="R10" pad="2"/>
 <contactref element="FADER1" pad="P1"/>
-<contactref element="POT5" pad="P1"/>
-<contactref element="POT6" pad="P1"/>
-<contactref element="POT7" pad="P1"/>
-<contactref element="POT4" pad="P1"/>
-<contactref element="POT3" pad="P1"/>
 <contactref element="POT2" pad="P1"/>
+<contactref element="POT4" pad="P1"/>
+<contactref element="POT6" pad="P1"/>
 <contactref element="POT1" pad="P1"/>
+<contactref element="POT3" pad="P1"/>
+<contactref element="POT5" pad="P1"/>
+<contactref element="POT7" pad="P1"/>
 <contactref element="ROTENC1" pad="S1"/>
 <contactref element="ROTENC2" pad="S1"/>
 <contactref element="ROTENC2" pad="C"/>
@@ -1486,8 +1649,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="19.304" y1="7.62" x2="19.558" y2="7.366" width="0.254" layer="1"/>
 <wire x1="19.216" y1="2.286" x2="19.216" y2="4.23" width="0.254" layer="16"/>
 <wire x1="19.216" y1="4.23" x2="21.463" y2="6.477" width="0.254" layer="16"/>
-<contactref element="JP2" pad="4"/>
-<contactref element="JP5" pad="4"/>
+<contactref element="BUS1" pad="4"/>
+<contactref element="BUS2" pad="4"/>
 <wire x1="5.842" y1="10.284" x2="6.988" y2="10.284" width="0.8128" layer="16"/>
 <wire x1="6.988" y1="10.284" x2="7.62" y2="9.652" width="0.8128" layer="16"/>
 <via x="7.62" y="9.652" extent="1-16" drill="0.508"/>
@@ -1543,7 +1706,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.805" y1="57.023" x2="13.462" y2="57.023" width="0.254" layer="16"/>
 <via x="13.462" y="57.023" extent="1-16" drill="0.508"/>
 <wire x1="13.462" y1="57.023" x2="13.462" y2="57.404" width="0.254" layer="1"/>
-<contactref element="JP3" pad="1"/>
+<contactref element="SER" pad="1"/>
 </signal>
 <signal name="NRST">
 <contactref element="CPU1" pad="7"/>
@@ -1656,7 +1819,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="USB_VBUS">
 <contactref element="CPU1" pad="42"/>
-<contactref element="JP1" pad="2"/>
+<contactref element="VBUS" pad="2"/>
 <contactref element="USB" pad="1"/>
 <wire x1="28.54" y1="14.49" x2="27.928" y2="14.49" width="0.254" layer="1"/>
 <wire x1="27.928" y1="14.49" x2="27.051" y2="15.367" width="0.254" layer="1"/>
@@ -1672,11 +1835,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14.605" y1="26.162" x2="19.304" y2="21.463" width="0.254" layer="1"/>
 </signal>
 <signal name="5.0V">
-<contactref element="JP1" pad="1"/>
+<contactref element="VBUS" pad="1"/>
 <contactref element="U1" pad="3"/>
 <contactref element="C15" pad="2"/>
-<contactref element="JP2" pad="1"/>
-<contactref element="JP5" pad="1"/>
+<contactref element="BUS1" pad="1"/>
+<contactref element="BUS2" pad="1"/>
 <wire x1="1.27" y1="6.096" x2="3.048" y2="6.096" width="0.8128" layer="1"/>
 <wire x1="3.048" y1="6.096" x2="6.858" y2="2.286" width="0.8128" layer="1"/>
 <wire x1="6.858" y1="1.524" x2="6.858" y2="2.286" width="0.8128" layer="1"/>
@@ -1763,13 +1926,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="35.56" y1="9.51" x2="35.54" y2="9.49" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
-<contactref element="BTN1" pad="LED1-"/>
+<contactref element="BTN4" pad="LED1-"/>
 <contactref element="R18" pad="1"/>
 <wire x1="41.7" y1="62.23" x2="40.728" y2="62.23" width="0.254" layer="16"/>
 <wire x1="40.728" y1="62.23" x2="39.497" y2="63.461" width="0.254" layer="16"/>
 </signal>
 <signal name="N$10">
-<contactref element="BTN1" pad="LED2-"/>
+<contactref element="BTN4" pad="LED2-"/>
 <contactref element="R19" pad="1"/>
 <wire x1="36.703" y1="62.953" x2="35.223" y2="62.953" width="0.254" layer="16"/>
 <wire x1="35.223" y1="62.953" x2="34.5" y2="62.23" width="0.254" layer="16"/>
@@ -1835,55 +1998,55 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.62" y1="110.49" x2="8.89" y2="109.22" width="0.254" layer="1"/>
 </signal>
 <signal name="N$24">
-<contactref element="BTN2" pad="LED1-"/>
+<contactref element="BTN1" pad="LED1-"/>
 <contactref element="R20" pad="1"/>
 <wire x1="30.568" y1="72.009" x2="30.568" y2="74.632" width="0.254" layer="16"/>
 <wire x1="30.568" y1="74.632" x2="29" y2="76.2" width="0.254" layer="16"/>
 </signal>
 <signal name="N$25">
-<contactref element="BTN2" pad="LED2-"/>
+<contactref element="BTN1" pad="LED2-"/>
 <contactref element="R21" pad="1"/>
 <wire x1="24.003" y1="76.161" x2="21.839" y2="76.161" width="0.254" layer="16"/>
 <wire x1="21.839" y1="76.161" x2="21.8" y2="76.2" width="0.254" layer="16"/>
 </signal>
 <signal name="N$29">
-<contactref element="BTN4" pad="LED1-"/>
+<contactref element="BTN5" pad="LED1-"/>
 <contactref element="R24" pad="1"/>
 <wire x1="30.441" y1="52.324" x2="30.441" y2="49.701" width="0.254" layer="16"/>
 <wire x1="30.441" y1="49.701" x2="29" y2="48.26" width="0.254" layer="16"/>
 </signal>
 <signal name="N$30">
-<contactref element="BTN4" pad="LED2-"/>
+<contactref element="BTN5" pad="LED2-"/>
 <contactref element="R25" pad="1"/>
 <wire x1="23.876" y1="48.426" x2="21.966" y2="48.426" width="0.254" layer="16"/>
 <wire x1="21.966" y1="48.426" x2="21.8" y2="48.26" width="0.254" layer="16"/>
 </signal>
 <signal name="N$34">
-<contactref element="BTN5" pad="LED1-"/>
+<contactref element="BTN6" pad="LED1-"/>
 <contactref element="R26" pad="1"/>
 <wire x1="39.585" y1="46.355" x2="39.795" y2="46.355" width="0.254" layer="16"/>
 <wire x1="39.795" y1="46.355" x2="41.7" y2="48.26" width="0.254" layer="16"/>
 </signal>
 <signal name="N$35">
-<contactref element="BTN5" pad="LED2-"/>
+<contactref element="BTN6" pad="LED2-"/>
 <contactref element="R27" pad="1"/>
 <wire x1="36.195" y1="47.41" x2="35.35" y2="47.41" width="0.254" layer="16"/>
 <wire x1="35.35" y1="47.41" x2="34.5" y2="48.26" width="0.254" layer="16"/>
 </signal>
 <signal name="N$39">
-<contactref element="BTN3" pad="LED1-"/>
+<contactref element="BTN2" pad="LED1-"/>
 <contactref element="R22" pad="1"/>
 <wire x1="41.7" y1="76.2" x2="39.282" y2="76.2" width="0.254" layer="16"/>
 <wire x1="39.282" y1="76.2" x2="39.243" y2="76.161" width="0.254" layer="16"/>
 </signal>
 <signal name="N$40">
-<contactref element="BTN3" pad="LED2-"/>
+<contactref element="BTN2" pad="LED2-"/>
 <contactref element="R23" pad="1"/>
 <wire x1="34.5" y1="76.2" x2="36.664" y2="76.2" width="0.254" layer="16"/>
 <wire x1="36.664" y1="76.2" x2="36.703" y2="76.161" width="0.254" layer="16"/>
 </signal>
 <signal name="N$44">
-<contactref element="BTN6" pad="LED1-"/>
+<contactref element="BTN3" pad="LED1-"/>
 <contactref element="R28" pad="1"/>
 <wire x1="29" y1="62.23" x2="29.083" y2="62.23" width="0.254" layer="16"/>
 <wire x1="29.083" y1="62.23" x2="29.718" y2="61.595" width="0.254" layer="16"/>
@@ -1891,7 +2054,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="29.718" y1="58.762" x2="28.829" y2="57.873" width="0.254" layer="16"/>
 </signal>
 <signal name="N$45">
-<contactref element="BTN6" pad="LED2-"/>
+<contactref element="BTN3" pad="LED2-"/>
 <contactref element="R29" pad="1"/>
 <wire x1="23.876" y1="62.015" x2="22.015" y2="62.015" width="0.254" layer="16"/>
 <wire x1="22.015" y1="62.015" x2="21.8" y2="62.23" width="0.254" layer="16"/>
@@ -2059,7 +2222,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.54" y1="18.99" x2="27.873" y2="18.99" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED1">
-<contactref element="BTN3" pad="LED1+"/>
+<contactref element="BTN2" pad="LED1+"/>
 <contactref element="IC2" pad="15"/>
 <wire x1="38.1" y1="79.8" x2="38.1" y2="81.407" width="0.254" layer="1"/>
 <wire x1="38.1" y1="81.407" x2="29.464" y2="90.043" width="0.254" layer="1"/>
@@ -2067,7 +2230,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="BTN_LED2">
 <contactref element="IC2" pad="3"/>
-<contactref element="BTN3" pad="LED2+"/>
+<contactref element="BTN2" pad="LED2+"/>
 <wire x1="25.273" y1="82.169" x2="27.432" y2="80.01" width="0.254" layer="1"/>
 <wire x1="27.432" y1="80.01" x2="27.432" y2="75.946" width="0.254" layer="1"/>
 <wire x1="27.432" y1="75.946" x2="28.321" y2="75.057" width="0.254" layer="1"/>
@@ -2080,7 +2243,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.273" y1="86.106" x2="25.273" y2="82.169" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED3">
-<contactref element="BTN2" pad="LED1+"/>
+<contactref element="BTN1" pad="LED1+"/>
 <contactref element="IC2" pad="5"/>
 <wire x1="20.822" y1="86.233" x2="23.749" y2="86.233" width="0.254" layer="1"/>
 <wire x1="23.749" y1="86.233" x2="24.13" y2="85.852" width="0.254" layer="1"/>
@@ -2089,7 +2252,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.13" y1="81.07" x2="24.279" y2="80.921" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED4">
-<contactref element="BTN2" pad="LED2+"/>
+<contactref element="BTN1" pad="LED2+"/>
 <contactref element="IC2" pad="7"/>
 <wire x1="20.822" y1="83.693" x2="22.098" y2="83.693" width="0.254" layer="1"/>
 <wire x1="22.098" y1="83.693" x2="23.114" y2="82.677" width="0.254" layer="1"/>
@@ -2098,7 +2261,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.4" y1="77.597" x2="25.4" y2="72.6" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED5">
-<contactref element="BTN1" pad="LED1+"/>
+<contactref element="BTN4" pad="LED1+"/>
 <contactref element="IC2" pad="4"/>
 <wire x1="28.702" y1="66.167" x2="37.763" y2="66.167" width="0.254" layer="1"/>
 <wire x1="37.763" y1="66.167" x2="38.1" y2="65.83" width="0.254" layer="1"/>
@@ -2112,7 +2275,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.765" y1="82.042" x2="24.765" y2="85.979" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED6">
-<contactref element="BTN5" pad="LED1+"/>
+<contactref element="BTN6" pad="LED1+"/>
 <contactref element="IC1" pad="3"/>
 <wire x1="32.893" y1="40.392" x2="32.893" y2="41.021" width="0.254" layer="1"/>
 <wire x1="32.893" y1="41.021" x2="36.83" y2="44.958" width="0.254" layer="1"/>
@@ -2140,7 +2303,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.559" y1="81.28" x2="27.305" y2="81.534" width="0.254" layer="16"/>
 </signal>
 <signal name="BTN_LED7">
-<contactref element="BTN4" pad="LED1+"/>
+<contactref element="BTN5" pad="LED1+"/>
 <contactref element="IC1" pad="6"/>
 <wire x1="29.083" y1="40.392" x2="29.083" y2="42.291" width="0.254" layer="1"/>
 <wire x1="29.083" y1="42.291" x2="26.416" y2="44.958" width="0.254" layer="1"/>
@@ -2149,13 +2312,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.4" y1="46.355" x2="25.4" y2="51.86" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED8">
-<contactref element="BTN4" pad="LED2+"/>
+<contactref element="BTN5" pad="LED2+"/>
 <contactref element="IC1" pad="7"/>
 <wire x1="27.813" y1="40.392" x2="27.813" y2="42.247" width="0.254" layer="1"/>
 <wire x1="27.813" y1="42.247" x2="25.4" y2="44.66" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED9">
-<contactref element="BTN1" pad="LED2+"/>
+<contactref element="BTN4" pad="LED2+"/>
 <contactref element="IC2" pad="6"/>
 <wire x1="20.822" y1="84.963" x2="23.241" y2="84.963" width="0.254" layer="1"/>
 <wire x1="23.241" y1="84.963" x2="23.622" y2="84.582" width="0.254" layer="1"/>
@@ -2174,14 +2337,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.575" y1="65.659" x2="29.083" y2="65.659" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED10">
-<contactref element="BTN5" pad="LED2+"/>
+<contactref element="BTN6" pad="LED2+"/>
 <contactref element="IC1" pad="2"/>
 <wire x1="34.163" y1="40.392" x2="34.163" y2="40.723" width="0.254" layer="1"/>
 <wire x1="34.163" y1="40.723" x2="38.1" y2="44.66" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_LED11">
 <contactref element="IC1" pad="4"/>
-<contactref element="BTN6" pad="LED1+"/>
+<contactref element="BTN3" pad="LED1+"/>
 <wire x1="27.432" y1="63.798" x2="25.4" y2="65.83" width="0.254" layer="1"/>
 <wire x1="27.432" y1="63.798" x2="27.432" y2="56.261" width="0.254" layer="1"/>
 <wire x1="27.432" y1="56.261" x2="27.686" y2="56.007" width="0.254" layer="1"/>
@@ -2197,7 +2360,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="BTN_LED12">
 <contactref element="IC1" pad="5"/>
-<contactref element="BTN6" pad="LED2+"/>
+<contactref element="BTN3" pad="LED2+"/>
 <wire x1="30.353" y1="40.392" x2="30.353" y2="41.783" width="0.254" layer="1"/>
 <wire x1="30.353" y1="41.783" x2="26.924" y2="45.212" width="0.254" layer="1"/>
 <wire x1="26.924" y1="45.212" x2="26.924" y2="45.847" width="0.254" layer="1"/>
@@ -2372,8 +2535,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R11" pad="2"/>
 <wire x1="17.266" y1="5.207" x2="16.129" y2="5.207" width="0.254" layer="16"/>
 <wire x1="16.129" y1="5.207" x2="14.986" y2="4.064" width="0.254" layer="16"/>
-<contactref element="JP2" pad="3"/>
-<contactref element="JP5" pad="3"/>
+<contactref element="BUS1" pad="3"/>
+<contactref element="BUS2" pad="3"/>
 <wire x1="14.986" y1="4.064" x2="14.478" y2="4.064" width="0.254" layer="16"/>
 <wire x1="14.478" y1="4.064" x2="11.938" y2="1.524" width="0.254" layer="16"/>
 <wire x1="1.27" y1="11.176" x2="2.286" y2="11.176" width="0.254" layer="1"/>
@@ -2390,8 +2553,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R11" pad="1"/>
 <wire x1="17.266" y1="6.477" x2="15.875" y2="6.477" width="0.254" layer="16"/>
 <wire x1="15.875" y1="6.477" x2="14.986" y2="5.588" width="0.254" layer="16"/>
-<contactref element="JP2" pad="2"/>
-<contactref element="JP5" pad="2"/>
+<contactref element="BUS1" pad="2"/>
+<contactref element="BUS2" pad="2"/>
 <wire x1="14.986" y1="5.588" x2="13.462" y2="5.588" width="0.254" layer="16"/>
 <wire x1="13.462" y1="5.588" x2="9.398" y2="1.524" width="0.254" layer="16"/>
 <wire x1="1.27" y1="8.636" x2="2.286" y2="8.636" width="0.254" layer="1"/>
@@ -2500,7 +2663,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC0">
 <contactref element="CPU1" pad="14"/>
-<contactref element="POT5" pad="P2"/>
+<contactref element="POT2" pad="P2"/>
 <wire x1="36.85" y1="165.1" x2="36.85" y2="143.109" width="0.254" layer="1"/>
 <wire x1="36.85" y1="143.109" x2="38.481" y2="141.478" width="0.254" layer="1"/>
 <wire x1="38.481" y1="141.478" x2="42.926" y2="141.478" width="0.254" layer="1"/>
@@ -2522,7 +2685,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC1">
 <contactref element="CPU1" pad="15"/>
-<contactref element="POT6" pad="P2"/>
+<contactref element="POT4" pad="P2"/>
 <wire x1="36.85" y1="139.7" x2="36.85" y2="116.693" width="0.254" layer="1"/>
 <wire x1="36.85" y1="116.693" x2="38.1" y2="115.443" width="0.254" layer="1"/>
 <wire x1="38.1" y1="115.443" x2="38.1" y2="105.283" width="0.254" layer="1"/>
@@ -2538,7 +2701,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC2">
 <contactref element="CPU1" pad="16"/>
-<contactref element="POT7" pad="P2"/>
+<contactref element="POT6" pad="P2"/>
 <wire x1="36.85" y1="114.3" x2="36.85" y2="105.771" width="0.254" layer="1"/>
 <wire x1="36.85" y1="105.771" x2="38.227" y2="104.394" width="0.254" layer="1"/>
 <wire x1="38.227" y1="104.394" x2="38.227" y2="98.552" width="0.254" layer="1"/>
@@ -2551,7 +2714,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC3">
 <contactref element="CPU1" pad="17"/>
-<contactref element="POT4" pad="P2"/>
+<contactref element="POT1" pad="P2"/>
 <wire x1="11.45" y1="165.1" x2="11.45" y2="142.474" width="0.254" layer="1"/>
 <wire x1="11.45" y1="142.474" x2="12.7" y2="141.224" width="0.254" layer="1"/>
 <wire x1="12.7" y1="141.224" x2="12.7" y2="120.904" width="0.254" layer="1"/>
@@ -2585,7 +2748,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC5">
 <contactref element="CPU1" pad="21"/>
-<contactref element="POT2" pad="P2"/>
+<contactref element="POT5" pad="P2"/>
 <wire x1="11.45" y1="114.3" x2="11.45" y2="111.994" width="0.254" layer="1"/>
 <wire x1="11.45" y1="111.994" x2="12.065" y2="111.379" width="0.254" layer="1"/>
 <wire x1="12.065" y1="111.379" x2="28.956" y2="111.379" width="0.254" layer="1"/>
@@ -2600,7 +2763,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ADC6">
 <contactref element="CPU1" pad="22"/>
-<contactref element="POT1" pad="P2"/>
+<contactref element="POT7" pad="P2"/>
 <wire x1="36.85" y1="88.9" x2="36.85" y2="85.07" width="0.254" layer="1"/>
 <wire x1="36.85" y1="85.07" x2="37.973" y2="83.947" width="0.254" layer="1"/>
 <wire x1="37.973" y1="83.947" x2="41.529" y2="83.947" width="0.254" layer="1"/>
@@ -2637,7 +2800,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DIN_9">
 <contactref element="IC5" pad="11"/>
 <contactref element="R37" pad="1"/>
-<contactref element="BTN2" pad="SW4"/>
+<contactref element="BTN1" pad="SW4"/>
 <contactref element="C21" pad="2"/>
 <wire x1="20.447" y1="79.717" x2="20.883" y2="79.717" width="0.254" layer="16"/>
 <wire x1="20.883" y1="79.717" x2="22.15" y2="78.45" width="0.254" layer="16"/>
@@ -2654,8 +2817,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DIN_10">
 <contactref element="IC5" pad="12"/>
 <contactref element="R36" pad="1"/>
-<contactref element="BTN1" pad="SW4"/>
-<contactref element="BTN1" pad="SW3"/>
+<contactref element="BTN4" pad="SW4"/>
+<contactref element="BTN4" pad="SW3"/>
 <contactref element="C20" pad="2"/>
 <wire x1="41.35" y1="64.48" x2="34.85" y2="64.48" width="0.254" layer="16"/>
 <wire x1="41.35" y1="64.48" x2="41.35" y2="64.861" width="0.254" layer="16"/>
@@ -2678,8 +2841,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DIN_11">
 <contactref element="IC5" pad="13"/>
 <contactref element="R35" pad="1"/>
-<contactref element="BTN5" pad="SW4"/>
-<contactref element="BTN5" pad="SW3"/>
+<contactref element="BTN6" pad="SW4"/>
+<contactref element="BTN6" pad="SW3"/>
 <contactref element="C24" pad="2"/>
 <wire x1="34.85" y1="50.51" x2="39.24" y2="50.51" width="0.254" layer="16"/>
 <wire x1="39.24" y1="50.51" x2="39.497" y2="50.253" width="0.254" layer="16"/>
@@ -2699,7 +2862,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DIN_12">
 <contactref element="IC5" pad="14"/>
 <contactref element="R34" pad="1"/>
-<contactref element="BTN4" pad="SW4"/>
+<contactref element="BTN5" pad="SW4"/>
 <contactref element="C23" pad="2"/>
 <wire x1="21.883" y1="52.324" x2="21.883" y2="50.777" width="0.254" layer="16"/>
 <wire x1="21.883" y1="50.777" x2="22.15" y2="50.51" width="0.254" layer="16"/>
@@ -2712,8 +2875,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DIN_13">
 <contactref element="IC5" pad="3"/>
 <contactref element="R33" pad="1"/>
-<contactref element="BTN3" pad="SW4"/>
-<contactref element="BTN3" pad="SW3"/>
+<contactref element="BTN2" pad="SW4"/>
+<contactref element="BTN2" pad="SW3"/>
 <contactref element="C22" pad="2"/>
 <wire x1="41.35" y1="78.45" x2="34.85" y2="78.45" width="0.254" layer="16"/>
 <wire x1="40.425" y1="80.391" x2="40.425" y2="79.375" width="0.254" layer="16"/>
@@ -2733,7 +2896,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="DIN_14">
 <contactref element="IC5" pad="4"/>
 <contactref element="R32" pad="1"/>
-<contactref element="BTN6" pad="SW4"/>
+<contactref element="BTN3" pad="SW4"/>
 <contactref element="C25" pad="2"/>
 <wire x1="21.883" y1="66.294" x2="21.883" y2="64.747" width="0.254" layer="16"/>
 <wire x1="21.883" y1="64.747" x2="22.15" y2="64.48" width="0.254" layer="16"/>
@@ -2767,7 +2930,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="UART_TX">
 <contactref element="CPU1" pad="51"/>
-<contactref element="JP3" pad="3"/>
+<contactref element="SER" pad="3"/>
 <via x="31.496" y="7.874" extent="1-16" drill="0.508"/>
 <wire x1="31.496" y1="6.096" x2="33.401" y2="4.191" width="0.254" layer="16"/>
 <wire x1="31.54" y1="9.49" x2="31.54" y2="7.918" width="0.254" layer="1"/>
@@ -2776,7 +2939,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="UART_RX">
 <contactref element="CPU1" pad="52"/>
-<contactref element="JP3" pad="2"/>
+<contactref element="SER" pad="2"/>
 <wire x1="32.04" y1="9.49" x2="32.04" y2="8.727" width="0.254" layer="1"/>
 <wire x1="32.04" y1="8.727" x2="32.385" y2="8.382" width="0.254" layer="1"/>
 <via x="32.385" y="8.382" extent="1-16" drill="0.508"/>
