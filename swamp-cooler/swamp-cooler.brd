@@ -1595,7 +1595,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="U$1" library="tayda" package="TAYDA_RELAY_A-5014" value="TAYDA_RELAY_A-5014" x="21.59" y="19.05" smashed="yes" rot="R180"/>
 <element name="H1" library="holes" package="4,1" value="MOUNT-HOLE4.1" x="3.81" y="3.81"/>
-<element name="H2" library="holes" package="4,1" value="MOUNT-HOLE4.1" x="46.99" y="2.54"/>
+<element name="H2" library="holes" package="4,1" value="MOUNT-HOLE4.1" x="46.99" y="3.81"/>
 <element name="H3" library="holes" package="4,1" value="MOUNT-HOLE4.1" x="3.81" y="39.37"/>
 <element name="H4" library="holes" package="4,1" value="MOUNT-HOLE4.1" x="46.99" y="39.37"/>
 </elements>
