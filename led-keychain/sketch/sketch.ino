@@ -20,8 +20,13 @@ void leds_wake_up() { }
 void leds_sleep() {
     /* OFF */
     memcpy(leds_off, leds, sizeof(leds));
-    memset(leds, 0, sizeof(leds));
-    FastLED.show();
+    
+    for (int j = 0; j < 128; ++j) {
+        for (int i = 0; i < NUM_LEDS; ++i) {
+            leds[i].fadeToBlackBy(5);
+        }
+        FastLED.show();
+    }
     pinMode(LED1_PIN, INPUT);
     digitalWrite(LED_EN_PIN, LOW);
 
@@ -47,6 +52,16 @@ void leds_sleep() {
 
     digitalWrite(LED_EN_PIN, HIGH);
     pinMode(LED1_PIN, OUTPUT);
+
+    for (int j = 0; j < 256; j += 2) {
+        for (int i = 0; i < NUM_LEDS; ++i) {
+            leds[i] = leds_off[i];
+            leds[i].fadeToBlackBy(255 - j);
+        }
+        FastLED.show();
+    }
+ 
+
     memcpy(leds, leds_off, sizeof(leds));
     FastLED.show();
     delay(200);
