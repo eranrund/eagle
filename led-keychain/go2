@@ -1,0 +1,1 @@
+/Applications/Arduino.app/Contents/MacOS/Arduino --pref build.path=/Users/eran/Projects/eagle/led-keychain/.build -v --upload --verbose-upload --port $(ls -la /dev/cu.usb* | awk '{print $10}' | grep -v 1411) /Users/eran/Projects/eagle/led-keychain/sketch/sketch.ino

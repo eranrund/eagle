@@ -9,7 +9,7 @@
 #define BTN3_PIN   0  // PD2
 #define BTN4_PIN   1  // PD3
 
-#define NUM_LEDS           10
+#define NUM_LEDS           100
 #define UPDATES_PER_SECOND 100
 
 CRGB leds[NUM_LEDS];
@@ -66,6 +66,8 @@ void setup()
 
     FastLED.addLeds<WS2812B, LED1_PIN, RGB>(leds, NUM_LEDS);
 	FastLED.setBrightness(brightness);
+    FastLED.setMaxPowerInVoltsAndMilliamps(5, 2000); 
+
     //leds_on = true;
     digitalWrite(LED_EN_PIN, HIGH);
     pinMode(LED1_PIN, OUTPUT);
