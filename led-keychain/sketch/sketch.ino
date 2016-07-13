@@ -16,6 +16,11 @@ CRGB leds[NUM_LEDS];
 CRGB leds_off[NUM_LEDS];
 uint8_t brightness = 64;
 
+#include "btn.h"
+Btn btn_brightness_up(BTN2_PIN);
+Btn btn_brightness_down(BTN3_PIN);
+
+
 void leds_wake_up() { }
 void leds_sleep() {
     /* OFF */
@@ -60,11 +65,9 @@ void leds_sleep() {
         }
         FastLED.show();
     }
- 
 
     memcpy(leds, leds_off, sizeof(leds));
     FastLED.show();
-    delay(200);
 }
 
 void setup()
@@ -92,7 +95,7 @@ void setup()
 #include "patterns_tinybee.h"
 void loop()
 {
-    static int i = 0;
+    /*static int i = 0;
     Serial.print(i++);
     Serial.print(" ");
     Serial.print(brightness); Serial.print(" " );
@@ -100,29 +103,54 @@ void loop()
     Serial.print(digitalRead(BTN2_PIN)); Serial.print(" ");
     Serial.print(digitalRead(BTN3_PIN)); Serial.print(" ");
     Serial.print(digitalRead(BTN4_PIN)); Serial.println();
+    */
 
-	// Check for power off
+    /* Brightness */
+	btn_brightness_up.poll(
+        /* Brightness UP pressed */
+        []() {
+            switch (brightness) {
+                case 0 ... 15: brightness += 1; break;
+                case 16 ... 100: brightness += 5; break;
+                case 101 ... (0xff - 15): brightness += 15; break;
+                case 255: break;
+            }
+            FastLED.setBrightness(brightness);
+        },
+        /* Brightness UP held */
+        []() {
+            if (brightness < 0xff) {
+                brightness++;
+                FastLED.setBrightness(brightness);
+            }
+        }
+    );
+    
+   btn_brightness_down.poll(
+        /* Brightness DOWN pressed */
+        []() {
+            switch (brightness) {
+                case 0: break;
+                case 1 ... 15: brightness -= 1; break;
+                case 16 ... 100: brightness -= 5; break;
+                case 101 ... 255: brightness -= 15; break;
+            }
+            FastLED.setBrightness(brightness);
+        },
+        /* Brightness DOWN held */
+        []() {
+            if (brightness > 0) {
+                brightness--;
+                FastLED.setBrightness(brightness);
+            }
+        }
+    );
+    
+    // Check for power off
 	if (!digitalRead(BTN1_PIN)) {
         delay(10);
         if (!digitalRead(BTN1_PIN)) {
             leds_sleep();
-        }
-    }
-
-    // Check for brightness
-    if (!digitalRead(BTN2_PIN)) {
-        if (brightness < 0xff) {
-            brightness++;
-            FastLED.setBrightness(brightness);
-            //delay(20);
-        }
-    }
-
-    if (!digitalRead(BTN3_PIN)) {
-        if (brightness > 0) {
-            brightness--;
-            FastLED.setBrightness(brightness);
-            //delay(20);
         }
     }
 
