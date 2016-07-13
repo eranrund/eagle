@@ -74,6 +74,7 @@ void setup()
     pinMode(LED2_PIN, OUTPUT);
 }
 
+#include "patterns_tinybee.h"
 void loop()
 {
     static int i = 0;
@@ -98,7 +99,7 @@ void loop()
         if (brightness < 0xff) {
             brightness++;
             FastLED.setBrightness(brightness);
-            delay(20);
+            //delay(20);
         }
     }
 
@@ -106,10 +107,13 @@ void loop()
         if (brightness > 0) {
             brightness--;
             FastLED.setBrightness(brightness);
-            delay(20);
+            //delay(20);
         }
     }
 
+    tinybee_loop();
+
+#if 0
 	/*****/
 	static uint8_t startIndex = 0;
     startIndex = startIndex + 1;
@@ -121,6 +125,7 @@ void loop()
 
 	FastLED.show();
     FastLED.delay(1000 / UPDATES_PER_SECOND);
+#endif
 }
 
 
