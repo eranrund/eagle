@@ -94,15 +94,18 @@ void setup()
 
 #include "patterns_tinybee.h"
 void loop()
+
 {
+
     /*static int i = 0;
     Serial.print(i++);
     Serial.print(" ");
     Serial.print(brightness); Serial.print(" " );
-    Serial.print(digitalRead(BTN1_PIN)); Serial.print(" ");
-    Serial.print(digitalRead(BTN2_PIN)); Serial.print(" ");
-    Serial.print(digitalRead(BTN3_PIN)); Serial.print(" ");
-    Serial.print(digitalRead(BTN4_PIN)); Serial.println();
+    //Serial.print(digitalRead(BTN1_PIN)); Serial.print(" ");
+    //Serial.print(digitalRead(BTN2_PIN)); Serial.print(" ");
+    //Serial.print(digitalRead(BTN3_PIN)); Serial.print(" ");
+    //Serial.print(digitalRead(BTN4_PIN));
+    Serial.println();
     */
 
     /* Brightness */
@@ -111,8 +114,9 @@ void loop()
         []() {
             switch (brightness) {
                 case 0 ... 15: brightness += 1; break;
-                case 16 ... 100: brightness += 5; break;
-                case 101 ... (0xff - 15): brightness += 15; break;
+                case 16 ... 100: brightness += 15; break;
+                case 101 ... (0xff - 30): brightness += 30; break;
+                case (0xff - 30 + 1) ... 254: brightness = 255; break;
                 case 255: break;
             }
             FastLED.setBrightness(brightness);
@@ -132,8 +136,8 @@ void loop()
             switch (brightness) {
                 case 0: break;
                 case 1 ... 15: brightness -= 1; break;
-                case 16 ... 100: brightness -= 5; break;
-                case 101 ... 255: brightness -= 15; break;
+                case 16 ... 100: brightness -= 15; break;
+                case 101 ... 255: brightness -= 30; break;
             }
             FastLED.setBrightness(brightness);
         },
