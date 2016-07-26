@@ -672,19 +672,6 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <rectangle x1="-5.461" y1="14.812" x2="-0.635" y2="15.828" layer="51"/>
 <rectangle x1="-8.001" y1="12.272" x2="-3.175" y2="13.288" layer="51"/>
 </package>
-<package name="PTV111-4">
-<wire x1="6" y1="0" x2="6" y2="17.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="21"/>
-<wire x1="-6" y1="0" x2="-6" y2="17.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="17.7" x2="6" y2="17.7" width="0.127" layer="21"/>
-<pad name="P$1" x="-5.8" y="11" drill="3" shape="square"/>
-<pad name="P$2" x="5.8" y="11" drill="3" shape="square"/>
-<pad name="P1" x="-3.75" y="0" drill="1.2" shape="square"/>
-<pad name="P4" x="3.75" y="0" drill="1.2" shape="square"/>
-<pad name="P2" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="P3" x="1.25" y="0" drill="1.2" shape="square"/>
-<text x="-3.81" y="17.78" size="1.27" layer="25">&gt;NAME</text>
-</package>
 <package name="100SP1T1B4M2QE">
 <description>Switch 100SP1T1B4M2QE
 http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/378824</description>
@@ -711,6 +698,19 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="1.27" x2="-3.81" y2="-10.16" width="0.127" layer="21"/>
 <text x="-1.27" y="-11.43" size="0.762" layer="25">&gt;NAME</text>
+</package>
+<package name="KEYSTONE-9V-BAT-HOLDER-1291">
+<description>http://www.digikey.com/product-detail/en/keystone-electronics/1291/36-1291-ND/251319</description>
+<pad name="P_NEG" x="0" y="6.35" drill="2.0828"/>
+<pad name="P_POS" x="0" y="-6.35" drill="2.0828"/>
+<hole x="-8.89" y="11.1125" drill="3.3528"/>
+<hole x="-43.815" y="11.1125" drill="3.3528"/>
+<hole x="-43.815" y="-11.1125" drill="3.3528"/>
+<hole x="-8.89" y="-11.1125" drill="3.3528"/>
+<wire x1="0" y1="14.2875" x2="0" y2="-14.2875" width="0.127" layer="21"/>
+<wire x1="-48.26" y1="14.2875" x2="-48.26" y2="-14.2875" width="0.127" layer="21"/>
+<wire x1="-48.26" y1="14.2875" x2="0" y2="14.2875" width="0.127" layer="21"/>
+<wire x1="-48.26" y1="-14.2875" x2="0" y2="-14.2875" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -748,25 +748,6 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <pin name="3" x="-15.24" y="0" visible="off" direction="pas" swaplevel="2"/>
 <pin name="4" x="12.7" y="-2.54" visible="off" direction="pas" swaplevel="2" rot="R180"/>
 <pin name="5" x="-12.7" y="-2.54" visible="off" direction="pas" swaplevel="2"/>
-</symbol>
-<symbol name="RTRIM">
-<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.286" y1="1.27" x2="-1.651" y2="2.413" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
-<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="U">
 <wire x1="0" y1="-3.175" x2="0" y2="-1.905" width="0.254" layer="94"/>
@@ -806,6 +787,13 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
+<symbol name="PIN-F">
+<wire x1="1.016" y1="0.254" x2="0" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="1.016" y2="-0.254" width="0.254" layer="94"/>
+<text x="1.524" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIDIJACK">
@@ -822,25 +810,6 @@ A modification of conn-hirshman:MAB5SH with two options for the grounding 'teeth
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PTV111-4220A-B104">
-<description>ROT POT PTV111-4220A-B104
-http://www.bourns.com/data/global/pdfs/PTVPTT.pdf</description>
-<gates>
-<gate name="G$1" symbol="RTRIM" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PTV111-4">
-<connects>
-<connect gate="G$1" pin="A" pad="P1"/>
-<connect gate="G$1" pin="E" pad="P3"/>
-<connect gate="G$1" pin="S" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -875,6 +844,23 @@ http://www.bourns.com/data/global/pdfs/PTVPTT.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="P$2_ANODE+"/>
 <connect gate="G$1" pin="C" pad="P$1_CATHODE-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KEYSTONE-9V-BAT-HOLDER-1291">
+<gates>
+<gate name="G_POS" symbol="PIN-F" x="2.54" y="2.54"/>
+<gate name="G_NEG" symbol="PIN-F" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="KEYSTONE-9V-BAT-HOLDER-1291">
+<connects>
+<connect gate="G_NEG" pin="1" pad="P_NEG"/>
+<connect gate="G_POS" pin="1" pad="P_POS"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15988,137 +15974,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-ptr500">
-<description>&lt;b&gt;PTR Connectors&lt;/b&gt;&lt;p&gt;
-Aug. 2004 / PTR Meßtechnik:&lt;br&gt;
-Die Bezeichnung der Serie AK505 wurde geändert.&lt;br&gt;
-Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
-&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;Alte Bezeichnung&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;Neue Bezeichnung&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AK505/2,grau&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AK500/2-5.0-H-GRAU&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AK505/2DS,grau&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AK500/2DS-5.0-H-GRAU&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AKZ505/2,grau&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=LEFT&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AKZ500/2-5.08-H-GRAU&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-  &lt;/TABLE&gt;
-
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="AK500/2">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="3.048" x2="-5.588" y2="3.175" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="3.048" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="-5.588" y1="3.175" x2="-5.588" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-5.588" y1="2.032" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.1524" layer="51"/>
-<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.1524" layer="51"/>
-<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
-<circle x="2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
-<circle x="-2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
-<circle x="2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
-<circle x="-2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
-<pad name="1" x="-2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
-<pad name="2" x="2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
-<text x="-5.08" y="4.445" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-5.715" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
-<text x="0.635" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
-<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="KL">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="KLV">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AK500/2" prefix="X" uservalue="yes">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="KLV" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="AK500/2">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="holes">
 <description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -16352,6 +16207,170 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Bourns">
+<packages>
+<package name="PTV09A-4">
+<description>PTV09 Series -9mm Potentiometer Vertical</description>
+<wire x1="-5.3" y1="1.05" x2="-5.3" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-5.3" y1="-1.05" x2="-3.5" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-1.05" x2="-3.5" y2="1.05" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="1.05" x2="-5.3" y2="1.05" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1.05" x2="3.5" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-1.05" x2="5.3" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-1.05" x2="5.3" y2="1.05" width="0.127" layer="51"/>
+<wire x1="5.3" y1="1.05" x2="3.5" y2="1.05" width="0.127" layer="51"/>
+<pad name="2" x="0" y="-7" drill="1"/>
+<pad name="3" x="2.5" y="-7" drill="1"/>
+<pad name="1" x="-2.5" y="-7" drill="1" shape="square" first="yes"/>
+<wire x1="-4.9" y1="5.5" x2="-4.9" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-5.5" x2="4.9" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-5.5" x2="4.9" y2="5.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="5.5" x2="-4.9" y2="5.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<pad name="4" x="-4.4" y="0" drill="2.2"/>
+<pad name="5" x="4.4" y="0" drill="2.2"/>
+<circle x="-4.4" y="0" radius="1.1" width="0.127" layer="51"/>
+<circle x="4.4" y="0" radius="1.1" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="POTENTIOMETER">
+<wire x1="5.08" y1="0" x2="4.572" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0" x2="3.81" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.016" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.016" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.016" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-3.81" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.016" x2="-4.572" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="2.54" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.2032" layer="94"/>
+<text x="10.16" y="5.08" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="10.16" y="-2.54" size="1.778" layer="95" rot="R180">&gt;VALUE</text>
+<pin name="CW" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="CCW" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="WIPER" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<text x="-7.62" y="2.54" size="1.778" layer="97" align="top-left">CCW</text>
+<text x="7.62" y="2.54" size="1.778" layer="97" align="top-right">CW</text>
+<pin name="CHASSIS" x="-7.62" y="-5.08" visible="off" length="middle" direction="pas"/>
+<text x="-12.7" y="-2.54" size="1.778" layer="97" align="top-left">chassis</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="POTENTIOMETER" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTV09A_VERTICAL" package="PTV09A-4">
+<connects>
+<connect gate="G$1" pin="CCW" pad="1"/>
+<connect gate="G$1" pin="CHASSIS" pad="4"/>
+<connect gate="G$1" pin="CW" pad="3"/>
+<connect gate="G$1" pin="WIPER" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16366,8 +16385,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="OK1" library="optocoupler" deviceset="4N*?M" device="" technology="25"/>
 <part name="U$1" library="keves" deviceset="MIDIJACK" device=""/>
 <part name="ISP1" library="adafruit" deviceset="AVRISP" device="-BOX"/>
-<part name="PW" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="FREQ" library="keves" deviceset="PTV111-4220A-B104" device=""/>
 <part name="MODE" library="keves" deviceset="100SP1T1B4M2QE" device=""/>
 <part name="PWR_SW" library="keves" deviceset="100SP1T1B4M2QE" device=""/>
 <part name="IC1" library="adafruit" deviceset="78*" device="T" technology="05"/>
@@ -16384,8 +16401,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="Q1" library="adafruit" deviceset="CRYSTAL" device="HC49UP" value="16MHz"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="025-025X050" value="18pF"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="025-025X050" value="18pF"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="050-025X075" value="18pF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="050-025X075" value="18pF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
@@ -16406,11 +16423,16 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="C4" library="rcl" deviceset="CPOL-US" device="E2-4" value="1uF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
-<part name="BAT" library="con-ptr500" deviceset="AK500/2" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
+<part name="BAT" library="keves" deviceset="KEYSTONE-9V-BAT-HOLDER-1291" device=""/>
+<part name="H5" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
+<part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="PW" library="Bourns" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="FREQ" library="Bourns" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
 </parts>
 <sheets>
 <sheet>
@@ -16421,8 +16443,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="OK1" gate="G$1" x="12.7" y="78.74"/>
 <instance part="U$1" gate="G$1" x="-30.48" y="83.82"/>
 <instance part="ISP1" gate="G$1" x="83.82" y="88.9" rot="R180"/>
-<instance part="PW" gate="G$1" x="127" y="81.28" rot="R270"/>
-<instance part="FREQ" gate="G$1" x="160.02" y="81.28" rot="R270"/>
 <instance part="MODE" gate="G$1" x="127" y="66.04" rot="R270"/>
 <instance part="PWR_SW" gate="G$1" x="-55.88" y="15.24" rot="R270"/>
 <instance part="IC1" gate="A1" x="-20.32" y="12.7"/>
@@ -16445,10 +16465,10 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="GND6" gate="1" x="27.94" y="43.18" rot="R270"/>
 <instance part="P+4" gate="1" x="66.04" y="86.36" rot="R90"/>
 <instance part="GND7" gate="1" x="66.04" y="91.44" rot="R270"/>
-<instance part="GND8" gate="1" x="134.62" y="81.28" rot="R90"/>
-<instance part="GND9" gate="1" x="167.64" y="81.28" rot="R90"/>
-<instance part="P+5" gate="1" x="119.38" y="81.28" rot="R90"/>
-<instance part="P+6" gate="1" x="152.4" y="81.28" rot="R90"/>
+<instance part="GND8" gate="1" x="139.7" y="96.52" rot="R90"/>
+<instance part="GND9" gate="1" x="167.64" y="96.52" rot="R90"/>
+<instance part="P+5" gate="1" x="119.38" y="96.52" rot="R90"/>
+<instance part="P+6" gate="1" x="147.32" y="96.52" rot="R90"/>
 <instance part="P+7" gate="1" x="134.62" y="68.58" rot="R270"/>
 <instance part="GND10" gate="1" x="134.62" y="63.5" rot="R90"/>
 <instance part="R5" gate="G$1" x="134.62" y="45.72" rot="R180"/>
@@ -16461,12 +16481,17 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="C4" gate="G$1" x="-40.64" y="10.16"/>
 <instance part="GND13" gate="1" x="-20.32" y="-2.54"/>
 <instance part="P+9" gate="1" x="-2.54" y="20.32"/>
-<instance part="BAT" gate="-1" x="-76.2" y="15.24"/>
-<instance part="BAT" gate="-2" x="-76.2" y="10.16"/>
 <instance part="H1" gate="G$1" x="-73.66" y="116.84"/>
 <instance part="H2" gate="G$1" x="-73.66" y="111.76"/>
 <instance part="H3" gate="G$1" x="-73.66" y="106.68"/>
 <instance part="H4" gate="G$1" x="-73.66" y="101.6"/>
+<instance part="BAT" gate="G_POS" x="-73.66" y="15.24" rot="R180"/>
+<instance part="BAT" gate="G_NEG" x="-73.66" y="10.16" rot="R180"/>
+<instance part="H5" gate="G$1" x="-73.66" y="96.52"/>
+<instance part="H6" gate="G$1" x="-73.66" y="91.44"/>
+<instance part="JP1" gate="G$1" x="-63.5" y="30.48" rot="R90"/>
+<instance part="PW" gate="G$1" x="129.54" y="96.52" rot="R180"/>
+<instance part="FREQ" gate="G$1" x="157.48" y="96.52" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -16531,14 +16556,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PW" gate="G$1" pin="A"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="FREQ" gate="G$1" pin="A"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="MODE" gate="G$1" pin="3"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
@@ -16564,15 +16581,27 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="-20.32" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-20.32" y="2.54"/>
-<pinref part="BAT" gate="-2" pin="KL"/>
-<wire x1="-40.64" y1="2.54" x2="-71.12" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="2.54" x2="-63.5" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="2.54" x2="-71.12" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="2.54" x2="-71.12" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-40.64" y="2.54"/>
+<pinref part="BAT" gate="G_NEG" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="-63.5" y1="27.94" x2="-63.5" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-63.5" y="2.54"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="99.06" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PW" gate="G$1" pin="CCW"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="FREQ" gate="G$1" pin="CCW"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -16599,14 +16628,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="P+4" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="PW" gate="G$1" pin="E"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="FREQ" gate="G$1" pin="E"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="MODE" gate="G$1" pin="1"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 </segment>
@@ -16622,6 +16643,14 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="P+9" gate="1" pin="+5V"/>
 <wire x1="-2.54" y1="12.7" x2="-2.54" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-2.54" y="12.7"/>
+</segment>
+<segment>
+<pinref part="PW" gate="G$1" pin="CW"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="FREQ" gate="G$1" pin="CW"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16722,9 +16751,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </net>
 <net name="PW" class="0">
 <segment>
-<pinref part="PW" gate="G$1" pin="S"/>
-<wire x1="127" y1="76.2" x2="127" y2="73.66" width="0.1524" layer="91"/>
-<label x="127" y="73.66" size="1.778" layer="95"/>
+<wire x1="129.54" y1="91.44" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
+<label x="129.54" y="88.9" size="1.778" layer="95"/>
+<pinref part="PW" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
@@ -16734,9 +16763,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </net>
 <net name="FREQ" class="0">
 <segment>
-<pinref part="FREQ" gate="G$1" pin="S"/>
-<wire x1="160.02" y1="76.2" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
-<label x="160.02" y="73.66" size="1.778" layer="95"/>
+<wire x1="157.48" y1="91.44" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
+<label x="157.48" y="88.9" size="1.778" layer="95"/>
+<pinref part="FREQ" gate="G$1" pin="WIPER"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
@@ -16790,8 +16819,12 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <net name="N$10" class="0">
 <segment>
 <pinref part="PWR_SW" gate="G$1" pin="2"/>
-<wire x1="-60.96" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="BAT" gate="-1" pin="KL"/>
+<wire x1="-60.96" y1="15.24" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="BAT" gate="G_POS" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="-66.04" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="27.94" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-66.04" y="15.24"/>
 </segment>
 </net>
 </nets>

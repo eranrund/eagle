@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3904,6 +3904,23 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="1.27" x2="-3.81" y2="-10.16" width="0.127" layer="21"/>
 <text x="-1.27" y="-11.43" size="0.762" layer="25">&gt;NAME</text>
+</package>
+<package name="KEYSTONE-9V-BAT-HOLDER-1291">
+<description>http://www.digikey.com/product-detail/en/keystone-electronics/1291/36-1291-ND/251319</description>
+<pad name="P_NEG" x="0" y="6.35" drill="2.0828"/>
+<pad name="P_POS" x="0" y="-6.35" drill="2.0828"/>
+<hole x="-8.89" y="11.1125" drill="3.3528"/>
+<hole x="-43.815" y="11.1125" drill="3.3528"/>
+<hole x="-43.815" y="-11.1125" drill="3.3528"/>
+<hole x="-8.89" y="-11.1125" drill="3.3528"/>
+<wire x1="0" y1="14.2875" x2="0" y2="-14.2875" width="0.127" layer="21"/>
+<wire x1="-48.26" y1="14.2875" x2="-48.26" y2="-14.2875" width="0.127" layer="21"/>
+<wire x1="-48.26" y1="14.2875" x2="0" y2="14.2875" width="0.127" layer="21"/>
+<wire x1="-48.26" y1="-14.2875" x2="0" y2="-14.2875" width="0.127" layer="21"/>
+</package>
+<package name="PTV09A-4025F-B503">
+<pad name="P$1" x="-5.2959" y="0" drill="2.794" shape="square"/>
+<pad name="P$2" x="5.2959" y="0" drill="2.794" shape="square"/>
 </package>
 </packages>
 <symbols>
@@ -8497,6 +8514,23 @@ Source: &lt;a href="http://www.national.com/ds/LM/LME49600.pdf"&gt; Data  sheet 
 <connects>
 <connect gate="G$1" pin="A" pad="P$2_ANODE+"/>
 <connect gate="G$1" pin="C" pad="P$1_CATHODE-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KEYSTONE-9V-BAT-HOLDER-1291">
+<gates>
+<gate name="G_POS" symbol="PIN-F" x="2.54" y="2.54"/>
+<gate name="G_NEG" symbol="PIN-F" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="KEYSTONE-9V-BAT-HOLDER-1291">
+<connects>
+<connect gate="G_NEG" pin="1" pad="P_NEG"/>
+<connect gate="G_POS" pin="1" pad="P_POS"/>
 </connects>
 <technologies>
 <technology name=""/>
