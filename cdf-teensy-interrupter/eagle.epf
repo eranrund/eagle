@@ -350,6 +350,8 @@ UsedLibrary="/Users/eran/Downloads/Teensy 1.1 lbr/Teensy_3_and_LC_Series_Boards_
 UsedLibrary="/Users/eran/Projects/eagle/libs/keves.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-LED.lbr"
 UsedLibrary="/Users/eran/Downloads/HD44780LCD.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-Electromechanical.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/adafruit.lbr"
 
 [Desktop]
 Screen="2560 1440"

@@ -3,7 +3,7 @@
 
 class Btn {
     int buttonVal = 0; // value read from button
-    int buttonLast = 0; // buffered value of the button's previous state
+    int buttonLast = HIGH; // buffered value of the button's previous state
     long btnDnTime; // time the button was pressed down
     long btnUpTime; // time the button was released
     long lastHeld = 0;
