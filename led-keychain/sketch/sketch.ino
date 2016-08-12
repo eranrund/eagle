@@ -134,7 +134,7 @@ void setup()
 {
 
     delay(1000);
-    Serial.begin(9600);
+    //Serial.begin(9600);
     pinMode(LED_EN_PIN, OUTPUT);
     digitalWrite(LED_EN_PIN, LOW);
     pinMode(BTN1_PIN, INPUT_PULLUP);
