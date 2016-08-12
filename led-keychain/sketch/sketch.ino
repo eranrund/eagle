@@ -1,3 +1,4 @@
+#include <EEPROM.h>
 #include <avr/sleep.h>
 #include "FastLED.h"
 
@@ -23,6 +24,33 @@ CRGB leds[NUM_LEDS];
 CRGB leds_off[NUM_LEDS];
 uint8_t brightness = 64;
 uint8_t led_mode = MODE_PATTERNS;
+
+#define CFG_MAGIC 0xabcd1234
+typedef struct cfg_s {
+    uint32_t magic;
+    uint8_t brightness;
+} cfg_t;
+
+void cfg_save() {
+    cfg_t cfg;
+    cfg.magic = CFG_MAGIC;
+    cfg.brightness = brightness;
+    EEPROM.put(0, cfg);
+}
+
+void cfg_load() {
+    cfg_t cfg;
+    EEPROM.get(0, cfg);
+
+    if (cfg.magic != CFG_MAGIC) {
+        cfg_save();
+        return;
+    }
+
+    brightness = cfg.brightness;
+}
+
+
 
 #include "btn.h"
 Btn btn_brightness_up(BTN2_PIN);
@@ -63,9 +91,17 @@ void leds_sleep() {
     sei();
     USBDevice.attach();
     delay(100);
+    pinMode(LED1_PIN, OUTPUT);
+
+
+    memset(leds, 0, sizeof(leds));
+    FastLED.show();
 
     digitalWrite(LED_EN_PIN, HIGH);
-    pinMode(LED1_PIN, OUTPUT);
+
+    FastLED.show();
+
+    delay(100);
 
     for (int j = 0; j < 256; j += 2) {
         for (int i = 0; i < NUM_LEDS; ++i) {
@@ -79,8 +115,25 @@ void leds_sleep() {
     FastLED.show();
 }
 
+void flash() {
+    for (int i = 0; i < 5; ++i) {
+        leds[0] = leds[1] = CRGB::Red;
+        leds[2] = leds[3] = CRGB::Green;
+        leds[4] = leds[5] = CRGB::Blue;
+        FastLED.show();
+        FastLED.delay(200);
+
+        memset(leds, 0, sizeof(leds));
+        FastLED.show();
+        FastLED.delay(200);
+    }
+}
+
+
 void setup()
 {
+
+    delay(1000);
     Serial.begin(9600);
     pinMode(LED_EN_PIN, OUTPUT);
     digitalWrite(LED_EN_PIN, LOW);
@@ -89,16 +142,26 @@ void setup()
     pinMode(BTN3_PIN, INPUT_PULLUP);
     pinMode(BTN4_PIN, INPUT_PULLUP);
 
-    delay(2000);
+
+    memset(leds, 0, sizeof(leds));
 
     FastLED.addLeds<WS2812B, LED1_PIN, GRB>(leds, NUM_LEDS);
-	FastLED.setBrightness(brightness);
-    FastLED.setMaxPowerInVoltsAndMilliamps(5, 2000);
+    FastLED.setMaxPowerInVoltsAndMilliamps(5, 1900);
+    FastLED.show();
 
-    //leds_on = true;
     digitalWrite(LED_EN_PIN, HIGH);
     pinMode(LED1_PIN, OUTPUT);
     pinMode(LED2_PIN, OUTPUT);
+
+    if (!digitalRead(BTN2_PIN) && !digitalRead(BTN3_PIN)) {
+        brightness = 64;
+        cfg_save();
+	    FastLED.setBrightness(brightness);
+        flash();
+    } else {
+        cfg_load();
+	    FastLED.setBrightness(brightness);
+    }
 }
 
 #include "patterns_tinybee.h"
@@ -129,12 +192,14 @@ void loop()
                 case 255: break;
             }
             FastLED.setBrightness(brightness);
+            cfg_save();
         },
         /* Brightness UP held */
         []() {
             if (brightness < 0xff) {
                 brightness++;
                 FastLED.setBrightness(brightness);
+                cfg_save();
             }
         }
     );
@@ -149,12 +214,14 @@ void loop()
                 case 101 ... 255: brightness -= 30; break;
             }
             FastLED.setBrightness(brightness);
+            cfg_save();
         },
         /* Brightness DOWN held */
         []() {
             if (brightness > 0) {
                 brightness--;
                 FastLED.setBrightness(brightness);
+                cfg_save();
             }
         }
     );
