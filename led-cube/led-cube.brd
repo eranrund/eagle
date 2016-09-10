@@ -288,6 +288,7 @@
 <hole x="4" y="37.5" drill="2.5"/>
 <hole x="46" y="37.5" drill="2.5"/>
 <hole x="46" y="12.5" drill="2.5"/>
+<text x="3.683" y="14.351" size="0.762" layer="21" font="vector" rot="R90">led-cube by Eran Rundstein, 2016</text>
 </plain>
 <libraries>
 <library name="jos-ph">
