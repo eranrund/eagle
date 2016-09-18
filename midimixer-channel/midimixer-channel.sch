@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4838,6 +4838,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="U$47" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="SER" library="microbuilder" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="U$51" library="microbuilder" deviceset="GND" device=""/>
+<part name="H5" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="H6" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4994,6 +4996,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="U$47" gate="G$1" x="-121.92" y="-33.02"/>
 <instance part="SER" gate="A" x="152.4" y="83.82"/>
 <instance part="U$51" gate="G$1" x="139.7" y="86.36" rot="R270"/>
+<instance part="H5" gate="G$1" x="177.8" y="139.7"/>
+<instance part="H6" gate="G$1" x="182.88" y="142.24"/>
 </instances>
 <busses>
 </busses>
