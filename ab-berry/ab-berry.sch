@@ -74,13 +74,18 @@
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -90,6 +95,22 @@
 <layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
 <layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
 <layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="yes" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="yes" active="yes"/>
@@ -1655,6 +1676,61 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="keves">
+<packages>
+<package name="PEC111-4XXXK-SXXXX">
+<wire x1="-6.25" y1="6.6" x2="6.25" y2="6.6" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-6.6" x2="6.25" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="6.6" x2="-6.25" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-6.6" x2="6.25" y2="6.6" width="0.127" layer="21"/>
+<pad name="S1" x="-2.5" y="7" drill="1" shape="square"/>
+<pad name="S2" x="2.5" y="7" drill="1" shape="square"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="C" x="0" y="-7.5" drill="1" shape="square"/>
+<pad name="B" x="2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="P$1" x="-5.7" y="0" drill="2.7" shape="square"/>
+<pad name="P$2" x="5.7" y="0" drill="2.7" shape="square"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ROTARYENCODER">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="-10.16" size="1.27" layer="95">&gt;NAME</text>
+<pin name="CH_A" x="-10.16" y="5.08" length="middle" direction="out"/>
+<pin name="COMMON" x="-10.16" y="2.54" length="middle" direction="in"/>
+<pin name="CH_B" x="-10.16" y="0" length="middle" direction="out"/>
+<pin name="SW1" x="-10.16" y="-2.54" length="middle"/>
+<pin name="SW2" x="-10.16" y="-5.08" length="middle"/>
+<text x="-2.286" y="8.382" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PEC11-4215K-S0024">
+<gates>
+<gate name="G$1" symbol="ROTARYENCODER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PEC111-4XXXK-SXXXX">
+<connects>
+<connect gate="G$1" pin="CH_A" pad="A"/>
+<connect gate="G$1" pin="CH_B" pad="B"/>
+<connect gate="G$1" pin="COMMON" pad="C"/>
+<connect gate="G$1" pin="SW1" pad="S1"/>
+<connect gate="G$1" pin="SW2" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1698,6 +1774,18 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
 <part name="U$14" library="microbuilder" deviceset="GND" device=""/>
+<part name="ROT1" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$16" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$17" library="microbuilder" deviceset="GND" device=""/>
+<part name="ROT2" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$15" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$18" library="microbuilder" deviceset="GND" device=""/>
+<part name="ROT3" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$19" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$20" library="microbuilder" deviceset="GND" device=""/>
+<part name="ROT4" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$21" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1737,6 +1825,18 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="LED1" gate="G$1" x="-38.1" y="63.5" rot="R270"/>
 <instance part="R5" gate="G$1" x="-38.1" y="76.2" rot="R90"/>
 <instance part="U$14" gate="G$1" x="-38.1" y="55.88"/>
+<instance part="ROT1" gate="G$1" x="-50.8" y="5.08"/>
+<instance part="U$16" gate="G$1" x="-63.5" y="7.62" rot="R270"/>
+<instance part="U$17" gate="G$1" x="-63.5" y="2.54" rot="R270"/>
+<instance part="ROT2" gate="G$1" x="-50.8" y="-15.24"/>
+<instance part="U$15" gate="G$1" x="-63.5" y="-12.7" rot="R270"/>
+<instance part="U$18" gate="G$1" x="-63.5" y="-17.78" rot="R270"/>
+<instance part="ROT3" gate="G$1" x="-50.8" y="-35.56"/>
+<instance part="U$19" gate="G$1" x="-63.5" y="-33.02" rot="R270"/>
+<instance part="U$20" gate="G$1" x="-63.5" y="-38.1" rot="R270"/>
+<instance part="ROT4" gate="G$1" x="-50.8" y="-58.42"/>
+<instance part="U$21" gate="G$1" x="-63.5" y="-55.88" rot="R270"/>
+<instance part="U$22" gate="G$1" x="-63.5" y="-60.96" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1826,6 +1926,38 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="U1" gate="G$1" pin="ADJ"/>
 <wire x1="-58.42" y1="76.2" x2="-58.42" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-58.42" y="73.66"/>
+</segment>
+<segment>
+<pinref part="ROT1" gate="G$1" pin="COMMON"/>
+<pinref part="U$16" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT1" gate="G$1" pin="SW1"/>
+<pinref part="U$17" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="COMMON"/>
+<pinref part="U$15" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="SW1"/>
+<pinref part="U$18" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT3" gate="G$1" pin="COMMON"/>
+<pinref part="U$19" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT3" gate="G$1" pin="SW1"/>
+<pinref part="U$20" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT4" gate="G$1" pin="COMMON"/>
+<pinref part="U$21" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT4" gate="G$1" pin="SW1"/>
+<pinref part="U$22" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -2025,6 +2157,90 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="-68.58" y1="83.82" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="83.82" x2="-68.58" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-68.58" y="83.82"/>
+</segment>
+</net>
+<net name="ROT1_A" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="CH_A"/>
+<wire x1="-60.96" y1="10.16" x2="-76.2" y2="10.16" width="0.1524" layer="91"/>
+<label x="-81.28" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT1_B" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="CH_B"/>
+<wire x1="-60.96" y1="5.08" x2="-76.2" y2="5.08" width="0.1524" layer="91"/>
+<label x="-81.28" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT1_SW" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="SW2"/>
+<wire x1="-60.96" y1="0" x2="-76.2" y2="0" width="0.1524" layer="91"/>
+<label x="-81.28" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT2_A" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="CH_A"/>
+<wire x1="-60.96" y1="-10.16" x2="-76.2" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-81.28" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT2_B" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="CH_B"/>
+<wire x1="-60.96" y1="-15.24" x2="-76.2" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-81.28" y="-15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT2_SW" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="SW2"/>
+<wire x1="-60.96" y1="-20.32" x2="-76.2" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-81.28" y="-20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT3_A" class="0">
+<segment>
+<pinref part="ROT3" gate="G$1" pin="CH_A"/>
+<wire x1="-60.96" y1="-30.48" x2="-76.2" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-81.28" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT3_B" class="0">
+<segment>
+<pinref part="ROT3" gate="G$1" pin="CH_B"/>
+<wire x1="-60.96" y1="-35.56" x2="-76.2" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-81.28" y="-35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT3_SW" class="0">
+<segment>
+<pinref part="ROT3" gate="G$1" pin="SW2"/>
+<wire x1="-60.96" y1="-40.64" x2="-76.2" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-81.28" y="-40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT4_A" class="0">
+<segment>
+<pinref part="ROT4" gate="G$1" pin="CH_A"/>
+<wire x1="-60.96" y1="-53.34" x2="-76.2" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-81.28" y="-53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT4_B" class="0">
+<segment>
+<pinref part="ROT4" gate="G$1" pin="CH_B"/>
+<wire x1="-60.96" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-81.28" y="-58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ROT4_SW" class="0">
+<segment>
+<pinref part="ROT4" gate="G$1" pin="SW2"/>
+<wire x1="-60.96" y1="-63.5" x2="-76.2" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-81.28" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

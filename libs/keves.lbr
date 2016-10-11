@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -173,6 +173,7 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 <pad name="P$1" x="-5.7" y="0" drill="2.7" shape="square"/>
 <pad name="P$2" x="5.7" y="0" drill="2.7" shape="square"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="C0816">
 <wire x1="-0.6" y1="-0.7" x2="-0.6" y2="-1" width="0.127" layer="21"/>
@@ -4249,6 +4250,30 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
 </package>
+<package name="SSD1306-7PIN">
+<wire x1="-7" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="-7" y1="0" x2="-7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="-2" x2="13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2" x2="-13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="-2" x2="-13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="13.65" y1="-2" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="25.8" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="21.53" x2="13.35" y2="21.53" width="0.127" layer="21" style="longdash"/>
+<wire x1="-13.35" y1="2.27" x2="13.35" y2="2.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-3" y="-2" size="1.27" layer="25">&gt;NAME</text>
+<pad name="CS" x="7.62" y="24.3" drill="0.8"/>
+<pad name="DC" x="5.08" y="24.3" drill="0.8"/>
+<pad name="RES" x="2.54" y="24.3" drill="0.8"/>
+<pad name="MOSI" x="0" y="24.3" drill="0.8"/>
+<pad name="CLK" x="-2.54" y="24.3" drill="0.8"/>
+<pad name="VCC" x="-5.08" y="24.3" drill="0.8"/>
+<pad name="GND" x="-7.62" y="24.3" drill="0.8" shape="square"/>
+<hole x="-12" y="24.3" drill="3"/>
+<hole x="12" y="24.3" drill="3"/>
+<hole x="-12" y="0" drill="3"/>
+<hole x="12" y="0" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RTRIM">
@@ -4281,6 +4306,7 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <pin name="CH_B" x="-10.16" y="0" length="middle" direction="out"/>
 <pin name="SW1" x="-10.16" y="-2.54" length="middle"/>
 <pin name="SW2" x="-10.16" y="-5.08" length="middle"/>
+<text x="-2.286" y="8.382" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="CAP-NP">
 <wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
@@ -5891,6 +5917,21 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="SSD1306-7PIN">
+<pin name="VCC" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="CLK" x="-12.7" y="0" length="middle"/>
+<pin name="MOSI" x="-12.7" y="-2.54" length="middle"/>
+<pin name="CS" x="-12.7" y="-5.08" length="middle"/>
+<pin name="DC" x="-12.7" y="-7.62" length="middle"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="5.08" y="-5.08" size="1.27" layer="94" rot="R90">SSD1306 LCD</text>
+<text x="-5.08" y="-15.24" size="1.27" layer="104">&gt;NAME</text>
+<pin name="RST" x="-12.7" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9005,6 +9046,28 @@ Source: &lt;a href="http://www.national.com/ds/LM/LME49600.pdf"&gt; Data  sheet 
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SSD1306-7PIN">
+<description>https://www.aliexpress.com/item/free-shipping-0-96-inch-OLED-display-module-128X64-OLED-For-arduino-I2C-IIC-SPI-7p/32595065668.html?ws_ab_test=searchweb0_0,searchweb201602_1_116_117_10065_10068_114_10067_115_10069_113_10017_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10078_10079_10073_10070_10052_10053_10050_10051,searchweb201603_6&amp;btsid=51ed1bae-6cee-4f36-9ddd-1a85c2e0ff68</description>
+<gates>
+<gate name="G$1" symbol="SSD1306-7PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSD1306-7PIN">
+<connects>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DC" pad="DC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RST" pad="RES"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>

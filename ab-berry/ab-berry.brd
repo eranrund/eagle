@@ -74,13 +74,18 @@
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -90,6 +95,22 @@
 <layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
 <layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
 <layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="yes" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="yes" active="yes"/>
@@ -385,6 +406,25 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </package>
 </packages>
 </library>
+<library name="keves">
+<packages>
+<package name="PEC111-4XXXK-SXXXX">
+<wire x1="-6.25" y1="6.6" x2="6.25" y2="6.6" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-6.6" x2="6.25" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="6.6" x2="-6.25" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-6.6" x2="6.25" y2="6.6" width="0.127" layer="21"/>
+<pad name="S1" x="-2.5" y="7" drill="1" shape="square"/>
+<pad name="S2" x="2.5" y="7" drill="1" shape="square"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="C" x="0" y="-7.5" drill="1" shape="square"/>
+<pad name="B" x="2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="P$1" x="-5.7" y="0" drill="2.7" shape="square"/>
+<pad name="P$2" x="5.7" y="0" drill="2.7" shape="square"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -593,6 +633,10 @@ design rules under a new name.</description>
 <element name="C9" library="microbuilder" package="0603" value="" x="-36.83" y="-46.99"/>
 <element name="LED1" library="microbuilder" package="CHIPLED_0603" value="" x="-41.91" y="-45.72"/>
 <element name="R5" library="microbuilder" package="0603" value="330" x="-41.91" y="-49.53"/>
+<element name="ROT1" library="keves" package="PEC111-4XXXK-SXXXX" value="PEC12R-4225F-S0024" x="-52.07" y="-41.91"/>
+<element name="ROT2" library="keves" package="PEC111-4XXXK-SXXXX" value="PEC12R-4225F-S0024" x="-52.07" y="-59.69"/>
+<element name="ROT3" library="keves" package="PEC111-4XXXK-SXXXX" value="PEC12R-4225F-S0024" x="-52.07" y="-77.47"/>
+<element name="ROT4" library="keves" package="PEC111-4XXXK-SXXXX" value="PEC12R-4225F-S0024" x="-52.07" y="-95.25"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -617,6 +661,21 @@ design rules under a new name.</description>
 <contactref element="LED1" pad="C"/>
 <contactref element="C9" pad="2"/>
 <contactref element="U1" pad="1"/>
+<contactref element="ROT1" pad="C"/>
+<contactref element="ROT1" pad="S1"/>
+<contactref element="ROT2" pad="C"/>
+<contactref element="ROT2" pad="S1"/>
+<contactref element="ROT3" pad="C"/>
+<contactref element="ROT3" pad="S1"/>
+<contactref element="ROT4" pad="C"/>
+<contactref element="ROT4" pad="S1"/>
+<wire x1="-54.57" y1="-88.25" x2="-52.07" y2="-102.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.07" y1="-84.97" x2="-54.57" y2="-88.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.57" y1="-70.47" x2="-52.07" y2="-84.97" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.07" y1="-67.19" x2="-54.57" y2="-70.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.57" y1="-52.69" x2="-52.07" y2="-67.19" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.07" y1="-49.41" x2="-54.57" y2="-52.69" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.91" y1="-44.97" x2="-52.07" y2="-49.41" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.68" y1="-44.45" x2="-41.91" y2="-44.97" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.86" y1="-42.42" x2="-37.68" y2="-44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.98" y1="-46.99" x2="-37.68" y2="-44.45" width="0" layer="19" extent="1-1"/>
@@ -637,6 +696,7 @@ design rules under a new name.</description>
 <wire x1="-22.52" y1="9.87" x2="-24.42" y2="3.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.92" y1="11.77" x2="-22.52" y2="9.87" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.82" y1="6.87" x2="-28.92" y2="11.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.57" y1="-34.91" x2="-52.07" y2="-49.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="STM32F072CBT6" pad="1"/>
@@ -743,6 +803,42 @@ design rules under a new name.</description>
 <contactref element="U1" pad="3"/>
 <contactref element="C8" pad="2"/>
 <wire x1="-33.26" y1="-42.42" x2="-35.98" y2="-44.45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ROT1_A">
+<contactref element="ROT1" pad="A"/>
+</signal>
+<signal name="ROT1_B">
+<contactref element="ROT1" pad="B"/>
+</signal>
+<signal name="ROT1_SW">
+<contactref element="ROT1" pad="S2"/>
+</signal>
+<signal name="ROT2_A">
+<contactref element="ROT2" pad="A"/>
+</signal>
+<signal name="ROT2_B">
+<contactref element="ROT2" pad="B"/>
+</signal>
+<signal name="ROT2_SW">
+<contactref element="ROT2" pad="S2"/>
+</signal>
+<signal name="ROT3_A">
+<contactref element="ROT3" pad="A"/>
+</signal>
+<signal name="ROT3_B">
+<contactref element="ROT3" pad="B"/>
+</signal>
+<signal name="ROT3_SW">
+<contactref element="ROT3" pad="S2"/>
+</signal>
+<signal name="ROT4_A">
+<contactref element="ROT4" pad="A"/>
+</signal>
+<signal name="ROT4_B">
+<contactref element="ROT4" pad="B"/>
+</signal>
+<signal name="ROT4_SW">
+<contactref element="ROT4" pad="S2"/>
 </signal>
 </signals>
 </board>
