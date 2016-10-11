@@ -1693,6 +1693,30 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SSD1306-7PIN">
+<wire x1="-7" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="-7" y1="0" x2="-7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="-2" x2="13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2" x2="-13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="-2" x2="-13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="13.65" y1="-2" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="25.8" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="21.53" x2="13.35" y2="21.53" width="0.127" layer="21" style="longdash"/>
+<wire x1="-13.35" y1="2.27" x2="13.35" y2="2.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-3" y="-2" size="1.27" layer="25">&gt;NAME</text>
+<pad name="CS" x="7.62" y="24.3" drill="0.8"/>
+<pad name="DC" x="5.08" y="24.3" drill="0.8"/>
+<pad name="RES" x="2.54" y="24.3" drill="0.8"/>
+<pad name="MOSI" x="0" y="24.3" drill="0.8"/>
+<pad name="CLK" x="-2.54" y="24.3" drill="0.8"/>
+<pad name="VCC" x="-5.08" y="24.3" drill="0.8"/>
+<pad name="GND" x="-7.62" y="24.3" drill="0.8" shape="square"/>
+<hole x="-12" y="24.3" drill="3"/>
+<hole x="12" y="24.3" drill="3"/>
+<hole x="-12" y="0" drill="3"/>
+<hole x="12" y="0" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ROTARYENCODER">
@@ -1708,6 +1732,21 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pin name="SW2" x="-10.16" y="-5.08" length="middle"/>
 <text x="-2.286" y="8.382" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="SSD1306-7PIN">
+<pin name="VCC" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="CLK" x="-12.7" y="0" length="middle"/>
+<pin name="MOSI" x="-12.7" y="-2.54" length="middle"/>
+<pin name="CS" x="-12.7" y="-5.08" length="middle"/>
+<pin name="DC" x="-12.7" y="-7.62" length="middle"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="5.08" y="-5.08" size="1.27" layer="94" rot="R90">SSD1306 LCD</text>
+<text x="-5.08" y="-15.24" size="1.27" layer="104">&gt;NAME</text>
+<pin name="RST" x="-12.7" y="-10.16" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PEC11-4215K-S0024">
@@ -1722,6 +1761,28 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <connect gate="G$1" pin="COMMON" pad="C"/>
 <connect gate="G$1" pin="SW1" pad="S1"/>
 <connect gate="G$1" pin="SW2" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SSD1306-7PIN">
+<description>https://www.aliexpress.com/item/free-shipping-0-96-inch-OLED-display-module-128X64-OLED-For-arduino-I2C-IIC-SPI-7p/32595065668.html?ws_ab_test=searchweb0_0,searchweb201602_1_116_117_10065_10068_114_10067_115_10069_113_10017_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10078_10079_10073_10070_10052_10053_10050_10051,searchweb201603_6&amp;btsid=51ed1bae-6cee-4f36-9ddd-1a85c2e0ff68</description>
+<gates>
+<gate name="G$1" symbol="SSD1306-7PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSD1306-7PIN">
+<connects>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DC" pad="DC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RST" pad="RES"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1786,6 +1847,16 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="ROT4" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
+<part name="LCD1" library="keves" deviceset="SSD1306-7PIN" device=""/>
+<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="U$23" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$24" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$25" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="LCD2" library="keves" deviceset="SSD1306-7PIN" device=""/>
+<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="U$26" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$27" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$28" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1837,6 +1908,16 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="ROT4" gate="G$1" x="-50.8" y="-58.42"/>
 <instance part="U$21" gate="G$1" x="-63.5" y="-55.88" rot="R270"/>
 <instance part="U$22" gate="G$1" x="-63.5" y="-60.96" rot="R270"/>
+<instance part="LCD1" gate="G$1" x="124.46" y="-20.32"/>
+<instance part="C10" gate="G$1" x="124.46" y="-10.16" rot="R90"/>
+<instance part="U$23" gate="G$1" x="129.54" y="-10.16" rot="R90"/>
+<instance part="U$24" gate="G$1" x="109.22" y="-17.78" rot="R270"/>
+<instance part="U$25" gate="G$1" x="109.22" y="-15.24" rot="R90"/>
+<instance part="LCD2" gate="G$1" x="124.46" y="-55.88"/>
+<instance part="C11" gate="G$1" x="124.46" y="-45.72" rot="R90"/>
+<instance part="U$26" gate="G$1" x="129.54" y="-45.72" rot="R90"/>
+<instance part="U$27" gate="G$1" x="109.22" y="-53.34" rot="R270"/>
+<instance part="U$28" gate="G$1" x="109.22" y="-50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1959,6 +2040,22 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="ROT4" gate="G$1" pin="SW1"/>
 <pinref part="U$22" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="P$2"/>
+<pinref part="U$23" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="GND"/>
+<pinref part="U$24" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="P$2"/>
+<pinref part="U$26" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LCD2" gate="G$1" pin="GND"/>
+<pinref part="U$27" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -2019,6 +2116,22 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="-45.72" y1="81.28" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-45.72" y="83.82"/>
 <junction x="-38.1" y="83.82"/>
+</segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="VCC"/>
+<pinref part="U$25" gate="G$1" pin="3.3V"/>
+<pinref part="C10" gate="G$1" pin="P$1"/>
+<wire x1="119.38" y1="-10.16" x2="111.76" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-10.16" x2="111.76" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="111.76" y="-15.24"/>
+</segment>
+<segment>
+<pinref part="LCD2" gate="G$1" pin="VCC"/>
+<pinref part="U$28" gate="G$1" pin="3.3V"/>
+<pinref part="C11" gate="G$1" pin="P$1"/>
+<wire x1="119.38" y1="-45.72" x2="111.76" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-45.72" x2="111.76" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="111.76" y="-50.8"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -2241,6 +2354,78 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="ROT4" gate="G$1" pin="SW2"/>
 <wire x1="-60.96" y1="-63.5" x2="-76.2" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-81.28" y="-63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI1_MOSI" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="MOSI"/>
+<wire x1="111.76" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
+<label x="91.44" y="-22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCD2" gate="G$1" pin="MOSI"/>
+<wire x1="111.76" y1="-58.42" x2="99.06" y2="-58.42" width="0.1524" layer="91"/>
+<label x="91.44" y="-58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32F072CBT6" gate="G$1" pin="PA7/ADC_IN7/SPI1_MOSI/TIM3_CH2"/>
+<wire x1="116.84" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
+<label x="121.92" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LCD_CS1" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="CS"/>
+<wire x1="111.76" y1="-25.4" x2="99.06" y2="-25.4" width="0.1524" layer="91"/>
+<label x="91.44" y="-25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LCD_DC" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="DC"/>
+<wire x1="111.76" y1="-27.94" x2="99.06" y2="-27.94" width="0.1524" layer="91"/>
+<label x="91.44" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCD2" gate="G$1" pin="DC"/>
+<wire x1="111.76" y1="-63.5" x2="99.06" y2="-63.5" width="0.1524" layer="91"/>
+<label x="91.44" y="-63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LCD_RST" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="RST"/>
+<wire x1="111.76" y1="-30.48" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
+<label x="91.44" y="-30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCD2" gate="G$1" pin="RST"/>
+<wire x1="111.76" y1="-66.04" x2="99.06" y2="-66.04" width="0.1524" layer="91"/>
+<label x="91.44" y="-66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI1_CLK" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="CLK"/>
+<wire x1="111.76" y1="-20.32" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
+<label x="91.44" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCD2" gate="G$1" pin="CLK"/>
+<wire x1="111.76" y1="-55.88" x2="99.06" y2="-55.88" width="0.1524" layer="91"/>
+<label x="91.44" y="-55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32F072CBT6" gate="G$1" pin="PA5/ADC_IN5/DAC_OUT2/SPI1_SCK"/>
+<wire x1="116.84" y1="73.66" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
+<label x="121.92" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LCD_CS2" class="0">
+<segment>
+<pinref part="LCD2" gate="G$1" pin="CS"/>
+<wire x1="111.76" y1="-60.96" x2="99.06" y2="-60.96" width="0.1524" layer="91"/>
+<label x="91.44" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
