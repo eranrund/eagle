@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2038,24 +2038,26 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.064" y1="6.858" x2="2.286" y2="8.636" width="0.254" layer="1"/>
 </signal>
 <signal name="CAN_TX">
-<contactref element="R14" pad="1"/>
-<wire x1="24.384" y1="7.112" x2="24.384" y2="7.874" width="0.254" layer="1"/>
-<wire x1="24.384" y1="7.874" x2="23.114" y2="9.144" width="0.254" layer="1"/>
-<via x="23.114" y="9.144" extent="1-16" drill="0.508"/>
-<wire x1="23.114" y1="9.144" x2="22.86" y2="9.144" width="0.254" layer="16"/>
-<wire x1="22.86" y1="9.144" x2="22.606" y2="8.89" width="0.254" layer="16"/>
-<wire x1="22.606" y1="8.89" x2="22.606" y2="8.007" width="0.254" layer="16"/>
 <contactref element="D2" pad="1"/>
-<wire x1="22.866" y1="7.747" x2="22.606" y2="8.007" width="0.254" layer="16"/>
+<contactref element="R13" pad="1"/>
+<wire x1="24.384" y1="5.334" x2="24.384" y2="4.318" width="0.254" layer="1"/>
+<via x="24.638" y="4.064" extent="1-16" drill="0.6"/>
+<wire x1="24.638" y1="4.064" x2="24.638" y2="6.985" width="0.254" layer="16"/>
+<wire x1="24.638" y1="6.985" x2="23.876" y2="7.747" width="0.254" layer="16"/>
+<wire x1="23.876" y1="7.747" x2="22.866" y2="7.747" width="0.254" layer="16"/>
+<wire x1="24.384" y1="4.318" x2="24.638" y2="4.064" width="0.254" layer="1"/>
 </signal>
 <signal name="CAN_RX">
 <contactref element="D2" pad="4"/>
-<contactref element="R13" pad="1"/>
-<wire x1="24.384" y1="5.334" x2="24.384" y2="4.572" width="0.254" layer="1"/>
-<wire x1="24.384" y1="4.572" x2="24.892" y2="4.064" width="0.254" layer="1"/>
-<via x="24.892" y="4.064" extent="1-16" drill="0.508"/>
-<wire x1="24.892" y1="4.064" x2="22.993" y2="4.064" width="0.254" layer="16"/>
 <wire x1="22.993" y1="4.064" x2="22.866" y2="3.937" width="0.254" layer="16"/>
+<contactref element="R14" pad="1"/>
+<wire x1="24.384" y1="7.112" x2="23.241" y2="7.112" width="0.254" layer="1"/>
+<wire x1="23.241" y1="7.112" x2="22.479" y2="6.35" width="0.254" layer="1"/>
+<wire x1="22.479" y1="6.35" x2="22.479" y2="3.175" width="0.254" layer="1"/>
+<wire x1="22.479" y1="3.175" x2="22.86" y2="2.794" width="0.254" layer="1"/>
+<via x="22.86" y="2.794" extent="1-16" drill="0.6"/>
+<wire x1="22.86" y1="2.794" x2="22.86" y2="3.931" width="0.254" layer="16"/>
+<wire x1="22.86" y1="3.931" x2="22.866" y2="3.937" width="0.254" layer="16"/>
 </signal>
 <signal name="SPI2_RC2">
 <contactref element="IC4" pad="1"/>

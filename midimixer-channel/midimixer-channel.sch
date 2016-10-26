@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6111,14 +6111,14 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="CAN_TX" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="104.14" x2="119.38" y2="104.14" width="0.2032" layer="91"/>
-<label x="116.84" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="D2" gate="G$1" pin="TXD"/>
 <wire x1="43.18" y1="-2.54" x2="27.94" y2="-2.54" width="0.2032" layer="91"/>
 <label x="27.94" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="106.68" x2="119.38" y2="106.68" width="0.2032" layer="91"/>
+<label x="116.84" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
@@ -6128,9 +6128,9 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <label x="27.94" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="106.68" x2="119.38" y2="106.68" width="0.2032" layer="91"/>
-<label x="116.84" y="106.68" size="1.778" layer="95"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="104.14" x2="119.38" y2="104.14" width="0.2032" layer="91"/>
+<label x="116.84" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_RC2" class="0">
