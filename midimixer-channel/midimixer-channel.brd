@@ -1245,7 +1245,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="10.668" y="193.7385" size="0.8128" layer="26" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="10.668" y="191.2937" size="0.4064" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="D2" library="omc" package="SO8" value="SN65HVD230" x="20.066" y="5.842" smashed="yes" rot="MR270">
+<element name="D2" library="omc" package="SO8" value="SN65HVD232" x="20.066" y="5.842" smashed="yes" rot="MR270">
 <attribute name="NAME" x="21.971" y="8.636" size="0.635" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="20.193" y="9.652" size="0.635" layer="28" font="vector" ratio="16" rot="MR270"/>
 </element>

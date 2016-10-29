@@ -4784,7 +4784,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="U$93" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="D2" library="omc" deviceset="SN65HVD230" device=""/>
+<part name="D2" library="omc" deviceset="SN65HVD230" device="" value="SN65HVD232"/>
 <part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$94" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$95" library="microbuilder" deviceset="3.3V" device=""/>
