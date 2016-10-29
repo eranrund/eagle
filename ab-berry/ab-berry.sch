@@ -49,6 +49,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,6 +59,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Mittellin" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,6 +73,7 @@
 <layer number="110" name="bBPL" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="MPL" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -83,8 +86,12 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -111,6 +118,12 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="yes" active="yes"/>
 <layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="yes" active="yes"/>
@@ -119,6 +132,7 @@
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -2399,6 +2413,77 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Capacitors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0603-POL">
+<description>Polarized footprint for tantalum 0603 sized capacitors.</description>
+<wire x1="-1.1" y1="-0.8" x2="-1.7" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="-1.7" y1="-0.8" x2="-1.7" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.7" y1="0.8" x2="-1.1" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-0.8" x2="1.5" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="1.5" y1="-0.8" x2="1.9" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="-0.4" x2="1.9" y2="0.4" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="0.4" x2="1.5" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.5" y1="0.8" x2="1.1" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.027940625" x2="0" y2="-0.027940625" width="0.381" layer="21"/>
+<smd name="K" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="A" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<circle x="1.7" y="0" radius="0.05" width="0.15" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="10UF-6.3V-20%(0603)(TANT)" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="0603-POL">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-13210" constant="no"/>
+<attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2435,8 +2520,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603" value="0"/>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U1" library="microbuilder" deviceset="LM1117" device="SOT223-REFLOW" value="LM1117MPX-3.3/NOPB or AP2114H-3.3TRG1"/>
-<part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF Tantalum"/>
-<part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF Tantalum"/>
 <part name="U$12" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="U$13" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
@@ -2525,6 +2608,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="R22" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="U$52" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$53" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF TANT"/>
+<part name="C9" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF TANT"/>
 </parts>
 <sheets>
 <sheet>
@@ -2557,8 +2642,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="R4" gate="G$1" x="20.32" y="-22.86" rot="R180"/>
 <instance part="C7" gate="G$1" x="38.1" y="-10.16" rot="R90"/>
 <instance part="U1" gate="G$1" x="-58.42" y="83.82"/>
-<instance part="C8" gate="G$1" x="-68.58" y="78.74" rot="R180"/>
-<instance part="C9" gate="G$1" x="-45.72" y="76.2"/>
 <instance part="U$12" gate="G$1" x="-73.66" y="83.82" rot="R90"/>
 <instance part="U$13" gate="G$1" x="-33.02" y="83.82" rot="R270"/>
 <instance part="LED1" gate="G$1" x="-38.1" y="63.5" rot="R270"/>
@@ -2647,6 +2730,8 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="R22" gate="G$1" x="-121.92" y="10.16" rot="R270"/>
 <instance part="U$52" gate="G$1" x="-116.84" y="17.78"/>
 <instance part="U$53" gate="G$1" x="-121.92" y="17.78"/>
+<instance part="C8" gate="G$1" x="-68.58" y="78.74"/>
+<instance part="C9" gate="G$1" x="-45.72" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -2722,7 +2807,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <junction x="50.8" y="-15.24"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="P$1"/>
 <wire x1="-68.58" y1="73.66" x2="-58.42" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="73.66" x2="-45.72" y2="58.42" width="0.1524" layer="91"/>
@@ -2730,12 +2814,13 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="-45.72" y1="58.42" x2="-38.1" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="-38.1" y1="58.42" x2="-38.1" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="P$2"/>
-<junction x="-45.72" y="73.66"/>
 <junction x="-38.1" y="58.42"/>
 <pinref part="U1" gate="G$1" pin="ADJ"/>
 <wire x1="-58.42" y1="76.2" x2="-58.42" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-58.42" y="73.66"/>
+<pinref part="C8" gate="G$1" pin="-"/>
+<pinref part="C9" gate="G$1" pin="-"/>
+<junction x="-45.72" y="73.66"/>
 </segment>
 <segment>
 <pinref part="ROT1" gate="G$1" pin="COMMON"/>
@@ -2902,10 +2987,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="-45.72" y1="83.82" x2="-38.1" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="83.82" x2="-35.56" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="81.28" x2="-38.1" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="P$1"/>
 <wire x1="-45.72" y1="81.28" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-45.72" y="83.82"/>
 <junction x="-38.1" y="83.82"/>
+<pinref part="C9" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="LCD1" gate="G$1" pin="VCC"/>
@@ -3108,10 +3193,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="U$12" gate="G$1" pin="5.0V"/>
 <pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="-71.12" y1="83.82" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="P$2"/>
 <wire x1="-68.58" y1="83.82" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="83.82" x2="-68.58" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-68.58" y="83.82"/>
+<pinref part="C8" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
