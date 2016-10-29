@@ -2445,15 +2445,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="ROT1" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
-<part name="ROT2" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
-<part name="U$15" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$18" library="microbuilder" deviceset="GND" device=""/>
-<part name="ROT3" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
-<part name="U$19" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$20" library="microbuilder" deviceset="GND" device=""/>
-<part name="ROT4" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
-<part name="U$21" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 <part name="LCD1" library="keves" deviceset="SSD1306-7PIN" device=""/>
 <part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$23" library="microbuilder" deviceset="GND" device=""/>
@@ -2485,6 +2476,55 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="U$36" library="keves" deviceset="ABM7-8.000MHZ-D2Y-T" device=""/>
 <part name="USR" library="microbuilder" deviceset="SWITCH_TACT_SMT" device=""/>
 <part name="U$37" library="microbuilder" deviceset="GND" device=""/>
+<part name="R7" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R8" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$38" library="microbuilder" deviceset="GND" device=""/>
+<part name="C15" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$39" library="microbuilder" deviceset="GND" device=""/>
+<part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R10" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="U$40" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$41" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="ROT4" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$21" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$22" library="microbuilder" deviceset="GND" device=""/>
+<part name="R11" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R12" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="C16" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$42" library="microbuilder" deviceset="GND" device=""/>
+<part name="C17" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$43" library="microbuilder" deviceset="GND" device=""/>
+<part name="R13" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R14" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="U$44" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="ROT2" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$15" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$18" library="microbuilder" deviceset="GND" device=""/>
+<part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="C18" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$46" library="microbuilder" deviceset="GND" device=""/>
+<part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$47" library="microbuilder" deviceset="GND" device=""/>
+<part name="R17" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R18" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="U$48" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$49" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="ROT3" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$19" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$20" library="microbuilder" deviceset="GND" device=""/>
+<part name="R19" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R20" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$50" library="microbuilder" deviceset="GND" device=""/>
+<part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$51" library="microbuilder" deviceset="GND" device=""/>
+<part name="R21" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R22" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="U$52" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$53" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2524,18 +2564,9 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="LED1" gate="G$1" x="-38.1" y="63.5" rot="R270"/>
 <instance part="R5" gate="G$1" x="-38.1" y="76.2" rot="R90"/>
 <instance part="U$14" gate="G$1" x="-38.1" y="55.88"/>
-<instance part="ROT1" gate="G$1" x="-50.8" y="5.08"/>
-<instance part="U$16" gate="G$1" x="-63.5" y="7.62" rot="R270"/>
-<instance part="U$17" gate="G$1" x="-63.5" y="2.54" rot="R270"/>
-<instance part="ROT2" gate="G$1" x="-50.8" y="-15.24"/>
-<instance part="U$15" gate="G$1" x="-63.5" y="-12.7" rot="R270"/>
-<instance part="U$18" gate="G$1" x="-63.5" y="-17.78" rot="R270"/>
-<instance part="ROT3" gate="G$1" x="-50.8" y="-35.56"/>
-<instance part="U$19" gate="G$1" x="-63.5" y="-33.02" rot="R270"/>
-<instance part="U$20" gate="G$1" x="-63.5" y="-38.1" rot="R270"/>
-<instance part="ROT4" gate="G$1" x="-50.8" y="-58.42"/>
-<instance part="U$21" gate="G$1" x="-63.5" y="-55.88" rot="R270"/>
-<instance part="U$22" gate="G$1" x="-63.5" y="-60.96" rot="R270"/>
+<instance part="ROT1" gate="G$1" x="-53.34" y="-15.24" rot="R270"/>
+<instance part="U$16" gate="G$1" x="-50.8" y="-2.54" rot="R180"/>
+<instance part="U$17" gate="G$1" x="-55.88" y="-2.54" rot="R180"/>
 <instance part="LCD1" gate="G$1" x="124.46" y="-20.32"/>
 <instance part="C10" gate="G$1" x="124.46" y="-10.16" rot="R90"/>
 <instance part="U$23" gate="G$1" x="129.54" y="-10.16" rot="R90"/>
@@ -2567,6 +2598,55 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="U$36" gate="G$1" x="17.78" y="17.78" rot="R90"/>
 <instance part="USR" gate="G$1" x="38.1" y="-58.42"/>
 <instance part="U$37" gate="G$1" x="27.94" y="-58.42" rot="R270"/>
+<instance part="R7" gate="G$1" x="-43.18" y="5.08" rot="R180"/>
+<instance part="R8" gate="G$1" x="-58.42" y="5.08"/>
+<instance part="C14" gate="G$1" x="-33.02" y="0"/>
+<instance part="U$38" gate="G$1" x="-33.02" y="-5.08"/>
+<instance part="C15" gate="G$1" x="-76.2" y="0"/>
+<instance part="U$39" gate="G$1" x="-76.2" y="-5.08"/>
+<instance part="R9" gate="G$1" x="-48.26" y="10.16" rot="R270"/>
+<instance part="R10" gate="G$1" x="-53.34" y="10.16" rot="R270"/>
+<instance part="U$40" gate="G$1" x="-48.26" y="17.78"/>
+<instance part="U$41" gate="G$1" x="-53.34" y="17.78"/>
+<instance part="ROT4" gate="G$1" x="-121.92" y="-66.04" rot="R270"/>
+<instance part="U$21" gate="G$1" x="-119.38" y="-53.34" rot="R180"/>
+<instance part="U$22" gate="G$1" x="-124.46" y="-53.34" rot="R180"/>
+<instance part="R11" gate="G$1" x="-111.76" y="-45.72" rot="R180"/>
+<instance part="R12" gate="G$1" x="-127" y="-45.72"/>
+<instance part="C16" gate="G$1" x="-101.6" y="-50.8"/>
+<instance part="U$42" gate="G$1" x="-101.6" y="-55.88"/>
+<instance part="C17" gate="G$1" x="-144.78" y="-50.8"/>
+<instance part="U$43" gate="G$1" x="-144.78" y="-55.88"/>
+<instance part="R13" gate="G$1" x="-116.84" y="-40.64" rot="R270"/>
+<instance part="R14" gate="G$1" x="-121.92" y="-40.64" rot="R270"/>
+<instance part="U$44" gate="G$1" x="-116.84" y="-33.02"/>
+<instance part="U$45" gate="G$1" x="-121.92" y="-33.02"/>
+<instance part="ROT2" gate="G$1" x="-53.34" y="-68.58" rot="R270"/>
+<instance part="U$15" gate="G$1" x="-50.8" y="-55.88" rot="R180"/>
+<instance part="U$18" gate="G$1" x="-55.88" y="-55.88" rot="R180"/>
+<instance part="R15" gate="G$1" x="-43.18" y="-48.26" rot="R180"/>
+<instance part="R16" gate="G$1" x="-58.42" y="-48.26"/>
+<instance part="C18" gate="G$1" x="-33.02" y="-53.34"/>
+<instance part="U$46" gate="G$1" x="-33.02" y="-58.42"/>
+<instance part="C19" gate="G$1" x="-76.2" y="-53.34"/>
+<instance part="U$47" gate="G$1" x="-76.2" y="-58.42"/>
+<instance part="R17" gate="G$1" x="-48.26" y="-43.18" rot="R270"/>
+<instance part="R18" gate="G$1" x="-53.34" y="-43.18" rot="R270"/>
+<instance part="U$48" gate="G$1" x="-48.26" y="-35.56"/>
+<instance part="U$49" gate="G$1" x="-53.34" y="-35.56"/>
+<instance part="ROT3" gate="G$1" x="-121.92" y="-15.24" rot="R270"/>
+<instance part="U$19" gate="G$1" x="-119.38" y="-2.54" rot="R180"/>
+<instance part="U$20" gate="G$1" x="-124.46" y="-2.54" rot="R180"/>
+<instance part="R19" gate="G$1" x="-111.76" y="5.08" rot="R180"/>
+<instance part="R20" gate="G$1" x="-127" y="5.08"/>
+<instance part="C20" gate="G$1" x="-101.6" y="0"/>
+<instance part="U$50" gate="G$1" x="-101.6" y="-5.08"/>
+<instance part="C21" gate="G$1" x="-144.78" y="0"/>
+<instance part="U$51" gate="G$1" x="-144.78" y="-5.08"/>
+<instance part="R21" gate="G$1" x="-116.84" y="10.16" rot="R270"/>
+<instance part="R22" gate="G$1" x="-121.92" y="10.16" rot="R270"/>
+<instance part="U$52" gate="G$1" x="-116.84" y="17.78"/>
+<instance part="U$53" gate="G$1" x="-121.92" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -2666,30 +2746,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="U$17" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ROT2" gate="G$1" pin="COMMON"/>
-<pinref part="U$15" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROT2" gate="G$1" pin="SW1"/>
-<pinref part="U$18" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROT3" gate="G$1" pin="COMMON"/>
-<pinref part="U$19" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROT3" gate="G$1" pin="SW1"/>
-<pinref part="U$20" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROT4" gate="G$1" pin="COMMON"/>
-<pinref part="U$21" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROT4" gate="G$1" pin="SW1"/>
-<pinref part="U$22" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C10" gate="G$1" pin="P$2"/>
 <pinref part="U$23" gate="G$1" pin="GND"/>
 </segment>
@@ -2733,6 +2789,62 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="USR" gate="G$1" pin="P"/>
 <pinref part="U$37" gate="G$1" pin="GND"/>
 <wire x1="30.48" y1="-58.42" x2="33.02" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="P$2"/>
+<pinref part="U$38" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="P$2"/>
+<pinref part="U$39" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT4" gate="G$1" pin="COMMON"/>
+<pinref part="U$21" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT4" gate="G$1" pin="SW1"/>
+<pinref part="U$22" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="P$2"/>
+<pinref part="U$42" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="P$2"/>
+<pinref part="U$43" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="COMMON"/>
+<pinref part="U$15" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="SW1"/>
+<pinref part="U$18" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="P$2"/>
+<pinref part="U$46" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="P$2"/>
+<pinref part="U$47" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT3" gate="G$1" pin="COMMON"/>
+<pinref part="U$19" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT3" gate="G$1" pin="SW1"/>
+<pinref part="U$20" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="P$2"/>
+<pinref part="U$50" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="P$2"/>
+<pinref part="U$51" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -2814,6 +2926,38 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="U$31" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="U$40" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="U$41" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="U$44" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="U$45" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="U$48" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="U$49" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="U$52" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="U$53" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -2979,33 +3123,39 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="ROT1_A" class="0">
 <segment>
-<pinref part="ROT1" gate="G$1" pin="CH_A"/>
-<wire x1="-60.96" y1="10.16" x2="-76.2" y2="10.16" width="0.1524" layer="91"/>
-<label x="-81.28" y="10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB14/SPI2_MISO/I2C2_SDA"/>
 <wire x1="116.84" y1="5.08" x2="124.46" y2="5.08" width="0.1524" layer="91"/>
 <label x="121.92" y="5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<label x="-30.48" y="5.08" size="1.778" layer="95"/>
+<wire x1="-38.1" y1="5.08" x2="-33.02" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="P$1"/>
+<wire x1="-33.02" y1="5.08" x2="-27.94" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-33.02" y="5.08"/>
+</segment>
 </net>
 <net name="ROT1_B" class="0">
-<segment>
-<pinref part="ROT1" gate="G$1" pin="CH_B"/>
-<wire x1="-60.96" y1="5.08" x2="-76.2" y2="5.08" width="0.1524" layer="91"/>
-<label x="-81.28" y="5.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB15/WKUP7/RTC_REFIN/SPI2_MOSI"/>
 <wire x1="116.84" y1="2.54" x2="124.46" y2="2.54" width="0.1524" layer="91"/>
 <label x="121.92" y="2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="5.08" x2="-76.2" y2="5.08" width="0.1524" layer="91"/>
+<label x="-81.28" y="5.08" size="1.778" layer="95"/>
+<pinref part="C15" gate="G$1" pin="P$1"/>
+<wire x1="-76.2" y1="5.08" x2="-81.28" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-76.2" y="5.08"/>
+</segment>
 </net>
 <net name="ROT1_SW" class="0">
 <segment>
 <pinref part="ROT1" gate="G$1" pin="SW2"/>
-<wire x1="-60.96" y1="0" x2="-76.2" y2="0" width="0.1524" layer="91"/>
-<label x="-81.28" y="0" size="1.778" layer="95"/>
+<wire x1="-58.42" y1="-5.08" x2="-60.96" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-60.96" y="-5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB12"/>
@@ -3015,110 +3165,128 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="ROT2_A" class="0">
 <segment>
-<pinref part="ROT2" gate="G$1" pin="CH_A"/>
-<wire x1="-60.96" y1="-10.16" x2="-76.2" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-81.28" y="-10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB4/SPI1_MISO/TIM3_CH1"/>
 <wire x1="116.84" y1="30.48" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
 <label x="121.92" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<label x="-30.48" y="-48.26" size="1.778" layer="95"/>
+<wire x1="-38.1" y1="-48.26" x2="-33.02" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="P$1"/>
+<wire x1="-33.02" y1="-48.26" x2="-27.94" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-48.26"/>
+</segment>
 </net>
 <net name="ROT2_B" class="0">
-<segment>
-<pinref part="ROT2" gate="G$1" pin="CH_B"/>
-<wire x1="-60.96" y1="-15.24" x2="-76.2" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-81.28" y="-15.24" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB5/WKUP6/SPI1_MOSI/TIM3_CH2"/>
 <wire x1="116.84" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
 <label x="121.92" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="-48.26" x2="-76.2" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-81.28" y="-48.26" size="1.778" layer="95"/>
+<pinref part="C19" gate="G$1" pin="P$1"/>
+<wire x1="-76.2" y1="-48.26" x2="-81.28" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-48.26"/>
+</segment>
 </net>
 <net name="ROT2_SW" class="0">
-<segment>
-<pinref part="ROT2" gate="G$1" pin="SW2"/>
-<wire x1="-60.96" y1="-20.32" x2="-76.2" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-81.28" y="-20.32" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB3/SPI1_SCK/TIM2_CH2"/>
 <wire x1="116.84" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
 <label x="121.92" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="SW2"/>
+<wire x1="-58.42" y1="-58.42" x2="-60.96" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-60.96" y="-58.42" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="ROT3_A" class="0">
-<segment>
-<pinref part="ROT3" gate="G$1" pin="CH_A"/>
-<wire x1="-60.96" y1="-30.48" x2="-76.2" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-81.28" y="-30.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB7/USART1_RX/I2C1_SDA"/>
 <wire x1="116.84" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
 <label x="121.92" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<label x="-99.06" y="5.08" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="5.08" x2="-101.6" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="C20" gate="G$1" pin="P$1"/>
+<wire x1="-101.6" y1="5.08" x2="-96.52" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-101.6" y="5.08"/>
+</segment>
 </net>
 <net name="ROT3_B" class="0">
-<segment>
-<pinref part="ROT3" gate="G$1" pin="CH_B"/>
-<wire x1="-60.96" y1="-35.56" x2="-76.2" y2="-35.56" width="0.1524" layer="91"/>
-<label x="-81.28" y="-35.56" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB8/I2C1_SCL/TIM16_CH1/CAN_RX"/>
 <wire x1="116.84" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
 <label x="121.92" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="-132.08" y1="5.08" x2="-144.78" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="P$1"/>
+<wire x1="-144.78" y1="5.08" x2="-149.86" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-144.78" y="5.08"/>
+<label x="-152.4" y="5.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ROT3_SW" class="0">
-<segment>
-<pinref part="ROT3" gate="G$1" pin="SW2"/>
-<wire x1="-60.96" y1="-40.64" x2="-76.2" y2="-40.64" width="0.1524" layer="91"/>
-<label x="-81.28" y="-40.64" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB6USART1_TX/I2C1_SCL"/>
 <wire x1="116.84" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
 <label x="121.92" y="25.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ROT3" gate="G$1" pin="SW2"/>
+<wire x1="-127" y1="-5.08" x2="-129.54" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-129.54" y="-5.08" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="ROT4_A" class="0">
-<segment>
-<pinref part="ROT4" gate="G$1" pin="CH_A"/>
-<wire x1="-60.96" y1="-53.34" x2="-76.2" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-81.28" y="-53.34" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB13/SPI2_SCK/I2C2_SCL"/>
 <wire x1="116.84" y1="7.62" x2="124.46" y2="7.62" width="0.1524" layer="91"/>
 <label x="121.92" y="7.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<label x="-99.06" y="-45.72" size="1.778" layer="95"/>
+<wire x1="-106.68" y1="-45.72" x2="-101.6" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="P$1"/>
+<wire x1="-101.6" y1="-45.72" x2="-96.52" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="-101.6" y="-45.72"/>
+</segment>
 </net>
 <net name="ROT4_B" class="0">
-<segment>
-<pinref part="ROT4" gate="G$1" pin="CH_B"/>
-<wire x1="-60.96" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-81.28" y="-58.42" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB11/I2C2_SDA/TIM2_C4/USART3_RX"/>
 <wire x1="116.84" y1="12.7" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
 <label x="121.92" y="12.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="-132.08" y1="-45.72" x2="-144.78" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-149.86" y="-45.72" size="1.778" layer="95"/>
+<pinref part="C17" gate="G$1" pin="P$1"/>
+<wire x1="-144.78" y1="-45.72" x2="-149.86" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="-144.78" y="-45.72"/>
+</segment>
 </net>
 <net name="ROT4_SW" class="0">
-<segment>
-<pinref part="ROT4" gate="G$1" pin="SW2"/>
-<wire x1="-60.96" y1="-63.5" x2="-76.2" y2="-63.5" width="0.1524" layer="91"/>
-<label x="-81.28" y="-63.5" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PB10/I2C2_SCL/TIM2_CH3/USART3_TX"/>
 <wire x1="116.84" y1="15.24" x2="124.46" y2="15.24" width="0.1524" layer="91"/>
 <label x="121.92" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ROT4" gate="G$1" pin="SW2"/>
+<wire x1="-127" y1="-55.88" x2="-129.54" y2="-55.88" width="0.1524" layer="91"/>
+<label x="-129.54" y="-55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SPI1_MOSI" class="0">
@@ -3258,6 +3426,78 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="STM32F072CBT6" gate="G$1" pin="PC13/WKUP2/RTC_TAMP1/RTC_TS/RTC_OUT"/>
 <wire x1="22.86" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
 <label x="5.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="CH_B"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-53.34" y1="-5.08" x2="-53.34" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<junction x="-53.34" y="5.08"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="CH_A"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="-5.08" x2="-48.26" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<junction x="-48.26" y="5.08"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="ROT4" gate="G$1" pin="CH_B"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="-121.92" y1="-55.88" x2="-121.92" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<junction x="-121.92" y="-45.72"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="ROT4" gate="G$1" pin="CH_A"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="-55.88" x2="-116.84" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<junction x="-116.84" y="-45.72"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="CH_B"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="-53.34" y1="-58.42" x2="-53.34" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<junction x="-53.34" y="-48.26"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="CH_A"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="-58.42" x2="-48.26" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<junction x="-48.26" y="-48.26"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="ROT3" gate="G$1" pin="CH_B"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="-121.92" y1="-5.08" x2="-121.92" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<junction x="-121.92" y="5.08"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="ROT3" gate="G$1" pin="CH_A"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="-5.08" x2="-116.84" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<junction x="-116.84" y="5.08"/>
 </segment>
 </net>
 </nets>
