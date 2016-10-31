@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2911,36 +2911,57 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 <pad name="P$1" x="-5.7" y="0" drill="2.7" shape="square"/>
 <pad name="P$2" x="5.7" y="0" drill="2.7" shape="square"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="PTV111-4">
-<wire x1="6" y1="0" x2="6" y2="17.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="0" x2="6" y2="0" width="0.127" layer="21"/>
-<wire x1="-6" y1="0" x2="-6" y2="17.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="17.7" x2="6" y2="17.7" width="0.127" layer="21"/>
-<pad name="P$1" x="-5.8" y="11" drill="3" shape="square"/>
-<pad name="P$2" x="5.8" y="11" drill="3" shape="square"/>
-<pad name="P1" x="-3.75" y="0" drill="1.2" shape="square"/>
-<pad name="P4" x="3.75" y="0" drill="1.2" shape="square"/>
-<pad name="P2" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="P3" x="1.25" y="0" drill="1.2" shape="square"/>
-<text x="-3.81" y="17.78" size="1.27" layer="25">&gt;NAME</text>
+<package name="PTV09A-4">
+<description>PTV09 Series -9mm Potentiometer Vertical</description>
+<wire x1="-5.3" y1="1.05" x2="-5.3" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-5.3" y1="-1.05" x2="-3.5" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-1.05" x2="-3.5" y2="1.05" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="1.05" x2="-5.3" y2="1.05" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1.05" x2="3.5" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-1.05" x2="5.3" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-1.05" x2="5.3" y2="1.05" width="0.127" layer="51"/>
+<wire x1="5.3" y1="1.05" x2="3.5" y2="1.05" width="0.127" layer="51"/>
+<pad name="CENTER" x="0" y="-7" drill="1"/>
+<pad name="CW" x="2.5" y="-7" drill="1"/>
+<pad name="CCW" x="-2.5" y="-7" drill="1" shape="square" first="yes"/>
+<wire x1="-4.9" y1="5.5" x2="-4.9" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-5.5" x2="4.9" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-5.5" x2="4.9" y2="5.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="5.5" x2="-4.9" y2="5.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<pad name="4" x="-4.4" y="0" drill="2.2"/>
+<pad name="5" x="4.4" y="0" drill="2.2"/>
+<circle x="-4.4" y="0" radius="1.1" width="0.127" layer="51"/>
+<circle x="4.4" y="0" radius="1.1" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="21"/>
+<text x="-2.032" y="-9.906" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="SSD1306-ALI">
-<description>http://www.aliexpress.com/item/3-3V-5V-0-96-LCD-Modules-IIC-I2C-128X64-SSD1306-OLED-LCD-Display-Module-Arduino/32252523430.html</description>
-<wire x1="-13.65" y1="-13.65" x2="13.65" y2="-13.65" width="0.127" layer="21"/>
-<wire x1="-13.65" y1="13.65" x2="13.65" y2="13.65" width="0.127" layer="21"/>
-<wire x1="-13.65" y1="13.65" x2="-13.65" y2="-13.65" width="0.127" layer="21"/>
-<wire x1="13.65" y1="13.65" x2="13.65" y2="-13.65" width="0.127" layer="21"/>
-<hole x="-10.35" y="-11.6" drill="3.2"/>
-<hole x="-10.35" y="11.6" drill="3.2"/>
-<hole x="10.35" y="11.6" drill="3.2"/>
-<hole x="10.35" y="-11.6" drill="3.2"/>
-<pad name="P$1" x="-6.35" y="12" drill="0.8" shape="square"/>
-<pad name="P$2" x="-3.81" y="12" drill="0.8"/>
-<pad name="P$3" x="-1.27" y="12" drill="0.8"/>
-<pad name="P$4" x="1.27" y="12" drill="0.8"/>
-<pad name="P$5" x="3.81" y="12" drill="0.8"/>
-<pad name="P$6" x="6.35" y="12" drill="0.8"/>
+<package name="SSD1306-7PIN">
+<wire x1="-7" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="-7" y1="0" x2="-7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="-2" x2="13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2" x2="-13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="-2" x2="-13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="13.65" y1="-2" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="25.8" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="21.53" x2="13.35" y2="21.53" width="0.127" layer="21" style="longdash"/>
+<wire x1="-13.35" y1="2.27" x2="13.35" y2="2.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-3" y="-2" size="1.27" layer="25">&gt;NAME</text>
+<pad name="CS" x="7.62" y="24.3" drill="0.8"/>
+<pad name="DC" x="5.08" y="24.3" drill="0.8"/>
+<pad name="RES" x="2.54" y="24.3" drill="0.8"/>
+<pad name="MOSI" x="0" y="24.3" drill="0.8"/>
+<pad name="CLK" x="-2.54" y="24.3" drill="0.8"/>
+<pad name="VCC" x="-5.08" y="24.3" drill="0.8"/>
+<pad name="GND" x="-7.62" y="24.3" drill="0.8" shape="square"/>
+<hole x="-12" y="24.3" drill="3"/>
+<hole x="12" y="24.3" drill="3"/>
+<hole x="-12" y="0" drill="3"/>
+<hole x="12" y="0" drill="3"/>
+<wire x1="-7" y1="-2" x2="7" y2="-2" width="0.127" layer="21" style="shortdash"/>
 </package>
 </packages>
 <symbols>
@@ -3031,24 +3052,50 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 <pin name="CH_B" x="-10.16" y="0" length="middle" direction="out"/>
 <pin name="SW1" x="-10.16" y="-2.54" length="middle"/>
 <pin name="SW2" x="-10.16" y="-5.08" length="middle"/>
+<text x="-2.286" y="8.382" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="SSD1306-ALI">
-<pin name="VCC" x="-7.62" y="0" length="middle"/>
-<pin name="GND" x="-7.62" y="-2.54" length="middle"/>
-<pin name="CLK" x="-7.62" y="-5.08" length="middle"/>
-<pin name="MOSI" x="-7.62" y="-7.62" length="middle"/>
-<pin name="CS" x="-7.62" y="-10.16" length="middle"/>
-<pin name="DC" x="-7.62" y="-12.7" length="middle"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="2.54" width="0.254" layer="94"/>
-<wire x1="12.7" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<text x="10.16" y="-10.16" size="1.27" layer="94" rot="R90">SSD1306 LCD</text>
-<text x="0" y="-17.78" size="1.27" layer="104">&gt;NAME</text>
+<symbol name="POTENTIOMETER">
+<wire x1="5.08" y1="0" x2="4.572" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0" x2="3.81" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.016" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.016" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.016" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-3.81" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.016" x2="-4.572" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="2.54" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.2032" layer="94"/>
+<text x="10.16" y="5.08" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="10.16" y="-2.54" size="1.778" layer="95" rot="R180">&gt;VALUE</text>
+<pin name="CW" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="CCW" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="WIPER" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<text x="-7.62" y="2.54" size="1.778" layer="97" align="top-left">CCW</text>
+<text x="7.62" y="2.54" size="1.778" layer="97" align="top-right">CW</text>
+<pin name="CHASSIS" x="-7.62" y="-5.08" visible="off" length="middle" direction="pas"/>
+<text x="-12.7" y="-2.54" size="1.778" layer="97" align="top-left">chassis</text>
+</symbol>
+<symbol name="SSD1306-7PIN">
+<pin name="VCC" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="CLK" x="-12.7" y="0" length="middle"/>
+<pin name="MOSI" x="-12.7" y="-2.54" length="middle"/>
+<pin name="CS" x="-12.7" y="-5.08" length="middle"/>
+<pin name="DC" x="-12.7" y="-7.62" length="middle"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="5.08" y="-5.08" size="1.27" layer="94" rot="R90">SSD1306 LCD</text>
+<text x="-5.08" y="-15.24" size="1.27" layer="104">&gt;NAME</text>
+<pin name="RST" x="-12.7" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="B3W-9000-RG2N" prefix="BTN">
+<deviceset name="B3W-9000-RG2N">
 <gates>
 <gate name="G$1" symbol="B3W-900X-X2X" x="-7.62" y="5.08"/>
 </gates>
@@ -3070,7 +3117,7 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PTA6043-2015CPB103" prefix="FADER">
+<deviceset name="PTA6043-2015CPB103">
 <gates>
 <gate name="G$1" symbol="RTRIM" x="0" y="0"/>
 </gates>
@@ -3087,7 +3134,7 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEC11-4215K-S0024" prefix="ROTENC">
+<deviceset name="PEC11-4215K-S0024">
 <gates>
 <gate name="G$1" symbol="ROTARYENCODER" x="0" y="0"/>
 </gates>
@@ -3106,18 +3153,17 @@ http://www.bourns.com/data/global/pdfs/pta.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PTV111-4220A-B104" prefix="POT">
-<description>ROT POT PTV111-4220A-B104
-http://www.bourns.com/data/global/pdfs/PTVPTT.pdf</description>
+<deviceset name="POTENTIOMETER" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="RTRIM" x="0" y="0"/>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PTV111-4">
+<device name="PTV09A_VERTICAL" package="PTV09A-4">
 <connects>
-<connect gate="G$1" pin="A" pad="P1"/>
-<connect gate="G$1" pin="E" pad="P3"/>
-<connect gate="G$1" pin="S" pad="P2"/>
+<connect gate="G$1" pin="CCW" pad="CCW"/>
+<connect gate="G$1" pin="CHASSIS" pad="4"/>
+<connect gate="G$1" pin="CW" pad="CW"/>
+<connect gate="G$1" pin="WIPER" pad="CENTER"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3125,19 +3171,21 @@ http://www.bourns.com/data/global/pdfs/PTVPTT.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SSD1306-ALI" prefix="LCD">
+<deviceset name="SSD1306-7PIN">
+<description>https://www.aliexpress.com/item/free-shipping-0-96-inch-OLED-display-module-128X64-OLED-For-arduino-I2C-IIC-SPI-7p/32595065668.html?ws_ab_test=searchweb0_0,searchweb201602_1_116_117_10065_10068_114_10067_115_10069_113_10017_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10078_10079_10073_10070_10052_10053_10050_10051,searchweb201603_6&amp;btsid=51ed1bae-6cee-4f36-9ddd-1a85c2e0ff68</description>
 <gates>
-<gate name="G$1" symbol="SSD1306-ALI" x="2.54" y="12.7"/>
+<gate name="G$1" symbol="SSD1306-7PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SSD1306-ALI">
+<device name="" package="SSD1306-7PIN">
 <connects>
-<connect gate="G$1" pin="CLK" pad="P$3"/>
-<connect gate="G$1" pin="CS" pad="P$5"/>
-<connect gate="G$1" pin="DC" pad="P$6"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="MOSI" pad="P$4"/>
-<connect gate="G$1" pin="VCC" pad="P$1"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DC" pad="DC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RST" pad="RES"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4735,13 +4783,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="C25" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="ROTENC1" library="keves" deviceset="PEC11-4215K-S0024" device=""/>
 <part name="ROTENC2" library="keves" deviceset="PEC11-4215K-S0024" device=""/>
-<part name="POT7" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="POT5" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="POT3" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="POT1" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="POT2" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="POT4" library="keves" deviceset="PTV111-4220A-B104" device=""/>
-<part name="POT6" library="keves" deviceset="PTV111-4220A-B104" device=""/>
 <part name="IC3" library="SparkFun-DigitalIC" deviceset="74*595" device="D" technology="LS"/>
 <part name="IC2" library="SparkFun-DigitalIC" deviceset="74*595" device="D" technology="LS"/>
 <part name="U$72" library="microbuilder" deviceset="3.3V" device=""/>
@@ -4813,7 +4854,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="U$114" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$115" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$116" library="microbuilder" deviceset="GND" device=""/>
-<part name="LCD1" library="keves" deviceset="SSD1306-ALI" device=""/>
 <part name="BUS1" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
 <part name="U$1" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="U$36" library="microbuilder" deviceset="GND" device=""/>
@@ -4840,6 +4880,14 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <part name="U$51" library="microbuilder" deviceset="GND" device=""/>
 <part name="H5" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="H6" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="POT2" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="POT7" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="POT4" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="POT5" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="POT6" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="POT3" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="POT1" library="keves" deviceset="POTENTIOMETER" device="PTV09A_VERTICAL"/>
+<part name="LCD" library="keves" deviceset="SSD1306-7PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4971,7 +5019,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="R11" gate="G$1" x="78.74" y="-5.08" rot="R270"/>
 <instance part="R14" gate="G$1" x="109.22" y="104.14" rot="R180"/>
 <instance part="R13" gate="G$1" x="109.22" y="106.68" rot="R180"/>
-<instance part="LCD1" gate="G$1" x="139.7" y="5.08"/>
 <instance part="BUS1" gate="A" x="-12.7" y="-2.54" rot="R180"/>
 <instance part="U$1" gate="G$1" x="5.08" y="-7.62" rot="R270"/>
 <instance part="U$36" gate="G$1" x="5.08" y="0" rot="R90"/>
@@ -4998,6 +5045,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="U$51" gate="G$1" x="139.7" y="86.36" rot="R270"/>
 <instance part="H5" gate="G$1" x="177.8" y="139.7"/>
 <instance part="H6" gate="G$1" x="182.88" y="142.24"/>
+<instance part="LCD" gate="G$1" x="144.78" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -5073,7 +5121,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="124.46" y1="5.08" x2="124.46" y2="10.16" width="0.2032" layer="91"/>
 <pinref part="C14" gate="G$1" pin="P$2"/>
 <junction x="124.46" y="5.08"/>
-<pinref part="LCD1" gate="G$1" pin="VCC"/>
+<pinref part="LCD" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="SCL"/>
@@ -5341,7 +5389,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <pinref part="C14" gate="G$1" pin="P$1"/>
 <junction x="116.84" y="5.08"/>
 <wire x1="116.84" y1="5.08" x2="116.84" y2="10.16" width="0.2032" layer="91"/>
-<pinref part="LCD1" gate="G$1" pin="GND"/>
+<pinref part="LCD" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="1"/>
@@ -5632,7 +5680,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <segment>
 <wire x1="132.08" y1="0" x2="116.84" y2="0" width="0.2032" layer="91"/>
 <label x="114.3" y="0" size="1.778" layer="95"/>
-<pinref part="LCD1" gate="G$1" pin="CLK"/>
+<pinref part="LCD" gate="G$1" pin="CLK"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PB3/JTDO"/>
@@ -5644,7 +5692,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <segment>
 <wire x1="132.08" y1="-2.54" x2="116.84" y2="-2.54" width="0.2032" layer="91"/>
 <label x="114.3" y="-2.54" size="1.778" layer="95"/>
-<pinref part="LCD1" gate="G$1" pin="MOSI"/>
+<pinref part="LCD" gate="G$1" pin="MOSI"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PB5"/>
@@ -5656,7 +5704,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <segment>
 <wire x1="132.08" y1="-7.62" x2="116.84" y2="-7.62" width="0.2032" layer="91"/>
 <label x="114.3" y="-7.62" size="1.778" layer="95"/>
-<pinref part="LCD1" gate="G$1" pin="DC"/>
+<pinref part="LCD" gate="G$1" pin="DC"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PB7"/>
@@ -6293,7 +6341,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <segment>
 <wire x1="132.08" y1="-5.08" x2="116.84" y2="-5.08" width="0.2032" layer="91"/>
 <label x="114.3" y="-5.08" size="1.778" layer="95"/>
-<pinref part="LCD1" gate="G$1" pin="CS"/>
+<pinref part="LCD" gate="G$1" pin="CS"/>
 </segment>
 </net>
 <net name="DIN_9" class="0">
@@ -6416,6 +6464,18 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <label x="124.46" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="LCD_RST" class="0">
+<segment>
+<pinref part="LCD" gate="G$1" pin="RST"/>
+<wire x1="132.08" y1="-10.16" x2="116.84" y2="-10.16" width="0.1524" layer="91"/>
+<label x="114.3" y="-10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PC4"/>
+<wire x1="22.86" y1="53.34" x2="2.54" y2="53.34" width="0.1524" layer="91"/>
+<label x="0" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6467,33 +6527,33 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <instance part="C25" gate="G$1" x="190.5" y="-30.48"/>
 <instance part="ROTENC1" gate="G$1" x="60.96" y="22.86" rot="R90"/>
 <instance part="ROTENC2" gate="G$1" x="83.82" y="22.86" rot="R90"/>
-<instance part="POT7" gate="G$1" x="7.62" y="-12.7" rot="R270"/>
-<instance part="POT5" gate="G$1" x="7.62" y="-30.48" rot="R270"/>
-<instance part="POT3" gate="G$1" x="7.62" y="-50.8" rot="R270"/>
-<instance part="POT1" gate="G$1" x="7.62" y="-71.12" rot="R270"/>
-<instance part="POT2" gate="G$1" x="45.72" y="-12.7" rot="R270"/>
-<instance part="POT4" gate="G$1" x="45.72" y="-30.48" rot="R270"/>
-<instance part="POT6" gate="G$1" x="45.72" y="-48.26" rot="R270"/>
 <instance part="U$97" gate="G$1" x="27.94" y="12.7" rot="R90"/>
 <instance part="U$98" gate="G$1" x="7.62" y="12.7" rot="R90"/>
-<instance part="U$99" gate="G$1" x="53.34" y="-12.7" rot="R90"/>
-<instance part="U$100" gate="G$1" x="53.34" y="-30.48" rot="R90"/>
-<instance part="U$101" gate="G$1" x="53.34" y="-48.26" rot="R90"/>
-<instance part="U$102" gate="G$1" x="15.24" y="-71.12" rot="R90"/>
-<instance part="U$103" gate="G$1" x="15.24" y="-50.8" rot="R90"/>
-<instance part="U$104" gate="G$1" x="15.24" y="-30.48" rot="R90"/>
-<instance part="U$105" gate="G$1" x="15.24" y="-12.7" rot="R90"/>
-<instance part="U$106" gate="G$1" x="0" y="-12.7" rot="R90"/>
-<instance part="U$107" gate="G$1" x="0" y="-30.48" rot="R90"/>
-<instance part="U$108" gate="G$1" x="0" y="-50.8" rot="R90"/>
-<instance part="U$109" gate="G$1" x="0" y="-71.12" rot="R90"/>
-<instance part="U$110" gate="G$1" x="38.1" y="-12.7" rot="R90"/>
-<instance part="U$111" gate="G$1" x="38.1" y="-30.48" rot="R90"/>
-<instance part="U$112" gate="G$1" x="38.1" y="-48.26" rot="R90"/>
+<instance part="U$99" gate="G$1" x="55.88" y="-12.7" rot="R90"/>
+<instance part="U$100" gate="G$1" x="55.88" y="-30.48" rot="R90"/>
+<instance part="U$101" gate="G$1" x="55.88" y="-48.26" rot="R90"/>
+<instance part="U$102" gate="G$1" x="17.78" y="-71.12" rot="R90"/>
+<instance part="U$103" gate="G$1" x="17.78" y="-50.8" rot="R90"/>
+<instance part="U$104" gate="G$1" x="17.78" y="-30.48" rot="R90"/>
+<instance part="U$105" gate="G$1" x="17.78" y="-12.7" rot="R90"/>
+<instance part="U$106" gate="G$1" x="-2.54" y="-12.7" rot="R90"/>
+<instance part="U$107" gate="G$1" x="-2.54" y="-30.48" rot="R90"/>
+<instance part="U$108" gate="G$1" x="-2.54" y="-50.8" rot="R90"/>
+<instance part="U$109" gate="G$1" x="-2.54" y="-71.12" rot="R90"/>
+<instance part="U$110" gate="G$1" x="35.56" y="-12.7" rot="R90"/>
+<instance part="U$111" gate="G$1" x="35.56" y="-30.48" rot="R90"/>
+<instance part="U$112" gate="G$1" x="35.56" y="-48.26" rot="R90"/>
 <instance part="U$113" gate="G$1" x="63.5" y="10.16"/>
 <instance part="U$114" gate="G$1" x="86.36" y="10.16"/>
 <instance part="U$115" gate="G$1" x="81.28" y="10.16"/>
 <instance part="U$116" gate="G$1" x="58.42" y="10.16"/>
+<instance part="POT2" gate="G$1" x="45.72" y="-12.7" rot="R180"/>
+<instance part="POT7" gate="G$1" x="7.62" y="-12.7" rot="R180"/>
+<instance part="POT4" gate="G$1" x="45.72" y="-30.48" rot="R180"/>
+<instance part="POT5" gate="G$1" x="7.62" y="-30.48" rot="R180"/>
+<instance part="POT6" gate="G$1" x="45.72" y="-48.26" rot="R180"/>
+<instance part="POT3" gate="G$1" x="7.62" y="-50.8" rot="R180"/>
+<instance part="POT1" gate="G$1" x="7.62" y="-71.12" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6628,34 +6688,6 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="25.4" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POT2" gate="G$1" pin="A"/>
-<pinref part="U$99" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="POT4" gate="G$1" pin="A"/>
-<pinref part="U$100" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="POT6" gate="G$1" pin="A"/>
-<pinref part="U$101" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="POT1" gate="G$1" pin="A"/>
-<pinref part="U$102" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="POT3" gate="G$1" pin="A"/>
-<pinref part="U$103" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="POT5" gate="G$1" pin="A"/>
-<pinref part="U$104" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="POT7" gate="G$1" pin="A"/>
-<pinref part="U$105" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="ROTENC1" gate="G$1" pin="SW1"/>
 <pinref part="U$113" gate="G$1" pin="GND"/>
 </segment>
@@ -6670,6 +6702,34 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <segment>
 <pinref part="ROTENC1" gate="G$1" pin="COMMON"/>
 <pinref part="U$116" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$99" gate="G$1" pin="GND"/>
+<pinref part="POT2" gate="G$1" pin="CCW"/>
+</segment>
+<segment>
+<pinref part="U$105" gate="G$1" pin="GND"/>
+<pinref part="POT7" gate="G$1" pin="CCW"/>
+</segment>
+<segment>
+<pinref part="U$100" gate="G$1" pin="GND"/>
+<pinref part="POT4" gate="G$1" pin="CCW"/>
+</segment>
+<segment>
+<pinref part="U$104" gate="G$1" pin="GND"/>
+<pinref part="POT5" gate="G$1" pin="CCW"/>
+</segment>
+<segment>
+<pinref part="U$101" gate="G$1" pin="GND"/>
+<pinref part="POT6" gate="G$1" pin="CCW"/>
+</segment>
+<segment>
+<pinref part="U$103" gate="G$1" pin="GND"/>
+<pinref part="POT3" gate="G$1" pin="CCW"/>
+</segment>
+<segment>
+<pinref part="U$102" gate="G$1" pin="GND"/>
+<pinref part="POT1" gate="G$1" pin="CCW"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -6893,32 +6953,32 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <wire x1="10.16" y1="12.7" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POT7" gate="G$1" pin="E"/>
-<pinref part="U$106" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="POT5" gate="G$1" pin="E"/>
-<pinref part="U$107" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="POT3" gate="G$1" pin="E"/>
-<pinref part="U$108" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="POT1" gate="G$1" pin="E"/>
-<pinref part="U$109" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="POT2" gate="G$1" pin="E"/>
 <pinref part="U$110" gate="G$1" pin="3.3V"/>
+<pinref part="POT2" gate="G$1" pin="CW"/>
 </segment>
 <segment>
-<pinref part="POT4" gate="G$1" pin="E"/>
+<pinref part="U$106" gate="G$1" pin="3.3V"/>
+<pinref part="POT7" gate="G$1" pin="CW"/>
+</segment>
+<segment>
 <pinref part="U$111" gate="G$1" pin="3.3V"/>
+<pinref part="POT4" gate="G$1" pin="CW"/>
 </segment>
 <segment>
-<pinref part="POT6" gate="G$1" pin="E"/>
+<pinref part="U$107" gate="G$1" pin="3.3V"/>
+<pinref part="POT5" gate="G$1" pin="CW"/>
+</segment>
+<segment>
 <pinref part="U$112" gate="G$1" pin="3.3V"/>
+<pinref part="POT6" gate="G$1" pin="CW"/>
+</segment>
+<segment>
+<pinref part="U$108" gate="G$1" pin="3.3V"/>
+<pinref part="POT3" gate="G$1" pin="CW"/>
+</segment>
+<segment>
+<pinref part="U$109" gate="G$1" pin="3.3V"/>
+<pinref part="POT1" gate="G$1" pin="CW"/>
 </segment>
 </net>
 <net name="ADC7" class="0">
@@ -6930,23 +6990,23 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="ADC1" class="0">
 <segment>
-<pinref part="POT4" gate="G$1" pin="S"/>
 <wire x1="45.72" y1="-35.56" x2="45.72" y2="-38.1" width="0.2032" layer="91"/>
 <label x="48.26" y="-38.1" size="1.778" layer="95"/>
+<pinref part="POT4" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="ADC5" class="0">
 <segment>
-<pinref part="POT5" gate="G$1" pin="S"/>
 <wire x1="7.62" y1="-35.56" x2="7.62" y2="-38.1" width="0.2032" layer="91"/>
 <label x="10.16" y="-35.56" size="1.778" layer="95"/>
+<pinref part="POT5" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="ADC6" class="0">
 <segment>
-<pinref part="POT7" gate="G$1" pin="S"/>
 <wire x1="7.62" y1="-17.78" x2="7.62" y2="-20.32" width="0.2032" layer="91"/>
 <label x="7.62" y="-17.78" size="1.778" layer="95"/>
+<pinref part="POT7" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="DIN_6" class="0">
@@ -7006,30 +7066,30 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </net>
 <net name="ADC2" class="0">
 <segment>
-<pinref part="POT6" gate="G$1" pin="S"/>
 <wire x1="45.72" y1="-53.34" x2="45.72" y2="-55.88" width="0.2032" layer="91"/>
 <label x="45.72" y="-55.88" size="1.778" layer="95"/>
+<pinref part="POT6" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="ADC0" class="0">
 <segment>
-<pinref part="POT2" gate="G$1" pin="S"/>
 <wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.2032" layer="91"/>
 <label x="45.72" y="-17.78" size="1.778" layer="95"/>
+<pinref part="POT2" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="ADC3" class="0">
 <segment>
-<pinref part="POT1" gate="G$1" pin="S"/>
 <wire x1="7.62" y1="-76.2" x2="7.62" y2="-78.74" width="0.2032" layer="91"/>
 <label x="7.62" y="-78.74" size="1.778" layer="95"/>
+<pinref part="POT1" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="ADC4" class="0">
 <segment>
-<pinref part="POT3" gate="G$1" pin="S"/>
 <wire x1="7.62" y1="-55.88" x2="7.62" y2="-58.42" width="0.2032" layer="91"/>
 <label x="7.62" y="-55.88" size="1.778" layer="95"/>
+<pinref part="POT3" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="DIN_9" class="0">
