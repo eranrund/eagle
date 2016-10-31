@@ -2822,8 +2822,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <contactref element="LCD" pad="CS"/>
 <wire x1="29.21" y1="231.394" x2="29.21" y2="238.125" width="0.254" layer="1"/>
 <wire x1="29.21" y1="238.125" x2="29.972" y2="238.887" width="0.254" layer="1"/>
-<wire x1="29.972" y1="238.887" x2="31.793" y2="238.887" width="0.254" layer="1"/>
-<wire x1="31.793" y1="238.887" x2="33.02" y2="237.66" width="0.254" layer="1"/>
+<wire x1="29.972" y1="238.887" x2="33.02" y2="237.66" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DIN_9">
 <contactref element="IC5" pad="11"/>
