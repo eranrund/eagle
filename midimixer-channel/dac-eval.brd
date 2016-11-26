@@ -1024,7 +1024,7 @@ shrink quad flat pack, square</description>
 <element name="R38" library="microbuilder" package="0603" value="10K" x="46.355" y="51.308" rot="R270"/>
 <element name="R39" library="microbuilder" package="0603" value="10K" x="53.086" y="49.149" rot="R90"/>
 <element name="R40" library="microbuilder" package="0603" value="10K" x="50.8" y="49.022" rot="R90"/>
-<element name="R41" library="microbuilder" package="0603" value="10K" x="61.214" y="23.622" rot="R270"/>
+<element name="R41" library="microbuilder" package="0603" value="10K" x="62.992" y="25.781" rot="R90"/>
 <element name="R42" library="microbuilder" package="0603" value="10K" x="48.26" y="49.022" rot="R90"/>
 </elements>
 <signals>
@@ -1981,7 +1981,7 @@ shrink quad flat pack, square</description>
 <wire x1="69.43" y1="47.498" x2="69.469" y2="47.537" width="0.3048" layer="1"/>
 <wire x1="67.525" y1="45.72" x2="67.525" y2="47.498" width="0.3048" layer="1"/>
 <wire x1="67.525" y1="45.72" x2="67.988" y2="36.064" width="0" layer="19" extent="1-1"/>
-<wire x1="61.214" y1="22.772" x2="64.044" y2="36.064" width="0" layer="19" extent="1-1"/>
+<wire x1="62.992" y1="26.631" x2="64.044" y2="36.064" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="DAC" pad="21"/>
@@ -2218,11 +2218,10 @@ shrink quad flat pack, square</description>
 <wire x1="61.194" y1="31.714" x2="61.194" y2="29.992" width="0.3048" layer="1"/>
 <wire x1="61.194" y1="29.992" x2="61.214" y2="29.972" width="0.3048" layer="1"/>
 <via x="61.214" y="29.972" extent="1-16" drill="0.6"/>
-<wire x1="61.214" y1="29.972" x2="61.214" y2="26.035" width="0.3048" layer="16"/>
-<wire x1="61.214" y1="26.035" x2="61.341" y2="25.908" width="0.3048" layer="16"/>
-<via x="61.341" y="25.908" extent="1-16" drill="0.6"/>
-<wire x1="61.341" y1="25.908" x2="61.341" y2="24.599" width="0.3048" layer="1"/>
-<wire x1="61.341" y1="24.599" x2="61.214" y2="24.472" width="0.3048" layer="1"/>
+<wire x1="61.214" y1="29.972" x2="61.214" y2="25.908" width="0.3048" layer="16"/>
+<via x="61.214" y="25.908" extent="1-16" drill="0.6"/>
+<wire x1="62.992" y1="24.931" x2="62.191" y2="24.931" width="0.3048" layer="1"/>
+<wire x1="62.191" y1="24.931" x2="61.214" y2="25.908" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>
