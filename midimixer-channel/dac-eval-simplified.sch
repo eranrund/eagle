@@ -2862,9 +2862,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="81.28" y="111.76" size="1.778" layer="91">TODOs:
-- DAC_VREF
-- DAC_VCC</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="129.54" y="91.44"/>
@@ -4294,10 +4291,4 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
