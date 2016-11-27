@@ -149,10 +149,12 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="76.2" y2="0" width="0" layer="20"/>
-<wire x1="76.2" y1="0" x2="76.2" y2="80" width="0" layer="20"/>
-<wire x1="76.2" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="73.152" y2="0" width="0" layer="20"/>
+<wire x1="73.152" y1="0" x2="72.898" y2="76.444" width="0" layer="20"/>
+<wire x1="72.898" y1="76.444" x2="-0.254" y2="76.444" width="0" layer="20"/>
+<wire x1="-0.254" y1="76.444" x2="0" y2="0" width="0" layer="20"/>
+<text x="52.578" y="3.81" size="0.8128" layer="21" font="vector">PCM4104 Eval - Rev A
+Eran Rundstein, Dec 2016</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -1080,11 +1082,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <attribute name="OC_NEWARK" value="unknown" x="69.469" y="68.326" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="69.469" y="68.326" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="DC_9" library="con-ptr500" package="AK500/2" value="" x="72.009" y="12.954" rot="R90">
-<attribute name="MF" value="" x="72.009" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="72.009" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="72.009" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="72.009" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="DC_9" library="con-ptr500" package="AK500/2" value="" x="69.723" y="16.002" rot="R90">
+<attribute name="MF" value="" x="69.723" y="16.002" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="69.723" y="16.002" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="69.723" y="16.002" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="69.723" y="16.002" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$30" library="keves" package="SO08" value="ADP3301ARZ-3.3" x="59.817" y="17.907" rot="R270"/>
 <element name="C53" library="microbuilder" package="0603" value="2.2uF (EMK107BB7225KA-T)" x="62.865" y="22.352" rot="R270"/>
@@ -1976,9 +1978,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="58.166" y1="42.33" x2="57.873" y2="42.33" width="0.3048" layer="1"/>
 <wire x1="57.873" y1="42.33" x2="57.023" y2="43.18" width="0.3048" layer="1"/>
 <contactref element="DAC" pad="10"/>
-<via x="71.755" y="37.465" extent="1-16" drill="0.6"/>
-<wire x1="70.231" y1="37.299" x2="71.589" y2="37.299" width="0.3048" layer="1"/>
-<wire x1="71.589" y1="37.299" x2="71.755" y2="37.465" width="0.3048" layer="1"/>
+<via x="70.231" y="39.243" extent="1-16" drill="0.6"/>
 <wire x1="60.194" y1="39.914" x2="60.194" y2="38.358" width="0.3048" layer="1"/>
 <wire x1="60.194" y1="38.358" x2="60.452" y2="38.1" width="0.3048" layer="1"/>
 <via x="60.452" y="38.1" extent="1-16" drill="0.6"/>
@@ -2081,6 +2081,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="56.095" y1="23.075" x2="56.134" y2="23.114" width="0.6096" layer="1"/>
 <via x="56.134" y="23.114" extent="1-16" drill="0.6"/>
 <wire x1="56.134" y1="23.114" x2="56.134" y2="24.003" width="0.6096" layer="16"/>
+<wire x1="70.231" y1="37.299" x2="70.231" y2="39.243" width="0.3048" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C52" pad="1"/>
@@ -2262,44 +2263,42 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="53.213" y1="33.401" x2="52.666" y2="33.401" width="0.3048" layer="1"/>
 <wire x1="52.666" y1="33.401" x2="52.539" y2="33.274" width="0.3048" layer="1"/>
 <wire x1="53.428" y1="40.386" x2="53.428" y2="40.806" width="0.4064" layer="1"/>
-<wire x1="53.428" y1="40.806" x2="51.943" y2="42.291" width="0.4064" layer="1"/>
+<wire x1="53.428" y1="40.806" x2="51.943" y2="42.291" width="0.6096" layer="1"/>
 <wire x1="51.943" y1="42.291" x2="51.943" y2="42.418" width="0.4064" layer="1"/>
 <via x="51.943" y="44.45" extent="1-16" drill="0.6"/>
-<wire x1="51.943" y1="42.418" x2="51.943" y2="43.434" width="0.4064" layer="1"/>
-<wire x1="51.943" y1="43.434" x2="51.943" y2="44.45" width="0.4064" layer="1"/>
-<wire x1="51.943" y1="44.45" x2="51.943" y2="43.434" width="0.4064" layer="16"/>
-<wire x1="51.943" y1="43.434" x2="51.943" y2="42.418" width="0.4064" layer="16"/>
-<wire x1="51.943" y1="44.45" x2="51.943" y2="46.482" width="0.4064" layer="16"/>
-<wire x1="51.943" y1="46.482" x2="51.943" y2="47.752" width="0.4064" layer="16"/>
-<wire x1="51.943" y1="47.752" x2="52.324" y2="48.133" width="0.4064" layer="16"/>
-<wire x1="52.324" y1="48.133" x2="52.578" y2="48.133" width="0.4064" layer="16"/>
-<wire x1="52.578" y1="48.133" x2="53.594" y2="48.133" width="0.4064" layer="16"/>
-<via x="53.594" y="48.133" extent="1-16" drill="0.6"/>
-<via x="52.578" y="48.133" extent="1-16" drill="0.6"/>
+<wire x1="51.943" y1="42.418" x2="51.943" y2="43.434" width="0.6096" layer="1"/>
+<wire x1="51.943" y1="43.434" x2="51.943" y2="44.45" width="0.6096" layer="1"/>
+<wire x1="51.943" y1="44.45" x2="51.943" y2="43.434" width="0.6096" layer="16"/>
+<wire x1="51.943" y1="43.434" x2="51.943" y2="42.418" width="0.6096" layer="16"/>
+<wire x1="51.943" y1="44.45" x2="51.943" y2="46.609" width="0.6096" layer="16"/>
 <via x="51.943" y="43.434" extent="1-16" drill="0.6"/>
 <via x="51.943" y="42.418" extent="1-16" drill="0.6"/>
-<wire x1="60.071" y1="50.673" x2="60.071" y2="51.181" width="0.4064" layer="1"/>
-<wire x1="53.594" y1="48.133" x2="52.324" y2="48.133" width="0.4064" layer="1"/>
-<wire x1="52.324" y1="48.133" x2="51.943" y2="47.752" width="0.4064" layer="1"/>
-<wire x1="51.943" y1="47.752" x2="51.943" y2="46.482" width="0.4064" layer="1"/>
-<via x="51.943" y="46.482" extent="1-16" drill="0.6"/>
-<wire x1="53.594" y1="48.133" x2="57.531" y2="48.133" width="0.4064" layer="1"/>
-<wire x1="57.531" y1="48.133" x2="60.071" y2="50.673" width="0.4064" layer="1"/>
+<wire x1="49.53" y1="46.609" x2="50.546" y2="46.609" width="0.6096" layer="1"/>
+<wire x1="50.546" y1="46.609" x2="51.562" y2="46.609" width="0.6096" layer="1"/>
+<wire x1="51.562" y1="46.609" x2="57.531" y2="46.609" width="0.6096" layer="1"/>
 <wire x1="52.539" y1="31.496" x2="51.269" y2="30.226" width="0.6096" layer="1"/>
 <wire x1="51.269" y1="30.226" x2="51.181" y2="30.226" width="0.6096" layer="1"/>
 <via x="49.149" y="30.226" extent="1-16" drill="0.6"/>
 <wire x1="51.181" y1="30.226" x2="50.165" y2="30.226" width="0.6096" layer="1"/>
 <wire x1="50.165" y1="30.226" x2="49.149" y2="30.226" width="0.6096" layer="1"/>
 <wire x1="48.387" y1="30.226" x2="47.625" y2="30.988" width="0.6096" layer="16"/>
-<wire x1="47.9425" y1="47.0535" x2="49.022" y2="48.133" width="0.6096" layer="16"/>
-<wire x1="49.022" y1="48.133" x2="52.578" y2="48.133" width="0.6096" layer="16"/>
+<wire x1="49.53" y1="46.609" x2="50.546" y2="46.609" width="0.6096" layer="16"/>
+<wire x1="50.546" y1="46.609" x2="51.562" y2="46.609" width="0.6096" layer="16"/>
+<wire x1="51.562" y1="46.609" x2="51.943" y2="46.609" width="0.6096" layer="16"/>
 <wire x1="48.387" y1="30.226" x2="50.165" y2="30.226" width="0.6096" layer="16"/>
 <wire x1="50.165" y1="30.226" x2="51.181" y2="30.226" width="0.6096" layer="16"/>
 <wire x1="51.181" y1="30.226" x2="51.269" y2="30.226" width="0.6096" layer="16"/>
 <via x="51.181" y="30.226" extent="1-16" drill="0.6"/>
 <via x="50.165" y="30.226" extent="1-16" drill="0.6"/>
-<wire x1="47.625" y1="30.988" x2="47.625" y2="46.736" width="0.6096" layer="16"/>
-<wire x1="47.625" y1="46.736" x2="47.9425" y2="47.0535" width="0.6096" layer="16"/>
+<wire x1="47.625" y1="30.988" x2="47.625" y2="43.815" width="0.6096" layer="16"/>
+<via x="49.53" y="46.609" extent="1-16" drill="0.6"/>
+<via x="50.546" y="46.609" extent="1-16" drill="0.6"/>
+<via x="51.562" y="46.609" extent="1-16" drill="0.6"/>
+<wire x1="47.625" y1="43.815" x2="47.625" y2="44.196" width="0.6096" layer="16"/>
+<wire x1="49.53" y1="46.609" x2="47.625" y2="44.704" width="0.6096" layer="16"/>
+<wire x1="47.625" y1="44.704" x2="47.625" y2="44.196" width="0.6096" layer="16"/>
+<wire x1="57.531" y1="46.609" x2="60.071" y2="49.149" width="0.6096" layer="1"/>
+<wire x1="60.071" y1="49.149" x2="60.071" y2="51.181" width="0.6096" layer="1"/>
 </signal>
 <signal name="+9V">
 <contactref element="DC_9" pad="1"/>
@@ -2327,16 +2326,17 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="61.528" y1="10.033" x2="63.969" y2="10.033" width="0.6096" layer="1"/>
 <wire x1="63.969" y1="10.033" x2="64.008" y2="10.072" width="0.6096" layer="1"/>
 <wire x1="64.008" y1="10.072" x2="65.786" y2="10.072" width="0.6096" layer="1"/>
-<wire x1="65.786" y1="10.072" x2="71.6416" y2="10.072" width="0.6096" layer="1"/>
-<wire x1="71.6416" y1="10.072" x2="72.009" y2="10.4394" width="0.6096" layer="1"/>
-<wire x1="62.8904" y1="16.002" x2="66.4464" y2="16.002" width="0.6096" layer="1"/>
-<wire x1="66.4464" y1="16.002" x2="72.009" y2="10.4394" width="0.6096" layer="1"/>
-<wire x1="62.865" y1="21.502" x2="72.048" y2="21.502" width="0.6096" layer="1"/>
-<wire x1="72.048" y1="21.502" x2="73.152" y2="22.606" width="0.6096" layer="1"/>
-<wire x1="73.152" y1="22.606" x2="73.152" y2="53.848" width="0.6096" layer="1"/>
-<wire x1="73.152" y1="53.848" x2="70.485" y2="56.515" width="0.6096" layer="1"/>
+<wire x1="62.8904" y1="16.002" x2="67.2084" y2="16.002" width="0.6096" layer="1"/>
+<wire x1="62.865" y1="21.502" x2="71.286" y2="21.502" width="0.6096" layer="1"/>
+<wire x1="72.39" y1="54.61" x2="70.485" y2="56.515" width="0.6096" layer="1"/>
 <wire x1="70.485" y1="56.515" x2="59.729" y2="56.515" width="0.6096" layer="1"/>
 <wire x1="59.729" y1="56.515" x2="59.69" y2="56.476" width="0.6096" layer="1"/>
+<wire x1="71.286" y1="21.502" x2="72.39" y2="22.606" width="0.6096" layer="1"/>
+<wire x1="72.39" y1="22.606" x2="72.39" y2="54.61" width="0.6096" layer="1"/>
+<wire x1="65.786" y1="10.072" x2="67.984" y2="10.072" width="0.6096" layer="1"/>
+<wire x1="67.984" y1="10.072" x2="69.723" y2="11.811" width="0.6096" layer="1"/>
+<wire x1="69.723" y1="11.811" x2="69.723" y2="13.4874" width="0.6096" layer="1"/>
+<wire x1="69.723" y1="13.4874" x2="67.2084" y2="16.002" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$47">
 <contactref element="C54" pad="1"/>
@@ -2388,4 +2388,10 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
