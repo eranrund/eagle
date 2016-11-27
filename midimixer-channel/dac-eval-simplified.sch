@@ -2468,6 +2468,35 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
 <circle x="-1.905" y="-1.27" radius="0.254" width="0.127" layer="21"/>
 </package>
+<package name="SOIC8">
+<description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<circle x="-1.905" y="-0.635" radius="0.254" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADP3301">
@@ -2485,6 +2514,19 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="20.32" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="20.32" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ADR02">
+<pin name="VIN" x="-7.62" y="5.08" length="middle"/>
+<pin name="TEMP" x="-7.62" y="2.54" length="middle"/>
+<pin name="VOUT" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="TRIM" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-7.62" y="7.62" length="middle"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<text x="4.318" y="-1.778" size="1.016" layer="95">&gt;NAME</text>
+<text x="7.62" y="8.382" size="1.016" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2506,6 +2548,129 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADR02">
+<gates>
+<gate name="G$1" symbol="ADR02" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="TEMP" pad="3"/>
+<connect gate="G$1" pin="TRIM" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="burr-brown">
+<description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT223">
+<description>&lt;b&gt;Smal Outline Transistor&lt;/b&gt;</description>
+<wire x1="-3.124" y1="1.731" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
+<wire x1="3.124" y1="-1.729" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
+<wire x1="-3.124" y1="1.731" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
+<wire x1="3.124" y1="-1.729" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
+<smd name="1" x="-2.2606" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="2" x="0.0254" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="3" x="2.3114" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="4" x="0" y="3.1496" dx="3.81" dy="2.0066" layer="1"/>
+<text x="-2.54" y="4.318" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.794" y="-5.842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="1.778" x2="1.524" y2="3.302" layer="51"/>
+<rectangle x1="-2.667" y1="-3.302" x2="-1.905" y2="-1.778" layer="51"/>
+<rectangle x1="1.905" y1="-3.302" x2="2.667" y2="-1.778" layer="51"/>
+<rectangle x1="-0.381" y1="-3.302" x2="0.381" y2="-1.778" layer="51"/>
+</package>
+<package name="DD-3">
+<description>&lt;b&gt;DPAC&lt;/b&gt;</description>
+<wire x1="-5.398" y1="-4.445" x2="-5.084" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-5.084" y1="-4.445" x2="5.076" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="5.076" y1="-4.445" x2="5.398" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="-4.445" x2="5.398" y2="4.128" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="4.128" x2="-5.398" y2="4.128" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="4.128" x2="-5.398" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-5.084" y1="3.81" x2="5.076" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="5.076" y1="3.81" x2="5.076" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-5.084" y1="-4.445" x2="-5.084" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="4.128" x2="-5.084" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="4.128" x2="5.076" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="4.128" x2="-5.398" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="5.08" x2="-4.445" y2="5.715" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="5.715" x2="4.445" y2="5.715" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="5.715" x2="5.398" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="5.08" x2="5.398" y2="4.128" width="0.1524" layer="21"/>
+<smd name="1" x="-2.54" y="-7.9375" dx="1.27" dy="5.08" layer="1"/>
+<smd name="2" x="0" y="-7.9375" dx="1.27" dy="5.08" layer="1"/>
+<smd name="3" x="2.54" y="-7.9375" dx="1.27" dy="5.08" layer="1"/>
+<text x="-3.81" y="-10.795" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.175" y1="-9.525" x2="-1.905" y2="-4.445" layer="51"/>
+<rectangle x1="-0.635" y1="-9.525" x2="0.635" y2="-4.445" layer="51"/>
+<rectangle x1="1.905" y1="-9.525" x2="3.175" y2="-4.445" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="REG1118">
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="2.54" size="1.778" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="VIN" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="VOUT" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="0" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="REG1117" prefix="IC">
+<description>&lt;b&gt;800mA and 1A Low Dropout (LDO) Positive Regulator&lt;/b&gt;&lt;p&gt;
+1.8V, 2.5V, 2.85V, 3.3V, 5V, and Adj</description>
+<gates>
+<gate name="G$1" symbol="REG1118" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="REG1117" constant="no"/>
+<attribute name="OC_FARNELL" value="1097566" constant="no"/>
+<attribute name="OC_NEWARK" value="14P6981" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F" package="DD-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="TEXAS INSTRUMENTS" constant="no"/>
+<attribute name="MPN" value="REG1117FAKTTT" constant="no"/>
+<attribute name="OC_FARNELL" value="1296120" constant="no"/>
+<attribute name="OC_NEWARK" value="87H2562" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2667,9 +2832,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="P-5" library="supply1" deviceset="-12V" device=""/>
-<part name="X1" library="con-ptr500" deviceset="AK500/2" device=""/>
+<part name="DC_9" library="con-ptr500" deviceset="AK500/2" device=""/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$30" library="keves" deviceset="ADP3301" device="" value="ADP3301ARZ-5"/>
+<part name="U$30" library="keves" deviceset="ADP3301" device="" value="ADP3301ARZ-3.3"/>
 <part name="U$31" library="microbuilder" deviceset="GND" device=""/>
 <part name="C53" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="2.2uF (EMK107BB7225KA-T)"/>
 <part name="U$34" library="microbuilder" deviceset="GND" device=""/>
@@ -2677,14 +2842,30 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="C54" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
 <part name="C55" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
 <part name="U$42" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$43" library="keves" deviceset="ADR02" device=""/>
+<part name="C56" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="2.2uF (EMK107BB7225KA-T)"/>
+<part name="C57" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="U$44" library="microbuilder" deviceset="GND" device=""/>
+<part name="EN_3.3" library="microbuilder" deviceset="HEADER-1X2" device=""/>
+<part name="C58" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
+<part name="C59" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="EN_DAC_VREF" library="microbuilder" deviceset="HEADER-1X2" device=""/>
+<part name="C60" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
+<part name="C61" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
+<part name="IC5" library="burr-brown" deviceset="REG1117" device="" value="REG1117-5"/>
+<part name="C62" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C64" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
+<part name="C63" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
+<part name="C65" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="U$45" library="microbuilder" deviceset="GND" device=""/>
+<part name="EN_DAC_VCC" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="81.28" y="111.76" size="1.778" layer="91">TODOs:
-- AVCC Supply
-- +/-12V Supply
-- Connect AGND to GND</text>
+- DAC_VREF
+- DAC_VCC</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="129.54" y="91.44"/>
@@ -3880,6 +4061,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <junction x="48.26" y="48.26"/>
 <junction x="48.26" y="45.72"/>
 <junction x="48.26" y="40.64"/>
+<junction x="48.26" y="38.1"/>
 </segment>
 </net>
 <net name="DAC_VREF" class="0">
@@ -3926,23 +4108,40 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <plain>
 </plain>
 <instances>
-<instance part="DC_12" gate="-1" x="-5.08" y="40.64"/>
-<instance part="DC_12" gate="-2" x="-5.08" y="35.56"/>
-<instance part="DC_12" gate="-3" x="-5.08" y="30.48"/>
-<instance part="U$25" gate="G$1" x="5.08" y="35.56" rot="R90"/>
-<instance part="P+5" gate="1" x="2.54" y="43.18"/>
-<instance part="P-5" gate="1" x="2.54" y="27.94"/>
-<instance part="X1" gate="-1" x="-5.08" y="17.78"/>
-<instance part="X1" gate="-2" x="-5.08" y="12.7"/>
-<instance part="U$29" gate="G$1" x="7.62" y="12.7" rot="R90"/>
+<instance part="DC_12" gate="-1" x="-30.48" y="66.04"/>
+<instance part="DC_12" gate="-2" x="-30.48" y="58.42"/>
+<instance part="DC_12" gate="-3" x="-30.48" y="50.8"/>
+<instance part="U$25" gate="G$1" x="-7.62" y="58.42" rot="R90"/>
+<instance part="P+5" gate="1" x="-22.86" y="68.58"/>
+<instance part="P-5" gate="1" x="-22.86" y="48.26"/>
+<instance part="DC_9" gate="-1" x="-33.02" y="38.1"/>
+<instance part="DC_9" gate="-2" x="-33.02" y="33.02"/>
+<instance part="U$29" gate="G$1" x="-20.32" y="33.02" rot="R90"/>
 <instance part="U$30" gate="G$1" x="50.8" y="50.8"/>
 <instance part="U$31" gate="G$1" x="22.86" y="68.58" rot="R270"/>
 <instance part="C53" gate="G$1" x="20.32" y="60.96" rot="R180"/>
 <instance part="U$34" gate="G$1" x="20.32" y="50.8"/>
-<instance part="U$35" gate="G$1" x="71.12" y="63.5" rot="R270"/>
+<instance part="U$35" gate="G$1" x="81.28" y="63.5" rot="R270"/>
 <instance part="C54" gate="G$1" x="60.96" y="68.58" rot="R90"/>
 <instance part="C55" gate="G$1" x="63.5" y="60.96" rot="R180"/>
 <instance part="U$42" gate="G$1" x="63.5" y="53.34"/>
+<instance part="U$43" gate="G$1" x="38.1" y="27.94"/>
+<instance part="C56" gate="G$1" x="17.78" y="38.1" rot="R180"/>
+<instance part="C57" gate="G$1" x="22.86" y="35.56"/>
+<instance part="U$44" gate="G$1" x="17.78" y="43.18" rot="R180"/>
+<instance part="EN_3.3" gate="G$1" x="73.66" y="66.04" rot="R90"/>
+<instance part="C58" gate="G$1" x="60.96" y="35.56"/>
+<instance part="C59" gate="G$1" x="73.66" y="35.56"/>
+<instance part="EN_DAC_VREF" gate="G$1" x="88.9" y="35.56" rot="R90"/>
+<instance part="C60" gate="G$1" x="-22.86" y="63.5"/>
+<instance part="C61" gate="G$1" x="-22.86" y="55.88"/>
+<instance part="IC5" gate="G$1" x="43.18" y="7.62"/>
+<instance part="C62" gate="G$1" x="22.86" y="2.54"/>
+<instance part="C64" gate="G$1" x="58.42" y="2.54"/>
+<instance part="C63" gate="G$1" x="17.78" y="5.08" rot="R180"/>
+<instance part="C65" gate="G$1" x="68.58" y="2.54"/>
+<instance part="U$45" gate="G$1" x="43.18" y="-7.62"/>
+<instance part="EN_DAC_VCC" gate="G$1" x="78.74" y="10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3951,12 +4150,18 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <segment>
 <pinref part="DC_12" gate="-2" pin="KL"/>
 <pinref part="U$25" gate="G$1" pin="GND"/>
-<wire x1="0" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="58.42" x2="-22.86" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C60" gate="G$1" pin="-"/>
+<junction x="-10.16" y="58.42"/>
+<wire x1="-22.86" y1="58.42" x2="-10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="58.42" x2="-22.86" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C61" gate="G$1" pin="+"/>
+<junction x="-22.86" y="58.42"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="DC_9" gate="-2" pin="KL"/>
 <pinref part="U$29" gate="G$1" pin="GND"/>
-<wire x1="5.08" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="33.02" x2="-27.94" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$30" gate="G$1" pin="GND"/>
@@ -3972,26 +4177,48 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="C55" gate="G$1" pin="P$1"/>
 <pinref part="U$42" gate="G$1" pin="GND"/>
 </segment>
-</net>
-<net name="+12V" class="0">
 <segment>
-<pinref part="DC_12" gate="-1" pin="KL"/>
-<pinref part="P+5" gate="1" pin="+12V"/>
-<wire x1="0" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C56" gate="G$1" pin="P$2"/>
+<pinref part="U$44" gate="G$1" pin="GND"/>
+<pinref part="U$43" gate="G$1" pin="GND"/>
+<wire x1="17.78" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="40.64" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C57" gate="G$1" pin="P$1"/>
+<junction x="22.86" y="40.64"/>
+<junction x="17.78" y="40.64"/>
+<pinref part="C59" gate="G$1" pin="P$1"/>
+<wire x1="30.48" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C58" gate="G$1" pin="P$1"/>
+<junction x="60.96" y="40.64"/>
+<wire x1="60.96" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<junction x="30.48" y="40.64"/>
 </segment>
-</net>
-<net name="-12V" class="0">
 <segment>
-<pinref part="DC_12" gate="-3" pin="KL"/>
-<pinref part="P-5" gate="1" pin="-12V"/>
-<wire x1="0" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="GND"/>
+<pinref part="C63" gate="G$1" pin="P$1"/>
+<wire x1="43.18" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-5.08" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="0" width="0.1524" layer="91"/>
+<pinref part="C62" gate="G$1" pin="P$2"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="C64" gate="G$1" pin="P$2"/>
+<wire x1="43.18" y1="-5.08" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-5.08" x2="58.42" y2="0" width="0.1524" layer="91"/>
+<pinref part="C65" gate="G$1" pin="P$2"/>
+<wire x1="58.42" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-5.08" x2="68.58" y2="0" width="0.1524" layer="91"/>
+<junction x="22.86" y="-5.08"/>
+<junction x="43.18" y="-5.08"/>
+<pinref part="U$45" gate="G$1" pin="GND"/>
+<junction x="58.42" y="-5.08"/>
 </segment>
 </net>
 <net name="+9V" class="0">
 <segment>
-<pinref part="X1" gate="-1" pin="KL"/>
-<wire x1="0" y1="17.78" x2="5.08" y2="17.78" width="0.1524" layer="91"/>
-<label x="2.54" y="17.78" size="1.778" layer="95"/>
+<pinref part="DC_9" gate="-1" pin="KL"/>
+<wire x1="-27.94" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
+<label x="-25.4" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$30" gate="G$1" pin="IN2"/>
@@ -4007,20 +4234,27 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <junction x="27.94" y="60.96"/>
 <junction x="27.94" y="63.5"/>
 </segment>
-</net>
-<net name="3.3V" class="0">
 <segment>
-<pinref part="U$30" gate="G$1" pin="OUT1"/>
-<junction x="53.34" y="63.5"/>
-<pinref part="U$30" gate="G$1" pin="OUT2"/>
-<wire x1="53.34" y1="60.96" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$35" gate="G$1" pin="3.3V"/>
-<wire x1="68.58" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C54" gate="G$1" pin="P$2"/>
-<wire x1="63.5" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="68.58" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
-<junction x="63.5" y="63.5"/>
-<pinref part="C55" gate="G$1" pin="P$2"/>
+<pinref part="U$43" gate="G$1" pin="VIN"/>
+<wire x1="30.48" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C56" gate="G$1" pin="P$1"/>
+<wire x1="22.86" y1="33.02" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<junction x="17.78" y="33.02"/>
+<pinref part="C57" gate="G$1" pin="P$2"/>
+<junction x="22.86" y="33.02"/>
+<label x="10.16" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="VIN"/>
+<wire x1="30.48" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
+<label x="5.08" y="7.62" size="1.778" layer="95"/>
+<pinref part="C62" gate="G$1" pin="P$1"/>
+<junction x="22.86" y="7.62"/>
+<wire x1="22.86" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="C63" gate="G$1" pin="P$2"/>
+<junction x="17.78" y="7.62"/>
+<wire x1="17.78" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -4028,6 +4262,86 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="C54" gate="G$1" pin="P$1"/>
 <pinref part="U$30" gate="G$1" pin="NR"/>
 <wire x1="55.88" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="U$30" gate="G$1" pin="OUT1"/>
+<junction x="53.34" y="63.5"/>
+<pinref part="U$30" gate="G$1" pin="OUT2"/>
+<wire x1="53.34" y1="60.96" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C54" gate="G$1" pin="P$2"/>
+<wire x1="63.5" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="68.58" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<junction x="63.5" y="63.5"/>
+<pinref part="C55" gate="G$1" pin="P$2"/>
+<pinref part="EN_3.3" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="EN_3.3" gate="G$1" pin="2"/>
+<pinref part="U$35" gate="G$1" pin="3.3V"/>
+<wire x1="73.66" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DAC_VREF" class="0">
+<segment>
+<pinref part="EN_DAC_VREF" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
+<label x="96.52" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="C61" gate="G$1" pin="-"/>
+<pinref part="DC_12" gate="-3" pin="KL"/>
+<wire x1="-25.4" y1="50.8" x2="-22.86" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="P-5" gate="1" pin="-12V"/>
+<junction x="-22.86" y="50.8"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="C60" gate="G$1" pin="+"/>
+<pinref part="DC_12" gate="-1" pin="KL"/>
+<wire x1="-25.4" y1="66.04" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<junction x="-22.86" y="66.04"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="IC5" gate="G$1" pin="VOUT"/>
+<wire x1="55.88" y1="7.62" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="C64" gate="G$1" pin="P$1"/>
+<junction x="58.42" y="7.62"/>
+<wire x1="58.42" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="C65" gate="G$1" pin="P$1"/>
+<junction x="68.58" y="7.62"/>
+<wire x1="68.58" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="EN_DAC_VCC" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="DAC_VCC" class="0">
+<segment>
+<pinref part="EN_DAC_VCC" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<label x="96.52" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="U$43" gate="G$1" pin="VOUT"/>
+<pinref part="EN_DAC_VREF" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C59" gate="G$1" pin="P$2"/>
+<junction x="73.66" y="33.02"/>
+<wire x1="60.96" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C58" gate="G$1" pin="P$2"/>
+<junction x="60.96" y="33.02"/>
 </segment>
 </net>
 </nets>

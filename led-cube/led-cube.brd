@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -613,8 +613,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$16" library="jos-ph" package="APA102_5050" value="APA1025050" x="40" y="40"/>
 <element name="C16" library="microbuilder" package="0603" value="0.1uF" x="40" y="36.5"/>
 <element name="IN1" library="keves" package="1X04" value="" x="25.5" y="1.2"/>
-<element name="IN2" library="keves" package="1X04" value="" x="1.2" y="25" rot="R90"/>
-<element name="OUT1" library="keves" package="1X04" value="" x="25.5" y="48.8"/>
+<element name="IN2" library="keves" package="1X04" value="" x="1.2" y="25" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.5302" y="30.5118" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="4.375" y="19.92" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="OUT1" library="keves" package="1X04" value="" x="25.5" y="48.8" smashed="yes">
+<attribute name="NAME" x="20.5978" y="45.9298" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="20.42" y="45.625" size="1.27" layer="27"/>
+</element>
 <element name="OUT2" library="keves" package="1X04" value="" x="48.8" y="25" rot="R90"/>
 </elements>
 <signals>
