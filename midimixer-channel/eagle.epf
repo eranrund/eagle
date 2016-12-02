@@ -1,12 +1,14 @@
 [Eagle]
-Version="07 05 00"
+Version="07 03 00"
 Platform="Mac OS X"
-Serial="62191E841E-LSR-WLM-1EL"
+Serial="722FEEC08C-LSR-WLM-5CP"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Users/eran/Projects/eagle/libs/keves.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/microbuilder.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/41xx.lbr"
