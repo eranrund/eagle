@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -4624,6 +4624,22 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <rectangle x1="5.72" y1="6.58" x2="6.82" y2="6.88" layer="31" rot="R90"/>
 <rectangle x1="6.22" y1="6.58" x2="7.32" y2="6.88" layer="31" rot="R90"/>
 <rectangle x1="6.72" y1="6.58" x2="7.82" y2="6.88" layer="31" rot="R90"/>
+</package>
+<package name="PTV111-1">
+<pad name="P$1" x="-3.75" y="0" drill="1.2"/>
+<pad name="P$2" x="-1.25" y="0" drill="1.2"/>
+<pad name="P$3" x="1.25" y="0" drill="1.2"/>
+<pad name="P$4" x="3.75" y="0" drill="1.2"/>
+<pad name="P$5" x="-6.1" y="3.4" drill="3" shape="square"/>
+<pad name="P$6" x="6.1" y="3.4" drill="3" shape="square"/>
+<wire x1="-6" y1="5.9" x2="6" y2="5.9" width="0.127" layer="21"/>
+<wire x1="-6" y1="5.9" x2="-6" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="6" y1="5.9" x2="6" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.2" x2="-4" y2="-9.2" width="0.127" layer="21"/>
+<wire x1="4" y1="-4.2" x2="4" y2="-9.2" width="0.127" layer="21"/>
+<wire x1="-6" y1="-4.2" x2="-4" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="6" y1="-4.2" x2="4" y2="-4.2" width="0.127" layer="21"/>
+<text x="-3" y="6.2" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -9806,6 +9822,23 @@ Source: STM32F42x_43x_LQFP100.bsd</description>
 <connect gate="G$1" pin="TRIM" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTV111-1">
+<gates>
+<gate name="G$1" symbol="RTRIM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTV111-1">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
