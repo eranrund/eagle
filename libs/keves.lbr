@@ -4641,6 +4641,36 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <wire x1="6" y1="-4.2" x2="4" y2="-4.2" width="0.127" layer="21"/>
 <text x="-3" y="6.2" size="1.27" layer="21">&gt;NAME</text>
 </package>
+<package name="ALPS-RK09D1130">
+<pad name="P$1" x="-2.5" y="0" drill="0.8"/>
+<pad name="P$2" x="0" y="0" drill="0.8"/>
+<pad name="P$3" x="2.5" y="0" drill="0.8"/>
+<pad name="P$4" x="-4.4" y="7" drill="2.5"/>
+<pad name="P$5" x="4.4" y="7" drill="2.5"/>
+<wire x1="-4.9" y1="0" x2="4.9" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="12.5" x2="4.9" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="0" x2="-4.9" y2="12.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="0" x2="4.9" y2="12.5" width="0.127" layer="21"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="108-1MD1T1B1M2QE-EVX">
+<wire x1="5.715" y1="6.35" x2="5.715" y2="-6.35" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-6.35" x2="-5.715" y2="-6.35" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-6.35" x2="-5.715" y2="6.35" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="6.35" x2="5.715" y2="6.35" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="3.175" x2="1.27" y2="0" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="0" width="0.2032" layer="51"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.2032" layer="51" curve="-180"/>
+<wire x1="1.275" y1="1.375" x2="-1.3" y2="1.35" width="0.2032" layer="51" curve="-273.242292"/>
+<circle x="0" y="3.175" radius="1.27" width="0.2032" layer="51"/>
+<text x="-4.445" y="6.985" size="1.778" layer="25">&gt;NAME</text>
+<pad name="P$1" x="-2.415" y="-4.7" drill="1.86"/>
+<pad name="P$2" x="-2.415" y="0" drill="1.86"/>
+<pad name="P$3" x="-2.415" y="4.7" drill="1.86"/>
+<pad name="P$4" x="2.415" y="-4.7" drill="1.86"/>
+<pad name="P$5" x="2.415" y="0" drill="1.86"/>
+<pad name="P$6" x="2.415" y="4.7" drill="1.86"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RTRIM">
@@ -6476,6 +6506,37 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <wire x1="15.24" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 <text x="4.318" y="-1.778" size="1.016" layer="95">&gt;NAME</text>
 <text x="7.62" y="8.382" size="1.016" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DPDT">
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-6.604" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="1.27" x2="-4.064" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="1.27" x2="-4.064" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-3.175" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="3.556" y2="3.048" width="0.254" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="3.175" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="5.588" y1="1.27" x2="6.096" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="1.27" x2="6.096" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="1.27" x2="6.604" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0" x2="-10.16" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-10.16" y1="1.27" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="-1.27" width="0.254" layer="94"/>
+<text x="10.16" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="12.7" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O" x="-7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="P1" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S1" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="O1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9839,6 +9900,43 @@ Source: STM32F42x_43x_LQFP100.bsd</description>
 <connect gate="G$1" pin="A" pad="P$3"/>
 <connect gate="G$1" pin="E" pad="P$1"/>
 <connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALPS-RK09D">
+<gates>
+<gate name="G$1" symbol="RTRIM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPS-RK09D1130">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="108-1MD1T1B1M2QE-EVX">
+<gates>
+<gate name="G$1" symbol="DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="108-1MD1T1B1M2QE-EVX">
+<connects>
+<connect gate="G$1" pin="O" pad="P$1"/>
+<connect gate="G$1" pin="O1" pad="P$4"/>
+<connect gate="G$1" pin="P" pad="P$2"/>
+<connect gate="G$1" pin="P1" pad="P$5"/>
+<connect gate="G$1" pin="S" pad="P$3"/>
+<connect gate="G$1" pin="S1" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
