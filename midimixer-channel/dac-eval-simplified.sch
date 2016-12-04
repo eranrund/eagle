@@ -2687,17 +2687,17 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF"/>
+<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF VJ0603A220JXACW1BC"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
-<part name="R1" library="microbuilder" deviceset="RESISTOR" device="0603" value="604 0.1%"/>
-<part name="R2" library="microbuilder" deviceset="RESISTOR" device="0603" value="604 0.1%"/>
-<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="2200pF ECH-U1H222JX5"/>
-<part name="R3" library="microbuilder" deviceset="RESISTOR" device="0603" value="499 0.1%"/>
-<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603" value="499 0.1%"/>
-<part name="R5" library="microbuilder" deviceset="RESISTOR" device="0603" value="1K 0.1%"/>
+<part name="R1" library="microbuilder" deviceset="RESISTOR" device="0603" value="12k 0.1%"/>
+<part name="R2" library="microbuilder" deviceset="RESISTOR" device="0603" value="12k 0.1%"/>
+<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="100pF ECH-U1H101JX5"/>
+<part name="R3" library="microbuilder" deviceset="RESISTOR" device="0603" value="10k 0.1%"/>
+<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603" value="10k 0.1%"/>
+<part name="R5" library="microbuilder" deviceset="RESISTOR" device="0603" value="20K 0.1%"/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
-<part name="IC1" library="linear" deviceset="NE5534" device="D" technology="A"/>
+<part name="IC1" library="linear" deviceset="NE5534" device="D" technology="A" value="ISL28110"/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="4.7uF"/>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
@@ -2706,15 +2706,15 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="P-1" library="supply1" deviceset="-12V" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
-<part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="560pF ECH-U1H561JX5"/>
-<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="560pF ECH-U1H561JX5"/>
+<part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="22pF VJ0805A220FXBPW1BC"/>
+<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="27pF CC0805FRNPO9BN270"/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
-<part name="R6" library="microbuilder" deviceset="RESISTOR" device="0603" value="1K 0.1%"/>
+<part name="R6" library="microbuilder" deviceset="RESISTOR" device="0603" value="20K 0.1%"/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="0603" value="100 0.1%"/>
 <part name="OUT1" library="pl-jacks" deviceset="MONOSW" device="S" value="NMJ4HFD2"/>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="R8" library="microbuilder" deviceset="RESISTOR" device="0603" value="2K 0.1% DNP"/>
-<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF"/>
+<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF VJ0603A220JXACW1BC"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
 <part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603" value="604 0.1%"/>
@@ -2741,7 +2741,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="OUT2" library="pl-jacks" deviceset="MONOSW" device="S" value="NMJ4HFD2"/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
 <part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="2K 0.1% DNP"/>
-<part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF"/>
+<part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF VJ0603A220JXACW1BC"/>
 <part name="C22" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
 <part name="C23" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
 <part name="R17" library="microbuilder" deviceset="RESISTOR" device="0603" value="604 0.1%"/>
@@ -2768,17 +2768,15 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="OUT3" library="pl-jacks" deviceset="MONOSW" device="S" value="NMJ4HFD2"/>
 <part name="U$15" library="microbuilder" deviceset="GND" device=""/>
 <part name="R24" library="microbuilder" deviceset="RESISTOR" device="0603" value="2K 0.1% DNP"/>
-<part name="C31" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF"/>
-<part name="C32" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
-<part name="C33" library="SparkFun-Capacitors" deviceset="CAP_POL" device="D" value="100uF EMVE160ADA101MF55G"/>
-<part name="R25" library="microbuilder" deviceset="RESISTOR" device="0603" value="604 0.1%"/>
-<part name="R26" library="microbuilder" deviceset="RESISTOR" device="0603" value="604 0.1%"/>
+<part name="C31" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="22pF VJ0603A220JXACW1BC"/>
+<part name="R25" library="microbuilder" deviceset="RESISTOR" device="0603" value="820 0.1%"/>
+<part name="R26" library="microbuilder" deviceset="RESISTOR" device="0603" value="820 0.1%"/>
 <part name="C34" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="2200pF ECH-U1H222JX5"/>
-<part name="R27" library="microbuilder" deviceset="RESISTOR" device="0603" value="499 0.1%"/>
-<part name="R28" library="microbuilder" deviceset="RESISTOR" device="0603" value="499 0.1%"/>
-<part name="R29" library="microbuilder" deviceset="RESISTOR" device="0603" value="1K 0.1%"/>
+<part name="R27" library="microbuilder" deviceset="RESISTOR" device="0603" value="910 0.1%"/>
+<part name="R28" library="microbuilder" deviceset="RESISTOR" device="0603" value="910 0.1%"/>
+<part name="R29" library="microbuilder" deviceset="RESISTOR" device="0603" value="1.6K 0.1%"/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
-<part name="IC4" library="linear" deviceset="NE5534" device="D" technology="A"/>
+<part name="IC4" library="linear" deviceset="NE5534" device="D" technology="A" value="OPA227"/>
 <part name="C35" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="C36" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="4.7uF"/>
 <part name="C37" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
@@ -2787,10 +2785,10 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="P-4" library="supply1" deviceset="-12V" device=""/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
-<part name="C39" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="560pF ECH-U1H561JX5"/>
-<part name="C40" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="560pF ECH-U1H561JX5"/>
+<part name="C39" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="680pF ECH-U1H681JX5"/>
+<part name="C40" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="680pF ECH-U1H681JX5"/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
-<part name="R30" library="microbuilder" deviceset="RESISTOR" device="0603" value="1K 0.1%"/>
+<part name="R30" library="microbuilder" deviceset="RESISTOR" device="0603" value="1.6K 0.1%"/>
 <part name="R31" library="microbuilder" deviceset="RESISTOR" device="0603" value="100 0.1%"/>
 <part name="OUT4" library="pl-jacks" deviceset="MONOSW" device="S" value="NMJ4HFD2"/>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
@@ -2858,10 +2856,15 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="U$45" library="microbuilder" deviceset="GND" device=""/>
 <part name="EN_DAC_VCC" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 <part name="U$46" library="microbuilder" deviceset="GND" device=""/>
+<part name="C67" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="22pF VJ0805A220FXBPW1BC"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="190.5" y="142.24" size="1.778" layer="97">Filter 1 (JFET)</text>
+<text x="337.82" y="142.24" size="1.778" layer="97">Filter 2 (NE5534 + Cap)</text>
+<text x="172.72" y="55.88" size="1.778" layer="97">Filter 3 (NE5534)</text>
+<text x="335.28" y="55.88" size="1.778" layer="97">Filter 4 (OPA227)</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="129.54" y="91.44"/>
@@ -2946,8 +2949,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="U$15" gate="G$1" x="401.32" y="83.82"/>
 <instance part="R24" gate="G$1" x="281.94" y="91.44" rot="R90"/>
 <instance part="C31" gate="G$1" x="292.1" y="5.08"/>
-<instance part="C32" gate="G$1" x="299.72" y="12.7" rot="R90"/>
-<instance part="C33" gate="G$1" x="299.72" y="0" rot="R90"/>
 <instance part="R25" gate="G$1" x="312.42" y="12.7"/>
 <instance part="R26" gate="G$1" x="312.42" y="0"/>
 <instance part="C34" gate="G$1" x="322.58" y="5.08"/>
@@ -3004,6 +3005,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="U$40" gate="G$1" x="0" y="99.06" rot="R90"/>
 <instance part="U$41" gate="G$1" x="0" y="96.52" rot="R270"/>
 <instance part="U$46" gate="G$1" x="-43.18" y="33.02"/>
+<instance part="C67" gate="G$1" x="370.84" y="101.6" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3403,20 +3405,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="401.32" y1="93.98" x2="393.7" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="C32" gate="G$1" pin="-"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="304.8" y1="12.7" x2="307.34" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="C33" gate="G$1" pin="-"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="304.8" y1="0" x2="307.34" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -3571,8 +3559,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </net>
 <net name="OUT4-" class="0">
 <segment>
-<pinref part="C32" gate="G$1" pin="+"/>
-<wire x1="297.18" y1="12.7" x2="292.1" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C31" gate="G$1" pin="P$1"/>
 <wire x1="292.1" y1="12.7" x2="281.94" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="12.7" x2="271.78" y2="12.7" width="0.1524" layer="91"/>
@@ -3582,6 +3568,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="281.94" y1="10.16" x2="281.94" y2="12.7" width="0.1524" layer="91"/>
 <junction x="281.94" y="12.7"/>
 <label x="269.24" y="12.7" size="1.778" layer="95"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="292.1" y1="12.7" x2="307.34" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DAC" gate="G$1" pin="VOUT4-"/>
@@ -3591,8 +3579,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </net>
 <net name="OUT4+" class="0">
 <segment>
-<pinref part="C33" gate="G$1" pin="+"/>
-<wire x1="297.18" y1="0" x2="292.1" y2="0" width="0.1524" layer="91"/>
 <pinref part="C31" gate="G$1" pin="P$2"/>
 <wire x1="292.1" y1="0" x2="281.94" y2="0" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="0" x2="271.78" y2="0" width="0.1524" layer="91"/>
@@ -3601,6 +3587,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="R32" gate="G$1" pin="1"/>
 <junction x="281.94" y="0"/>
 <label x="269.24" y="0" size="1.778" layer="95"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="307.34" y1="0" x2="292.1" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DAC" gate="G$1" pin="VOUT4+"/>
@@ -4042,6 +4030,21 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="53.34" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="33.02" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="C67" gate="G$1" pin="P$1"/>
+<pinref part="IC3" gate="A" pin="CMP"/>
+<wire x1="365.76" y1="101.6" x2="360.68" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="IC3" gate="A" pin="ON/CMP"/>
+<pinref part="C67" gate="G$1" pin="P$2"/>
+<wire x1="368.3" y1="91.44" x2="373.38" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="91.44" x2="373.38" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
