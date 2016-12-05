@@ -19315,12 +19315,49 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
+<part name="SC_SW" library="keves" deviceset="108-1MD1T1B1M2QE-EVX" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="SC" library="con-ptr500" deviceset="AK500/2" device=""/>
+<part name="U$26" library="microbuilder" deviceset="GND" device=""/>
+<part name="SC_ON" library="led" deviceset="LED" device="5MM">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="U$27" library="microbuilder" deviceset="GND" device=""/>
+<part name="P+12" library="supply1" deviceset="+15V" device=""/>
+<part name="R39" library="rcl" deviceset="R-US_" device="0204/7" value="1k">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="BYPASS_SW" library="keves" deviceset="108-1MD1T1B1M2QE-EVX" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="U$28" library="microbuilder" deviceset="GND" device=""/>
+<part name="COMP_ON" library="led" deviceset="LED" device="5MM">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="P+13" library="supply1" deviceset="+15V" device=""/>
+<part name="R40" library="rcl" deviceset="R-US_" device="0204/7" value="1k">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-43.18" y="60.96" size="1.778" layer="91">TODO:
-- Sidechain</text>
+- Sidechain
+- Bypass</text>
 <text x="167.64" y="165.1" size="1.778" layer="97" rot="R180">J/I/H are RED</text>
 </plain>
 <instances>
@@ -19337,7 +19374,7 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MF" x="7.62" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="7.62" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="2.54" y="53.34" rot="R90"/>
+<instance part="U$1" gate="G$1" x="-33.02" y="53.34" rot="R90"/>
 <instance part="R1" gate="G$1" x="25.4" y="48.26">
 <attribute name="OC_NEWARK" x="25.4" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="25.4" y="48.26" size="1.778" layer="96" display="off"/>
@@ -19386,7 +19423,7 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MF" x="81.28" y="71.12" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="81.28" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$7" gate="G$1" x="127" y="50.8" rot="R270"/>
+<instance part="U$7" gate="G$1" x="203.2" y="50.8" rot="R270"/>
 <instance part="U$8" gate="G$1" x="63.5" y="-22.86"/>
 <instance part="R6" gate="G$1" x="55.88" y="0">
 <attribute name="OC_NEWARK" x="55.88" y="0" size="1.778" layer="96" display="off"/>
@@ -19696,10 +19733,10 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MPN" x="365.76" y="-40.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+9" gate="1" x="365.76" y="7.62"/>
-<instance part="IN" gate="-1" x="-7.62" y="53.34"/>
-<instance part="IN" gate="-2" x="-7.62" y="48.26"/>
-<instance part="OUT" gate="-1" x="137.16" y="50.8" rot="MR0"/>
-<instance part="OUT" gate="-2" x="137.16" y="45.72" rot="MR0"/>
+<instance part="IN" gate="-1" x="-43.18" y="53.34"/>
+<instance part="IN" gate="-2" x="-43.18" y="48.26"/>
+<instance part="OUT" gate="-1" x="213.36" y="50.8" rot="MR0"/>
+<instance part="OUT" gate="-2" x="213.36" y="45.72" rot="MR0"/>
 <instance part="IC2" gate="B" x="-43.18" y="-50.8"/>
 <instance part="C12" gate="G$1" x="111.76" y="45.72" rot="R270">
 <attribute name="OC_NEWARK" x="111.76" y="45.72" size="1.778" layer="96" display="off"/>
@@ -19856,29 +19893,73 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MPN" x="119.38" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$25" gate="G$1" x="139.7" y="81.28"/>
+<instance part="SC_SW" gate="G$1" x="-27.94" y="30.48" rot="R90">
+<attribute name="OC_NEWARK" x="-27.94" y="30.48" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="-27.94" y="30.48" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="-27.94" y="30.48" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="SC" gate="-1" x="-63.5" y="38.1"/>
+<instance part="SC" gate="-2" x="-63.5" y="33.02"/>
+<instance part="U$26" gate="G$1" x="-53.34" y="38.1" rot="R90"/>
+<instance part="SC_ON" gate="G$1" x="-48.26" y="22.86" rot="R90">
+<attribute name="OC_NEWARK" x="-48.26" y="22.86" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-48.26" y="22.86" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-48.26" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$27" gate="G$1" x="-17.78" y="25.4" rot="R90"/>
+<instance part="P+12" gate="1" x="-68.58" y="22.86" rot="R90"/>
+<instance part="R39" gate="G$1" x="-58.42" y="22.86">
+<attribute name="OC_NEWARK" x="-58.42" y="22.86" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-58.42" y="22.86" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-58.42" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="BYPASS_SW" gate="G$1" x="185.42" y="53.34" rot="R90">
+<attribute name="OC_NEWARK" x="185.42" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="185.42" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="185.42" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$28" gate="G$1" x="200.66" y="58.42" rot="R90"/>
+<instance part="COMP_ON" gate="G$1" x="165.1" y="55.88" rot="R90">
+<attribute name="OC_NEWARK" x="165.1" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="165.1" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="165.1" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+13" gate="1" x="144.78" y="55.88" rot="R90"/>
+<instance part="R40" gate="G$1" x="154.94" y="55.88">
+<attribute name="OC_NEWARK" x="154.94" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="154.94" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="154.94" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="SIG_IN" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="5.08" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
-<junction x="2.54" y="48.26"/>
-<wire x1="2.54" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="48.26" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="+"/>
-<wire x1="2.54" y1="38.1" x2="2.54" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-40.64" x2="2.54" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="IN" gate="-2" pin="KL"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-<junction x="2.54" y="38.1"/>
+<junction x="2.54" y="48.26"/>
+<pinref part="IN" gate="-2" pin="KL"/>
+<wire x1="-38.1" y1="48.26" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="SC_SW" gate="G$1" pin="S1"/>
+<wire x1="-35.56" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="38.1" x2="-35.56" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="38.1" x2="-35.56" y2="48.26" width="0.1524" layer="91"/>
+<label x="-7.62" y="48.26" size="1.778" layer="95" rot="R90"/>
+<junction x="-35.56" y="48.26"/>
+</segment>
+<segment>
+<pinref part="BYPASS_SW" gate="G$1" pin="S"/>
+<wire x1="180.34" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="124.46" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="0" y1="53.34" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="53.34" x2="-38.1" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="IN" gate="-1" pin="KL"/>
 </segment>
 <segment>
@@ -19909,8 +19990,8 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="GND"/>
-<wire x1="129.54" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="OUT" gate="-1" pin="KL"/>
+<wire x1="208.28" y1="50.8" x2="205.74" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="-OA2" pin="+IN"/>
@@ -20016,6 +20097,21 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <wire x1="139.7" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="88.9" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <junction x="139.7" y="88.9"/>
+</segment>
+<segment>
+<pinref part="U$26" gate="G$1" pin="GND"/>
+<pinref part="SC" gate="-1" pin="KL"/>
+<wire x1="-55.88" y1="38.1" x2="-58.42" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SC_SW" gate="G$1" pin="P"/>
+<pinref part="U$27" gate="G$1" pin="GND"/>
+<wire x1="-20.32" y1="25.4" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BYPASS_SW" gate="G$1" pin="P1"/>
+<pinref part="U$28" gate="G$1" pin="GND"/>
+<wire x1="198.12" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -20212,6 +20308,16 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <pinref part="PWR" gate="-1" pin="KL"/>
 <pinref part="P+11" gate="1" pin="+15V"/>
 <wire x1="-33.02" y1="-12.7" x2="-38.1" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+12" gate="1" pin="+15V"/>
+<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="22.86" x2="-66.04" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+13" gate="1" pin="+15V"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -20678,12 +20784,12 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <net name="N$41" class="0">
 <segment>
 <pinref part="C12" gate="G$1" pin="+"/>
-<pinref part="OUT" gate="-2" pin="KL"/>
 <wire x1="114.3" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="53.34" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="BYPASS_SW" gate="G$1" pin="O"/>
+<wire x1="116.84" y1="45.72" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
 <junction x="116.84" y="45.72"/>
 </segment>
 </net>
@@ -20955,6 +21061,59 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <wire x1="91.44" y1="101.6" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
 <junction x="91.44" y="119.38"/>
 <junction x="119.38" y="101.6"/>
+</segment>
+</net>
+<net name="SC_IN" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="15.24" y1="-40.64" x2="2.54" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="SC_SW" gate="G$1" pin="P1"/>
+<wire x1="-22.86" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="2.54" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="SC_SW" gate="G$1" pin="O1"/>
+<pinref part="SC" gate="-2" pin="KL"/>
+<wire x1="-33.02" y1="33.02" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="SC_SW" gate="G$1" pin="O"/>
+<pinref part="SC_ON" gate="G$1" pin="C"/>
+<wire x1="-43.18" y1="22.86" x2="-33.02" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="SC_ON" gate="G$1" pin="A"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="-53.34" y1="22.86" x2="-50.8" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="OUT" gate="-2" pin="KL"/>
+<wire x1="208.28" y1="45.72" x2="195.58" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="45.72" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="BYPASS_SW" gate="G$1" pin="P"/>
+<wire x1="195.58" y1="48.26" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="COMP_ON" gate="G$1" pin="C"/>
+<wire x1="170.18" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="BYPASS_SW" gate="G$1" pin="O1"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="COMP_ON" gate="G$1" pin="A"/>
+<pinref part="R40" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
