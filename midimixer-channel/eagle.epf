@@ -9,6 +9,8 @@ Desktop="Desktop"
 AutoSaveProject=1
 UsedLibrary="/Users/eran/Projects/eagle/libs/keves.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/microbuilder.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/pl-jacks.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/that-corp.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/41xx.lbr"
@@ -360,10 +362,12 @@ UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_LEDs.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Passives.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Sensors.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Switches.lbr"
+UsedLibrary="/Users/eran/Downloads/alps.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-LED.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 -22 599 377"
+Loc="971 455 1570 854"
 State=2
 Number=0
 

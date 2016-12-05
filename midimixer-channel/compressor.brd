@@ -153,9 +153,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="-11.43" x2="185.4" y2="-11.43" width="0" layer="20"/>
-<wire x1="185.4" y1="-11.43" x2="185.4" y2="38.1" width="0" layer="20"/>
-<wire x1="185.4" y1="38.1" x2="0" y2="38.1" width="0" layer="20"/>
+<wire x1="0" y1="-11.43" x2="177.8" y2="-11.43" width="0" layer="20"/>
+<wire x1="177.8" y1="-11.43" x2="177.8" y2="38.1" width="0" layer="20"/>
+<wire x1="177.8" y1="38.1" x2="0" y2="38.1" width="0" layer="20"/>
 <wire x1="0" y1="38.1" x2="0" y2="-11.43" width="0" layer="20"/>
 </plain>
 <libraries>
