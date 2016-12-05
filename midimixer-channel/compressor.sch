@@ -20965,11 +20965,6 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <label x="-20.32" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="VARIABLE/AUTO" gate="G$1" pin="P1"/>
-<wire x1="78.74" y1="7.62" x2="243.84" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="VARIABLE/AUTO" gate="G$1" pin="S1"/>
 <wire x1="254" y1="5.08" x2="264.16" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="5.08" x2="264.16" y2="-5.08" width="0.1524" layer="91"/>
@@ -21119,6 +21114,13 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <pinref part="COMP_ON" gate="G$1" pin="A"/>
 <pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="VARIABLE/AUTO" gate="G$1" pin="P1"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="7.62" x2="78.74" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
