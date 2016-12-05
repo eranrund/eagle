@@ -18820,6 +18820,10 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="+15v" width="0.5588" drill="0">
+</class>
+<class number="2" name="-15v" width="0.5588" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U1" library="that-corp" deviceset="THAT4301" device="P20-I">
