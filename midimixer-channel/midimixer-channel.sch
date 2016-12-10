@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -1757,7 +1758,7 @@ TS-003</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="3.3V" prefix="3.3V_">
+<deviceset name="3.3V">
 <description>&lt;b&gt;3.3V Supply&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
@@ -2032,7 +2033,7 @@ TS-003</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="GND_">
+<deviceset name="GND">
 <description>&lt;b&gt;GND&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="GND" x="0" y="0"/>
@@ -4604,8 +4605,6 @@ http://www.tag-connect.com</description>
 <part name="U$61" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$62" library="microbuilder" deviceset="GND" device=""/>
 <part name="C25" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
-<part name="ROTENC1" library="keves" deviceset="PEC11-4215K-S0024" device=""/>
-<part name="ROTENC2" library="keves" deviceset="PEC11-4215K-S0024" device=""/>
 <part name="IC3" library="SparkFun-DigitalIC" deviceset="74*595" device="D" technology="LS"/>
 <part name="IC2" library="SparkFun-DigitalIC" deviceset="74*595" device="D" technology="LS"/>
 <part name="U$72" library="microbuilder" deviceset="3.3V" device=""/>
@@ -4640,13 +4639,9 @@ http://www.tag-connect.com</description>
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="U$92" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R9" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
-<part name="R8" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
-<part name="R7" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
-<part name="R3" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
-<part name="R2" library="microbuilder" deviceset="RESISTOR" device="_0603" value="10k"/>
 <part name="U$93" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="D2" library="omc" deviceset="SN65HVD230" device="" value="SN65HVD232"/>
 <part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
@@ -4673,10 +4668,6 @@ http://www.tag-connect.com</description>
 <part name="U$110" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$111" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$112" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="U$113" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$114" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$115" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$116" library="microbuilder" deviceset="GND" device=""/>
 <part name="BUS1" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
 <part name="U$1" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="U$36" library="microbuilder" deviceset="GND" device=""/>
@@ -4714,6 +4705,32 @@ http://www.tag-connect.com</description>
 <part name="U$59" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$63" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$64" library="microbuilder" deviceset="GND" device=""/>
+<part name="ROT1" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$21" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$22" library="microbuilder" deviceset="GND" device=""/>
+<part name="R39" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R40" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="C27" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$51" library="microbuilder" deviceset="GND" device=""/>
+<part name="C28" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$65" library="microbuilder" deviceset="GND" device=""/>
+<part name="R41" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R42" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="U$66" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$67" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="ROT2" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
+<part name="U$68" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$69" library="microbuilder" deviceset="GND" device=""/>
+<part name="R43" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R44" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="C29" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$70" library="microbuilder" deviceset="GND" device=""/>
+<part name="C30" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$71" library="microbuilder" deviceset="GND" device=""/>
+<part name="R45" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="R46" library="microbuilder" deviceset="RESISTOR" device="0603" value="10K"/>
+<part name="U$87" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$117" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4825,13 +4842,9 @@ http://www.tag-connect.com</description>
 <instance part="R1" gate="G$1" x="-121.92" y="7.62" rot="R90"/>
 <instance part="U$92" gate="G$1" x="-121.92" y="17.78"/>
 <instance part="R9" gate="G$1" x="-45.72" y="17.78" rot="R90"/>
-<instance part="R8" gate="G$1" x="-48.26" y="17.78" rot="R90"/>
-<instance part="R7" gate="G$1" x="-50.8" y="17.78" rot="R90"/>
 <instance part="R6" gate="G$1" x="-53.34" y="17.78" rot="R90"/>
 <instance part="R5" gate="G$1" x="-55.88" y="17.78" rot="R90"/>
 <instance part="R4" gate="G$1" x="-58.42" y="17.78" rot="R90"/>
-<instance part="R3" gate="G$1" x="-60.96" y="17.78" rot="R90"/>
-<instance part="R2" gate="G$1" x="-63.5" y="17.78" rot="R90"/>
 <instance part="U$93" gate="G$1" x="-63.5" y="27.94"/>
 <instance part="D2" gate="G$1" x="55.88" y="-5.08"/>
 <instance part="C10" gate="G$1" x="58.42" y="12.7" rot="R90"/>
@@ -4993,29 +5006,18 @@ http://www.tag-connect.com</description>
 </segment>
 <segment>
 <pinref part="U$93" gate="G$1" pin="3.3V"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="25.4" x2="-63.5" y2="22.86" width="0.2032" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-63.5" y1="22.86" x2="-60.96" y2="22.86" width="0.2032" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<junction x="-48.26" y="22.86"/>
-<wire x1="-60.96" y1="22.86" x2="-58.42" y2="22.86" width="0.2032" layer="91"/>
+<wire x1="-63.5" y1="22.86" x2="-58.42" y2="22.86" width="0.2032" layer="91"/>
 <wire x1="-58.42" y1="22.86" x2="-55.88" y2="22.86" width="0.2032" layer="91"/>
 <wire x1="-55.88" y1="22.86" x2="-53.34" y2="22.86" width="0.2032" layer="91"/>
-<wire x1="-53.34" y1="22.86" x2="-50.8" y2="22.86" width="0.2032" layer="91"/>
-<wire x1="-50.8" y1="22.86" x2="-48.26" y2="22.86" width="0.2032" layer="91"/>
-<wire x1="-48.26" y1="22.86" x2="-45.72" y2="22.86" width="0.2032" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<junction x="-50.8" y="22.86"/>
+<wire x1="-53.34" y1="22.86" x2="-45.72" y2="22.86" width="0.2032" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <junction x="-53.34" y="22.86"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <junction x="-55.88" y="22.86"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <junction x="-58.42" y="22.86"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<junction x="-60.96" y="22.86"/>
-<junction x="-63.5" y="22.86"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="P$1"/>
@@ -5856,23 +5858,15 @@ http://www.tag-connect.com</description>
 <net name="DIN_1" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="A"/>
-<wire x1="-71.12" y1="10.16" x2="-63.5" y2="10.16" width="0.2032" layer="91"/>
 <label x="-38.1" y="10.16" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-63.5" y1="10.16" x2="-38.1" y2="10.16" width="0.2032" layer="91"/>
-<wire x1="-63.5" y1="12.7" x2="-63.5" y2="10.16" width="0.2032" layer="91"/>
-<junction x="-63.5" y="10.16"/>
+<wire x1="-71.12" y1="10.16" x2="-38.1" y2="10.16" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="DIN_2" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="B"/>
-<wire x1="-71.12" y1="7.62" x2="-60.96" y2="7.62" width="0.2032" layer="91"/>
 <label x="-38.1" y="7.62" size="1.778" layer="95"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="7.62" x2="-38.1" y2="7.62" width="0.2032" layer="91"/>
-<wire x1="-60.96" y1="12.7" x2="-60.96" y2="7.62" width="0.2032" layer="91"/>
-<junction x="-60.96" y="7.62"/>
+<wire x1="-71.12" y1="7.62" x2="-38.1" y2="7.62" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="DIN_3" class="0">
@@ -5911,23 +5905,15 @@ http://www.tag-connect.com</description>
 <net name="DIN_6" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="F"/>
-<wire x1="-71.12" y1="-2.54" x2="-50.8" y2="-2.54" width="0.2032" layer="91"/>
+<wire x1="-71.12" y1="-2.54" x2="-38.1" y2="-2.54" width="0.2032" layer="91"/>
 <label x="-38.1" y="-2.54" size="1.778" layer="95"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-50.8" y1="-2.54" x2="-38.1" y2="-2.54" width="0.2032" layer="91"/>
-<wire x1="-50.8" y1="12.7" x2="-50.8" y2="-2.54" width="0.2032" layer="91"/>
-<junction x="-50.8" y="-2.54"/>
 </segment>
 </net>
 <net name="DIN_7" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="G"/>
-<wire x1="-71.12" y1="-5.08" x2="-48.26" y2="-5.08" width="0.2032" layer="91"/>
+<wire x1="-71.12" y1="-5.08" x2="-38.1" y2="-5.08" width="0.2032" layer="91"/>
 <label x="-38.1" y="-5.08" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-48.26" y1="-5.08" x2="-38.1" y2="-5.08" width="0.2032" layer="91"/>
-<wire x1="-48.26" y1="-5.08" x2="-48.26" y2="12.7" width="0.2032" layer="91"/>
-<junction x="-48.26" y="-5.08"/>
 </segment>
 </net>
 <net name="DIN_8" class="0">
@@ -6356,8 +6342,6 @@ http://www.tag-connect.com</description>
 <instance part="U$61" gate="G$1" x="160.02" y="-38.1" rot="R270"/>
 <instance part="U$62" gate="G$1" x="172.72" y="-33.02" rot="R270"/>
 <instance part="C25" gate="G$1" x="190.5" y="-30.48"/>
-<instance part="ROTENC1" gate="G$1" x="60.96" y="22.86" rot="R90"/>
-<instance part="ROTENC2" gate="G$1" x="83.82" y="22.86" rot="R90"/>
 <instance part="U$97" gate="G$1" x="27.94" y="12.7" rot="R90"/>
 <instance part="U$98" gate="G$1" x="7.62" y="12.7" rot="R90"/>
 <instance part="U$99" gate="G$1" x="55.88" y="-12.7" rot="R90"/>
@@ -6374,10 +6358,6 @@ http://www.tag-connect.com</description>
 <instance part="U$110" gate="G$1" x="35.56" y="-12.7" rot="R90"/>
 <instance part="U$111" gate="G$1" x="35.56" y="-30.48" rot="R90"/>
 <instance part="U$112" gate="G$1" x="35.56" y="-48.26" rot="R90"/>
-<instance part="U$113" gate="G$1" x="63.5" y="10.16"/>
-<instance part="U$114" gate="G$1" x="86.36" y="10.16"/>
-<instance part="U$115" gate="G$1" x="81.28" y="10.16"/>
-<instance part="U$116" gate="G$1" x="58.42" y="10.16"/>
 <instance part="POT2" gate="G$1" x="45.72" y="-12.7" rot="R180"/>
 <instance part="POT7" gate="G$1" x="7.62" y="-12.7" rot="R180"/>
 <instance part="POT4" gate="G$1" x="45.72" y="-30.48" rot="R180"/>
@@ -6385,6 +6365,32 @@ http://www.tag-connect.com</description>
 <instance part="POT6" gate="G$1" x="45.72" y="-48.26" rot="R180"/>
 <instance part="POT3" gate="G$1" x="7.62" y="-50.8" rot="R180"/>
 <instance part="POT1" gate="G$1" x="7.62" y="-71.12" rot="R180"/>
+<instance part="ROT1" gate="G$1" x="2.54" y="40.64" rot="R270"/>
+<instance part="U$21" gate="G$1" x="5.08" y="53.34" rot="R180"/>
+<instance part="U$22" gate="G$1" x="0" y="53.34" rot="R180"/>
+<instance part="R39" gate="G$1" x="12.7" y="60.96" rot="R180"/>
+<instance part="R40" gate="G$1" x="-2.54" y="60.96"/>
+<instance part="C27" gate="G$1" x="22.86" y="55.88"/>
+<instance part="U$51" gate="G$1" x="22.86" y="50.8"/>
+<instance part="C28" gate="G$1" x="-20.32" y="55.88"/>
+<instance part="U$65" gate="G$1" x="-20.32" y="50.8"/>
+<instance part="R41" gate="G$1" x="7.62" y="66.04" rot="R270"/>
+<instance part="R42" gate="G$1" x="2.54" y="66.04" rot="R270"/>
+<instance part="U$66" gate="G$1" x="7.62" y="73.66"/>
+<instance part="U$67" gate="G$1" x="2.54" y="73.66"/>
+<instance part="ROT2" gate="G$1" x="88.9" y="45.72" rot="R270"/>
+<instance part="U$68" gate="G$1" x="91.44" y="58.42" rot="R180"/>
+<instance part="U$69" gate="G$1" x="86.36" y="58.42" rot="R180"/>
+<instance part="R43" gate="G$1" x="99.06" y="66.04" rot="R180"/>
+<instance part="R44" gate="G$1" x="83.82" y="66.04"/>
+<instance part="C29" gate="G$1" x="109.22" y="60.96"/>
+<instance part="U$70" gate="G$1" x="109.22" y="55.88"/>
+<instance part="C30" gate="G$1" x="66.04" y="60.96"/>
+<instance part="U$71" gate="G$1" x="66.04" y="55.88"/>
+<instance part="R45" gate="G$1" x="93.98" y="71.12" rot="R270"/>
+<instance part="R46" gate="G$1" x="88.9" y="71.12" rot="R270"/>
+<instance part="U$87" gate="G$1" x="93.98" y="78.74"/>
+<instance part="U$117" gate="G$1" x="88.9" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -6519,22 +6525,6 @@ http://www.tag-connect.com</description>
 <wire x1="25.4" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ROTENC1" gate="G$1" pin="SW1"/>
-<pinref part="U$113" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROTENC2" gate="G$1" pin="SW1"/>
-<pinref part="U$114" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROTENC2" gate="G$1" pin="COMMON"/>
-<pinref part="U$115" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="ROTENC1" gate="G$1" pin="COMMON"/>
-<pinref part="U$116" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$99" gate="G$1" pin="GND"/>
 <pinref part="POT2" gate="G$1" pin="CCW"/>
 </segment>
@@ -6562,6 +6552,38 @@ http://www.tag-connect.com</description>
 <pinref part="U$102" gate="G$1" pin="GND"/>
 <pinref part="POT1" gate="G$1" pin="CCW"/>
 </segment>
+<segment>
+<pinref part="ROT1" gate="G$1" pin="COMMON"/>
+<pinref part="U$21" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT1" gate="G$1" pin="SW1"/>
+<pinref part="U$22" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C27" gate="G$1" pin="P$2"/>
+<pinref part="U$51" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="P$2"/>
+<pinref part="U$65" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="COMMON"/>
+<pinref part="U$68" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ROT2" gate="G$1" pin="SW1"/>
+<pinref part="U$69" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C29" gate="G$1" pin="P$2"/>
+<pinref part="U$70" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="P$2"/>
+<pinref part="U$71" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
@@ -6579,9 +6601,12 @@ http://www.tag-connect.com</description>
 </net>
 <net name="DIN_7" class="0">
 <segment>
-<pinref part="ROTENC1" gate="G$1" pin="CH_B"/>
-<wire x1="60.96" y1="12.7" x2="60.96" y2="5.08" width="0.2032" layer="91"/>
-<label x="63.5" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="60.96" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
+<label x="-25.4" y="60.96" size="1.778" layer="95"/>
+<pinref part="C28" gate="G$1" pin="P$1"/>
+<wire x1="-20.32" y1="60.96" x2="-25.4" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-20.32" y="60.96"/>
 </segment>
 </net>
 <net name="BTN_LED5" class="0">
@@ -6811,6 +6836,22 @@ http://www.tag-connect.com</description>
 <pinref part="U$109" gate="G$1" pin="3.3V"/>
 <pinref part="POT1" gate="G$1" pin="CW"/>
 </segment>
+<segment>
+<pinref part="R41" gate="G$1" pin="1"/>
+<pinref part="U$66" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="U$67" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R45" gate="G$1" pin="1"/>
+<pinref part="U$87" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R46" gate="G$1" pin="1"/>
+<pinref part="U$117" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="ADC7" class="0">
 <segment>
@@ -6842,9 +6883,12 @@ http://www.tag-connect.com</description>
 </net>
 <net name="DIN_6" class="0">
 <segment>
-<pinref part="ROTENC1" gate="G$1" pin="CH_A"/>
-<wire x1="55.88" y1="12.7" x2="55.88" y2="5.08" width="0.2032" layer="91"/>
-<label x="58.42" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="R39" gate="G$1" pin="1"/>
+<label x="25.4" y="60.96" size="1.778" layer="95"/>
+<wire x1="17.78" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="P$1"/>
+<wire x1="22.86" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
+<junction x="22.86" y="60.96"/>
 </segment>
 </net>
 <net name="BTN_LED9" class="0">
@@ -6856,30 +6900,36 @@ http://www.tag-connect.com</description>
 </net>
 <net name="DIN_1" class="0">
 <segment>
-<pinref part="ROTENC2" gate="G$1" pin="CH_A"/>
-<wire x1="78.74" y1="12.7" x2="78.74" y2="5.08" width="0.2032" layer="91"/>
-<label x="81.28" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="R43" gate="G$1" pin="1"/>
+<label x="111.76" y="66.04" size="1.778" layer="95"/>
+<wire x1="104.14" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C29" gate="G$1" pin="P$1"/>
+<wire x1="109.22" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
+<junction x="109.22" y="66.04"/>
 </segment>
 </net>
 <net name="DIN_2" class="0">
 <segment>
-<pinref part="ROTENC2" gate="G$1" pin="CH_B"/>
-<wire x1="83.82" y1="12.7" x2="83.82" y2="5.08" width="0.2032" layer="91"/>
-<label x="86.36" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="R44" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<label x="60.96" y="66.04" size="1.778" layer="95"/>
+<pinref part="C30" gate="G$1" pin="P$1"/>
+<wire x1="66.04" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<junction x="66.04" y="66.04"/>
 </segment>
 </net>
 <net name="DIN_3" class="0">
 <segment>
-<pinref part="ROTENC2" gate="G$1" pin="SW2"/>
-<wire x1="88.9" y1="12.7" x2="88.9" y2="5.08" width="0.2032" layer="91"/>
-<label x="91.44" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="ROT2" gate="G$1" pin="SW2"/>
+<wire x1="83.82" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<label x="81.28" y="55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="DIN_5" class="0">
 <segment>
-<pinref part="ROTENC1" gate="G$1" pin="SW2"/>
-<wire x1="66.04" y1="12.7" x2="66.04" y2="5.08" width="0.2032" layer="91"/>
-<label x="68.58" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="ROT1" gate="G$1" pin="SW2"/>
+<wire x1="-2.54" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="-5.08" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="DIN_10" class="0">
@@ -6931,6 +6981,42 @@ http://www.tag-connect.com</description>
 <wire x1="149.86" y1="-2.54" x2="147.32" y2="-2.54" width="0.2032" layer="91"/>
 <junction x="149.86" y="-2.54"/>
 <label x="152.4" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="CH_B"/>
+<pinref part="R40" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="50.8" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R42" gate="G$1" pin="2"/>
+<junction x="2.54" y="60.96"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="CH_A"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="50.8" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R41" gate="G$1" pin="2"/>
+<junction x="7.62" y="60.96"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="CH_B"/>
+<pinref part="R44" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="55.88" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<junction x="88.9" y="66.04"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="ROT2" gate="G$1" pin="CH_A"/>
+<pinref part="R43" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="55.88" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R45" gate="G$1" pin="2"/>
+<junction x="93.98" y="66.04"/>
 </segment>
 </net>
 </nets>
