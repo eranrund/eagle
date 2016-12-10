@@ -2165,8 +2165,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <signal name="N$56">
 <contactref element="IC3" pad="7"/>
 <contactref element="D1" pad="3"/>
-<wire x1="19.552" y1="94.361" x2="19.431" y2="94.361" width="0.254" layer="1"/>
-<wire x1="19.431" y1="94.361" x2="16.51" y2="91.44" width="0.254" layer="1"/>
+<wire x1="19.552" y1="94.361" x2="18.669" y2="94.361" width="0.254" layer="1"/>
+<wire x1="18.669" y1="94.361" x2="18.288" y2="93.98" width="0.254" layer="1"/>
+<wire x1="18.288" y1="93.98" x2="18.288" y2="93.218" width="0.254" layer="1"/>
+<wire x1="18.288" y1="93.218" x2="16.51" y2="91.44" width="0.254" layer="1"/>
 </signal>
 <signal name="N$57">
 <contactref element="IC3" pad="9"/>
@@ -2708,10 +2710,10 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <signal name="N$31">
 <contactref element="IC2" pad="2"/>
 <contactref element="D1" pad="1"/>
-<wire x1="20.822" y1="90.043" x2="18.415" y2="90.043" width="0.254" layer="1"/>
-<wire x1="18.415" y1="90.043" x2="18.034" y2="89.662" width="0.254" layer="1"/>
-<wire x1="18.034" y1="89.662" x2="18.034" y2="87.884" width="0.254" layer="1"/>
-<wire x1="18.034" y1="87.884" x2="16.51" y2="86.36" width="0.254" layer="1"/>
+<wire x1="20.822" y1="90.043" x2="19.05" y2="90.043" width="0.254" layer="1"/>
+<wire x1="18.415" y1="88.265" x2="16.51" y2="86.36" width="0.254" layer="1"/>
+<wire x1="19.05" y1="90.043" x2="18.415" y2="89.408" width="0.254" layer="1"/>
+<wire x1="18.415" y1="89.408" x2="18.415" y2="88.265" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_UNUSED1">
 <contactref element="IC1" pad="1"/>
