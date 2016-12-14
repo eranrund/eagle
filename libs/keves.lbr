@@ -6731,10 +6731,10 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <pin name="PC12" x="30.48" y="-71.12" length="short" rot="R180"/>
 <pin name="PC13" x="30.48" y="-73.66" length="short" rot="R180"/>
 <pin name="PC14_OSC32IN" x="-30.48" y="-50.8" length="short"/>
-<pin name="PC15_OSC32OUT" x="-30.48" y="-58.42" length="short"/>
+<pin name="PC15_OSC32OUT" x="-30.48" y="-55.88" length="short"/>
 <pin name="PD2" x="-30.48" y="-66.04" length="short"/>
 <pin name="PF0_OSCIN" x="-30.48" y="-17.78" length="short"/>
-<pin name="PF1_OSCOUT" x="-30.48" y="-27.94" length="short"/>
+<pin name="PF1_OSCOUT" x="-30.48" y="-22.86" length="short"/>
 <pin name="VDDA" x="-30.48" y="22.86" length="short" direction="pwr"/>
 <pin name="VSSA" x="-30.48" y="10.16" length="short" direction="pwr"/>
 <pin name="VBAT" x="-30.48" y="38.1" length="short" direction="pas"/>
