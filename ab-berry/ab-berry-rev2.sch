@@ -3600,6 +3600,11 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <junction x="-144.78" y="5.08"/>
 <label x="-152.4" y="5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB0"/>
+<wire x1="83.82" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
+<label x="91.44" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ROT3_SW" class="0">
 <segment>

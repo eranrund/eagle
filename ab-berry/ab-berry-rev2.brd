@@ -893,8 +893,8 @@ For attribution, please provide a link in any documentation or design files to t
 <element name="H3" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="55.88" y="58.42"/>
 <element name="H4" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="55.88" y="2.54"/>
 <element name="JP3" library="pinhead" package="1X02" value="" x="55.626" y="50.546" rot="MR90"/>
-<element name="R6" library="microbuilder" package="0603" value="330" x="17.78" y="23.368" rot="MR0"/>
-<element name="LED2" library="microbuilder" package="CHIPLED_0603" value="" x="21.59" y="23.368" rot="MR90"/>
+<element name="R6" library="microbuilder" package="0603" value="330" x="17.78" y="23.749" rot="MR0"/>
+<element name="LED2" library="microbuilder" package="CHIPLED_0603" value="" x="21.463" y="23.749" rot="MR90"/>
 <element name="C12" library="microbuilder" package="0603" value="18pF" x="24.257" y="33.782" rot="MR90"/>
 <element name="C13" library="microbuilder" package="0603" value="18pF" x="24.257" y="30.226" smashed="yes" rot="MR90">
 <attribute name="NAME" x="24.257" y="26.162" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
@@ -1117,7 +1117,6 @@ For attribution, please provide a link in any documentation or design files to t
 <contactref element="U2" pad="1"/>
 <wire x1="8.382" y1="48.602" x2="8.167" y2="48.602" width="0.254" layer="16"/>
 <wire x1="8.167" y1="48.602" x2="5.969" y2="50.8" width="0.254" layer="16"/>
-<wire x1="2.794" y1="51.562" x2="5.969" y2="50.8" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C1" pad="2"/>
@@ -1546,8 +1545,6 @@ For attribution, please provide a link in any documentation or design files to t
 </signal>
 <signal name="ROT1_SW">
 <contactref element="ROT1" pad="S2"/>
-<wire x1="7.283" y1="28.619" x2="6.858" y2="28.194" width="0.254" layer="16"/>
-<wire x1="6.858" y1="28.194" x2="6.858" y2="24.765" width="0.254" layer="16"/>
 <via x="11.43" y="20.193" extent="1-16" drill="0.6"/>
 <wire x1="16.978" y1="15.89" x2="15.733" y2="15.89" width="0.254" layer="1"/>
 <wire x1="15.733" y1="15.89" x2="11.43" y2="20.193" width="0.254" layer="1"/>
@@ -1557,6 +1554,9 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="8.89" y1="22.733" x2="11.43" y2="20.193" width="0.254" layer="16"/>
 <contactref element="IC1" pad="25"/>
 <wire x1="9.058" y1="28.619" x2="7.283" y2="28.619" width="0.254" layer="16"/>
+<wire x1="7.283" y1="28.619" x2="6.35" y2="27.686" width="0.254" layer="16"/>
+<wire x1="6.35" y1="27.686" x2="6.35" y2="25.273" width="0.254" layer="16"/>
+<wire x1="6.35" y1="25.273" x2="6.858" y2="24.765" width="0.254" layer="16"/>
 </signal>
 <signal name="ROT2_A">
 <contactref element="R15" pad="1"/>
@@ -1615,10 +1615,6 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="37.592" y1="45.124" x2="37.631" y2="45.085" width="0.254" layer="16"/>
 </signal>
 <signal name="ROT3_B">
-<wire x1="46.442" y1="42.886" x2="45.72" y2="42.164" width="0.254" layer="1"/>
-<via x="21.59" y="40.386" extent="1-16" drill="0.6"/>
-<wire x1="21.59" y1="40.386" x2="15.875" y2="40.386" width="0.254" layer="16"/>
-<wire x1="14.458" y1="38.969" x2="15.875" y2="40.386" width="0.254" layer="16"/>
 <contactref element="R20" pad="1"/>
 <contactref element="C21" pad="1"/>
 <via x="46.442" y="42.886" extent="1-16" drill="0.6"/>
@@ -1628,12 +1624,17 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="48.26" y1="46.824" x2="48.094" y2="46.99" width="0.254" layer="16"/>
 <wire x1="50.038" y1="46.902" x2="48.182" y2="46.902" width="0.254" layer="16"/>
 <wire x1="48.182" y1="46.902" x2="48.094" y2="46.99" width="0.254" layer="16"/>
-<wire x1="21.59" y1="40.386" x2="34.544" y2="40.386" width="0.254" layer="1"/>
-<wire x1="34.544" y1="40.386" x2="36.322" y2="42.164" width="0.254" layer="1"/>
-<via x="36.322" y="42.164" extent="1-16" drill="0.6"/>
-<wire x1="36.322" y1="42.164" x2="39.751" y2="42.164" width="0.254" layer="16"/>
-<via x="39.751" y="42.164" extent="1-16" drill="0.6"/>
-<wire x1="39.751" y1="42.164" x2="45.72" y2="42.164" width="0.254" layer="1"/>
+<contactref element="IC1" pad="18"/>
+<wire x1="13.458" y1="27.219" x2="13.458" y2="24.134" width="0.254" layer="16"/>
+<wire x1="13.458" y1="24.134" x2="14.732" y2="22.86" width="0.254" layer="16"/>
+<wire x1="14.732" y1="22.86" x2="24.384" y2="22.86" width="0.254" layer="16"/>
+<wire x1="24.384" y1="22.86" x2="25.781" y2="24.257" width="0.254" layer="16"/>
+<wire x1="25.781" y1="24.257" x2="41.021" y2="24.257" width="0.254" layer="16"/>
+<via x="41.021" y="24.257" extent="1-16" drill="0.6"/>
+<wire x1="41.021" y1="24.257" x2="42.545" y2="24.257" width="0.254" layer="1"/>
+<wire x1="42.545" y1="24.257" x2="44.323" y2="26.035" width="0.254" layer="1"/>
+<wire x1="44.323" y1="26.035" x2="44.323" y2="40.767" width="0.254" layer="1"/>
+<wire x1="44.323" y1="40.767" x2="46.442" y2="42.886" width="0.254" layer="1"/>
 </signal>
 <signal name="ROT3_SW">
 <wire x1="14.986" y1="43.18" x2="18.542" y2="43.18" width="0.254" layer="16"/>
@@ -1659,10 +1660,10 @@ For attribution, please provide a link in any documentation or design files to t
 </signal>
 <signal name="ROT4_A">
 <wire x1="8.89" y1="21.59" x2="17.272" y2="13.208" width="0.254" layer="16"/>
-<wire x1="7.021" y1="29.119" x2="6.35" y2="28.448" width="0.254" layer="16"/>
+<wire x1="7.021" y1="29.119" x2="5.715" y2="27.813" width="0.254" layer="16"/>
 <via x="6.985" y="23.495" extent="1-16" drill="0.6"/>
 <wire x1="6.985" y1="23.495" x2="8.89" y2="21.59" width="0.254" layer="1"/>
-<wire x1="6.096" y1="24.384" x2="6.985" y2="23.495" width="0.254" layer="16"/>
+<wire x1="5.715" y1="24.765" x2="6.985" y2="23.495" width="0.254" layer="16"/>
 <via x="8.89" y="21.59" extent="1-16" drill="0.6"/>
 <wire x1="19.177" y1="6.35" x2="18.034" y2="6.35" width="0.254" layer="1"/>
 <wire x1="18.034" y1="6.35" x2="17.272" y2="7.112" width="0.254" layer="1"/>
@@ -1678,11 +1679,9 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="24.13" y1="1.397" x2="35.306" y2="1.397" width="0.254" layer="1"/>
 <wire x1="37.553" y1="3.302" x2="37.553" y2="1.475" width="0.3048" layer="16"/>
 <wire x1="37.553" y1="1.475" x2="37.631" y2="1.397" width="0.3048" layer="16"/>
-<wire x1="6.35" y1="28.448" x2="6.35" y2="25.527" width="0.254" layer="16"/>
-<wire x1="6.35" y1="25.527" x2="6.096" y2="25.273" width="0.254" layer="16"/>
-<wire x1="6.096" y1="25.273" x2="6.096" y2="24.384" width="0.254" layer="16"/>
 <contactref element="IC1" pad="26"/>
 <wire x1="9.058" y1="29.119" x2="7.021" y2="29.119" width="0.254" layer="16"/>
+<wire x1="5.715" y1="24.765" x2="5.715" y2="27.813" width="0.254" layer="16"/>
 </signal>
 <signal name="ROT4_B">
 <via x="44.958" y="8.636" extent="1-16" drill="0.6"/>
@@ -1750,13 +1749,13 @@ For attribution, please provide a link in any documentation or design files to t
 <contactref element="LCD1" pad="RES"/>
 <contactref element="LCD2" pad="RES"/>
 <wire x1="56.304" y1="27.94" x2="26.84" y2="27.94" width="0.254" layer="16"/>
-<wire x1="16.551" y1="27.219" x2="17.018" y2="27.686" width="0.254" layer="16"/>
-<via x="17.018" y="27.686" extent="1-16" drill="0.6"/>
-<wire x1="17.018" y1="27.686" x2="20.574" y2="27.686" width="0.254" layer="1"/>
-<wire x1="20.574" y1="27.686" x2="20.828" y2="27.94" width="0.254" layer="1"/>
+<via x="17.145" y="27.305" extent="1-16" drill="0.6"/>
 <wire x1="20.828" y1="27.94" x2="26.84" y2="27.94" width="0.254" layer="1"/>
 <contactref element="IC1" pad="13"/>
-<wire x1="15.958" y1="27.219" x2="16.551" y2="27.219" width="0.254" layer="16"/>
+<wire x1="15.958" y1="27.219" x2="17.059" y2="27.219" width="0.254" layer="16"/>
+<wire x1="17.059" y1="27.219" x2="17.145" y2="27.305" width="0.254" layer="16"/>
+<wire x1="17.145" y1="27.305" x2="20.193" y2="27.305" width="0.254" layer="1"/>
+<wire x1="20.193" y1="27.305" x2="20.828" y2="27.94" width="0.254" layer="1"/>
 </signal>
 <signal name="SPI1_CLK">
 <contactref element="LCD1" pad="CLK"/>
@@ -1783,7 +1782,7 @@ For attribution, please provide a link in any documentation or design files to t
 <signal name="N$7">
 <contactref element="R6" pad="1"/>
 <contactref element="LED2" pad="A"/>
-<wire x1="18.63" y1="23.368" x2="20.84" y2="23.368" width="0.254" layer="16"/>
+<wire x1="18.63" y1="23.749" x2="20.713" y2="23.749" width="0.254" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="C12" pad="2"/>
@@ -1875,7 +1874,7 @@ For attribution, please provide a link in any documentation or design files to t
 <contactref element="R22" pad="2"/>
 <wire x1="46.394" y1="46.99" x2="46.394" y2="45.126" width="0.254" layer="16"/>
 <wire x1="46.394" y1="45.126" x2="46.442" y2="45.078" width="0.254" layer="16"/>
-<wire x1="46.394" y1="46.99" x2="46.394" y2="48.768" width="0" layer="19" extent="16-16"/>
+<wire x1="46.394" y1="46.99" x2="46.394" y2="48.768" width="0.254" layer="16"/>
 </signal>
 <signal name="N$17">
 <contactref element="ROT3" pad="A"/>
@@ -1889,8 +1888,7 @@ For attribution, please provide a link in any documentation or design files to t
 <contactref element="X1" pad="2"/>
 <contactref element="R23" pad="1"/>
 <contactref element="U2" pad="3"/>
-<wire x1="1.524" y1="54.229" x2="4.826" y2="54.229" width="0.254" layer="16"/>
-<wire x1="1.016" y1="53.721" x2="1.524" y2="54.229" width="0.254" layer="16"/>
+<wire x1="1.397" y1="54.61" x2="5.207" y2="54.61" width="0.254" layer="16"/>
 <wire x1="8.255" y1="57.658" x2="19.812" y2="57.658" width="0.254" layer="16"/>
 <wire x1="19.812" y1="57.658" x2="21.59" y2="59.436" width="0.254" layer="16"/>
 <wire x1="21.59" y1="59.436" x2="26.162" y2="59.436" width="0.254" layer="16"/>
@@ -1901,15 +1899,16 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="29.21" y1="53.309" x2="27.96" y2="52.059" width="0.254" layer="16"/>
 <wire x1="27.96" y1="52.059" x2="27.96" y2="51.101" width="0.254" layer="16"/>
 <wire x1="27.96" y1="51.101" x2="26.958" y2="50.099" width="0.254" layer="16"/>
-<wire x1="4.826" y1="54.229" x2="8.255" y2="57.658" width="0.254" layer="16"/>
-<wire x1="1.016" y1="53.721" x2="1.016" y2="42.252" width="0.254" layer="16"/>
+<wire x1="5.207" y1="54.61" x2="8.255" y2="57.658" width="0.254" layer="16"/>
+<wire x1="0.381" y1="53.594" x2="0.381" y2="42.887" width="0.254" layer="16"/>
+<wire x1="0.381" y1="42.887" x2="1.016" y2="42.252" width="0.254" layer="16"/>
+<wire x1="1.397" y1="54.61" x2="0.381" y2="53.594" width="0.254" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="X1" pad="3"/>
 <contactref element="R24" pad="1"/>
 <contactref element="U2" pad="2"/>
-<wire x1="1.524" y1="53.467" x2="1.778" y2="53.721" width="0.254" layer="16"/>
-<wire x1="1.778" y1="53.721" x2="4.953" y2="53.721" width="0.254" layer="16"/>
+<wire x1="1.651" y1="54.102" x2="5.334" y2="54.102" width="0.254" layer="16"/>
 <wire x1="8.382" y1="57.15" x2="20.066" y2="57.15" width="0.254" layer="16"/>
 <wire x1="20.066" y1="57.15" x2="21.844" y2="58.928" width="0.254" layer="16"/>
 <wire x1="21.844" y1="58.928" x2="25.781" y2="58.928" width="0.254" layer="16"/>
@@ -1920,9 +1919,10 @@ For attribution, please provide a link in any documentation or design files to t
 <wire x1="27.96" y1="53.995" x2="24.892" y2="50.927" width="0.254" layer="16"/>
 <wire x1="24.892" y1="50.927" x2="24.892" y2="50.133" width="0.254" layer="16"/>
 <wire x1="24.892" y1="50.133" x2="24.858" y2="50.099" width="0.254" layer="16"/>
-<wire x1="1.524" y1="53.467" x2="1.524" y2="43.522" width="0.254" layer="16"/>
-<wire x1="4.953" y1="53.721" x2="8.382" y2="57.15" width="0.254" layer="16"/>
-<wire x1="1.524" y1="43.522" x2="2.794" y2="42.252" width="0.254" layer="16"/>
+<wire x1="0.889" y1="44.157" x2="2.794" y2="42.252" width="0.254" layer="16"/>
+<wire x1="5.334" y1="54.102" x2="8.382" y2="57.15" width="0.254" layer="16"/>
+<wire x1="0.889" y1="53.34" x2="0.889" y2="44.157" width="0.254" layer="16"/>
+<wire x1="1.651" y1="54.102" x2="0.889" y2="53.34" width="0.254" layer="16"/>
 </signal>
 <signal name="USB_DM">
 <contactref element="R23" pad="2"/>
