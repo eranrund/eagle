@@ -1409,9 +1409,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="IC1" pad="58"/>
 <wire x1="20.482" y1="32.651" x2="26.84" y2="27.94" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="SPI1_CLK">
-<contactref element="LCD1" pad="CLK"/>
-</signal>
 <signal name="LCD_CS2">
 <contactref element="LCD2" pad="CS"/>
 <wire x1="26.332" y1="22.352" x2="25.527" y2="22.352" width="0.254" layer="16"/>
@@ -1551,6 +1548,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="SPI1_SCK">
 <contactref element="IC1" pad="55"/>
 <contactref element="LCD2" pad="CLK"/>
+<contactref element="LCD1" pad="CLK"/>
+<wire x1="26.84" y1="33.02" x2="56.304" y2="33.02" width="0" layer="19" extent="1-1"/>
 <wire x1="20.482" y1="34.151" x2="26.84" y2="33.02" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>

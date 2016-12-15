@@ -2708,7 +2708,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="35.56" y="144.78" size="1.778" layer="91">TODO:
 - Verify USB resistors / DP/DM
 - Verify Boot0 and are there any other mandatory connections
-- USB shield + ESD</text>
+- USB shield + ESD
+- Serial Flash</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="45.72" y="127"/>
@@ -3549,13 +3550,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="116.84" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SPI1_CLK" class="0">
-<segment>
-<pinref part="LCD1" gate="G$1" pin="CLK"/>
-<wire x1="111.76" y1="-20.32" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
-<label x="91.44" y="-20.32" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LCD_CS2" class="0">
 <segment>
 <pinref part="LCD2" gate="G$1" pin="CS"/>
@@ -3753,6 +3747,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="LCD2" gate="G$1" pin="CLK"/>
 <wire x1="111.76" y1="-55.88" x2="99.06" y2="-55.88" width="0.1524" layer="91"/>
 <label x="91.44" y="-55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="CLK"/>
+<wire x1="111.76" y1="-20.32" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
+<label x="91.44" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
