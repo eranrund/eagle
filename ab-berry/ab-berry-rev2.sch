@@ -2719,6 +2719,158 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 </deviceset>
 </devicesets>
 </library>
+<library name="atmel">
+<description>&lt;b&gt;AVR Devices&lt;/b&gt;&lt;p&gt;
+Configurable logic, microcontrollers, nonvolatile memories&lt;p&gt;
+Based on the following sources:&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;www.atmel.com
+&lt;li&gt;CD-ROM : Configurable Logic Microcontroller Nonvolatile Memory
+&lt;li&gt;CadSoft download site, www.cadsoft.de or www.cadsoftusa.com , file at90smcu_v400.zip
+&lt;li&gt;avr.lbr
+&lt;/ul&gt;
+&lt;author&gt;Revised by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="VDFN-8">
+<description>&lt;b&gt;8M1-A-MLF (VDFN)&lt;/b&gt; 6 x 5 mm&lt;p&gt;
+Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</description>
+<wire x1="-2.9" y1="-2.4" x2="2.9" y2="-2.4" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-2.4" x2="2.9" y2="2.4" width="0.2032" layer="51"/>
+<wire x1="2.9" y1="2.4" x2="-2.9" y2="2.4" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="2.4" x2="-2.9" y2="-2.4" width="0.2032" layer="51"/>
+<circle x="-1.5" y="1.5" radius="0.35" width="0" layer="51"/>
+<smd name="1" x="-2.675" y="1.5" dx="1.1" dy="0.6" layer="1" roundness="100"/>
+<smd name="2" x="-2.675" y="0.5" dx="1.1" dy="0.6" layer="1" roundness="100"/>
+<smd name="3" x="-2.675" y="-0.5" dx="1.1" dy="0.6" layer="1" roundness="100"/>
+<smd name="4" x="-2.675" y="-1.5" dx="1.1" dy="0.6" layer="1" roundness="100"/>
+<smd name="5" x="2.675" y="-1.5" dx="1.1" dy="0.6" layer="1" roundness="100" rot="R180"/>
+<smd name="6" x="2.675" y="-0.5" dx="1.1" dy="0.6" layer="1" roundness="100" rot="R180"/>
+<smd name="7" x="2.675" y="0.5" dx="1.1" dy="0.6" layer="1" roundness="100" rot="R180"/>
+<smd name="8" x="2.675" y="1.5" dx="1.1" dy="0.6" layer="1" roundness="100" rot="R180"/>
+<smd name="9" x="0" y="0" dx="3.6" dy="4.2" layer="1" roundness="5" stop="no" cream="no"/>
+<text x="-3" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.3" y1="-1.7" x2="1.3" y2="1.7" layer="31"/>
+<polygon width="0.254" layer="29">
+<vertex x="-1.7" y="2"/>
+<vertex x="1.7" y="2"/>
+<vertex x="1.7" y="-2"/>
+<vertex x="-1.7" y="-2"/>
+<vertex x="-1.7" y="1.4" curve="180"/>
+<vertex x="-1.7" y="1.9"/>
+</polygon>
+</package>
+<package name="8S2">
+<description>&lt;b&gt;8S2&lt;/b&gt; 8-lead, 0.208 Body&lt;p&gt;
+Plastic Small Outline Package (EIAJ)&lt;br&gt;
+Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description>
+<wire x1="-2.6" y1="2.65" x2="-2.35" y2="2.9" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.35" y1="2.9" x2="2.6" y2="2.65" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.35" y1="-2.925" x2="2.6" y2="-2.675" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.6" y1="-2.675" x2="-2.35" y2="-2.925" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.36" y1="-2.925" x2="-2.34" y2="-2.925" width="0.1524" layer="51"/>
+<wire x1="-2.34" y1="2.9" x2="2.36" y2="2.9" width="0.1524" layer="51"/>
+<wire x1="-2.21" y1="2.9" x2="-2.34" y2="2.9" width="0.1524" layer="21"/>
+<wire x1="-1.59" y1="2.9" x2="-0.95" y2="2.9" width="0.1524" layer="21"/>
+<wire x1="-0.32" y1="2.9" x2="0.32" y2="2.9" width="0.1524" layer="21"/>
+<wire x1="0.95" y1="2.9" x2="1.59" y2="2.9" width="0.1524" layer="21"/>
+<wire x1="2.21" y1="2.9" x2="2.36" y2="2.9" width="0.1524" layer="21"/>
+<wire x1="2.2" y1="-2.925" x2="2.33" y2="-2.925" width="0.1524" layer="21"/>
+<wire x1="1.59" y1="-2.925" x2="0.94" y2="-2.925" width="0.1524" layer="21"/>
+<wire x1="0.32" y1="-2.925" x2="-0.33" y2="-2.925" width="0.1524" layer="21"/>
+<wire x1="-0.95" y1="-2.925" x2="-1.59" y2="-2.925" width="0.1524" layer="21"/>
+<wire x1="-2.21" y1="-2.925" x2="-2.34" y2="-2.925" width="0.1524" layer="21"/>
+<wire x1="-2.6" y1="2.65" x2="-2.6" y2="-2.665" width="0.1524" layer="21"/>
+<wire x1="2.6" y1="-2.675" x2="2.6" y2="2.65" width="0.1524" layer="21"/>
+<circle x="-1.42" y="-1.115" radius="0.5" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="2" x="-0.645" y="-3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="3" x="0.625" y="-3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="4" x="1.895" y="-3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="8" x="-1.905" y="3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="7" x="-0.635" y="3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="6" x="0.635" y="3.404" dx="0.5" dy="1.4" layer="1"/>
+<smd name="5" x="1.905" y="3.404" dx="0.5" dy="1.4" layer="1"/>
+<text x="-2.8575" y="-2.159" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.064" y="-2.159" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.08" y1="2.95" x2="-1.73" y2="3.85" layer="51"/>
+<rectangle x1="-0.81" y1="2.95" x2="-0.46" y2="3.85" layer="51"/>
+<rectangle x1="0.46" y1="2.95" x2="0.81" y2="3.85" layer="51"/>
+<rectangle x1="1.73" y1="2.95" x2="2.08" y2="3.85" layer="51"/>
+<rectangle x1="1.72" y1="-3.85" x2="2.07" y2="-2.95" layer="51"/>
+<rectangle x1="0.45" y1="-3.85" x2="0.8" y2="-2.95" layer="51"/>
+<rectangle x1="-0.82" y1="-3.85" x2="-0.47" y2="-2.95" layer="51"/>
+<rectangle x1="-2.08" y1="-3.85" x2="-1.73" y2="-2.95" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AT45DB161VFN8">
+<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!CS" x="-10.16" y="-5.08" length="short" direction="in"/>
+<pin name="SCK" x="-10.16" y="-2.54" length="short" direction="in"/>
+<pin name="SI" x="-10.16" y="2.54" length="short" direction="in"/>
+<pin name="SO" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="!RESET" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="VCC" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="!WP" x="-10.16" y="0" length="short" direction="in"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AT45DB161D" prefix="IC">
+<description>&lt;b&gt;16-megabit 2.5V or 2.7V DataFlash&lt;/b&gt;&lt;p&gt;
+Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</description>
+<gates>
+<gate name="G$1" symbol="AT45DB161VFN8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MU" package="VDFN-8">
+<connects>
+<connect gate="G$1" pin="!CS" pad="4"/>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="!WP" pad="5"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="SI" pad="1"/>
+<connect gate="G$1" pin="SO" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="ATMEL" constant="no"/>
+<attribute name="MPN" value="AT45DB161D-SU" constant="no"/>
+<attribute name="OC_FARNELL" value="1455040" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-SU" package="8S2">
+<connects>
+<connect gate="G$1" pin="!CS" pad="4"/>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="!WP" pad="5"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="SI" pad="1"/>
+<connect gate="G$1" pin="SO" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="ATMEL" constant="no"/>
+<attribute name="MPN" value="AT45DB161D-SU" constant="no"/>
+<attribute name="OC_FARNELL" value="1455040" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2856,6 +3008,13 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <part name="U2" library="Volks73-NXPSemiconductors" deviceset="PRTR5V0U2X?" device=""/>
 <part name="U$57" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$58" library="microbuilder" deviceset="5.0V" device=""/>
+<part name="IC2" library="atmel" deviceset="AT45DB161D" device="-SU"/>
+<part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="U$59" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$60" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$61" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$62" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$63" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2991,6 +3150,13 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <instance part="U2" gate="-SUPPLY" x="104.14" y="132.08" rot="R180"/>
 <instance part="U$57" gate="G$1" x="104.14" y="147.32" rot="R180"/>
 <instance part="U$58" gate="G$1" x="104.14" y="116.84" rot="R180"/>
+<instance part="IC2" gate="G$1" x="147.32" y="15.24"/>
+<instance part="C23" gate="G$1" x="160.02" y="30.48" rot="R180"/>
+<instance part="U$59" gate="G$1" x="160.02" y="38.1" rot="R180"/>
+<instance part="U$60" gate="G$1" x="165.1" y="10.16" rot="R90"/>
+<instance part="U$61" gate="G$1" x="165.1" y="20.32" rot="R270"/>
+<instance part="U$62" gate="G$1" x="116.84" y="15.24" rot="R90"/>
+<instance part="U$63" gate="G$1" x="116.84" y="20.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3208,6 +3374,16 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <pinref part="U2" gate="-SUPPLY" pin="GND"/>
 <pinref part="U$57" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<pinref part="U$60" gate="G$1" pin="GND"/>
+<wire x1="162.56" y1="10.16" x2="160.02" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="P$2"/>
+<pinref part="U$59" gate="G$1" pin="GND"/>
+<wire x1="160.02" y1="33.02" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -3320,6 +3496,24 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="U$53" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VCC"/>
+<pinref part="U$61" gate="G$1" pin="3.3V"/>
+<wire x1="162.56" y1="20.32" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="P$1"/>
+<wire x1="160.02" y1="25.4" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
+<junction x="160.02" y="20.32"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="!WP"/>
+<pinref part="U$62" gate="G$1" pin="3.3V"/>
+<wire x1="119.38" y1="15.24" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="!RESET"/>
+<pinref part="U$63" gate="G$1" pin="3.3V"/>
+<wire x1="119.38" y1="20.32" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -3676,6 +3870,11 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <label x="91.44" y="68.58" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PA7"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="SI"/>
+<wire x1="137.16" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
+<label x="121.92" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LCD_CS1" class="0">
 <segment>
@@ -3738,6 +3937,11 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <wire x1="83.82" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
 <label x="91.44" y="73.66" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PA5"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="SCK"/>
+<wire x1="137.16" y1="12.7" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
+<label x="121.92" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_CS2" class="0">
@@ -3928,6 +4132,30 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <pinref part="IC1" gate="G$1" pin="PA15"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FLASH_CS" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="!CS"/>
+<wire x1="137.16" y1="10.16" x2="124.46" y2="10.16" width="0.1524" layer="91"/>
+<label x="121.92" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA2"/>
+<wire x1="83.82" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="91.44" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI1_MISO" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="SO"/>
+<wire x1="160.02" y1="17.78" x2="175.26" y2="17.78" width="0.1524" layer="91"/>
+<label x="172.72" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA6"/>
+<wire x1="83.82" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<label x="91.44" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
