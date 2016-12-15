@@ -2916,9 +2916,9 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <instance part="JP3" gate="G$1" x="-66.04" y="55.88"/>
 <instance part="U$31" gate="G$1" x="-71.12" y="58.42" rot="R90"/>
 <instance part="U$32" gate="G$1" x="-71.12" y="55.88" rot="R270"/>
-<instance part="R6" gate="G$1" x="106.68" y="40.64" rot="R180"/>
-<instance part="LED2" gate="G$1" x="119.38" y="40.64"/>
-<instance part="U$33" gate="G$1" x="129.54" y="40.64" rot="R90"/>
+<instance part="R6" gate="G$1" x="106.68" y="48.26" rot="R180"/>
+<instance part="LED2" gate="G$1" x="119.38" y="48.26"/>
+<instance part="U$33" gate="G$1" x="127" y="48.26" rot="R90"/>
 <instance part="C12" gate="G$1" x="12.7" y="20.32" rot="R90"/>
 <instance part="C13" gate="G$1" x="10.16" y="15.24" rot="R270"/>
 <instance part="U$34" gate="G$1" x="5.08" y="15.24" rot="R270"/>
@@ -3119,7 +3119,7 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="U$33" gate="G$1" pin="GND"/>
-<wire x1="127" y1="40.64" x2="121.92" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="P$2"/>
@@ -3756,7 +3756,7 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="114.3" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3921,6 +3921,13 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <junction x="134.62" y="91.44"/>
 <pinref part="X1" gate="SHIELD" pin="S1"/>
 <junction x="134.62" y="96.52"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA15"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
