@@ -7074,12 +7074,12 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <pin name="VDDA" x="-30.48" y="12.7" length="short" direction="pwr"/>
 <pin name="VSSA" x="-30.48" y="-7.62" length="short" direction="pwr"/>
 <pin name="VBAT" x="-30.48" y="27.94" length="short" direction="pas"/>
-<pin name="VDD@1" x="-30.48" y="20.32" length="short" direction="pwr"/>
-<pin name="VDD@2" x="-30.48" y="17.78" length="short" direction="pwr"/>
-<pin name="VDD@3" x="-30.48" y="15.24" length="short" direction="pwr"/>
-<pin name="VSS@1" x="-30.48" y="0" length="short" direction="pwr"/>
+<pin name="VDD@1" x="-30.48" y="17.78" length="short" direction="pwr"/>
+<pin name="VDD@2" x="-30.48" y="15.24" length="short" direction="pwr"/>
+<pin name="VDD@3" x="-30.48" y="20.32" length="short" direction="pwr"/>
+<pin name="VSS@1" x="-30.48" y="-5.08" length="short" direction="pwr"/>
 <pin name="VSS@2" x="-30.48" y="-2.54" length="short" direction="pwr"/>
-<pin name="VSS@3" x="-30.48" y="-5.08" length="short" direction="pwr"/>
+<pin name="VSS@3" x="-30.48" y="0" length="short" direction="pwr"/>
 <wire x1="-27.94" y1="-58.42" x2="27.94" y2="-58.42" width="0.254" layer="94"/>
 <wire x1="27.94" y1="-58.42" x2="27.94" y2="30.48" width="0.254" layer="94"/>
 <wire x1="27.94" y1="30.48" x2="-27.94" y2="30.48" width="0.254" layer="94"/>
