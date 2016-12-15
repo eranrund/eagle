@@ -1615,6 +1615,27 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SSD1306-7PIN-NO-HOLES">
+<wire x1="-7" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="-7" y1="0" x2="-7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="-2" x2="13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2" x2="-13.65" y2="-2" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="-2" x2="-13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="13.65" y1="-2" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.65" y1="25.8" x2="13.65" y2="25.8" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="21.53" x2="13.35" y2="21.53" width="0.127" layer="21" style="longdash"/>
+<wire x1="-13.35" y1="2.27" x2="13.35" y2="2.27" width="0.127" layer="21" style="shortdash"/>
+<text x="-3" y="-2" size="1.27" layer="25">&gt;NAME</text>
+<pad name="CS" x="7.62" y="24.3" drill="0.8"/>
+<pad name="DC" x="5.08" y="24.3" drill="0.8"/>
+<pad name="RES" x="2.54" y="24.3" drill="0.8"/>
+<pad name="MOSI" x="0" y="24.3" drill="0.8"/>
+<pad name="CLK" x="-2.54" y="24.3" drill="0.8"/>
+<pad name="VCC" x="-5.08" y="24.3" drill="0.8"/>
+<pad name="GND" x="-7.62" y="24.3" drill="0.8" shape="square"/>
+<wire x1="-7" y1="-2" x2="7" y2="-2" width="0.127" layer="21" style="shortdash"/>
+</package>
 <package name="SSD1306-7PIN">
 <wire x1="-7" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
 <wire x1="-7" y1="0" x2="-7" y2="-2" width="0.127" layer="21"/>
@@ -1830,6 +1851,21 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <rectangle x1="-2.36" y1="3.5" x2="-2.14" y2="4.5" layer="51"/>
 <rectangle x1="-2.86" y1="3.5" x2="-2.64" y2="4.5" layer="51"/>
 </package>
+<package name="TE-292304-1">
+<description>&lt;b&gt;BERG&lt;/b&gt;</description>
+<wire x1="-6.02" y1="5.6" x2="-6.02" y2="-10.15" width="0.254" layer="21"/>
+<wire x1="-6.02" y1="-10.15" x2="6.02" y2="-10.15" width="0.254" layer="21"/>
+<wire x1="6.02" y1="-10.15" x2="6.02" y2="5.6" width="0.254" layer="21"/>
+<wire x1="6.02" y1="5.6" x2="-6.02" y2="5.6" width="0.254" layer="21"/>
+<pad name="1" x="1.25" y="4.71" drill="0.95" shape="octagon"/>
+<pad name="2" x="-1.25" y="4.71" drill="0.95" shape="octagon"/>
+<pad name="3" x="-1.25" y="2.71" drill="0.95" shape="octagon"/>
+<pad name="4" x="1.25" y="2.71" drill="0.95" shape="octagon"/>
+<pad name="P$1" x="6.02" y="0" drill="2.3"/>
+<pad name="P$2" x="-6.02" y="0" drill="2.3"/>
+<text x="-6.096" y="6.096" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.62" y="-8.89" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ROTARYENCODER">
@@ -1944,6 +1980,30 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-33.02" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
+<symbol name="USB_DEVICE_B">
+<wire x1="0" y1="7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
+<pin name="1" x="-2.54" y="5.08" visible="pad" length="short"/>
+<pin name="2" x="-2.54" y="2.54" visible="pad" length="short"/>
+<pin name="3" x="-2.54" y="0" visible="pad" length="short"/>
+<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short"/>
+</symbol>
+<symbol name="SHIELD2">
+<wire x1="2.54" y1="-8.89" x2="0" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-8.89" x2="-3.81" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-7.62" width="0.254" layer="94" style="shortdash" curve="-90"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="6.35" x2="-3.81" y2="6.35" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="6.35" x2="-5.08" y2="5.08" width="0.254" layer="94" style="shortdash" curve="90"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-8.89" width="0.1524" layer="94"/>
+<pin name="S1" x="2.54" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S2" x="0" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PEC11-4215K-S0024">
@@ -1971,7 +2031,21 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <gate name="G$1" symbol="SSD1306-7PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SSD1306-7PIN">
+<device name="WITH-HOLES" package="SSD1306-7PIN">
+<connects>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DC" pad="DC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RST" pad="RES"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WITHOUT-HOLES" package="SSD1306-7PIN-NO-HOLES">
 <connects>
 <connect gate="G$1" pin="CLK" pad="CLK"/>
 <connect gate="G$1" pin="CS" pad="CS"/>
@@ -2091,6 +2165,28 @@ Source: STM32F302_F303_B_C_LQFP48.bsd</description>
 <connect gate="G$1" pin="VSS@2" pad="35"/>
 <connect gate="G$1" pin="VSS@3" pad="23"/>
 <connect gate="G$1" pin="VSSA" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TE-292304-1" prefix="X" uservalue="yes">
+<description>USB A Female connector</description>
+<gates>
+<gate name="_CONN" symbol="USB_DEVICE_B" x="-2.54" y="0"/>
+<gate name="SHIELD" symbol="SHIELD2" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="TE-292304-1">
+<connects>
+<connect gate="SHIELD" pin="S1" pad="P$1"/>
+<connect gate="SHIELD" pin="S2" pad="P$2"/>
+<connect gate="_CONN" pin="1" pad="1"/>
+<connect gate="_CONN" pin="2" pad="2"/>
+<connect gate="_CONN" pin="3" pad="3"/>
+<connect gate="_CONN" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2494,6 +2590,135 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="Volks73-NXPSemiconductors">
+<description>&lt;h1&gt;Volks73's Library for NXP Semiconductor Parts&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/volks73/eagle-libraries/"&gt;Repository&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3&gt;Licensing:&lt;/h3&gt; 
+&lt;p&gt;
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0), &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/"&gt;http://creativecommons.org/licenses/by-sa/3.0/&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+For attribution, please provide a link in any documentation or design files to the repository on Github. 
+&lt;/p&gt;</description>
+<packages>
+<package name="SOT-143B">
+<description>&lt;h1&gt;Small-Outline Transistor (SOT) 143B&lt;/h1&gt;</description>
+<smd name="1" x="-0.75" y="-1.05" dx="1" dy="0.6" layer="1"/>
+<smd name="2" x="0.95" y="-1.05" dx="0.6" dy="0.6" layer="1"/>
+<smd name="3" x="0.95" y="1.05" dx="0.6" dy="0.6" layer="1"/>
+<smd name="4" x="-0.95" y="1.05" dx="0.6" dy="0.6" layer="1"/>
+<wire x1="-1.5" y1="-0.65" x2="-1.5" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="0.65" x2="1.5" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.65" x2="1.5" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.65" x2="-1.5" y2="-0.65" width="0.127" layer="21"/>
+<rectangle x1="-1.19" y1="0.7" x2="-0.71" y2="1.15" layer="51"/>
+<rectangle x1="0.71" y1="0.7" x2="1.19" y2="1.15" layer="51"/>
+<rectangle x1="0.71" y1="-1.15" x2="1.19" y2="-0.7" layer="51"/>
+<rectangle x1="-1.19" y1="-1.15" x2="-0.31" y2="-0.7" layer="51"/>
+<text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PRTR5V0U2X">
+<pin name="IO1" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="IO2" x="-10.16" y="0" visible="pin" length="middle"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="8.89" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="SUPPLY">
+<pin name="VCC" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-7.62" size="1.778" layer="95" rot="R90">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PRTR5V0U2X?" prefix="U">
+<description>&lt;h1&gt;I&lt;sup&gt;2&lt;/sup&gt;C-Bus EDS Protection&lt;/h1&gt;
+&lt;h2&gt;Ulta low capacitance double rail-to-rail ESD protection diode&lt;/h2&gt;
+&lt;h3&gt;Documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;General Description&lt;/h3&gt;
+&lt;p&gt;
+Ultra low capacitance rail-to-rail ElectroStatic Discharge (ESD) protection diode in a small SOT143B Surface-Mounted Device (SMD) plastic package designed to protect two Hi-Speed data lines or high-frequency signal lines from the damage caused by ESD and other transients.
+&lt;/p&gt;
+&lt;p&gt;
+PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes as well as an additional ESD protection diode to ensure signal line protection even if no supply voltage is available.
+&lt;/p&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ESD protection of two Hi-Speed data lines or high-frequency signal lines&lt;/li&gt;
+&lt;li&gt;Ultra low input/output to ground capacitance: C&lt;sub&gt;(I/O-GND)&lt;/sub&gt; = 1 pF&lt;/li&gt;
+&lt;li&gt;ESD protection up to 8kV&lt;/li&gt;
+&lt;li&gt;IEC 61000-4-2, level 4 (ESD)&lt;/li&gt;
+&lt;li&gt;Very low clamping voltage due to an integrated additional ESD protection diode&lt;/li&gt;
+&lt;li&gt;Very low reverse current&lt;/li&gt;
+&lt;li&gt;Small SMD plastic package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;USB 2.0 ports&lt;/li&gt;
+&lt;li&gt;Digital Video Interface (DVI)/High Definition Multimedia Interface (HDMI) interfaces&lt;/li&gt;
+&lt;li&gt;Mobile and cordless phones&lt;/li&gt;
+&lt;li&gt;Personal Digital Assistants (PDA)&lt;/li&gt;
+&lt;li&gt;Digital Cameras&lt;/li&gt;
+&lt;li&gt;Wide Area Network (WAN) / Local Area Network (LAN) systems&lt;/li&gt;
+&lt;li&gt;PCs, notebooks, printers, and other PC peripherals&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="U$1" symbol="PRTR5V0U2X" x="0" y="0"/>
+<gate name="-SUPPLY" symbol="SUPPLY" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SOT-143B">
+<connects>
+<connect gate="-SUPPLY" pin="GND" pad="1"/>
+<connect gate="-SUPPLY" pin="VCC" pad="4"/>
+<connect gate="U$1" pin="IO1" pad="2"/>
+<connect gate="U$1" pin="IO2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="APPLICATIONS" value="General Purpose"/>
+<attribute name="BIDIRECTIONAL_CHANNELS" value="2"/>
+<attribute name="CAPACITANCE" value="1pF @ 1MHz"/>
+<attribute name="CURRENT_PEAK_PULSE" value="-"/>
+<attribute name="DESCRIPTION" value="TVS DIODE 5.5VWM SOT143B"/>
+<attribute name="DOCUMENTATION_LINK" value="&lt;a href=&quot;http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf&quot;&gt;Datasheet&lt;/a&gt;"/>
+<attribute name="DOCUMENTATION_URL" value="http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf"/>
+<attribute name="MANUFACTURER" value="NXP Semiconductors"/>
+<attribute name="MOUNTING_TYPE" value="Surface Mount"/>
+<attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C"/>
+<attribute name="PART_NUMBER" value="PRTR5V0U2X,215"/>
+<attribute name="POWER-PEAK_PULSE" value="-"/>
+<attribute name="POWER_LINE_PROTECTION" value="Yes"/>
+<attribute name="SUPPLIER_ITEM_LINK" value="&lt;a href=&quot;http://www.digikey.com/product-detail/en/PRTR5V0U2X,215/568-4140-1-ND/1589981&quot;&gt;Details&lt;/a&gt;"/>
+<attribute name="SUPPLIER_ITEM_NUMBER" value="568-4140-1-ND"/>
+<attribute name="SUPPLIER_ITEM_URL" value="http://www.digikey.com/product-detail/en/PRTR5V0U2X,215/568-4140-1-ND/1589981"/>
+<attribute name="SUPPLIER_LINK" value="&lt;a href=&quot;http://www.digikey.com&quot;&gt;Home Page&lt;/a&gt;"/>
+<attribute name="SUPPLIER_NAME" value="Digi-Key"/>
+<attribute name="SUPPLIER_URL" value="http://www.digikey.com"/>
+<attribute name="TYPE" value="Steering (Rail to Rail)"/>
+<attribute name="UNIDIRECTIONAL_CHANNELS" value="-"/>
+<attribute name="VOLTAGE_BREAKDOWN" value="6V"/>
+<attribute name="VOLTAGE_CLAMPING" value="-"/>
+<attribute name="VOLTAGE_REVERSE" value="5.5V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2537,12 +2762,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="ROT1" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
-<part name="LCD1" library="keves" deviceset="SSD1306-7PIN" device=""/>
+<part name="LCD1" library="keves" deviceset="SSD1306-7PIN" device="WITHOUT-HOLES"/>
 <part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$23" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$25" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="LCD2" library="keves" deviceset="SSD1306-7PIN" device=""/>
+<part name="LCD2" library="keves" deviceset="SSD1306-7PIN" device="WITHOUT-HOLES"/>
 <part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
@@ -2619,7 +2844,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$53" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF TANT"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF TANT"/>
-<part name="IC1" library="keves" deviceset="STM32F302_F303_B_C_LQFP48" device=""/>
+<part name="IC1" library="keves" deviceset="STM32F302_F303_B_C_LQFP48" device="" value="STM32F303CCT6"/>
+<part name="X1" library="keves" deviceset="TE-292304-1" device=""/>
+<part name="R23" library="microbuilder" deviceset="RESISTOR" device="0603" value="22"/>
+<part name="R24" library="microbuilder" deviceset="RESISTOR" device="0603" value="22"/>
+<part name="U$54" library="microbuilder" deviceset="5.0V" device=""/>
+<part name="U$55" library="microbuilder" deviceset="GND" device=""/>
+<part name="R25" library="microbuilder" deviceset="RESISTOR" device="0603" value="1M"/>
+<part name="C22" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="4.7nF"/>
+<part name="U$56" library="microbuilder" deviceset="GND" device=""/>
+<part name="U2" library="Volks73-NXPSemiconductors" deviceset="PRTR5V0U2X?" device=""/>
+<part name="U$57" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$58" library="microbuilder" deviceset="5.0V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2742,6 +2978,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C8" gate="G$1" x="-68.58" y="78.74"/>
 <instance part="C9" gate="G$1" x="-45.72" y="78.74"/>
 <instance part="IC1" gate="G$1" x="53.34" y="58.42"/>
+<instance part="X1" gate="_CONN" x="132.08" y="106.68"/>
+<instance part="X1" gate="SHIELD" x="132.08" y="109.22"/>
+<instance part="R23" gate="G$1" x="114.3" y="109.22" rot="R180"/>
+<instance part="R24" gate="G$1" x="101.6" y="106.68" rot="R180"/>
+<instance part="U$54" gate="G$1" x="129.54" y="121.92"/>
+<instance part="U$55" gate="G$1" x="129.54" y="96.52"/>
+<instance part="R25" gate="G$1" x="134.62" y="86.36" rot="R270"/>
+<instance part="C22" gate="G$1" x="142.24" y="86.36"/>
+<instance part="U$56" gate="G$1" x="134.62" y="76.2"/>
+<instance part="U2" gate="U$1" x="124.46" y="132.08" rot="R90"/>
+<instance part="U2" gate="-SUPPLY" x="104.14" y="132.08" rot="R180"/>
+<instance part="U$57" gate="G$1" x="104.14" y="147.32" rot="R180"/>
+<instance part="U$58" gate="G$1" x="104.14" y="116.84" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2940,6 +3189,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C21" gate="G$1" pin="P$2"/>
 <pinref part="U$51" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X1" gate="_CONN" pin="4"/>
+<pinref part="U$55" gate="G$1" pin="GND"/>
+<wire x1="129.54" y1="99.06" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C22" gate="G$1" pin="P$2"/>
+<wire x1="142.24" y1="83.82" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$56" gate="G$1" pin="GND"/>
+<wire x1="142.24" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="81.28" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<junction x="134.62" y="81.28"/>
+</segment>
+<segment>
+<pinref part="U2" gate="-SUPPLY" pin="GND"/>
+<pinref part="U$57" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3167,9 +3434,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="2.54" y="-22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="91.44" y="55.88" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="PA12"/>
+<pinref part="IC1" gate="G$1" pin="PB9"/>
+<wire x1="83.82" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<label x="91.44" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
@@ -3179,9 +3446,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="2.54" y="-27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
-<label x="91.44" y="58.42" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="PA11"/>
+<wire x1="83.82" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
+<label x="91.44" y="20.32" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PB8"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3214,6 +3481,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-68.58" y1="43.18" x2="-53.34" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$29" gate="G$1" pin="5.0V"/>
 <junction x="-68.58" y="43.18"/>
+</segment>
+<segment>
+<pinref part="X1" gate="_CONN" pin="1"/>
+<pinref part="U$54" gate="G$1" pin="5.0V"/>
+<wire x1="129.54" y1="119.38" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="-SUPPLY" pin="VCC"/>
+<pinref part="U$58" gate="G$1" pin="5.0V"/>
 </segment>
 </net>
 <net name="ROT1_A" class="0">
@@ -3316,11 +3592,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 </net>
 <net name="ROT3_B" class="0">
-<segment>
-<wire x1="83.82" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
-<label x="91.44" y="20.32" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="PB8"/>
-</segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="-132.08" y1="5.08" x2="-144.78" y2="5.08" width="0.1524" layer="91"/>
@@ -3476,13 +3747,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC1" gate="G$1" pin="PB1"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="PB0"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -3593,6 +3857,65 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-116.84" y1="-5.08" x2="-116.84" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <junction x="-116.84" y="5.08"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="X1" gate="_CONN" pin="2"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U$1" pin="IO2"/>
+<wire x1="124.46" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="121.92" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+<junction x="124.46" y="109.22"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="X1" gate="_CONN" pin="3"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="106.68" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U$1" pin="IO1"/>
+<wire x1="121.92" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="121.92" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+<junction x="121.92" y="106.68"/>
+</segment>
+</net>
+<net name="USB_DM" class="0">
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<label x="81.28" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="83.82" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<label x="91.44" y="58.42" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PA11"/>
+</segment>
+</net>
+<net name="USB_DP" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<label x="81.28" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="83.82" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="91.44" y="55.88" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PA12"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="X1" gate="SHIELD" pin="S2"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="96.52" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="P$1"/>
+<wire x1="134.62" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
+<junction x="134.62" y="91.44"/>
+<pinref part="X1" gate="SHIELD" pin="S1"/>
+<junction x="134.62" y="96.52"/>
 </segment>
 </net>
 </nets>
