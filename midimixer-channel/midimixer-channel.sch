@@ -5787,9 +5787,9 @@ http://www.tag-connect.com</description>
 <label x="114.3" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CPU1" gate="G$1" pin="PC4"/>
-<wire x1="22.86" y1="53.34" x2="2.54" y2="53.34" width="0.1524" layer="91"/>
-<label x="0" y="53.34" size="1.778" layer="95"/>
+<pinref part="CPU1" gate="G$1" pin="PD2/SDIO_CMD"/>
+<wire x1="81.28" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<label x="88.9" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
