@@ -4291,7 +4291,7 @@ http://www.tag-connect.com</description>
 <part name="R17" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
 <part name="U$28" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
-<part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
+<part name="PWR" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="U$30" library="microbuilder" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
 <part name="C18" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10uF 603-CC206KKX5R7BB106"/>
@@ -4477,6 +4477,12 @@ http://www.tag-connect.com</description>
 <part name="U$117" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$19" library="keves" deviceset="ABM7-8.000MHZ-D2Y-T" device=""/>
 <part name="U$20" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="R2" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="LED" library="microbuilder" deviceset="LED" device="0603"/>
+<part name="U$32" library="microbuilder" deviceset="GND" device=""/>
+<part name="PWR5.0V" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
+<part name="U$113" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$114" library="microbuilder" deviceset="5.0V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4519,7 +4525,7 @@ http://www.tag-connect.com</description>
 <instance part="R17" gate="G$1" x="177.8" y="55.88" rot="R90"/>
 <instance part="U$28" gate="G$1" x="177.8" y="66.04"/>
 <instance part="U$29" gate="G$1" x="137.16" y="48.26"/>
-<instance part="LED1" gate="G$1" x="177.8" y="40.64" rot="R270"/>
+<instance part="PWR" gate="G$1" x="177.8" y="40.64" rot="R270"/>
 <instance part="U$30" gate="G$1" x="177.8" y="30.48"/>
 <instance part="L1" gate="G$1" x="190.5" y="60.96" rot="R90"/>
 <instance part="C18" gate="G$1" x="200.66" y="55.88" rot="R180"/>
@@ -4622,6 +4628,12 @@ http://www.tag-connect.com</description>
 <instance part="U$64" gate="G$1" x="157.48" y="104.14" rot="R270"/>
 <instance part="U$19" gate="G$1" x="10.16" y="101.6" rot="R90"/>
 <instance part="U$20" gate="G$1" x="-71.12" y="68.58"/>
+<instance part="R2" gate="G$1" x="10.16" y="50.8"/>
+<instance part="LED" gate="G$1" x="-2.54" y="50.8" rot="R180"/>
+<instance part="U$32" gate="G$1" x="-10.16" y="50.8" rot="R270"/>
+<instance part="PWR5.0V" gate="G$1" x="203.2" y="81.28"/>
+<instance part="U$113" gate="G$1" x="193.04" y="81.28" rot="R270"/>
+<instance part="U$114" gate="G$1" x="190.5" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4908,7 +4920,7 @@ http://www.tag-connect.com</description>
 <junction x="137.16" y="50.8"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <pinref part="U$30" gate="G$1" pin="GND"/>
 <wire x1="177.8" y1="33.02" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="P$2"/>
@@ -5044,6 +5056,16 @@ http://www.tag-connect.com</description>
 <pinref part="U$64" gate="G$1" pin="GND"/>
 <wire x1="160.02" y1="104.14" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LED" gate="G$1" pin="C"/>
+<pinref part="U$32" gate="G$1" pin="GND"/>
+<wire x1="-7.62" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PWR5.0V" gate="G$1" pin="2"/>
+<pinref part="U$113" gate="G$1" pin="GND"/>
+<wire x1="195.58" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="NRST" class="0">
 <segment>
@@ -5140,11 +5162,16 @@ http://www.tag-connect.com</description>
 <junction x="0" y="-7.62"/>
 <wire x1="0" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="PWR5.0V" gate="G$1" pin="1"/>
+<pinref part="U$114" gate="G$1" pin="5.0V"/>
+<wire x1="193.04" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="45.72" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5958,6 +5985,20 @@ http://www.tag-connect.com</description>
 <pinref part="CPU1" gate="G$1" pin="PA5/SPI1_SCK"/>
 <wire x1="22.86" y1="60.96" x2="2.54" y2="60.96" width="0.2032" layer="91"/>
 <label x="0" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="LED" gate="G$1" pin="A"/>
+<wire x1="2.54" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PC5"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
