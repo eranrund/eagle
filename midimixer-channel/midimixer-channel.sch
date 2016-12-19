@@ -5618,56 +5618,42 @@ http://www.tag-connect.com</description>
 <label x="-60.96" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC0" class="0">
+<net name="FADER" class="0">
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA0"/>
 <wire x1="22.86" y1="78.74" x2="2.54" y2="78.74" width="0.2032" layer="91"/>
 <label x="0" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC1" class="0">
-<segment>
-<pinref part="CPU1" gate="G$1" pin="PA1"/>
-<wire x1="22.86" y1="76.2" x2="2.54" y2="76.2" width="0.2032" layer="91"/>
-<label x="0" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ADC2" class="0">
-<segment>
-<pinref part="CPU1" gate="G$1" pin="PA2/UART2_TX"/>
-<wire x1="22.86" y1="73.66" x2="2.54" y2="73.66" width="0.2032" layer="91"/>
-<label x="0" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ADC3" class="0">
-<segment>
-<pinref part="CPU1" gate="G$1" pin="PA3/UART2_RX"/>
-<wire x1="22.86" y1="71.12" x2="2.54" y2="71.12" width="0.2032" layer="91"/>
-<label x="0" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ADC4" class="0">
+<net name="POT6" class="0">
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA4/SPI1_NSS"/>
 <wire x1="22.86" y1="63.5" x2="2.54" y2="63.5" width="0.2032" layer="91"/>
 <label x="0" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC5" class="0">
+<net name="POT1" class="0">
 <segment>
-<pinref part="CPU1" gate="G$1" pin="PA5/SPI1_SCK"/>
-<wire x1="22.86" y1="60.96" x2="2.54" y2="60.96" width="0.2032" layer="91"/>
-<label x="0" y="60.96" size="1.778" layer="95"/>
+<pinref part="CPU1" gate="G$1" pin="PA1"/>
+<wire x1="22.86" y1="76.2" x2="2.54" y2="76.2" width="0.2032" layer="91"/>
+<label x="0" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC6" class="0">
+<net name="POT5" class="0">
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PA3/UART2_RX"/>
+<wire x1="22.86" y1="71.12" x2="2.54" y2="71.12" width="0.2032" layer="91"/>
+<label x="0" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POT7" class="0">
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA6/SPI1_MISO"/>
 <wire x1="22.86" y1="58.42" x2="2.54" y2="58.42" width="0.2032" layer="91"/>
 <label x="0" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC7" class="0">
+<net name="POT2" class="0">
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA7/SPI1_MOSI"/>
 <wire x1="22.86" y1="55.88" x2="2.54" y2="55.88" width="0.2032" layer="91"/>
@@ -5958,6 +5944,20 @@ http://www.tag-connect.com</description>
 <wire x1="-60.96" y1="2.54" x2="-43.18" y2="2.54" width="0.2032" layer="91"/>
 <wire x1="-60.96" y1="12.7" x2="-60.96" y2="2.54" width="0.2032" layer="91"/>
 <junction x="-60.96" y="2.54"/>
+</segment>
+</net>
+<net name="POT3" class="0">
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PA2/UART2_TX"/>
+<wire x1="22.86" y1="73.66" x2="2.54" y2="73.66" width="0.2032" layer="91"/>
+<label x="0" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POT4" class="0">
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PA5/SPI1_SCK"/>
+<wire x1="22.86" y1="60.96" x2="2.54" y2="60.96" width="0.2032" layer="91"/>
+<label x="0" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -6538,21 +6538,21 @@ http://www.tag-connect.com</description>
 <pinref part="U$117" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
-<net name="ADC1" class="0">
+<net name="POT4" class="0">
 <segment>
 <wire x1="45.72" y1="-35.56" x2="45.72" y2="-38.1" width="0.2032" layer="91"/>
 <label x="48.26" y="-38.1" size="1.778" layer="95"/>
 <pinref part="POT4" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
-<net name="ADC5" class="0">
+<net name="POT5" class="0">
 <segment>
 <wire x1="7.62" y1="-35.56" x2="7.62" y2="-38.1" width="0.2032" layer="91"/>
 <label x="10.16" y="-35.56" size="1.778" layer="95"/>
 <pinref part="POT5" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
-<net name="ADC6" class="0">
+<net name="POT7" class="0">
 <segment>
 <wire x1="7.62" y1="-17.78" x2="7.62" y2="-20.32" width="0.2032" layer="91"/>
 <label x="7.62" y="-17.78" size="1.778" layer="95"/>
@@ -6623,28 +6623,28 @@ http://www.tag-connect.com</description>
 <label x="154.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC2" class="0">
+<net name="POT6" class="0">
 <segment>
 <wire x1="45.72" y1="-53.34" x2="45.72" y2="-55.88" width="0.2032" layer="91"/>
 <label x="45.72" y="-55.88" size="1.778" layer="95"/>
 <pinref part="POT6" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
-<net name="ADC0" class="0">
+<net name="FADER" class="0">
 <segment>
 <pinref part="FADER1" gate="G$1" pin="S"/>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="2.54" width="0.2032" layer="91"/>
 <label x="17.78" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ADC3" class="0">
+<net name="POT1" class="0">
 <segment>
 <wire x1="7.62" y1="-76.2" x2="7.62" y2="-78.74" width="0.2032" layer="91"/>
 <label x="7.62" y="-78.74" size="1.778" layer="95"/>
 <pinref part="POT1" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
-<net name="ADC4" class="0">
+<net name="POT3" class="0">
 <segment>
 <wire x1="7.62" y1="-55.88" x2="7.62" y2="-58.42" width="0.2032" layer="91"/>
 <label x="7.62" y="-55.88" size="1.778" layer="95"/>
@@ -6700,7 +6700,7 @@ http://www.tag-connect.com</description>
 <junction x="93.98" y="66.04"/>
 </segment>
 </net>
-<net name="ADC7" class="0">
+<net name="POT2" class="0">
 <segment>
 <wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.2032" layer="91"/>
 <label x="45.72" y="-17.78" size="1.778" layer="95"/>
