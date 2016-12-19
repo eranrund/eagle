@@ -5646,13 +5646,6 @@ http://www.tag-connect.com</description>
 <label x="0" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="POT7" class="0">
-<segment>
-<pinref part="CPU1" gate="G$1" pin="PA6/SPI1_MISO"/>
-<wire x1="22.86" y1="58.42" x2="2.54" y2="58.42" width="0.2032" layer="91"/>
-<label x="0" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="POT2" class="0">
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA7/SPI1_MOSI"/>
@@ -5954,6 +5947,13 @@ http://www.tag-connect.com</description>
 </segment>
 </net>
 <net name="POT4" class="0">
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PA6/SPI1_MISO"/>
+<wire x1="22.86" y1="58.42" x2="2.54" y2="58.42" width="0.2032" layer="91"/>
+<label x="0" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POT7" class="0">
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PA5/SPI1_SCK"/>
 <wire x1="22.86" y1="60.96" x2="2.54" y2="60.96" width="0.2032" layer="91"/>
