@@ -1885,10 +1885,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="2.54" y="93.98" size="1.778" layer="91">TODO:
-- Holes for DC+/DC-/OUT
-- DC Reservoir capacitors?
-- VERIFY FOOTPRINTS</text>
 <text x="93.98" y="93.98" size="1.778" layer="97">For capacitor: 940C30S68K-F</text>
 </plain>
 <instances>
@@ -2053,10 +2049,4 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
