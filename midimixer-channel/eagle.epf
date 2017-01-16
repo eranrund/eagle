@@ -7,8 +7,10 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Users/eran/Projects/eagle/libs/bt_con-jst-xh.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/keves.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/microbuilder.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/pinhead+.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/pl-jacks.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/that-corp.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/19inch.lbr"
@@ -365,12 +367,5 @@ UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Switches.lbr"
 UsedLibrary="/Users/eran/Downloads/alps.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-LED.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="971 455 1570 854"
-State=2
-Number=0
-
 [Desktop]
 Screen="2560 1440"
-Window="Win_1"
