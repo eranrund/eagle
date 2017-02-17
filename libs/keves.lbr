@@ -7187,7 +7187,7 @@ http://www.bourns.com/data/global/pdfs/PTVPTT.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEC11-4215K-S0024">
+<deviceset name="PEC11-4215K-S0024" prefix="ROT">
 <gates>
 <gate name="G$1" symbol="ROTARYENCODER" x="0" y="0"/>
 </gates>
@@ -10269,7 +10269,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LME49600.pdf"&gt; Data  sheet 
 </device>
 </devices>
 </deviceset>
-<deviceset name="SSD1306-7PIN">
+<deviceset name="SSD1306-7PIN" prefix="LCD">
 <description>https://www.aliexpress.com/item/free-shipping-0-96-inch-OLED-display-module-128X64-OLED-For-arduino-I2C-IIC-SPI-7p/32595065668.html?ws_ab_test=searchweb0_0,searchweb201602_1_116_117_10065_10068_114_10067_115_10069_113_10017_10080_10082_10081_10060_10061_10062_10056_10055_10054_10059_10078_10079_10073_10070_10052_10053_10050_10051,searchweb201603_6&amp;btsid=51ed1bae-6cee-4f36-9ddd-1a85c2e0ff68</description>
 <gates>
 <gate name="G$1" symbol="SSD1306-7PIN" x="0" y="0"/>
@@ -10305,7 +10305,7 @@ Source: &lt;a href="http://www.national.com/ds/LM/LME49600.pdf"&gt; Data  sheet 
 </device>
 </devices>
 </deviceset>
-<deviceset name="ABM7-8.000MHZ-D2Y-T">
+<deviceset name="ABM7-8.000MHZ-D2Y-T" prefix="X">
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
