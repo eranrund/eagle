@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="80" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -150,9 +150,9 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="52.832" y2="0" width="0" layer="20"/>
-<wire x1="52.832" y1="0" x2="52.832" y2="76.454" width="0" layer="20"/>
-<wire x1="52.832" y1="76.454" x2="0" y2="76.454" width="0" layer="20"/>
-<wire x1="0" y1="76.454" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="52.832" y1="0" x2="52.832" y2="76.2" width="0" layer="20"/>
+<wire x1="52.832" y1="76.2" x2="0" y2="76.2" width="0" layer="20"/>
+<wire x1="0" y1="76.2" x2="0" y2="0" width="0" layer="20"/>
 <text x="32.258" y="3.81" size="0.8128" layer="21" font="vector">PCM4104 Eval - Rev A
 Eran Rundstein, Dec 2016</text>
 <text x="46.228" y="23.495" size="0.8128" layer="21" font="vector" rot="R180">SCK</text>
@@ -1608,20 +1608,22 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="0.762" y1="16.891" x2="0.762" y2="34.036" width="1.016" layer="1"/>
 <wire x1="0.762" y1="34.036" x2="0.762" y2="53.34" width="1.016" layer="1"/>
 <wire x1="0.762" y1="53.34" x2="0.762" y2="67.183" width="1.016" layer="1"/>
-<wire x1="0.762" y1="67.183" x2="9.271" y2="75.692" width="1.016" layer="1"/>
-<wire x1="11.049" y1="71.208" x2="11.049" y2="75.565" width="1.016" layer="1"/>
+<wire x1="0.762" y1="67.183" x2="7.493" y2="73.914" width="1.016" layer="1"/>
 <wire x1="10.883" y1="51.943" x2="10.883" y2="52.871" width="1.016" layer="1"/>
 <wire x1="10.883" y1="52.871" x2="10.414" y2="53.34" width="1.016" layer="1"/>
 <wire x1="10.414" y1="53.34" x2="0.762" y2="53.34" width="1.016" layer="1"/>
 <wire x1="9.867" y1="32.512" x2="9.867" y2="33.313" width="1.016" layer="1"/>
 <wire x1="9.867" y1="33.313" x2="9.144" y2="34.036" width="1.016" layer="1"/>
 <wire x1="9.144" y1="34.036" x2="0.762" y2="34.036" width="1.016" layer="1"/>
-<wire x1="39.129" y1="74.168" x2="21.209" y2="74.168" width="1.016" layer="1"/>
-<wire x1="21.209" y1="74.168" x2="19.685" y2="75.692" width="1.016" layer="1"/>
-<wire x1="19.685" y1="75.692" x2="11.176" y2="75.692" width="1.016" layer="1"/>
-<wire x1="11.176" y1="75.692" x2="9.271" y2="75.692" width="1.016" layer="1"/>
-<wire x1="11.049" y1="75.565" x2="11.176" y2="75.692" width="1.016" layer="1"/>
 <wire x1="11.137" y1="71.12" x2="11.049" y2="71.208" width="0.3048" layer="1"/>
+<wire x1="39.129" y1="74.168" x2="20.066" y2="74.168" width="1.016" layer="1"/>
+<wire x1="20.066" y1="74.168" x2="18.923" y2="73.025" width="1.016" layer="1"/>
+<wire x1="18.923" y1="73.025" x2="15.24" y2="73.025" width="1.016" layer="1"/>
+<wire x1="15.24" y1="73.025" x2="14.351" y2="73.914" width="1.016" layer="1"/>
+<wire x1="14.351" y1="73.914" x2="11.811" y2="73.914" width="1.016" layer="1"/>
+<wire x1="11.811" y1="73.914" x2="7.493" y2="73.914" width="1.016" layer="1"/>
+<wire x1="11.137" y1="71.12" x2="11.137" y2="73.24" width="1.016" layer="1"/>
+<wire x1="11.137" y1="73.24" x2="11.811" y2="73.914" width="1.016" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="C10" pad="1"/>
@@ -2092,10 +2094,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="9.437" y1="72.429" x2="9.525" y2="72.517" width="0.508" layer="1"/>
 <via x="9.525" y="72.517" extent="1-16" drill="0.6"/>
 <wire x1="9.525" y1="72.517" x2="9.779" y2="72.771" width="0.508" layer="16"/>
-<wire x1="17.106" y1="70.612" x2="17.106" y2="71.921" width="0.508" layer="1"/>
-<wire x1="17.106" y1="71.921" x2="16.891" y2="72.136" width="0.508" layer="1"/>
-<via x="16.891" y="72.136" extent="1-16" drill="0.6"/>
-<wire x1="16.891" y1="72.136" x2="16.637" y2="72.39" width="0.508" layer="16"/>
+<via x="18.923" y="69.85" extent="1-16" drill="0.6"/>
 <wire x1="13.335" y1="71.054" x2="13.335" y2="72.39" width="0.508" layer="1"/>
 <wire x1="13.335" y1="72.39" x2="13.462" y2="72.517" width="0.508" layer="1"/>
 <via x="13.462" y="72.517" extent="1-16" drill="0.6"/>
@@ -2328,6 +2327,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="39.37" y1="68.58" x2="39.37" y2="66.281" width="1.016" layer="1"/>
 <wire x1="49.149" y1="68.326" x2="39.624" y2="68.326" width="1.016" layer="1"/>
 <wire x1="39.624" y1="68.326" x2="39.37" y2="68.58" width="1.016" layer="1"/>
+<wire x1="17.106" y1="70.612" x2="18.161" y2="70.612" width="0.508" layer="1"/>
+<wire x1="18.161" y1="70.612" x2="18.923" y2="69.85" width="0.508" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C52" pad="1"/>
