@@ -19658,6 +19658,9 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
+<part name="P-12" library="supply1" deviceset="-15V" device=""/>
+<part name="P-13" library="supply1" deviceset="-15V" device=""/>
+<part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20242,6 +20245,9 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <instance part="H2" gate="G$1" x="-76.2" y="114.3"/>
 <instance part="H3" gate="G$1" x="-76.2" y="109.22"/>
 <instance part="H4" gate="G$1" x="-76.2" y="104.14"/>
+<instance part="P-12" gate="1" x="-55.88" y="-53.34" rot="R270"/>
+<instance part="P-13" gate="1" x="-55.88" y="-48.26" rot="R270"/>
+<instance part="U$29" gate="G$1" x="-55.88" y="-63.5" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -20425,6 +20431,11 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <pinref part="U$28" gate="G$1" pin="GND"/>
 <wire x1="198.12" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="A" pin="+IN"/>
+<pinref part="U$29" gate="G$1" pin="GND"/>
+<wire x1="-53.34" y1="-63.5" x2="-50.8" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -20532,6 +20543,16 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <pinref part="PWR" gate="-3" pin="KL"/>
 <pinref part="P-11" gate="1" pin="-15V"/>
 <wire x1="-33.02" y1="-22.86" x2="-38.1" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="B" pin="-IN"/>
+<pinref part="P-12" gate="1" pin="-15V"/>
+<wire x1="-53.34" y1="-53.34" x2="-50.8" y2="-53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="B" pin="+IN"/>
+<pinref part="P-13" gate="1" pin="-15V"/>
+<wire x1="-53.34" y1="-48.26" x2="-50.8" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+15V" class="0">
@@ -21435,6 +21456,17 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <pinref part="IC4" gate="A" pin="+IN"/>
 <wire x1="25.4" y1="134.62" x2="-10.16" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="2"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="-50.8" y1="-68.58" x2="-58.42" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-68.58" x2="-58.42" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-78.74" x2="-27.94" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-78.74" x2="-27.94" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="OUT"/>
+<wire x1="-27.94" y1="-66.04" x2="-35.56" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
