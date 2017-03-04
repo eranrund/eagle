@@ -2257,11 +2257,7 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="rcl" package="B45181D" value="47u" x="26.924" y="19.304" rot="MR270">
-<attribute name="OC_NEWARK" value="01X1464" x="26.924" y="19.304" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="" x="26.924" y="19.304" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="ERJ-1TRQFR47U" x="26.924" y="19.304" size="1.778" layer="28" rot="MR270" display="off"/>
-</element>
+<element name="C1" library="rcl" package="B45181D" value="47u" x="26.924" y="19.304" rot="MR270"/>
 <element name="C2" library="rcl" package="E2,5-7" value="22u RNS1D220MDS1" x="139.954" y="24.511" rot="MR0">
 <attribute name="OC_NEWARK" value="unknown" x="139.954" y="24.511" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="139.954" y="24.511" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2756,11 +2752,31 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="" x="6.35" y="42.037" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="6.35" y="42.037" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="JP1" library="jumper" package="JP1" value="" x="105.918" y="13.97" rot="R270"/>
-<element name="H1" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="2.54" y="2.54"/>
-<element name="H2" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="2.54" y="48.26"/>
-<element name="H3" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="170.18" y="2.54"/>
-<element name="H4" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="170.18" y="48.26"/>
+<element name="JP1" library="jumper" package="JP1" value="" x="105.918" y="13.97" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="105.918" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="105.918" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="105.918" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="H1" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="2.54" y="2.54">
+<attribute name="OC_NEWARK" value="unknown" x="2.54" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="2.54" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="2.54" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="H2" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="2.54" y="48.26">
+<attribute name="OC_NEWARK" value="unknown" x="2.54" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="2.54" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="2.54" y="48.26" size="1.778" layer="27" display="off"/>
+</element>
+<element name="H3" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="170.18" y="2.54">
+<attribute name="OC_NEWARK" value="unknown" x="170.18" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="170.18" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="170.18" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="H4" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="170.18" y="48.26">
+<attribute name="OC_NEWARK" value="unknown" x="170.18" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="170.18" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="170.18" y="48.26" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="SIG_IN">

@@ -19128,11 +19128,7 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="C1" library="rcl" deviceset="CPOL-US" device="B45181D" value="47u">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value="ERJ-1TRQFR47U"/>
-<attribute name="OC_NEWARK" value="01X1464"/>
-</part>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="B45181D" value="47u"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0204/7" value="20.0k 0.1%">
 <attribute name="MF" value=""/>
@@ -19653,11 +19649,31 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="JP1" library="jumper" deviceset="JP1E" device=""/>
-<part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
-<part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
-<part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
-<part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
+<part name="JP1" library="jumper" deviceset="JP1E" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.3">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.3">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.3">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
+<part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.3">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 <part name="P-12" library="supply1" deviceset="-15V" device=""/>
 <part name="P-13" library="supply1" deviceset="-15V" device=""/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
@@ -19679,11 +19695,7 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <instance part="U1" gate="-VCA" x="53.34" y="48.26"/>
 <instance part="U1" gate="-OA1" x="172.72" y="-101.6"/>
 <instance part="U1" gate="-OA2" x="55.88" y="-15.24" rot="MR0"/>
-<instance part="C1" gate="G$1" x="7.62" y="48.26" rot="R90">
-<attribute name="OC_NEWARK" x="7.62" y="48.26" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="7.62" y="48.26" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="7.62" y="48.26" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C1" gate="G$1" x="7.62" y="48.26" rot="R90"/>
 <instance part="U$1" gate="G$1" x="-33.02" y="53.34" rot="R90"/>
 <instance part="R1" gate="G$1" x="25.4" y="48.26">
 <attribute name="OC_NEWARK" x="25.4" y="48.26" size="1.778" layer="96" display="off"/>
@@ -20240,11 +20252,31 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <attribute name="MF" x="154.94" y="55.88" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="154.94" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP1" gate="A" x="-12.7" y="137.16"/>
-<instance part="H1" gate="G$1" x="-76.2" y="119.38"/>
-<instance part="H2" gate="G$1" x="-76.2" y="114.3"/>
-<instance part="H3" gate="G$1" x="-76.2" y="109.22"/>
-<instance part="H4" gate="G$1" x="-76.2" y="104.14"/>
+<instance part="JP1" gate="A" x="-12.7" y="137.16">
+<attribute name="OC_NEWARK" x="-12.7" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-12.7" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-12.7" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H1" gate="G$1" x="-76.2" y="119.38">
+<attribute name="OC_NEWARK" x="-76.2" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-76.2" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-76.2" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H2" gate="G$1" x="-76.2" y="114.3">
+<attribute name="OC_NEWARK" x="-76.2" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-76.2" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-76.2" y="114.3" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H3" gate="G$1" x="-76.2" y="109.22">
+<attribute name="OC_NEWARK" x="-76.2" y="109.22" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-76.2" y="109.22" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-76.2" y="109.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H4" gate="G$1" x="-76.2" y="104.14">
+<attribute name="OC_NEWARK" x="-76.2" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-76.2" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-76.2" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P-12" gate="1" x="-55.88" y="-53.34" rot="R270"/>
 <instance part="P-13" gate="1" x="-55.88" y="-48.26" rot="R270"/>
 <instance part="U$29" gate="G$1" x="-55.88" y="-63.5" rot="R270"/>
