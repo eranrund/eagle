@@ -720,7 +720,9 @@ TS-003</description>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1116,7 +1118,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="LM1117MPX-3.3/NOPB" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT223-WAVE" package="SOT223-W">
@@ -2888,6 +2892,70 @@ www.irf.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="jumper">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="JP1">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
+<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
+<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
+<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="J1">
+<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="3.81" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="1.905" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.905" y1="5.08" x2="1.905" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.905" y1="-5.08" x2="-1.905" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.905" y1="-5.08" x2="-1.905" y2="5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JP1Q" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="J1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP1">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3031,10 +3099,12 @@ www.irf.com&lt;p&gt;
 <part name="GND27" library="microbuilder" deviceset="GND" device=""/>
 <part name="X2" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="X1" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-2X2" device=""/>
+<part name="CAN_TERM" library="pinhead" deviceset="PINHD-2X2" device=""/>
 <part name="Q1" library="transistor-small-signal" deviceset="BSS84" device=""/>
 <part name="R22" library="microbuilder" deviceset="RESISTOR" device="0603" value="1.5k"/>
 <part name="3.3V16" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="MASTER_EN" library="jumper" deviceset="JP1Q" device=""/>
+<part name="GND41" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3182,10 +3252,12 @@ www.irf.com&lt;p&gt;
 <instance part="X1" gate="-2" x="-71.12" y="40.64"/>
 <instance part="X1" gate="-3" x="-71.12" y="38.1"/>
 <instance part="X1" gate="-4" x="-71.12" y="35.56"/>
-<instance part="JP2" gate="A" x="33.02" y="-25.4"/>
+<instance part="CAN_TERM" gate="A" x="33.02" y="-25.4"/>
 <instance part="Q1" gate="G$1" x="114.3" y="88.9" rot="MR180"/>
 <instance part="R22" gate="G$1" x="114.3" y="101.6" rot="R270"/>
 <instance part="3.3V16" gate="G$1" x="114.3" y="78.74" rot="R180"/>
+<instance part="MASTER_EN" gate="A" x="2.54" y="5.08" rot="R90"/>
+<instance part="GND41" gate="G$1" x="-10.16" y="5.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3415,6 +3487,11 @@ www.irf.com&lt;p&gt;
 <wire x1="-20.32" y1="-35.56" x2="-17.78" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="MASTER_EN" gate="A" pin="2"/>
+<pinref part="GND41" gate="G$1" pin="GND"/>
+<wire x1="-7.62" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -3622,7 +3699,7 @@ www.irf.com&lt;p&gt;
 <wire x1="17.78" y1="-22.86" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-5.08" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
 <label x="35.56" y="-5.08" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="CAN_TERM" gate="A" pin="1"/>
 <wire x1="27.94" y1="-22.86" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="17.78" y="-22.86"/>
 </segment>
@@ -3642,7 +3719,7 @@ www.irf.com&lt;p&gt;
 <wire x1="15.24" y1="-27.94" x2="15.24" y2="-43.18" width="0.1524" layer="91"/>
 <label x="35.56" y="-43.18" size="1.778" layer="95"/>
 <wire x1="15.24" y1="-43.18" x2="43.18" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="CAN_TERM" gate="A" pin="3"/>
 <wire x1="15.24" y1="-27.94" x2="27.94" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-27.94" x2="27.94" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="15.24" y="-27.94"/>
@@ -4181,7 +4258,7 @@ www.irf.com&lt;p&gt;
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="CAN_TERM" gate="A" pin="2"/>
 <wire x1="35.56" y1="-22.86" x2="43.18" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-22.86" x2="43.18" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
@@ -4190,7 +4267,7 @@ www.irf.com&lt;p&gt;
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="CAN_TERM" gate="A" pin="4"/>
 <wire x1="35.56" y1="-25.4" x2="43.18" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-25.4" x2="43.18" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -4229,6 +4306,15 @@ www.irf.com&lt;p&gt;
 <pinref part="IC1" gate="G$1" pin="PA8"/>
 <wire x1="83.82" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
 <label x="91.44" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC13"/>
+<wire x1="22.86" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="MASTER_EN" gate="A" pin="1"/>
 </segment>
 </net>
 </nets>
