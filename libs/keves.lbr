@@ -9144,7 +9144,10 @@ Source:</description>
 <connect gate="_CONN" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="292304-1
+" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -10300,7 +10303,9 @@ Source: &lt;a href="http://www.national.com/ds/LM/LME49600.pdf"&gt; Data  sheet 
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

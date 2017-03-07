@@ -1222,7 +1222,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="MF-LED-0603-GREEN" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603_NOOUTLINE" package="CHIPLED_0603_NOOUTLINE">
@@ -1363,7 +1365,9 @@ http://www.tag-connect.com</description>
 <connect gate="A" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1470,7 +1474,9 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <connect gate="G$1" pin="VREF" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="SN65HVD230DR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1847,7 +1853,9 @@ Visit www.openmulticopter.org for more information on our project.</description>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1950,7 +1958,9 @@ Source: STM32F302_F303_B_C_LQFP48.bsd</description>
 <connect gate="_CONN" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="292304-1 " constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2173,7 +2183,9 @@ Source: STM32F302_F303_B_C_LQFP48.bsd</description>
 </device>
 <device name="3.2" package="3,2">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.3" package="4,3">
@@ -2330,7 +2342,9 @@ Source: STM32F302_F303_B_C_LQFP48.bsd</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="MF-CON-2.54mm-01x02" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="/90" package="1X02/90">
@@ -2358,7 +2372,9 @@ Source: STM32F302_F303_B_C_LQFP48.bsd</description>
 <connect gate="A" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="5-146254-2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="/90" package="2X02/90">
@@ -2554,6 +2570,7 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <attribute name="DOCUMENTATION_URL" value="http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf"/>
 <attribute name="MANUFACTURER" value="NXP Semiconductors"/>
 <attribute name="MOUNTING_TYPE" value="Surface Mount"/>
+<attribute name="MPN" value="PRTR5V0U2X,215" constant="no"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215"/>
 <attribute name="POWER-PEAK_PULSE" value="-"/>
@@ -2798,7 +2815,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <connect gate="-4" pin="1" pad="P$4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="B4B-XH-A(LF)(SN)" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2949,7 +2968,9 @@ www.irf.com&lt;p&gt;
 <connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="MF-CON-2.54mm-01x02" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2973,7 +2994,9 @@ www.irf.com&lt;p&gt;
 <part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
-<part name="C15" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="4.7uF"/>
+<part name="C15" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="4.7uF">
+<attribute name="MPN" value="CL10A475MP5LNNC"/>
+</part>
 <part name="GND17" library="microbuilder" deviceset="GND" device=""/>
 <part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="-NL"/>
 <part name="3.3V7" library="microbuilder" deviceset="3.3V" device=""/>
@@ -2991,7 +3014,9 @@ www.irf.com&lt;p&gt;
 <part name="5.0V2" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="3.3V6" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
-<part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603" value="330">
+<attribute name="MPN" value="MF-RES-0603-330"/>
+</part>
 <part name="GND11" library="microbuilder" deviceset="GND" device=""/>
 <part name="ROT2" library="keves" deviceset="PEC11-4215K-S0024" device="" value="PEC12R-4225F-S0024"/>
 <part name="GND9" library="microbuilder" deviceset="GND" device=""/>
@@ -3012,10 +3037,14 @@ www.irf.com&lt;p&gt;
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.2" value="MOUNT-HOLE3.2"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2" value="MOUNT-HOLE3.2"/>
 <part name="5.0V1" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="3.3V3" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND7" library="microbuilder" deviceset="GND" device=""/>
-<part name="R21" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R21" library="microbuilder" deviceset="RESISTOR" device="0603" value="330">
+<attribute name="MPN" value="MF-RES-0603-330"/>
+</part>
 <part name="LED2" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="GND34" library="microbuilder" deviceset="GND" device=""/>
 <part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="18pF"/>
@@ -3075,9 +3104,15 @@ www.irf.com&lt;p&gt;
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF TANT"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)(TANT)" device="&quot;" value="10uF TANT"/>
 <part name="IC1" library="keves" deviceset="STM32F302_F303_B_C_LQFP48" device="" value="STM32F303CCT6"/>
-<part name="X4" library="keves" deviceset="TE-292304-1" device=""/>
-<part name="R24" library="microbuilder" deviceset="RESISTOR" device="0603" value="22"/>
-<part name="R23" library="microbuilder" deviceset="RESISTOR" device="0603" value="22"/>
+<part name="X4" library="keves" deviceset="TE-292304-1" device="">
+<attribute name="POPULATE" value="0"/>
+</part>
+<part name="R24" library="microbuilder" deviceset="RESISTOR" device="0603" value="22">
+<attribute name="MPN" value="MF-RES-0603-22"/>
+</part>
+<part name="R23" library="microbuilder" deviceset="RESISTOR" device="0603" value="22">
+<attribute name="MPN" value="MF-RES-0603-22"/>
+</part>
 <part name="5.0V4" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="GND37" library="microbuilder" deviceset="GND" device=""/>
 <part name="R25" library="microbuilder" deviceset="RESISTOR" device="0603" value="1M"/>
@@ -3086,22 +3121,32 @@ www.irf.com&lt;p&gt;
 <part name="U2" library="Volks73-NXPSemiconductors" deviceset="PRTR5V0U2X?" device=""/>
 <part name="GND33" library="microbuilder" deviceset="GND" device=""/>
 <part name="5.0V3" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="IC2" library="atmel" deviceset="AT45DB161D" device="-SU"/>
+<part name="IC2" library="atmel" deviceset="AT45DB161D" device="-SU">
+<attribute name="POPULATE" value="0"/>
+</part>
 <part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="GND39" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND40" library="microbuilder" deviceset="GND" device=""/>
 <part name="3.3V19" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="3.3V18" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="3.3V17" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="60 1%"/>
-<part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="60 1%"/>
+<part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="60 1%">
+<attribute name="MPN" value="MF-RES-0603-60.4"/>
+</part>
+<part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="60 1%">
+<attribute name="MPN" value="MF-RES-0603-60.4"/>
+</part>
 <part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="4.7nF"/>
 <part name="GND27" library="microbuilder" deviceset="GND" device=""/>
 <part name="X2" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="X1" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="CAN_TERM" library="pinhead" deviceset="PINHD-2X2" device=""/>
-<part name="Q1" library="transistor-small-signal" deviceset="BSS84" device=""/>
-<part name="R22" library="microbuilder" deviceset="RESISTOR" device="0603" value="1.5k"/>
+<part name="Q1" library="transistor-small-signal" deviceset="BSS84" device="">
+<attribute name="MPN" value="BSS84"/>
+</part>
+<part name="R22" library="microbuilder" deviceset="RESISTOR" device="0603" value="1.5k">
+<attribute name="MPN" value="MCR03ERTF1501"/>
+</part>
 <part name="3.3V16" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="MASTER_EN" library="jumper" deviceset="JP1Q" device=""/>
 <part name="GND41" library="microbuilder" deviceset="GND" device=""/>
@@ -3118,7 +3163,9 @@ www.irf.com&lt;p&gt;
 <instance part="C11" gate="G$1" x="2.54" y="73.66" rot="R90"/>
 <instance part="C9" gate="G$1" x="-5.08" y="71.12" rot="R90"/>
 <instance part="C8" gate="G$1" x="-7.62" y="66.04" rot="R270"/>
-<instance part="C15" gate="G$1" x="17.78" y="86.36" rot="R90"/>
+<instance part="C15" gate="G$1" x="17.78" y="86.36" rot="R90">
+<attribute name="MPN" x="17.78" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND17" gate="G$1" x="-12.7" y="93.98" rot="R180"/>
 <instance part="TC1" gate="A" x="-10.16" y="38.1" rot="R180"/>
 <instance part="3.3V7" gate="G$1" x="-27.94" y="43.18" rot="R90"/>
@@ -3136,7 +3183,9 @@ www.irf.com&lt;p&gt;
 <instance part="5.0V2" gate="G$1" x="-73.66" y="83.82" rot="R90"/>
 <instance part="3.3V6" gate="G$1" x="-33.02" y="83.82" rot="R270"/>
 <instance part="LED1" gate="G$1" x="-38.1" y="63.5" rot="R270"/>
-<instance part="R9" gate="G$1" x="-38.1" y="76.2" rot="R90"/>
+<instance part="R9" gate="G$1" x="-38.1" y="76.2" rot="R90">
+<attribute name="MPN" x="-38.1" y="76.2" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND11" gate="G$1" x="-38.1" y="55.88"/>
 <instance part="ROT2" gate="G$1" x="-58.42" y="116.84" rot="R270"/>
 <instance part="GND9" gate="G$1" x="-55.88" y="129.54" rot="R180"/>
@@ -3157,10 +3206,14 @@ www.irf.com&lt;p&gt;
 <instance part="H3" gate="G$1" x="-71.12" y="93.98"/>
 <instance part="H4" gate="G$1" x="-63.5" y="93.98"/>
 <instance part="5.0V1" gate="G$1" x="-83.82" y="43.18" rot="R90"/>
-<instance part="JP1" gate="G$1" x="-66.04" y="55.88"/>
+<instance part="JP1" gate="G$1" x="-66.04" y="55.88">
+<attribute name="POPULATE" x="-66.04" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="3.3V3" gate="G$1" x="-71.12" y="58.42" rot="R90"/>
 <instance part="GND7" gate="G$1" x="-71.12" y="55.88" rot="R270"/>
-<instance part="R21" gate="G$1" x="106.68" y="48.26" rot="R180"/>
+<instance part="R21" gate="G$1" x="106.68" y="48.26" rot="R180">
+<attribute name="MPN" x="106.68" y="48.26" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="LED2" gate="G$1" x="119.38" y="48.26"/>
 <instance part="GND34" gate="G$1" x="127" y="48.26" rot="R90"/>
 <instance part="C14" gate="G$1" x="12.7" y="20.32" rot="R90"/>
@@ -3221,9 +3274,15 @@ www.irf.com&lt;p&gt;
 <instance part="C5" gate="G$1" x="-45.72" y="78.74"/>
 <instance part="IC1" gate="G$1" x="53.34" y="58.42"/>
 <instance part="X4" gate="_CONN" x="154.94" y="109.22"/>
-<instance part="X4" gate="SHIELD" x="154.94" y="111.76"/>
-<instance part="R24" gate="G$1" x="137.16" y="111.76" rot="R180"/>
-<instance part="R23" gate="G$1" x="124.46" y="109.22" rot="R180"/>
+<instance part="X4" gate="SHIELD" x="154.94" y="111.76">
+<attribute name="POPULATE" x="154.94" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R24" gate="G$1" x="137.16" y="111.76" rot="R180">
+<attribute name="MPN" x="137.16" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="124.46" y="109.22" rot="R180">
+<attribute name="MPN" x="124.46" y="109.22" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="5.0V4" gate="G$1" x="152.4" y="124.46"/>
 <instance part="GND37" gate="G$1" x="152.4" y="99.06"/>
 <instance part="R25" gate="G$1" x="157.48" y="88.9" rot="R270"/>
@@ -3233,15 +3292,21 @@ www.irf.com&lt;p&gt;
 <instance part="U2" gate="-SUPPLY" x="127" y="134.62" rot="R180"/>
 <instance part="GND33" gate="G$1" x="127" y="149.86" rot="R180"/>
 <instance part="5.0V3" gate="G$1" x="127" y="119.38" rot="R180"/>
-<instance part="IC2" gate="G$1" x="147.32" y="15.24"/>
+<instance part="IC2" gate="G$1" x="147.32" y="15.24">
+<attribute name="POPULATE" x="147.32" y="15.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C23" gate="G$1" x="160.02" y="30.48" rot="R180"/>
 <instance part="GND39" gate="G$1" x="160.02" y="38.1" rot="R180"/>
 <instance part="GND40" gate="G$1" x="165.1" y="10.16" rot="R90"/>
 <instance part="3.3V19" gate="G$1" x="165.1" y="20.32" rot="R270"/>
 <instance part="3.3V18" gate="G$1" x="116.84" y="15.24" rot="R90"/>
 <instance part="3.3V17" gate="G$1" x="116.84" y="20.32" rot="R90"/>
-<instance part="R16" gate="G$1" x="50.8" y="-30.48" rot="R90"/>
-<instance part="R15" gate="G$1" x="50.8" y="-20.32" rot="R90"/>
+<instance part="R16" gate="G$1" x="50.8" y="-30.48" rot="R90">
+<attribute name="MPN" x="50.8" y="-30.48" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R15" gate="G$1" x="50.8" y="-20.32" rot="R90">
+<attribute name="MPN" x="50.8" y="-20.32" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="C19" gate="G$1" x="58.42" y="-25.4" rot="R270"/>
 <instance part="GND27" gate="G$1" x="68.58" y="-25.4" rot="R90"/>
 <instance part="X2" gate="-1" x="-55.88" y="43.18"/>
@@ -3253,8 +3318,12 @@ www.irf.com&lt;p&gt;
 <instance part="X1" gate="-3" x="-71.12" y="38.1"/>
 <instance part="X1" gate="-4" x="-71.12" y="35.56"/>
 <instance part="CAN_TERM" gate="A" x="33.02" y="-25.4"/>
-<instance part="Q1" gate="G$1" x="114.3" y="88.9" rot="MR180"/>
-<instance part="R22" gate="G$1" x="114.3" y="101.6" rot="R270"/>
+<instance part="Q1" gate="G$1" x="114.3" y="88.9" rot="MR180">
+<attribute name="MPN" x="114.3" y="88.9" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
+<instance part="R22" gate="G$1" x="114.3" y="101.6" rot="R270">
+<attribute name="MPN" x="114.3" y="101.6" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="3.3V16" gate="G$1" x="114.3" y="78.74" rot="R180"/>
 <instance part="MASTER_EN" gate="A" x="2.54" y="5.08" rot="R90"/>
 <instance part="GND41" gate="G$1" x="-10.16" y="5.08" rot="R270"/>

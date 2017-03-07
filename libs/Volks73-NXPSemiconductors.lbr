@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -317,6 +317,7 @@ PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes a
 <attribute name="DOCUMENTATION_URL" value="http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf"/>
 <attribute name="MANUFACTURER" value="NXP Semiconductors"/>
 <attribute name="MOUNTING_TYPE" value="Surface Mount"/>
+<attribute name="MPN" value="PRTR5V0U2X,215" constant="no"/>
 <attribute name="OPERATING_TEMPERATURE" value="-40C ~ 85C"/>
 <attribute name="PART_NUMBER" value="PRTR5V0U2X,215"/>
 <attribute name="POWER-PEAK_PULSE" value="-"/>
