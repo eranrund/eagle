@@ -4452,7 +4452,7 @@ http://www.tag-connect.com</description>
 <part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="BTN4" library="keves" deviceset="B3W-9000-RG2N" device=""/>
 <part name="R18" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="R19" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R19" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="U$37" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$38" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$39" library="microbuilder" deviceset="GND" device=""/>
@@ -4462,38 +4462,38 @@ http://www.tag-connect.com</description>
 <part name="RN2" library="resistor-sil" deviceset="G05R" device="" value="4606X-101-101LF"/>
 <part name="U$40" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
-<part name="FADER1" library="keves" deviceset="PTA6043-2015CPB103" device=""/>
+<part name="FADER1" library="keves" deviceset="PTA6043-2015CPB103" device="" value="PTA6043-2010CIB503"/>
 <part name="BTN1" library="keves" deviceset="B3W-9000-RG2N" device=""/>
 <part name="R20" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="R21" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R21" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="U$44" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$45" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$46" library="microbuilder" deviceset="GND" device=""/>
 <part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="BTN5" library="keves" deviceset="B3W-9000-RG2N" device=""/>
 <part name="R24" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="R25" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R25" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="U$48" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$49" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$50" library="microbuilder" deviceset="GND" device=""/>
 <part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="BTN6" library="keves" deviceset="B3W-9000-RG2N" device=""/>
 <part name="R26" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="R27" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R27" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="U$52" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$53" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$54" library="microbuilder" deviceset="GND" device=""/>
 <part name="C24" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="BTN2" library="keves" deviceset="B3W-9000-RG2N" device=""/>
 <part name="R22" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="R23" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R23" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="U$56" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$57" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$58" library="microbuilder" deviceset="GND" device=""/>
 <part name="C22" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="BTN3" library="keves" deviceset="B3W-9000-RG2N" device=""/>
 <part name="R28" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
-<part name="R29" library="microbuilder" deviceset="RESISTOR" device="0603" value="330"/>
+<part name="R29" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
 <part name="U$60" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$61" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$62" library="microbuilder" deviceset="GND" device=""/>
