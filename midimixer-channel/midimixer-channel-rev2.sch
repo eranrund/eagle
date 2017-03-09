@@ -7237,13 +7237,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="-53.34" y1="78.74" x2="-50.8" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BTN8_LED2" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="QG"/>
-<wire x1="-71.12" y1="129.54" x2="-58.42" y2="129.54" width="0.2032" layer="91"/>
-<label x="-60.96" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BTN8_LED1" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="QF"/>
@@ -7258,25 +7251,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="-60.96" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BTN6_LED1" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="QD"/>
-<wire x1="-71.12" y1="121.92" x2="-58.42" y2="121.92" width="0.2032" layer="91"/>
-<label x="-60.96" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BTN7_LED1" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="QH"/>
-<wire x1="-71.12" y1="132.08" x2="-58.42" y2="132.08" width="0.2032" layer="91"/>
-<label x="-60.96" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BTN7_LED2" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="QA"/>
-<wire x1="-71.12" y1="114.3" x2="-58.42" y2="114.3" width="0.2032" layer="91"/>
-<label x="-60.96" y="114.3" size="1.778" layer="95"/>
+<pinref part="IC1" gate="A" pin="QG"/>
+<wire x1="-71.12" y1="129.54" x2="-58.42" y2="129.54" width="0.2032" layer="91"/>
+<label x="-60.96" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BTN4" class="0">
@@ -7485,13 +7464,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="BTN5_LED1" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="QB"/>
-<wire x1="-71.12" y1="116.84" x2="-58.42" y2="116.84" width="0.2032" layer="91"/>
-<label x="-60.96" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BTN5_LED2" class="0">
-<segment>
 <pinref part="IC1" gate="A" pin="QC"/>
 <wire x1="-71.12" y1="119.38" x2="-58.42" y2="119.38" width="0.2032" layer="91"/>
 <label x="-60.96" y="119.38" size="1.778" layer="95"/>
@@ -7530,6 +7502,34 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IC2" gate="A" pin="QF"/>
 <wire x1="-71.12" y1="91.44" x2="-60.96" y2="91.44" width="0.2032" layer="91"/>
 <label x="-68.58" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BTN6_LED1" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="QB"/>
+<wire x1="-71.12" y1="116.84" x2="-58.42" y2="116.84" width="0.2032" layer="91"/>
+<label x="-60.96" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BTN5_LED2" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="QD"/>
+<wire x1="-71.12" y1="121.92" x2="-58.42" y2="121.92" width="0.2032" layer="91"/>
+<label x="-60.96" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BTN8_LED2" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="QA"/>
+<wire x1="-71.12" y1="114.3" x2="-58.42" y2="114.3" width="0.2032" layer="91"/>
+<label x="-60.96" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BTN7_LED2" class="0">
+<segment>
+<pinref part="IC1" gate="A" pin="QH"/>
+<wire x1="-71.12" y1="132.08" x2="-58.42" y2="132.08" width="0.2032" layer="91"/>
+<label x="-60.96" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
