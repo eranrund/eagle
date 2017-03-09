@@ -4638,9 +4638,9 @@ http://www.tag-connect.com</description>
 <instance part="U$64" gate="G$1" x="157.48" y="104.14" rot="R270"/>
 <instance part="U$19" gate="G$1" x="10.16" y="101.6" rot="R90"/>
 <instance part="U$20" gate="G$1" x="-71.12" y="68.58"/>
-<instance part="R2" gate="G$1" x="10.16" y="50.8"/>
-<instance part="LED" gate="G$1" x="-2.54" y="50.8" rot="R180"/>
-<instance part="U$32" gate="G$1" x="-10.16" y="50.8" rot="R270"/>
+<instance part="R2" gate="G$1" x="111.76" y="83.82" rot="R180"/>
+<instance part="LED" gate="G$1" x="124.46" y="83.82"/>
+<instance part="U$32" gate="G$1" x="132.08" y="83.82" rot="R90"/>
 <instance part="R3" gate="G$1" x="88.9" y="-50.8" rot="R90"/>
 <instance part="R7" gate="G$1" x="88.9" y="-40.64" rot="R90"/>
 <instance part="C16" gate="G$1" x="96.52" y="-45.72" rot="R270"/>
@@ -5056,7 +5056,7 @@ http://www.tag-connect.com</description>
 <segment>
 <pinref part="LED" gate="G$1" pin="C"/>
 <pinref part="U$32" gate="G$1" pin="GND"/>
-<wire x1="-7.62" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="P$1"/>
@@ -5372,6 +5372,7 @@ http://www.tag-connect.com</description>
 <junction x="-106.68" y="5.08"/>
 <pinref part="IC4" gate="A" pin="CLK"/>
 <pinref part="IC5" gate="A" pin="CLK"/>
+<label x="-104.14" y="-30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PB13/I2S2_CK"/>
@@ -5424,10 +5425,12 @@ http://www.tag-connect.com</description>
 </net>
 <net name="SPI2_MISO" class="0">
 <segment>
-<wire x1="-101.6" y1="-2.54" x2="-114.3" y2="-2.54" width="0.2032" layer="91"/>
 <wire x1="-114.3" y1="-2.54" x2="-114.3" y2="139.7" width="0.2032" layer="91"/>
 <label x="-111.76" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="IC5" gate="A" pin="QH"/>
+<wire x1="-114.3" y1="-2.54" x2="-114.3" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="A" pin="QH"/>
+<wire x1="-114.3" y1="-53.34" x2="-101.6" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-114.3" y="-30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PB14/I2S2_XD"/>
@@ -5440,29 +5443,24 @@ http://www.tag-connect.com</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-101.6" y1="0" x2="-121.92" y2="0" width="0.2032" layer="91"/>
 <wire x1="-121.92" y1="0" x2="-121.92" y2="2.54" width="0.2032" layer="91"/>
-<wire x1="-101.6" y1="-53.34" x2="-127" y2="-53.34" width="0.2032" layer="91"/>
-<wire x1="-127" y1="-53.34" x2="-127" y2="0" width="0.2032" layer="91"/>
-<wire x1="-127" y1="0" x2="-121.92" y2="0" width="0.2032" layer="91"/>
-<junction x="-121.92" y="0"/>
-<pinref part="IC4" gate="A" pin="QH"/>
 <pinref part="IC5" gate="A" pin="SER"/>
 </segment>
 </net>
-<net name="DIN_1" class="0">
+<net name="ROT2_A" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="A"/>
 <label x="-43.18" y="-40.64" size="1.778" layer="95"/>
 <wire x1="-76.2" y1="-40.64" x2="-43.18" y2="-40.64" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="DIN_2" class="0">
+<net name="ROT2_B" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="B"/>
 <label x="-43.18" y="-43.18" size="1.778" layer="95"/>
 <wire x1="-76.2" y1="-43.18" x2="-43.18" y2="-43.18" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="DIN_3" class="0">
+<net name="ROT2_SW" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="C"/>
 <wire x1="-76.2" y1="-45.72" x2="-63.5" y2="-45.72" width="0.2032" layer="91"/>
@@ -5484,7 +5482,7 @@ http://www.tag-connect.com</description>
 <junction x="-60.96" y="-48.26"/>
 </segment>
 </net>
-<net name="DIN_5" class="0">
+<net name="ROT1_SW" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="E"/>
 <wire x1="-76.2" y1="-50.8" x2="-58.42" y2="-50.8" width="0.2032" layer="91"/>
@@ -5495,14 +5493,14 @@ http://www.tag-connect.com</description>
 <junction x="-58.42" y="-50.8"/>
 </segment>
 </net>
-<net name="DIN_6" class="0">
+<net name="ROT1_A" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="F"/>
 <wire x1="-76.2" y1="-53.34" x2="-43.18" y2="-53.34" width="0.2032" layer="91"/>
 <label x="-43.18" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIN_7" class="0">
+<net name="ROT1_B" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="G"/>
 <wire x1="-76.2" y1="-55.88" x2="-43.18" y2="-55.88" width="0.2032" layer="91"/>
@@ -5605,6 +5603,7 @@ http://www.tag-connect.com</description>
 <junction x="-116.84" y="7.62"/>
 <pinref part="IC4" gate="A" pin="SH/!LD"/>
 <pinref part="IC5" gate="A" pin="SH/!LD"/>
+<label x="-116.84" y="-30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="PC2"/>
@@ -5753,9 +5752,14 @@ http://www.tag-connect.com</description>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="-101.6" y1="-50.8" x2="-121.92" y2="-50.8" width="0.2032" layer="91"/>
+<wire x1="-101.6" y1="-50.8" x2="-109.22" y2="-50.8" width="0.2032" layer="91"/>
+<wire x1="-109.22" y1="-50.8" x2="-121.92" y2="-50.8" width="0.2032" layer="91"/>
 <wire x1="-121.92" y1="-50.8" x2="-121.92" y2="-48.26" width="0.2032" layer="91"/>
 <pinref part="IC4" gate="A" pin="SER"/>
+<pinref part="IC5" gate="A" pin="QH"/>
+<wire x1="-101.6" y1="-2.54" x2="-109.22" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="-2.54" x2="-109.22" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="-109.22" y="-50.8"/>
 </segment>
 </net>
 <net name="UART_TX" class="0">
@@ -5987,14 +5991,7 @@ http://www.tag-connect.com</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="LED" gate="G$1" pin="A"/>
-<wire x1="2.54" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="CPU1" gate="G$1" pin="PC5"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -6029,6 +6026,13 @@ http://www.tag-connect.com</description>
 <junction x="88.9" y="-45.72"/>
 <wire x1="83.82" y1="-45.72" x2="88.9" y2="-45.72" width="0.1524" layer="91"/>
 <label x="78.74" y="-45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="CPU1" gate="G$1" pin="PC12/SDIO_CLK"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -6349,7 +6353,7 @@ http://www.tag-connect.com</description>
 <wire x1="134.62" y1="15.24" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DIN_7" class="0">
+<net name="ROT1_B" class="0">
 <segment>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="60.96" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
@@ -6630,7 +6634,7 @@ http://www.tag-connect.com</description>
 <pinref part="POT7" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
-<net name="DIN_6" class="0">
+<net name="ROT1_A" class="0">
 <segment>
 <pinref part="R39" gate="G$1" pin="1"/>
 <label x="25.4" y="60.96" size="1.778" layer="95"/>
@@ -6647,7 +6651,7 @@ http://www.tag-connect.com</description>
 <label x="147.32" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIN_1" class="0">
+<net name="ROT2_A" class="0">
 <segment>
 <pinref part="R43" gate="G$1" pin="1"/>
 <label x="111.76" y="66.04" size="1.778" layer="95"/>
@@ -6657,7 +6661,7 @@ http://www.tag-connect.com</description>
 <junction x="109.22" y="66.04"/>
 </segment>
 </net>
-<net name="DIN_2" class="0">
+<net name="ROT2_B" class="0">
 <segment>
 <pinref part="R44" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
@@ -6667,18 +6671,11 @@ http://www.tag-connect.com</description>
 <junction x="66.04" y="66.04"/>
 </segment>
 </net>
-<net name="DIN_3" class="0">
+<net name="ROT2_SW" class="0">
 <segment>
 <pinref part="ROT2" gate="G$1" pin="SW2"/>
 <wire x1="83.82" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
 <label x="81.28" y="55.88" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="DIN_5" class="0">
-<segment>
-<pinref part="ROT1" gate="G$1" pin="SW2"/>
-<wire x1="-2.54" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
-<label x="-5.08" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="BTN4" class="0">
@@ -6776,6 +6773,13 @@ http://www.tag-connect.com</description>
 <wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.2032" layer="91"/>
 <label x="45.72" y="-17.78" size="1.778" layer="95"/>
 <pinref part="POT2" gate="G$1" pin="WIPER"/>
+</segment>
+</net>
+<net name="ROT1_SW" class="0">
+<segment>
+<pinref part="ROT1" gate="G$1" pin="SW2"/>
+<wire x1="-2.54" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="-5.08" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
