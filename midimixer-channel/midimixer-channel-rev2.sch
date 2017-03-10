@@ -5974,6 +5974,22 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C40" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
 <part name="U$138" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$139" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C42" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$141" library="microbuilder" deviceset="GND" device=""/>
+<part name="C43" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$142" library="microbuilder" deviceset="GND" device=""/>
+<part name="C44" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$143" library="microbuilder" deviceset="GND" device=""/>
+<part name="C45" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$144" library="microbuilder" deviceset="GND" device=""/>
+<part name="C46" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$145" library="microbuilder" deviceset="GND" device=""/>
+<part name="C47" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$146" library="microbuilder" deviceset="GND" device=""/>
+<part name="C48" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$147" library="microbuilder" deviceset="GND" device=""/>
+<part name="C49" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$148" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7686,6 +7702,22 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="C40" gate="G$1" x="35.56" y="12.7"/>
 <instance part="U$138" gate="G$1" x="35.56" y="22.86" rot="R180"/>
 <instance part="U$139" gate="G$1" x="35.56" y="5.08" rot="R180"/>
+<instance part="C42" gate="G$1" x="12.7" y="5.08" rot="R90"/>
+<instance part="U$141" gate="G$1" x="5.08" y="5.08" rot="R270"/>
+<instance part="C43" gate="G$1" x="2.54" y="-20.32" rot="R90"/>
+<instance part="U$142" gate="G$1" x="-5.08" y="-20.32" rot="R270"/>
+<instance part="C44" gate="G$1" x="2.54" y="-45.72" rot="R90"/>
+<instance part="U$143" gate="G$1" x="-5.08" y="-45.72" rot="R270"/>
+<instance part="C45" gate="G$1" x="2.54" y="-76.2" rot="R90"/>
+<instance part="U$144" gate="G$1" x="-5.08" y="-76.2" rot="R270"/>
+<instance part="C46" gate="G$1" x="2.54" y="-106.68" rot="R90"/>
+<instance part="U$145" gate="G$1" x="-5.08" y="-106.68" rot="R270"/>
+<instance part="C47" gate="G$1" x="40.64" y="-73.66" rot="R90"/>
+<instance part="U$146" gate="G$1" x="33.02" y="-73.66" rot="R270"/>
+<instance part="C48" gate="G$1" x="40.64" y="-45.72" rot="R90"/>
+<instance part="U$147" gate="G$1" x="33.02" y="-45.72" rot="R270"/>
+<instance part="C49" gate="G$1" x="40.64" y="-20.32" rot="R90"/>
+<instance part="U$148" gate="G$1" x="33.02" y="-20.32" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7961,6 +7993,38 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="C40" gate="G$1" pin="P$1"/>
 <pinref part="U$138" gate="G$1" pin="GND"/>
 <wire x1="35.56" y1="20.32" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C42" gate="G$1" pin="P$1"/>
+<pinref part="U$141" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C43" gate="G$1" pin="P$1"/>
+<pinref part="U$142" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="P$1"/>
+<pinref part="U$143" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C45" gate="G$1" pin="P$1"/>
+<pinref part="U$144" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C46" gate="G$1" pin="P$1"/>
+<pinref part="U$145" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C47" gate="G$1" pin="P$1"/>
+<pinref part="U$146" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C48" gate="G$1" pin="P$1"/>
+<pinref part="U$147" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C49" gate="G$1" pin="P$1"/>
+<pinref part="U$148" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -8279,22 +8343,34 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <net name="POT4" class="0">
 <segment>
 <wire x1="45.72" y1="-43.18" x2="45.72" y2="-45.72" width="0.2032" layer="91"/>
-<label x="48.26" y="-45.72" size="1.778" layer="95"/>
+<label x="48.26" y="-53.34" size="1.778" layer="95" rot="R90"/>
 <pinref part="POT4" gate="G$1" pin="WIPER"/>
+<wire x1="45.72" y1="-45.72" x2="45.72" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="C48" gate="G$1" pin="P$2"/>
+<wire x1="43.18" y1="-45.72" x2="45.72" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="45.72" y="-45.72"/>
 </segment>
 </net>
 <net name="POT5" class="0">
 <segment>
 <wire x1="7.62" y1="-43.18" x2="7.62" y2="-45.72" width="0.2032" layer="91"/>
-<label x="10.16" y="-43.18" size="1.778" layer="95"/>
+<label x="10.16" y="-55.88" size="1.778" layer="95" rot="R90"/>
 <pinref part="POT5" gate="G$1" pin="WIPER"/>
+<wire x1="7.62" y1="-45.72" x2="7.62" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C44" gate="G$1" pin="P$2"/>
+<wire x1="5.08" y1="-45.72" x2="7.62" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="7.62" y="-45.72"/>
 </segment>
 </net>
 <net name="POT7" class="0">
 <segment>
 <wire x1="7.62" y1="-17.78" x2="7.62" y2="-20.32" width="0.2032" layer="91"/>
-<label x="7.62" y="-17.78" size="1.778" layer="95"/>
+<label x="10.16" y="-30.48" size="1.778" layer="95" rot="R90"/>
 <pinref part="POT7" gate="G$1" pin="WIPER"/>
+<wire x1="7.62" y1="-20.32" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="C43" gate="G$1" pin="P$2"/>
+<wire x1="5.08" y1="-20.32" x2="7.62" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="7.62" y="-20.32"/>
 </segment>
 </net>
 <net name="ROT1_A" class="0">
@@ -8357,15 +8433,23 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <net name="POT6" class="0">
 <segment>
 <wire x1="45.72" y1="-71.12" x2="45.72" y2="-73.66" width="0.2032" layer="91"/>
-<label x="45.72" y="-73.66" size="1.778" layer="95"/>
+<label x="48.26" y="-81.28" size="1.778" layer="95" rot="R90"/>
 <pinref part="POT6" gate="G$1" pin="WIPER"/>
+<wire x1="45.72" y1="-73.66" x2="45.72" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="C47" gate="G$1" pin="P$2"/>
+<wire x1="43.18" y1="-73.66" x2="45.72" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="45.72" y="-73.66"/>
 </segment>
 </net>
 <net name="FADER" class="0">
 <segment>
 <pinref part="FADER1" gate="G$1" pin="S"/>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="2.54" width="0.2032" layer="91"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="5.08" width="0.2032" layer="91"/>
 <label x="17.78" y="5.08" size="1.778" layer="95"/>
+<pinref part="C42" gate="G$1" pin="P$2"/>
+<wire x1="17.78" y1="5.08" x2="17.78" y2="2.54" width="0.2032" layer="91"/>
+<wire x1="15.24" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
+<junction x="17.78" y="5.08"/>
 </segment>
 </net>
 <net name="POT1" class="0">
@@ -8373,13 +8457,21 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="7.62" y1="-104.14" x2="7.62" y2="-106.68" width="0.2032" layer="91"/>
 <label x="7.62" y="-106.68" size="1.778" layer="95"/>
 <pinref part="POT1" gate="G$1" pin="WIPER"/>
+<wire x1="7.62" y1="-106.68" x2="7.62" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="C46" gate="G$1" pin="P$2"/>
+<wire x1="5.08" y1="-106.68" x2="7.62" y2="-106.68" width="0.1524" layer="91"/>
+<junction x="7.62" y="-106.68"/>
 </segment>
 </net>
 <net name="POT3" class="0">
 <segment>
 <wire x1="7.62" y1="-73.66" x2="7.62" y2="-76.2" width="0.2032" layer="91"/>
-<label x="7.62" y="-73.66" size="1.778" layer="95"/>
+<label x="10.16" y="-86.36" size="1.778" layer="95" rot="R90"/>
 <pinref part="POT3" gate="G$1" pin="WIPER"/>
+<wire x1="7.62" y1="-76.2" x2="7.62" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="C45" gate="G$1" pin="P$2"/>
+<wire x1="5.08" y1="-76.2" x2="7.62" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="7.62" y="-76.2"/>
 </segment>
 </net>
 <net name="BTN3" class="0">
@@ -8434,8 +8526,12 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <net name="POT2" class="0">
 <segment>
 <wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.2032" layer="91"/>
-<label x="45.72" y="-17.78" size="1.778" layer="95"/>
+<label x="48.26" y="-27.94" size="1.778" layer="95" rot="R90"/>
 <pinref part="POT2" gate="G$1" pin="WIPER"/>
+<wire x1="45.72" y1="-20.32" x2="45.72" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="C49" gate="G$1" pin="P$2"/>
+<wire x1="43.18" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="45.72" y="-20.32"/>
 </segment>
 </net>
 <net name="ROT1_SW" class="0">
