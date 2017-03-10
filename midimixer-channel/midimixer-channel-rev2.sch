@@ -5976,7 +5976,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="U$12" gate="G$1" x="111.76" y="68.58" rot="R90"/>
 <instance part="U$13" gate="G$1" x="96.52" y="71.12" rot="R270"/>
 <instance part="C12" gate="G$1" x="91.44" y="73.66"/>
-<instance part="U$14" gate="G$1" x="91.44" y="83.82" rot="R180"/>
+<instance part="U$14" gate="G$1" x="91.44" y="81.28" rot="R180"/>
 <instance part="U$15" gate="G$1" x="91.44" y="109.22" rot="R90"/>
 <instance part="C11" gate="G$1" x="86.36" y="111.76"/>
 <instance part="U$16" gate="G$1" x="91.44" y="116.84" rot="R270"/>
@@ -6366,7 +6366,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="C12" gate="G$1" pin="P$1"/>
 <pinref part="U$14" gate="G$1" pin="GND"/>
-<wire x1="91.44" y1="81.28" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CPU1" gate="G$1" pin="VSS2"/>
@@ -6678,13 +6677,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="PWR" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="45.72" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PB2" class="0">
-<segment>
-<pinref part="CPU1" gate="G$1" pin="PB2-BOOT1"/>
-<wire x1="22.86" y1="43.18" x2="12.7" y2="43.18" width="0.2032" layer="91"/>
-<label x="12.7" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_CLK" class="0">
@@ -8337,6 +8329,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <junction x="177.8" y="81.28"/>
 <wire x1="177.8" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
 <label x="182.88" y="81.28" size="1.778" layer="95"/>
+<junction x="175.26" y="81.28"/>
 </segment>
 </net>
 <net name="5.0V" class="0">
@@ -8389,6 +8382,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <junction x="177.8" y="45.72"/>
 <wire x1="177.8" y1="45.72" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
 <label x="182.88" y="45.72" size="1.778" layer="95"/>
+<junction x="175.26" y="45.72"/>
 </segment>
 </net>
 <net name="N$48" class="0">
