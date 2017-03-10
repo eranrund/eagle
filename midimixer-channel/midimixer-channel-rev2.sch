@@ -5950,6 +5950,30 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="U$122" library="microbuilder" deviceset="GND" device=""/>
 <part name="R56" library="microbuilder" deviceset="RESISTOR" device="_0603" value="100"/>
 <part name="U$123" library="microbuilder" deviceset="GND" device=""/>
+<part name="C33" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$124" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$125" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C34" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$126" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$127" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C35" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$128" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$129" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C36" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$130" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$131" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C37" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$132" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$133" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C38" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$134" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$135" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C39" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$136" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$137" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="C40" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="U$138" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$139" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7576,26 +7600,26 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="U$97" gate="G$1" x="27.94" y="12.7" rot="R90"/>
 <instance part="U$98" gate="G$1" x="7.62" y="12.7" rot="R90"/>
 <instance part="U$99" gate="G$1" x="55.88" y="-12.7" rot="R90"/>
-<instance part="U$100" gate="G$1" x="55.88" y="-30.48" rot="R90"/>
-<instance part="U$101" gate="G$1" x="55.88" y="-48.26" rot="R90"/>
-<instance part="U$102" gate="G$1" x="17.78" y="-71.12" rot="R90"/>
-<instance part="U$103" gate="G$1" x="17.78" y="-50.8" rot="R90"/>
-<instance part="U$104" gate="G$1" x="17.78" y="-30.48" rot="R90"/>
+<instance part="U$100" gate="G$1" x="55.88" y="-38.1" rot="R90"/>
+<instance part="U$101" gate="G$1" x="55.88" y="-66.04" rot="R90"/>
+<instance part="U$102" gate="G$1" x="17.78" y="-99.06" rot="R90"/>
+<instance part="U$103" gate="G$1" x="17.78" y="-68.58" rot="R90"/>
+<instance part="U$104" gate="G$1" x="17.78" y="-38.1" rot="R90"/>
 <instance part="U$105" gate="G$1" x="17.78" y="-12.7" rot="R90"/>
 <instance part="U$106" gate="G$1" x="-2.54" y="-12.7" rot="R90"/>
-<instance part="U$107" gate="G$1" x="-2.54" y="-30.48" rot="R90"/>
-<instance part="U$108" gate="G$1" x="-2.54" y="-50.8" rot="R90"/>
-<instance part="U$109" gate="G$1" x="-2.54" y="-71.12" rot="R90"/>
+<instance part="U$107" gate="G$1" x="-2.54" y="-38.1" rot="R90"/>
+<instance part="U$108" gate="G$1" x="-2.54" y="-68.58" rot="R90"/>
+<instance part="U$109" gate="G$1" x="-2.54" y="-99.06" rot="R90"/>
 <instance part="U$110" gate="G$1" x="35.56" y="-12.7" rot="R90"/>
-<instance part="U$111" gate="G$1" x="35.56" y="-30.48" rot="R90"/>
-<instance part="U$112" gate="G$1" x="35.56" y="-48.26" rot="R90"/>
+<instance part="U$111" gate="G$1" x="35.56" y="-38.1" rot="R90"/>
+<instance part="U$112" gate="G$1" x="35.56" y="-66.04" rot="R90"/>
 <instance part="POT2" gate="G$1" x="45.72" y="-12.7" rot="R180"/>
 <instance part="POT7" gate="G$1" x="7.62" y="-12.7" rot="R180"/>
-<instance part="POT4" gate="G$1" x="45.72" y="-30.48" rot="R180"/>
-<instance part="POT5" gate="G$1" x="7.62" y="-30.48" rot="R180"/>
-<instance part="POT6" gate="G$1" x="45.72" y="-48.26" rot="R180"/>
-<instance part="POT3" gate="G$1" x="7.62" y="-50.8" rot="R180"/>
-<instance part="POT1" gate="G$1" x="7.62" y="-71.12" rot="R180"/>
+<instance part="POT4" gate="G$1" x="45.72" y="-38.1" rot="R180"/>
+<instance part="POT5" gate="G$1" x="7.62" y="-38.1" rot="R180"/>
+<instance part="POT6" gate="G$1" x="45.72" y="-66.04" rot="R180"/>
+<instance part="POT3" gate="G$1" x="7.62" y="-68.58" rot="R180"/>
+<instance part="POT1" gate="G$1" x="7.62" y="-99.06" rot="R180"/>
 <instance part="ROT1" gate="G$1" x="2.54" y="40.64" rot="R270"/>
 <instance part="U$21" gate="G$1" x="5.08" y="53.34" rot="R180"/>
 <instance part="U$22" gate="G$1" x="0" y="53.34" rot="R180"/>
@@ -7638,6 +7662,30 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="T2" gate="G$1" x="144.78" y="43.18" rot="R270"/>
 <instance part="U$33" gate="G$1" x="134.62" y="40.64" rot="R270"/>
 <instance part="R16" gate="G$1" x="144.78" y="53.34" rot="R270"/>
+<instance part="C33" gate="G$1" x="63.5" y="-12.7"/>
+<instance part="U$124" gate="G$1" x="63.5" y="-5.08" rot="R180"/>
+<instance part="U$125" gate="G$1" x="63.5" y="-17.78" rot="R180"/>
+<instance part="C34" gate="G$1" x="63.5" y="-38.1"/>
+<instance part="U$126" gate="G$1" x="63.5" y="-27.94" rot="R180"/>
+<instance part="U$127" gate="G$1" x="63.5" y="-45.72" rot="R180"/>
+<instance part="C35" gate="G$1" x="63.5" y="-66.04"/>
+<instance part="U$128" gate="G$1" x="63.5" y="-55.88" rot="R180"/>
+<instance part="U$129" gate="G$1" x="63.5" y="-73.66" rot="R180"/>
+<instance part="C36" gate="G$1" x="25.4" y="-101.6"/>
+<instance part="U$130" gate="G$1" x="25.4" y="-91.44" rot="R180"/>
+<instance part="U$131" gate="G$1" x="25.4" y="-109.22" rot="R180"/>
+<instance part="C37" gate="G$1" x="22.86" y="-73.66"/>
+<instance part="U$132" gate="G$1" x="22.86" y="-63.5" rot="R180"/>
+<instance part="U$133" gate="G$1" x="22.86" y="-81.28" rot="R180"/>
+<instance part="C38" gate="G$1" x="22.86" y="-40.64"/>
+<instance part="U$134" gate="G$1" x="22.86" y="-30.48" rot="R180"/>
+<instance part="U$135" gate="G$1" x="22.86" y="-48.26" rot="R180"/>
+<instance part="C39" gate="G$1" x="22.86" y="-15.24"/>
+<instance part="U$136" gate="G$1" x="22.86" y="-5.08" rot="R180"/>
+<instance part="U$137" gate="G$1" x="22.86" y="-22.86" rot="R180"/>
+<instance part="C40" gate="G$1" x="35.56" y="12.7"/>
+<instance part="U$138" gate="G$1" x="35.56" y="22.86" rot="R180"/>
+<instance part="U$139" gate="G$1" x="35.56" y="5.08" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7874,6 +7922,45 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="T2" gate="G$1" pin="E"/>
 <pinref part="U$33" gate="G$1" pin="GND"/>
 <wire x1="137.16" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="P$1"/>
+<pinref part="U$124" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C34" gate="G$1" pin="P$1"/>
+<pinref part="U$126" gate="G$1" pin="GND"/>
+<wire x1="63.5" y1="-30.48" x2="63.5" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C35" gate="G$1" pin="P$1"/>
+<pinref part="U$128" gate="G$1" pin="GND"/>
+<wire x1="63.5" y1="-58.42" x2="63.5" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C36" gate="G$1" pin="P$1"/>
+<pinref part="U$130" gate="G$1" pin="GND"/>
+<wire x1="25.4" y1="-93.98" x2="25.4" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C37" gate="G$1" pin="P$1"/>
+<pinref part="U$132" gate="G$1" pin="GND"/>
+<wire x1="22.86" y1="-66.04" x2="22.86" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C38" gate="G$1" pin="P$1"/>
+<pinref part="U$134" gate="G$1" pin="GND"/>
+<wire x1="22.86" y1="-33.02" x2="22.86" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C39" gate="G$1" pin="P$1"/>
+<pinref part="U$136" gate="G$1" pin="GND"/>
+<wire x1="22.86" y1="-7.62" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C40" gate="G$1" pin="P$1"/>
+<pinref part="U$138" gate="G$1" pin="GND"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -8149,18 +8236,57 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="R46" gate="G$1" pin="1"/>
 <pinref part="U$117" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="P$2"/>
+<pinref part="U$125" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="C34" gate="G$1" pin="P$2"/>
+<pinref part="U$127" gate="G$1" pin="3.3V"/>
+<wire x1="63.5" y1="-43.18" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C35" gate="G$1" pin="P$2"/>
+<pinref part="U$129" gate="G$1" pin="3.3V"/>
+<wire x1="63.5" y1="-71.12" x2="63.5" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C36" gate="G$1" pin="P$2"/>
+<pinref part="U$131" gate="G$1" pin="3.3V"/>
+<wire x1="25.4" y1="-106.68" x2="25.4" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C37" gate="G$1" pin="P$2"/>
+<pinref part="U$133" gate="G$1" pin="3.3V"/>
+<wire x1="22.86" y1="-78.74" x2="22.86" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C38" gate="G$1" pin="P$2"/>
+<pinref part="U$135" gate="G$1" pin="3.3V"/>
+<wire x1="22.86" y1="-45.72" x2="22.86" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C39" gate="G$1" pin="P$2"/>
+<pinref part="U$137" gate="G$1" pin="3.3V"/>
+<wire x1="22.86" y1="-20.32" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C40" gate="G$1" pin="P$2"/>
+<pinref part="U$139" gate="G$1" pin="3.3V"/>
+<wire x1="35.56" y1="7.62" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="POT4" class="0">
 <segment>
-<wire x1="45.72" y1="-35.56" x2="45.72" y2="-38.1" width="0.2032" layer="91"/>
-<label x="48.26" y="-38.1" size="1.778" layer="95"/>
+<wire x1="45.72" y1="-43.18" x2="45.72" y2="-45.72" width="0.2032" layer="91"/>
+<label x="48.26" y="-45.72" size="1.778" layer="95"/>
 <pinref part="POT4" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="POT5" class="0">
 <segment>
-<wire x1="7.62" y1="-35.56" x2="7.62" y2="-38.1" width="0.2032" layer="91"/>
-<label x="10.16" y="-35.56" size="1.778" layer="95"/>
+<wire x1="7.62" y1="-43.18" x2="7.62" y2="-45.72" width="0.2032" layer="91"/>
+<label x="10.16" y="-43.18" size="1.778" layer="95"/>
 <pinref part="POT5" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
@@ -8230,8 +8356,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="POT6" class="0">
 <segment>
-<wire x1="45.72" y1="-53.34" x2="45.72" y2="-55.88" width="0.2032" layer="91"/>
-<label x="45.72" y="-55.88" size="1.778" layer="95"/>
+<wire x1="45.72" y1="-71.12" x2="45.72" y2="-73.66" width="0.2032" layer="91"/>
+<label x="45.72" y="-73.66" size="1.778" layer="95"/>
 <pinref part="POT6" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
@@ -8244,15 +8370,15 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="POT1" class="0">
 <segment>
-<wire x1="7.62" y1="-76.2" x2="7.62" y2="-78.74" width="0.2032" layer="91"/>
-<label x="7.62" y="-78.74" size="1.778" layer="95"/>
+<wire x1="7.62" y1="-104.14" x2="7.62" y2="-106.68" width="0.2032" layer="91"/>
+<label x="7.62" y="-106.68" size="1.778" layer="95"/>
 <pinref part="POT1" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
 <net name="POT3" class="0">
 <segment>
-<wire x1="7.62" y1="-55.88" x2="7.62" y2="-58.42" width="0.2032" layer="91"/>
-<label x="7.62" y="-55.88" size="1.778" layer="95"/>
+<wire x1="7.62" y1="-73.66" x2="7.62" y2="-76.2" width="0.2032" layer="91"/>
+<label x="7.62" y="-73.66" size="1.778" layer="95"/>
 <pinref part="POT3" gate="G$1" pin="WIPER"/>
 </segment>
 </net>
