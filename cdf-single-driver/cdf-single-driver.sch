@@ -11274,6 +11274,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="-53.34" y1="83.82" x2="-35.56" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="83.82" x2="-35.56" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-25.4" y="73.66"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11335,6 +11336,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-25.4" y1="53.34" x2="-25.4" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="-"/>
 <wire x1="-35.56" y1="58.42" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-35.56" y="53.34"/>
 </segment>
 <segment>
 <pinref part="24V" gate="-2" pin="KL"/>

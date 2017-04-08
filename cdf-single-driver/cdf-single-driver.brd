@@ -159,6 +159,10 @@
 <wire x1="48.26" y1="0" x2="48.26" y2="40.64" width="0" layer="20"/>
 <wire x1="48.26" y1="40.64" x2="0" y2="40.64" width="0" layer="20"/>
 <wire x1="0" y1="40.64" x2="0" y2="0" width="0" layer="20"/>
+<text x="8.636" y="24.638" size="1.016" layer="25" font="vector" rot="R90">GND</text>
+<text x="8.636" y="28.956" size="1.016" layer="25" font="vector" rot="R90">+24V</text>
+<text x="41.402" y="19.812" size="1.016" layer="25" font="vector" rot="R90">CDF Single Driver</text>
+<text x="42.926" y="19.812" size="1.016" layer="25" font="vector" rot="R90">Rev 1 - Apr 2017</text>
 </plain>
 <libraries>
 <library name="con-ptr500">
@@ -1725,56 +1729,112 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="24V" library="con-ptr500" package="AK500/2" value="" x="3.556" y="28.448" rot="R270">
+<element name="24V" library="con-ptr500" package="AK500/2" value="" x="3.556" y="28.448" smashed="yes" rot="R270">
 <attribute name="MPN" value="" x="3.556" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="3.556" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="3.556" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="3.556" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-2.159" y="33.528" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C1" library="microbuilder" package="0805" value="1u" x="10.795" y="28.448" rot="R180"/>
-<element name="C10" library="microbuilder" package="0805" value="4.7u" x="19.05" y="31.496" rot="R90"/>
-<element name="C11" library="rcl" package="E3,5-8" value="330u (661-ELXZ250ELL331MH1)" x="14.224" y="35.814" rot="R270"/>
-<element name="C12" library="microbuilder" package="0805" value="0.1u" x="10.795" y="30.734"/>
-<element name="C2" library="microbuilder" package="0805" value="0.1u" x="15.748" y="16.764" rot="R90"/>
+<element name="C1" library="microbuilder" package="0805" value="1u" x="10.795" y="28.448" smashed="yes" rot="R180">
+<attribute name="NAME" x="12.827" y="29.083" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="8.763" y="29.21" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C10" library="microbuilder" package="0805" value="4.7u" x="19.05" y="31.496" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.955" y="29.718" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="19.812" y="33.528" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C11" library="rcl" package="E3,5-8" value="330u (661-ELXZ250ELL331MH1)" x="14.224" y="35.814" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.128" y="39.116" size="1.27" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="11.176" y="38.1" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C12" library="microbuilder" package="0805" value="0.1u" x="10.795" y="30.734" smashed="yes">
+<attribute name="NAME" x="9.525" y="31.877" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="12.827" y="29.972" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C2" library="microbuilder" package="0805" value="0.1u" x="15.748" y="16.764" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.605" y="17.272" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="16.51" y="18.796" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="C3" library="microbuilder" package="0805" value="4.7u" x="20.32" y="17.526"/>
-<element name="C4" library="microbuilder" package="0805" value="2.2u" x="35.56" y="12.192" rot="R180"/>
+<element name="C4" library="microbuilder" package="0805" value="2.2u" x="35.56" y="12.192" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.528" y="12.319" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="33.528" y="12.954" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
 <element name="C5" library="microbuilder" package="0805" value="1u" x="38.862" y="13.462" rot="R90"/>
-<element name="C6" library="microbuilder" package="0805" value="0.1u" x="15.748" y="6.604" rot="R90"/>
+<element name="C6" library="microbuilder" package="0805" value="0.1u" x="15.748" y="6.604" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.605" y="7.366" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="16.51" y="8.636" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="C7" library="microbuilder" package="0805" value="4.7u" x="20.32" y="7.62"/>
-<element name="C8" library="rcl" package="E3,5-8" value="220u" x="24.384" y="24.384" rot="R90"/>
-<element name="C9" library="rcl" package="E3,5-8" value="220u" x="33.528" y="24.384" rot="R90"/>
+<element name="C8" library="rcl" package="E3,5-8" value="220u" x="24.384" y="24.384" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.956" y="20.066" size="1.27" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="27.432" y="22.098" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C9" library="rcl" package="E3,5-8" value="220u" x="33.528" y="24.384" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.354" y="20.066" size="1.27" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="36.576" y="22.098" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="D1" library="diode" package="MICROMELF-W" value="MCL4148-TR" x="18.034" y="11.938" rot="R270"/>
 <element name="D2" library="diode" package="MICROMELF-W" value="MCL4148-TR" x="18.034" y="2.032" rot="R270"/>
-<element name="D3" library="diode" package="SOD123" value="" x="32.766" y="35.56" rot="R90"/>
-<element name="GATE_IN" library="con-ptr500" package="AK500/3" value="" x="3.556" y="14.732" rot="R270">
+<element name="D3" library="diode" package="SOD123" value="" x="32.766" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.766" y="34.46" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="35.066" y="34.46" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="GATE_IN" library="con-ptr500" package="AK500/3" value="" x="3.556" y="14.732" smashed="yes" rot="R270">
 <attribute name="MPN" value="" x="3.556" y="14.732" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="3.556" y="14.732" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="3.556" y="14.732" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="3.556" y="14.732" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="8.001" y="13.1826" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="-2.159" y="22.3266" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="H1" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="45.72" y="38.1"/>
 <element name="H2" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="2.54" y="38.1"/>
 <element name="H3" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="45.72" y="2.54"/>
 <element name="H4" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="2.54" y="2.54"/>
-<element name="IC1" library="r-78xx_10" package="SIP3" value="R-789.0-0.5" x="28.448" y="35.052" rot="R90">
+<element name="IC1" library="r-78xx_10" package="SIP3" value="R-789.0-0.5" x="28.448" y="35.052" smashed="yes" rot="R90">
 <attribute name="MPN" value="R-789.0-05" x="28.448" y="35.052" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1793145" x="28.448" y="35.052" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="62X9544" x="28.448" y="35.052" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Recom" x="28.448" y="35.052" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.896" y="29.352" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="32.148" y="29.352" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="IC2" library="keves" package="SOIC8" value="UCC27423" x="12.446" y="24.384" rot="R270"/>
-<element name="OUT" library="con-ptr500" package="AK500/2" value="" x="44.45" y="12.7" rot="R90">
+<element name="IC2" library="keves" package="SOIC8" value="UCC27423" x="12.446" y="24.384" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.303" y="20.447" size="1.27" layer="25" font="vector"/>
+<attribute name="VALUE" x="10.541" y="20.447" size="1.27" layer="27"/>
+</element>
+<element name="OUT" library="con-ptr500" package="AK500/2" value="" x="44.45" y="12.7" smashed="yes" rot="R90">
 <attribute name="MPN" value="" x="44.45" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="44.45" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="44.45" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="44.45" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.481" y="10.922" size="1.778" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="50.165" y="7.62" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R1" library="microbuilder" package="0805" value="1k" x="15.748" y="12.446" rot="R90"/>
-<element name="R2" library="microbuilder" package="0805" value="15" x="35.56" y="14.732" rot="R180"/>
-<element name="R3" library="microbuilder" package="0805" value="1k" x="15.748" y="2.54" rot="R90"/>
-<element name="R4" library="microbuilder" package="0805" value="1" x="15.24" y="30.48" rot="R180"/>
-<element name="U$1" library="keves" package="TO252-4" value="FDD8424H" x="21.336" y="13.462" rot="R270"/>
-<element name="U$2" library="keves" package="TO252-4" value="FDD8424H" x="21.336" y="3.556" rot="R270"/>
+<element name="R1" library="microbuilder" package="0805" value="1k" x="15.748" y="12.446" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.605" y="13.208" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="16.51" y="14.478" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R2" library="microbuilder" package="0805" value="15" x="35.56" y="14.732" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.528" y="14.859" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="33.528" y="15.494" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R3" library="microbuilder" package="0805" value="1k" x="15.748" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.605" y="3.302" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="16.51" y="4.572" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R4" library="microbuilder" package="0805" value="1" x="15.24" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.018" y="29.083" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="13.208" y="31.242" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="U$1" library="keves" package="TO252-4" value="FDD8424H" x="21.336" y="13.462" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.241" y="17.272" size="1.27" layer="25" font="vector"/>
+</element>
+<element name="U$2" library="keves" package="TO252-4" value="FDD8424H" x="21.336" y="3.556" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.241" y="7.366" size="1.27" layer="25" font="vector"/>
+</element>
 </elements>
 <signals>
 <signal name="+9V">
@@ -1818,13 +1878,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C11" pad="-"/>
 <contactref element="24V" pad="2"/>
 <polygon width="0.762" layer="16">
-<vertex x="-1.016" y="101.092"/>
-<vertex x="166.37" y="101.092"/>
-<vertex x="166.37" y="-3.556"/>
+<vertex x="-16.002" y="48.26"/>
+<vertex x="50.8" y="48.26"/>
+<vertex x="50.8" y="-3.556"/>
 <vertex x="-16.002" y="-3.556"/>
-<vertex x="-16.002" y="101.092"/>
-<vertex x="-1.524" y="101.092"/>
-<vertex x="-1.524" y="101.346"/>
 </polygon>
 <wire x1="21.336" y1="5.836" x2="21.336" y2="7.554" width="0.762" layer="1"/>
 <wire x1="21.336" y1="7.554" x2="21.27" y2="7.62" width="0.762" layer="1"/>
@@ -1922,11 +1979,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="16.256" y1="3.556" x2="15.814" y2="3.556" width="0.762" layer="1"/>
 <wire x1="15.814" y1="3.556" x2="15.748" y2="3.49" width="0.762" layer="1"/>
 <polygon width="0.4064" layer="1" isolate="0.254" rank="6">
-<vertex x="-2.54" y="103.886"/>
-<vertex x="169.164" y="103.886"/>
-<vertex x="169.164" y="-5.334"/>
+<vertex x="-3.048" y="50.8"/>
+<vertex x="53.34" y="50.8"/>
+<vertex x="53.34" y="-5.334"/>
 <vertex x="-3.048" y="-5.334"/>
-<vertex x="-3.048" y="104.394"/>
 </polygon>
 </signal>
 <signal name="N$5">
