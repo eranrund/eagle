@@ -10957,7 +10957,7 @@ Source: STM32F302_F303_B_C_LQFP48.bsd</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FDD8424H">
+<deviceset name="FDD8424H" prefix="Q">
 <gates>
 <gate name="G$1" symbol="FDD8424H" x="0" y="2.54"/>
 </gates>
