@@ -2799,12 +2799,12 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </element>
 <element name="BTN1" library="keves" package="B3W-9000-X1X" value="B3W-9000-B1N" x="25.4" y="53.975"/>
 <element name="C31" library="microbuilder" package="0603" value="0.1uF" x="28.575" y="58.42" rot="MR180"/>
-<element name="R8" library="microbuilder" package="0603" value="120" x="27.051" y="53.086" rot="MR270"/>
+<element name="R8" library="microbuilder" package="0603" value="200" x="27.051" y="53.086" rot="MR270"/>
 <element name="T1" library="transistor" package="SOT23-BEC" value="MMBT2222A" x="24.638" y="53.213" rot="MR180"/>
 <element name="R11" library="microbuilder" package="0603" value="1k" x="23.622" y="59.055" rot="MR270"/>
 <element name="BTN2" library="keves" package="B3W-9000-X1X" value="B3W-9000-B1N" x="38.1" y="53.975"/>
 <element name="C32" library="microbuilder" package="0603" value="0.1uF" x="41.021" y="58.166" rot="MR180"/>
-<element name="R15" library="microbuilder" package="0603" value="120" x="39.497" y="53.086" smashed="yes" rot="MR270">
+<element name="R15" library="microbuilder" package="0603" value="200" x="39.497" y="53.086" smashed="yes" rot="MR270">
 <attribute name="NAME" x="38.481" y="55.118" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270"/>
 <attribute name="VALUE" x="40.259" y="51.308" size="0.4064" layer="28" font="vector" ratio="10" rot="MR270"/>
 </element>

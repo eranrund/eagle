@@ -5962,7 +5962,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
 <part name="C31" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="5.0V1" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="R8" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
+<part name="R8" library="microbuilder" deviceset="RESISTOR" device="0603" value="200"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2222ALT1" value="MMBT2222A"/>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
 <part name="R11" library="microbuilder" deviceset="RESISTOR" device="0603" value="1k"/>
@@ -5970,7 +5970,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="C32" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="5.0V2" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="120"/>
+<part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="200"/>
 <part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2222ALT1" value="MMBT2222A"/>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
 <part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="1k"/>
