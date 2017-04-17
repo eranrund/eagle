@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -50,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -560,6 +575,21 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <wire x1="-3.81" y1="1.27" x2="-3.81" y2="-10.16" width="0.127" layer="21"/>
 <text x="-1.27" y="-11.43" size="0.762" layer="25">&gt;NAME</text>
 </package>
+<package name="TE-292304-1">
+<description>&lt;b&gt;BERG&lt;/b&gt;</description>
+<wire x1="-6.02" y1="5.6" x2="-6.02" y2="-10.15" width="0.254" layer="21"/>
+<wire x1="-6.02" y1="-10.15" x2="6.02" y2="-10.15" width="0.254" layer="21"/>
+<wire x1="6.02" y1="-10.15" x2="6.02" y2="5.6" width="0.254" layer="21"/>
+<wire x1="6.02" y1="5.6" x2="-6.02" y2="5.6" width="0.254" layer="21"/>
+<pad name="1" x="1.25" y="4.71" drill="0.95" shape="octagon"/>
+<pad name="2" x="-1.25" y="4.71" drill="0.95" shape="octagon"/>
+<pad name="3" x="-1.25" y="2.71" drill="0.95" shape="octagon"/>
+<pad name="4" x="1.25" y="2.71" drill="0.95" shape="octagon"/>
+<pad name="P$1" x="6.02" y="0" drill="2.3"/>
+<pad name="P$2" x="-6.02" y="0" drill="2.3"/>
+<text x="-6.096" y="6.096" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.62" y="-8.89" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIN-5">
@@ -635,6 +665,30 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
+<symbol name="USB_DEVICE_B">
+<wire x1="0" y1="7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="-2.54" size="2.54" layer="94" rot="R90">USB</text>
+<pin name="1" x="-2.54" y="5.08" visible="pad" length="short"/>
+<pin name="2" x="-2.54" y="2.54" visible="pad" length="short"/>
+<pin name="3" x="-2.54" y="0" visible="pad" length="short"/>
+<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short"/>
+</symbol>
+<symbol name="SHIELD2">
+<wire x1="2.54" y1="-8.89" x2="0" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-8.89" x2="-3.81" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-7.62" width="0.254" layer="94" style="shortdash" curve="-90"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="6.35" x2="-3.81" y2="6.35" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="6.35" x2="-5.08" y2="5.08" width="0.254" layer="94" style="shortdash" curve="90"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-8.89" width="0.1524" layer="94"/>
+<pin name="S1" x="2.54" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S2" x="0" y="-12.7" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIDIJACK">
@@ -688,6 +742,30 @@ A modification of conn-hirshman:MAB5SH with two options for the grounding 'teeth
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TE-292304-1" prefix="X" uservalue="yes">
+<description>USB A Female connector</description>
+<gates>
+<gate name="_CONN" symbol="USB_DEVICE_B" x="-2.54" y="0"/>
+<gate name="SHIELD" symbol="SHIELD2" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="TE-292304-1">
+<connects>
+<connect gate="SHIELD" pin="S1" pad="P$1"/>
+<connect gate="SHIELD" pin="S2" pad="P$2"/>
+<connect gate="_CONN" pin="1" pad="1"/>
+<connect gate="_CONN" pin="2" pad="2"/>
+<connect gate="_CONN" pin="3" pad="3"/>
+<connect gate="_CONN" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="292304-1 " constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7220,6 +7298,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R7" library="rcl" deviceset="R-US_" device="0204/7" value="220"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="X1" library="keves" deviceset="TE-292304-1" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" deviceset="+5V" device=""/>
+<part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
+<part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.3"/>
 </parts>
 <sheets>
 <sheet>
@@ -7288,6 +7371,12 @@ TL1105LF250Q
 <instance part="R7" gate="G$1" x="27.94" y="17.78"/>
 <instance part="GND16" gate="1" x="10.16" y="7.62"/>
 <instance part="P+1" gate="1" x="10.16" y="63.5"/>
+<instance part="X1" gate="_CONN" x="5.08" y="134.62"/>
+<instance part="X1" gate="SHIELD" x="2.54" y="137.16"/>
+<instance part="GND11" gate="1" x="-12.7" y="132.08" rot="R270"/>
+<instance part="P+7" gate="1" x="-12.7" y="139.7" rot="R90"/>
+<instance part="H3" gate="G$1" x="-73.66" y="106.68"/>
+<instance part="H4" gate="G$1" x="-73.66" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -7390,6 +7479,11 @@ TL1105LF250Q
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="X1" gate="_CONN" pin="4"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="-10.16" y1="132.08" x2="2.54" y2="132.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -7426,6 +7520,11 @@ TL1105LF250Q
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="10.16" y1="58.42" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
 <junction x="10.16" y="58.42"/>
+</segment>
+<segment>
+<pinref part="X1" gate="_CONN" pin="1"/>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<wire x1="-10.16" y1="139.7" x2="2.54" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
