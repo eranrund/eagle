@@ -565,10 +565,10 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <hole x="0" y="-7.62" drill="3.302"/>
 <hole x="2.54" y="0" drill="1.6256"/>
 <hole x="-2.54" y="0" drill="1.6256"/>
-<pad name="P$1_CATHODE-" x="-1.27" y="-2.54" drill="0.635"/>
-<pad name="P$2_ANODE+" x="1.27" y="-2.54" drill="0.635"/>
-<text x="-2.54" y="-3.81" size="1.27" layer="21">-</text>
-<text x="2.54" y="-3.81" size="1.27" layer="21">+</text>
+<pad name="P$1_CATHODE-" x="1.27" y="-2.54" drill="0.635"/>
+<pad name="P$2_ANODE+" x="-1.27" y="-2.54" drill="0.635"/>
+<text x="2.54" y="-3.81" size="1.27" layer="21">-</text>
+<text x="-3.175" y="-3.81" size="1.27" layer="21">+</text>
 <wire x1="-3.81" y1="-10.16" x2="3.81" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-10.16" x2="3.81" y2="1.27" width="0.127" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
@@ -3942,8 +3942,8 @@ type 0204, grid 7.5 mm</description>
 <wire x1="2.54" y1="-0.762" x2="2.54" y2="0.762" width="0.1524" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.54" y="1.2954" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.6256" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.54" y="1.2954" size="0.762" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.6256" y="-0.4826" size="0.635" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="2.54" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.54" y2="0.254" layer="21"/>
 </package>
@@ -6023,7 +6023,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 <device name="3.2" package="3,2">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.3" package="4,3">

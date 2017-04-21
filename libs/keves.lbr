@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3921,10 +3921,10 @@ http://www.digikey.com/product-detail/en/e-switch/100SP1T1B4M2QE/EG2355-ND/37882
 <hole x="0" y="-7.62" drill="3.302"/>
 <hole x="2.54" y="0" drill="1.6256"/>
 <hole x="-2.54" y="0" drill="1.6256"/>
-<pad name="P$1_CATHODE-" x="-1.27" y="-2.54" drill="0.635"/>
-<pad name="P$2_ANODE+" x="1.27" y="-2.54" drill="0.635"/>
-<text x="-2.54" y="-3.81" size="1.27" layer="21">-</text>
-<text x="2.54" y="-3.81" size="1.27" layer="21">+</text>
+<pad name="P$1_CATHODE-" x="1.27" y="-2.54" drill="0.635"/>
+<pad name="P$2_ANODE+" x="-1.27" y="-2.54" drill="0.635"/>
+<text x="2.54" y="-3.81" size="1.27" layer="21">-</text>
+<text x="-3.175" y="-3.81" size="1.27" layer="21">+</text>
 <wire x1="-3.81" y1="-10.16" x2="3.81" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-10.16" x2="3.81" y2="1.27" width="0.127" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
