@@ -364,8 +364,14 @@ UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_LEDs.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Passives.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Sensors.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/macrofab/Libraries/MF_Switches.lbr"
-UsedLibrary="/Users/eran/Downloads/alps.lbr"
 UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-LED.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 -22 783 553"
+State=2
+Number=0
 
 [Desktop]
 Screen="2560 1440"
+Window="Win_1"

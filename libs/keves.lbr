@@ -10634,7 +10634,7 @@ Source: STM32F42x_43x_LQFP100.bsd</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADP3301">
+<deviceset name="ADP3301" prefix="IC">
 <gates>
 <gate name="G$1" symbol="ADP3301" x="0" y="-5.08"/>
 </gates>
