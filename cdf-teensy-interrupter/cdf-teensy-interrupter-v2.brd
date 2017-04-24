@@ -161,6 +161,8 @@
 <wire x1="0" y1="80.01" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="76.2" y2="0" width="0" layer="20"/>
 <wire x1="76.2" y1="0" x2="76.2" y2="80.01" width="0" layer="20"/>
+<text x="25.019" y="74.93" size="1.778" layer="22" font="vector" rot="MR180">CDF Interrupter v2
+)'( 2017</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -2276,4 +2278,10 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

@@ -2762,6 +2762,124 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="PCM5102">
+<packages>
+<package name="TSSOP20">
+<wire x1="-3.1646" y1="-2.2828" x2="3.1646" y2="-2.2828" width="0.1524" layer="51"/>
+<wire x1="3.1646" y1="2.2828" x2="3.1646" y2="-2.2828" width="0.1524" layer="21"/>
+<wire x1="3.1646" y1="2.2828" x2="-3.1646" y2="2.2828" width="0.1524" layer="51"/>
+<wire x1="-3.1646" y1="-2.2828" x2="-3.1646" y2="2.2828" width="0.1524" layer="21"/>
+<circle x="-2.2756" y="-1.2192" radius="0.4572" width="0.1524" layer="21"/>
+<smd name="1" x="-2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="2" x="-2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="3" x="-1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="4" x="-0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="5" x="-0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="6" x="0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="7" x="0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="8" x="1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="13" x="1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="14" x="0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="15" x="0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="16" x="-0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="17" x="-0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="18" x="-1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="19" x="-2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="20" x="-2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="9" x="2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="10" x="2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="12" x="2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="11" x="2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<text x="-3.5456" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.5362" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-3.0266" y1="-3.121" x2="-2.8234" y2="-2.2828" layer="51"/>
+<rectangle x1="-2.3766" y1="-3.121" x2="-2.1734" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.7266" y1="-3.121" x2="-1.5234" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.0766" y1="-3.121" x2="-0.8734" y2="-2.2828" layer="51"/>
+<rectangle x1="-0.4266" y1="-3.121" x2="-0.2234" y2="-2.2828" layer="51"/>
+<rectangle x1="0.2234" y1="-3.121" x2="0.4266" y2="-2.2828" layer="51"/>
+<rectangle x1="0.8734" y1="-3.121" x2="1.0766" y2="-2.2828" layer="51"/>
+<rectangle x1="1.5234" y1="-3.121" x2="1.7266" y2="-2.2828" layer="51"/>
+<rectangle x1="1.5234" y1="2.2828" x2="1.7266" y2="3.121" layer="51"/>
+<rectangle x1="0.8734" y1="2.2828" x2="1.0766" y2="3.121" layer="51"/>
+<rectangle x1="0.2234" y1="2.2828" x2="0.4266" y2="3.121" layer="51"/>
+<rectangle x1="-0.4266" y1="2.2828" x2="-0.2234" y2="3.121" layer="51"/>
+<rectangle x1="-1.0766" y1="2.2828" x2="-0.8734" y2="3.121" layer="51"/>
+<rectangle x1="-1.7266" y1="2.2828" x2="-1.5234" y2="3.121" layer="51"/>
+<rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
+<rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
+<rectangle x1="2.1734" y1="-3.121" x2="2.3766" y2="-2.2828" layer="51"/>
+<rectangle x1="2.8234" y1="-3.121" x2="3.0266" y2="-2.2828" layer="51"/>
+<rectangle x1="2.1734" y1="2.2828" x2="2.3766" y2="3.121" layer="51"/>
+<rectangle x1="2.8234" y1="2.2828" x2="3.0266" y2="3.121" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PCM5102">
+<wire x1="-15.24" y1="25.4" x2="-15.24" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="25.4" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
+<pin name="CPVDD" x="-20.32" y="22.86" length="middle"/>
+<pin name="CAPP" x="-20.32" y="20.32" length="middle"/>
+<pin name="CPGND" x="-20.32" y="17.78" length="middle"/>
+<pin name="CAPM" x="-20.32" y="15.24" length="middle"/>
+<pin name="VNEG" x="-20.32" y="12.7" length="middle"/>
+<pin name="OUTL" x="-20.32" y="10.16" length="middle"/>
+<pin name="OUTR" x="-20.32" y="7.62" length="middle"/>
+<pin name="AVDD" x="-20.32" y="5.08" length="middle"/>
+<pin name="AGND" x="-20.32" y="2.54" length="middle"/>
+<pin name="DEMP" x="-20.32" y="0" length="middle"/>
+<pin name="DVDD" x="10.16" y="22.86" length="middle" rot="R180"/>
+<pin name="DGND" x="10.16" y="20.32" length="middle" rot="R180"/>
+<pin name="LDOO" x="10.16" y="17.78" length="middle" rot="R180"/>
+<pin name="XSMT" x="10.16" y="15.24" length="middle" rot="R180"/>
+<pin name="FMT" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="LRCK" x="10.16" y="10.16" length="middle" rot="R180"/>
+<pin name="DIN" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="BCK" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="SCK" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="FLT" x="10.16" y="0" length="middle" rot="R180"/>
+<text x="-10.16" y="-5.08" size="1.778" layer="96">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCM5102" prefix="IC">
+<gates>
+<gate name="G$1" symbol="PCM5102" x="7.62" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="TSSOP20">
+<connects>
+<connect gate="G$1" pin="AGND" pad="9"/>
+<connect gate="G$1" pin="AVDD" pad="8"/>
+<connect gate="G$1" pin="BCK" pad="13"/>
+<connect gate="G$1" pin="CAPM" pad="4"/>
+<connect gate="G$1" pin="CAPP" pad="2"/>
+<connect gate="G$1" pin="CPGND" pad="3"/>
+<connect gate="G$1" pin="CPVDD" pad="1"/>
+<connect gate="G$1" pin="DEMP" pad="10"/>
+<connect gate="G$1" pin="DGND" pad="19"/>
+<connect gate="G$1" pin="DIN" pad="14"/>
+<connect gate="G$1" pin="DVDD" pad="20"/>
+<connect gate="G$1" pin="FLT" pad="11"/>
+<connect gate="G$1" pin="FMT" pad="16"/>
+<connect gate="G$1" pin="LDOO" pad="18"/>
+<connect gate="G$1" pin="LRCK" pad="15"/>
+<connect gate="G$1" pin="OUTL" pad="6"/>
+<connect gate="G$1" pin="OUTR" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="12"/>
+<connect gate="G$1" pin="VNEG" pad="5"/>
+<connect gate="G$1" pin="XSMT" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2850,6 +2968,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="X2" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="X3" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="CAN_TERM" library="pinhead" deviceset="PINHD-2X2" device=""/>
+<part name="IC2" library="PCM5102" deviceset="PCM5102" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3464,6 +3583,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="20.32" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="IC2" gate="G$1" x="66.04" y="35.56"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
