@@ -1,0 +1,29 @@
+MCU:
+ v JTAG
+ v XTAL
+ v Boot pins
+ v USB
+ v CAN
+
+ - 2x SAI
+ - MCLK Xtal
+ - Serial flash
+ - PA5<->MCLK Timer hack
+ - User LEDs
+ - User BTNs (to force bootloader for example)
+
+Headphones:
+ - PCM5102A
+ - Headphone amp TBD
+ - Header for output
+
+Main output:
+ - DAC tbd
+ - RCA output
+ - XLR output
+ - Booth output with separate volume knob
+
+Power:
+ - Input TBD
+ - Input connector: CON-SOCJ-2155 (Jack/Connector 2.1mm x 5.5mm)
+ - LED
