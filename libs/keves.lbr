@@ -7626,7 +7626,7 @@ http://www.bourns.com/data/global/pdfs/PTVPTT.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DC21P">
+<deviceset name="DC21P" prefix="J">
 <description>DC 2.1 mm Power Socket Positive Centre</description>
 <gates>
 <gate name="G$1" symbol="DCP" x="5.08" y="10.16"/>
