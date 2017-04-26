@@ -5081,7 +5081,7 @@ NEED TO VERIFY TIP/RING</text>
 <instance part="C30" gate="G$1" x="137.16" y="175.26"/>
 <instance part="C31" gate="G$1" x="137.16" y="167.64"/>
 <instance part="15V_EN" gate="-1" x="149.86" y="180.34"/>
-<instance part="15V_EN" gate="-2" x="152.4" y="160.02" rot="R180"/>
+<instance part="15V_EN" gate="-2" x="149.86" y="160.02" rot="MR180"/>
 <instance part="IC10" gate="G$1" x="208.28" y="208.28"/>
 <instance part="C32" gate="G$1" x="185.42" y="203.2" rot="R180"/>
 <instance part="D1" gate="G$1" x="236.22" y="203.2" rot="R90"/>
@@ -6366,14 +6366,14 @@ NEED TO VERIFY TIP/RING</text>
 <net name="N$49" class="0">
 <segment>
 <pinref part="IC9" gate="G$1" pin="OUT-"/>
-<pinref part="15V_EN" gate="-2" pin="2"/>
 <wire x1="121.92" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C29" gate="G$1" pin="P$2"/>
 <junction x="129.54" y="162.56"/>
 <wire x1="129.54" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C31" gate="G$1" pin="-"/>
+<pinref part="15V_EN" gate="-2" pin="1"/>
+<wire x1="149.86" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <junction x="137.16" y="162.56"/>
-<wire x1="137.16" y1="162.56" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -6419,11 +6419,6 @@ NEED TO VERIFY TIP/RING</text>
 </net>
 <net name="-15V" class="0">
 <segment>
-<pinref part="15V_EN" gate="-2" pin="1"/>
-<wire x1="152.4" y1="162.56" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
-<label x="157.48" y="160.02" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC11" gate="G$1" pin="IN"/>
 <wire x1="200.66" y1="144.78" x2="190.5" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IC11" gate="G$1" pin="IN_TAB"/>
@@ -6444,6 +6439,11 @@ NEED TO VERIFY TIP/RING</text>
 <pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="25.4" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 <label x="30.48" y="147.32" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="15V_EN" gate="-2" pin="2"/>
+<wire x1="152.4" y1="162.56" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
+<label x="162.56" y="165.1" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$53" class="0">
