@@ -4970,9 +4970,9 @@ NEED TO VERIFY TIP/RING</text>
 <instance part="C6" gate="G$1" x="154.94" y="58.42"/>
 <instance part="C7" gate="G$1" x="53.34" y="71.12"/>
 <instance part="C8" gate="G$1" x="53.34" y="58.42"/>
-<instance part="J1" gate="G$1" x="243.84" y="-20.32" rot="MR180"/>
-<instance part="GND10" gate="G$1" x="236.22" y="-22.86" rot="R270"/>
-<instance part="GND11" gate="G$1" x="236.22" y="-17.78" rot="R270"/>
+<instance part="J1" gate="G$1" x="246.38" y="-20.32"/>
+<instance part="GND10" gate="G$1" x="236.22" y="-17.78" rot="R270"/>
+<instance part="GND11" gate="G$1" x="236.22" y="-22.86" rot="R270"/>
 <instance part="IC4" gate="G$1" x="78.74" y="-53.34"/>
 <instance part="GND12" gate="G$1" x="63.5" y="-53.34" rot="R270"/>
 <instance part="R17" gate="G$1" x="76.2" y="-33.02"/>
@@ -5221,12 +5221,12 @@ NEED TO VERIFY TIP/RING</text>
 <segment>
 <pinref part="J1" gate="G$1" pin="1-RING"/>
 <pinref part="GND10" gate="G$1" pin="GND"/>
-<wire x1="238.76" y1="-22.86" x2="243.84" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="-17.78" x2="246.38" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2-RING"/>
 <pinref part="GND11" gate="G$1" pin="GND"/>
-<wire x1="238.76" y1="-17.78" x2="243.84" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="-22.86" x2="246.38" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCOM"/>
@@ -5689,9 +5689,9 @@ NEED TO VERIFY TIP/RING</text>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="30.48" x2="218.44" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="30.48" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2-TIP"/>
-<wire x1="243.84" y1="-20.32" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="30.48" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1-TIP"/>
+<wire x1="246.38" y1="-15.24" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -6003,9 +6003,9 @@ NEED TO VERIFY TIP/RING</text>
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="-53.34" x2="218.44" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="-53.34" x2="218.44" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1-TIP"/>
-<wire x1="243.84" y1="-25.4" x2="218.44" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-53.34" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2-TIP"/>
+<wire x1="246.38" y1="-20.32" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
