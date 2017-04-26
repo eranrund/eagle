@@ -4915,6 +4915,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C48" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
 <part name="C49" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C50" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
+<part name="C51" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
 </parts>
 <sheets>
 <sheet>
@@ -5101,10 +5102,10 @@ NEED TO VERIFY TIP/RING</text>
 <instance part="C36" gate="G$1" x="185.42" y="149.86" rot="R180"/>
 <instance part="C37" gate="G$1" x="190.5" y="147.32"/>
 <instance part="R41" gate="G$1" x="218.44" y="165.1" rot="R90"/>
-<instance part="R42" gate="G$1" x="231.14" y="149.86" rot="R90"/>
+<instance part="R42" gate="G$1" x="228.6" y="149.86" rot="R90"/>
 <instance part="U$29" gate="G$1" x="218.44" y="175.26" rot="R180"/>
-<instance part="C38" gate="G$1" x="241.3" y="165.1"/>
-<instance part="D4" gate="G$1" x="241.3" y="152.4" rot="R90"/>
+<instance part="C38" gate="G$1" x="236.22" y="165.1"/>
+<instance part="D4" gate="G$1" x="236.22" y="152.4" rot="R90"/>
 <instance part="L6" gate="G$1" x="254" y="144.78" rot="R90"/>
 <instance part="U$30" gate="G$1" x="281.94" y="144.78" rot="R270"/>
 <instance part="J5" gate="G$1" x="12.7" y="195.58" rot="R180"/>
@@ -5149,6 +5150,7 @@ NEED TO VERIFY TIP/RING</text>
 <instance part="C48" gate="G$1" x="160.02" y="-22.86"/>
 <instance part="C49" gate="G$1" x="149.86" y="-22.86"/>
 <instance part="C50" gate="G$1" x="149.86" y="-12.7"/>
+<instance part="C51" gate="G$1" x="243.84" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -5438,7 +5440,11 @@ NEED TO VERIFY TIP/RING</text>
 <junction x="190.5" y="170.18"/>
 <junction x="218.44" y="170.18"/>
 <pinref part="C38" gate="G$1" pin="P$1"/>
-<wire x1="218.44" y1="170.18" x2="241.3" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="170.18" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="C51" gate="G$1" pin="P$1"/>
+<wire x1="236.22" y1="170.18" x2="243.84" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="170.18" x2="243.84" y2="160.02" width="0.1524" layer="91"/>
+<junction x="236.22" y="170.18"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="-"/>
@@ -6500,17 +6506,21 @@ NEED TO VERIFY TIP/RING</text>
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="R42" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="132.08" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="132.08" x2="231.14" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="132.08" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IC11" gate="G$1" pin="OUT"/>
-<wire x1="231.14" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
-<junction x="231.14" y="144.78"/>
-<wire x1="231.14" y1="144.78" x2="241.3" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="144.78" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
+<junction x="228.6" y="144.78"/>
+<wire x1="228.6" y1="144.78" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="144.78" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="L6" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="144.78" x2="241.3" y2="144.78" width="0.1524" layer="91"/>
-<junction x="241.3" y="144.78"/>
+<wire x1="246.38" y1="144.78" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
+<junction x="236.22" y="144.78"/>
+<junction x="243.84" y="144.78"/>
+<wire x1="243.84" y1="144.78" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C51" gate="G$1" pin="P$2"/>
+<wire x1="243.84" y1="152.4" x2="243.84" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$58" class="0">
@@ -6519,16 +6529,16 @@ NEED TO VERIFY TIP/RING</text>
 <pinref part="R41" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="157.48" x2="218.44" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="R42" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="154.94" x2="231.14" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="154.94" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
 <junction x="218.44" y="157.48"/>
-<wire x1="231.14" y1="157.48" x2="241.3" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="157.48" x2="241.3" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="157.48" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="157.48" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C38" gate="G$1" pin="P$2"/>
-<wire x1="241.3" y1="157.48" x2="241.3" y2="162.56" width="0.1524" layer="91"/>
-<junction x="241.3" y="157.48"/>
+<wire x1="236.22" y1="157.48" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
+<junction x="236.22" y="157.48"/>
 <pinref part="D4" gate="G$1" pin="C"/>
-<junction x="231.14" y="157.48"/>
+<junction x="228.6" y="157.48"/>
 </segment>
 </net>
 <net name="N$55" class="0">
