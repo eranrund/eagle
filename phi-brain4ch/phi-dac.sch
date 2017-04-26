@@ -5026,7 +5026,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C49" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C50" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C51" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
-<part name="OSC1" library="microbuilder" deviceset="OSCILLATOR" device=""/>
+<part name="OSC1" library="microbuilder" deviceset="OSCILLATOR" device="" value="12.288MHz C3391-12.288"/>
 <part name="C52" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$47" library="microbuilder" deviceset="GND" device=""/>
@@ -5038,6 +5038,10 @@ Low profile connectors, straight&lt;p&gt;
 <text x="241.3" y="-7.62" size="1.778" layer="91">NEED TO VERIFY FOOTPRINT
 NEED TO VERIFY TIP/RING</text>
 <text x="241.3" y="-2.54" size="1.778" layer="91">NEED TO VERIFY LEFT/RIGHT</text>
+<text x="-17.78" y="96.52" size="1.778" layer="91">TODO:
+PCM5102?
+HEADPHONE AMP?
+2xCAN CONNECTORS</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="81.28" y="121.92"/>

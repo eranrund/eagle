@@ -1365,7 +1365,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C49" library="microbuilder" package="0603" value="0.1u" x="62.865" y="8.255" rot="R90"/>
 <element name="C50" library="microbuilder" package="0603" value="0.1u" x="62.865" y="11.811" rot="R90"/>
 <element name="C51" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="31.623" y="24.765" rot="R270"/>
-<element name="OSC1" library="microbuilder" package="OSC_7X5MM" value="" x="100.33" y="39.624"/>
+<element name="OSC1" library="microbuilder" package="OSC_7X5MM" value="12.288MHz C3391-12.288" x="100.33" y="39.624"/>
 <element name="C52" library="microbuilder" package="0603" value="0.1uF" x="95.25" y="40.894" rot="R270"/>
 <element name="R48" library="microbuilder" package="_0805" value="0" x="102.87" y="45.212" rot="R90"/>
 </elements>
