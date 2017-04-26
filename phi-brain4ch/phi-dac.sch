@@ -4830,8 +4830,8 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
-<part name="C24" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF (EEE-1EA101XP)"/>
-<part name="C25" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF (EEE-1EA101XP)"/>
+<part name="C24" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" value="47uF (EEE-HA1C470WR)"/>
+<part name="C25" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" value="47uF (EEE-HA1C470WR)"/>
 <part name="R34" library="microbuilder" deviceset="RESISTOR" device="_0805" value="1k"/>
 <part name="U$23" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
@@ -5016,7 +5016,7 @@ NEED TO VERIFY TIP/RING</text>
 <instance part="H2" gate="G$1" x="10.16" y="215.9"/>
 <instance part="H5" gate="G$1" x="10.16" y="210.82"/>
 <instance part="H6" gate="G$1" x="15.24" y="213.36"/>
-<instance part="JP1" gate="B" x="111.76" y="137.16" rot="R90"/>
+<instance part="JP1" gate="B" x="114.3" y="137.16" rot="R90"/>
 <instance part="R33" gate="G$1" x="144.78" y="132.08"/>
 <instance part="GND21" gate="G$1" x="157.48" y="132.08" rot="R90"/>
 <instance part="IC8" gate="G$1" x="111.76" y="190.5"/>
@@ -6033,34 +6033,6 @@ NEED TO VERIFY TIP/RING</text>
 <wire x1="226.06" y1="-53.34" x2="233.68" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IOUT_RIGHT_N"/>
-<pinref part="JP1" gate="B" pin="2"/>
-<wire x1="104.14" y1="134.62" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IOUT_RIGHT_P"/>
-<pinref part="JP1" gate="B" pin="4"/>
-<wire x1="104.14" y1="137.16" x2="101.6" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IOUT_LEFT_N"/>
-<pinref part="JP1" gate="B" pin="6"/>
-<wire x1="104.14" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IOUT_LEFT_P"/>
-<pinref part="JP1" gate="B" pin="8"/>
-<wire x1="104.14" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -6613,9 +6585,9 @@ NEED TO VERIFY TIP/RING</text>
 <label x="50.8" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="B" pin="7"/>
-<wire x1="119.38" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
-<label x="127" y="142.24" size="1.778" layer="95"/>
+<pinref part="JP1" gate="B" pin="5"/>
+<wire x1="121.92" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
+<label x="127" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_L_NN" class="0">
@@ -6630,9 +6602,9 @@ NEED TO VERIFY TIP/RING</text>
 <label x="50.8" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="B" pin="5"/>
-<wire x1="119.38" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
-<label x="127" y="139.7" size="1.778" layer="95"/>
+<pinref part="JP1" gate="B" pin="7"/>
+<wire x1="121.92" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
+<label x="127" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_R_PP" class="0">
@@ -6647,9 +6619,9 @@ NEED TO VERIFY TIP/RING</text>
 <label x="50.8" y="-48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="B" pin="3"/>
-<wire x1="119.38" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
-<label x="127" y="137.16" size="1.778" layer="95"/>
+<pinref part="JP1" gate="B" pin="1"/>
+<wire x1="121.92" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<label x="127" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_R_NN" class="0">
@@ -6664,9 +6636,37 @@ NEED TO VERIFY TIP/RING</text>
 <label x="50.8" y="-58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="B" pin="1"/>
-<wire x1="119.38" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
-<label x="127" y="134.62" size="1.778" layer="95"/>
+<pinref part="JP1" gate="B" pin="3"/>
+<wire x1="121.92" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<label x="127" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IOUT_RIGHT_P"/>
+<pinref part="JP1" gate="B" pin="2"/>
+<wire x1="101.6" y1="137.16" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IOUT_RIGHT_N"/>
+<pinref part="JP1" gate="B" pin="4"/>
+<wire x1="101.6" y1="134.62" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IOUT_LEFT_N"/>
+<pinref part="JP1" gate="B" pin="8"/>
+<wire x1="101.6" y1="139.7" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IOUT_LEFT_P"/>
+<pinref part="JP1" gate="B" pin="6"/>
+<wire x1="101.6" y1="142.24" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
