@@ -4787,8 +4787,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="H5" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="JP1" library="jumper" deviceset="JP4Q" device=""/>
 <part name="R33" library="microbuilder" deviceset="RESISTOR" device="_0805" value="10K 0.1% or better (ERA-3AEB103V)"/>
 <part name="GND21" library="microbuilder" deviceset="GND" device=""/>
@@ -5014,8 +5012,6 @@ NEED TO VERIFY TIP/RING</text>
 <instance part="H4" gate="G$1" x="15.24" y="215.9"/>
 <instance part="H1" gate="G$1" x="10.16" y="220.98"/>
 <instance part="H2" gate="G$1" x="10.16" y="215.9"/>
-<instance part="H5" gate="G$1" x="10.16" y="210.82"/>
-<instance part="H6" gate="G$1" x="15.24" y="213.36"/>
 <instance part="JP1" gate="B" x="114.3" y="137.16" rot="R90"/>
 <instance part="R33" gate="G$1" x="144.78" y="132.08"/>
 <instance part="GND21" gate="G$1" x="157.48" y="132.08" rot="R90"/>

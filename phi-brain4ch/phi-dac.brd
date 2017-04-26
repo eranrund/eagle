@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1246,12 +1246,6 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="H2" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="116.84" y="2.54">
 <attribute name="POPULATE" value="0" x="107.95" y="-24.13" size="1.778" layer="27" display="off"/>
-</element>
-<element name="H5" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="-18.288" y="29.718">
-<attribute name="POPULATE" value="0" x="-18.288" y="11.938" size="1.778" layer="27" display="off"/>
-</element>
-<element name="H6" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="-9.398" y="29.718">
-<attribute name="POPULATE" value="0" x="-18.288" y="3.048" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JP1" library="jumper" package="JP4Q" value="" x="81.407" y="23.749"/>
 <element name="R33" library="microbuilder" package="_0805" value="10K 0.1% or better (ERA-3AEB103V)" x="84.709" y="37.465" rot="R90"/>
@@ -2619,16 +2613,24 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.461" y1="12.446" x2="3.81" y2="12.446" width="1.143" layer="1"/>
 <wire x1="3.81" y1="12.446" x2="2.54" y2="12.446" width="1.143" layer="1"/>
 <wire x1="2.54" y1="12.446" x2="1.651" y2="13.335" width="1.143" layer="1"/>
-<wire x1="1.651" y1="13.335" x2="1.651" y2="33.782" width="1.143" layer="1"/>
-<wire x1="1.651" y1="33.782" x2="3.429" y2="35.56" width="1.143" layer="1"/>
-<wire x1="3.429" y1="35.56" x2="11.811" y2="35.56" width="1.143" layer="1"/>
+<wire x1="1.651" y1="13.335" x2="1.651" y2="36.068" width="1.143" layer="1"/>
+<wire x1="1.651" y1="36.068" x2="1.651" y2="37.211" width="1.143" layer="1"/>
+<wire x1="2.159" y1="35.56" x2="11.811" y2="35.56" width="1.143" layer="1"/>
 <wire x1="11.811" y1="35.56" x2="12.319" y2="35.052" width="1.143" layer="1"/>
 <wire x1="12.319" y1="35.052" x2="12.319" y2="34.023" width="1.143" layer="1"/>
 <wire x1="12.319" y1="34.023" x2="12.192" y2="33.896" width="1.143" layer="1"/>
 <wire x1="3.937" y1="10.668" x2="3.937" y2="12.319" width="1.143" layer="1"/>
 <wire x1="3.937" y1="12.319" x2="3.81" y2="12.446" width="1.143" layer="1"/>
-<wire x1="64.9986" y1="45.1104" x2="61.722" y2="32.639" width="0" layer="19" extent="1-1"/>
-<wire x1="12.319" y1="34.023" x2="60.6806" y2="32.639" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9986" y1="45.1104" x2="64.9986" y2="48.0314" width="1.143" layer="1"/>
+<wire x1="64.9986" y1="48.0314" x2="64.77" y2="48.26" width="1.143" layer="1"/>
+<wire x1="64.77" y1="48.26" x2="50.292" y2="48.26" width="1.143" layer="1"/>
+<wire x1="50.292" y1="48.26" x2="12.7" y2="48.26" width="1.143" layer="1"/>
+<wire x1="12.7" y1="48.26" x2="1.651" y2="37.211" width="1.143" layer="1"/>
+<wire x1="2.159" y1="35.56" x2="1.651" y2="36.068" width="1.143" layer="1"/>
+<wire x1="61.722" y1="32.639" x2="53.213" y2="32.639" width="1.143" layer="1"/>
+<wire x1="53.213" y1="32.639" x2="50.8" y2="35.052" width="1.143" layer="1"/>
+<wire x1="50.8" y1="35.052" x2="50.8" y2="47.752" width="1.143" layer="1"/>
+<wire x1="50.8" y1="47.752" x2="50.292" y2="48.26" width="1.143" layer="1"/>
 </signal>
 <signal name="N$49">
 <contactref element="IC9" pad="5"/>
@@ -2639,7 +2641,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.198" y1="22.479" x2="8.509" y2="21.168" width="1.27" layer="1"/>
 <wire x1="11.43" y1="21.206" x2="14.602" y2="21.206" width="1.27" layer="1"/>
 <wire x1="14.602" y1="21.206" x2="14.605" y2="21.209" width="1.27" layer="1"/>
-<wire x1="8.509" y1="21.168" x2="11.43" y2="21.206" width="0" layer="19" extent="1-1"/>
+<wire x1="8.509" y1="21.168" x2="11.392" y2="21.168" width="1.143" layer="1"/>
+<wire x1="11.392" y1="21.168" x2="11.43" y2="21.206" width="1.143" layer="1"/>
 </signal>
 <signal name="N$50">
 <contactref element="15V_EN" pad="1"/>
@@ -2801,8 +2804,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="69.596" y="42.164"/>
 <vertex x="69.596" y="43.561"/>
 <vertex x="63.119" y="43.561"/>
-<vertex x="63.119" y="48.895"/>
-<vertex x="55.245" y="48.895"/>
+<vertex x="63.119" y="46.355"/>
+<vertex x="55.245" y="46.355"/>
 <vertex x="55.245" y="36.703"/>
 <vertex x="63.119" y="36.703"/>
 <vertex x="63.119" y="42.164"/>
