@@ -5292,7 +5292,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$51" library="microbuilder" deviceset="GND" device=""/>
 <part name="C61" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C66" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
-<part name="L9" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="U$52" library="microbuilder" deviceset="GND" device=""/>
 <part name="C67" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="C68" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
@@ -5581,7 +5580,6 @@ REVERSE POLARITY? FUSE?</text>
 <instance part="U$51" gate="G$1" x="-99.06" y="139.7"/>
 <instance part="C61" gate="G$1" x="-53.34" y="177.8" rot="R90"/>
 <instance part="C66" gate="G$1" x="-53.34" y="185.42" rot="R90"/>
-<instance part="L9" gate="G$1" x="-58.42" y="200.66" rot="R180"/>
 <instance part="U$52" gate="G$1" x="-50.8" y="198.12" rot="R180"/>
 <instance part="C67" gate="G$1" x="-45.72" y="185.42" rot="R90"/>
 <instance part="C68" gate="G$1" x="-45.72" y="177.8" rot="R90"/>
@@ -7347,9 +7345,15 @@ REVERSE POLARITY? FUSE?</text>
 <label x="-134.62" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="L9" gate="G$1" pin="2"/>
-<wire x1="-58.42" y1="208.28" x2="-58.42" y2="213.36" width="0.1524" layer="91"/>
-<label x="-58.42" y="210.82" size="1.778" layer="95" rot="R90"/>
+<label x="-58.42" y="190.5" size="1.778" layer="95" rot="R90"/>
+<pinref part="C66" gate="G$1" pin="P$1"/>
+<junction x="-58.42" y="185.42"/>
+<wire x1="-58.42" y1="177.8" x2="-58.42" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C61" gate="G$1" pin="P$1"/>
+<junction x="-58.42" y="177.8"/>
+<pinref part="IC13" gate="G$1" pin="DVDD"/>
+<wire x1="-58.42" y1="177.8" x2="-58.42" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="195.58" x2="-58.42" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="-116.84" y="182.88" size="1.778" layer="95"/>
@@ -7380,19 +7384,6 @@ REVERSE POLARITY? FUSE?</text>
 <pinref part="IC13" gate="G$1" pin="AVDD"/>
 <wire x1="-88.9" y1="152.4" x2="-99.06" y2="152.4" width="0.1524" layer="91"/>
 <junction x="-99.06" y="152.4"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="L9" gate="G$1" pin="1"/>
-<pinref part="C66" gate="G$1" pin="P$1"/>
-<junction x="-58.42" y="185.42"/>
-<wire x1="-58.42" y1="177.8" x2="-58.42" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="185.42" x2="-58.42" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="C61" gate="G$1" pin="P$1"/>
-<junction x="-58.42" y="177.8"/>
-<pinref part="IC13" gate="G$1" pin="DVDD"/>
-<wire x1="-58.42" y1="177.8" x2="-58.42" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
