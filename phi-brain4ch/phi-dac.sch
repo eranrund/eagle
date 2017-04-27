@@ -5074,10 +5074,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R34" library="microbuilder" deviceset="RESISTOR" device="_0805" value="1k"/>
 <part name="U$23" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
-<part name="R35" library="microbuilder" deviceset="RESISTOR" device="_0805" value="50"/>
-<part name="R36" library="microbuilder" deviceset="RESISTOR" device="_0805" value="50"/>
-<part name="R37" library="microbuilder" deviceset="RESISTOR" device="_0805" value="50"/>
-<part name="R38" library="microbuilder" deviceset="RESISTOR" device="_0805" value="50"/>
 <part name="IC9" library="keves" deviceset="MURATA-MGJ2" device="" value="MGJ2D121515SC"/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="C26" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF (EEE-1EA101XP)"/>
@@ -5324,10 +5320,6 @@ REVERSE POLARITY? FUSE?</text>
 <instance part="R34" gate="G$1" x="53.34" y="142.24"/>
 <instance part="U$23" gate="G$1" x="40.64" y="142.24" rot="R90"/>
 <instance part="U$24" gate="G$1" x="55.88" y="129.54" rot="R270"/>
-<instance part="R35" gate="G$1" x="50.8" y="109.22"/>
-<instance part="R36" gate="G$1" x="50.8" y="106.68"/>
-<instance part="R37" gate="G$1" x="50.8" y="104.14"/>
-<instance part="R38" gate="G$1" x="50.8" y="101.6"/>
 <instance part="IC9" gate="G$1" x="104.14" y="172.72"/>
 <instance part="U$25" gate="G$1" x="71.12" y="162.56" rot="R270"/>
 <instance part="C26" gate="G$1" x="81.28" y="170.18"/>
@@ -6544,42 +6536,14 @@ REVERSE POLARITY? FUSE?</text>
 <pinref part="SV1" gate="1" pin="11"/>
 </segment>
 </net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="BCK"/>
-<pinref part="R36" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="DATA"/>
-<pinref part="R37" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="LRCK"/>
-<pinref part="R38" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="SCK"/>
-<pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="I2S_MCK" class="0">
 <segment>
-<pinref part="R35" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="109.22" x2="20.32" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="129.54" x2="-10.16" y2="129.54" width="0.1524" layer="91"/>
 <label x="0" y="129.54" size="1.778" layer="95"/>
 <pinref part="SV1" gate="1" pin="9"/>
+<pinref part="IC1" gate="G$1" pin="SCK"/>
 </segment>
 <segment>
 <pinref part="R48" gate="G$1" pin="2"/>
@@ -6589,32 +6553,32 @@ REVERSE POLARITY? FUSE?</text>
 </net>
 <net name="I2S_BCK" class="0">
 <segment>
-<pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="106.68" x2="17.78" y2="127" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="127" x2="-10.16" y2="127" width="0.1524" layer="91"/>
 <label x="0" y="127" size="1.778" layer="95"/>
 <pinref part="SV1" gate="1" pin="7"/>
+<pinref part="IC1" gate="G$1" pin="BCK"/>
 </segment>
 </net>
 <net name="I2S_DATA" class="0">
 <segment>
-<pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="104.14" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="124.46" x2="-10.16" y2="124.46" width="0.1524" layer="91"/>
 <label x="0" y="124.46" size="1.778" layer="95"/>
 <pinref part="SV1" gate="1" pin="5"/>
+<pinref part="IC1" gate="G$1" pin="DATA"/>
 </segment>
 </net>
 <net name="I2S_LRCK" class="0">
 <segment>
-<pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="101.6" x2="12.7" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="121.92" x2="-10.16" y2="121.92" width="0.1524" layer="91"/>
 <label x="0" y="121.92" size="1.778" layer="95"/>
 <pinref part="SV1" gate="1" pin="3"/>
+<pinref part="IC1" gate="G$1" pin="LRCK"/>
 </segment>
 </net>
 <net name="+12V" class="0">
