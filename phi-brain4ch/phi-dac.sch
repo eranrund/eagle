@@ -5278,7 +5278,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="X1" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="U$48" library="microbuilder" deviceset="GND" device=""/>
 <part name="R49" library="microbuilder" deviceset="RESISTOR" device="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)"/>
-<part name="L7" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="C56" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="C57" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="C58" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="22uF GRM21BR61E226ME44L"/>
@@ -5566,7 +5565,6 @@ REVERSE POLARITY? FUSE?</text>
 <instance part="X1" gate="-4" x="165.1" y="264.16"/>
 <instance part="U$48" gate="G$1" x="101.6" y="254"/>
 <instance part="R49" gate="G$1" x="114.3" y="261.62"/>
-<instance part="L7" gate="G$1" x="152.4" y="271.78" rot="R90"/>
 <instance part="C56" gate="G$1" x="129.54" y="266.7"/>
 <instance part="C57" gate="G$1" x="139.7" y="266.7"/>
 <instance part="C58" gate="G$1" x="63.5" y="264.16"/>
@@ -7283,8 +7281,14 @@ REVERSE POLARITY? FUSE?</text>
 <pinref part="X2" gate="-1" pin="1"/>
 <wire x1="160.02" y1="271.78" x2="175.26" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-1" pin="1"/>
-<pinref part="L7" gate="G$1" pin="2"/>
-<junction x="160.02" y="271.78"/>
+<pinref part="IC12" gate="G$1" pin="OUT"/>
+<pinref part="C56" gate="G$1" pin="P$1"/>
+<wire x1="139.7" y1="271.78" x2="129.54" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="271.78" x2="121.92" y2="271.78" width="0.1524" layer="91"/>
+<junction x="129.54" y="271.78"/>
+<pinref part="C57" gate="G$1" pin="P$1"/>
+<wire x1="160.02" y1="271.78" x2="139.7" y2="271.78" width="0.1524" layer="91"/>
+<junction x="139.7" y="271.78"/>
 </segment>
 </net>
 <net name="CAN_H" class="0">
@@ -7306,19 +7310,6 @@ REVERSE POLARITY? FUSE?</text>
 <pinref part="R49" gate="G$1" pin="1"/>
 <pinref part="IC12" gate="G$1" pin="TRIM"/>
 <wire x1="109.22" y1="261.62" x2="106.68" y2="261.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="L7" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="271.78" x2="139.7" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="IC12" gate="G$1" pin="OUT"/>
-<pinref part="C56" gate="G$1" pin="P$1"/>
-<wire x1="139.7" y1="271.78" x2="129.54" y2="271.78" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="271.78" x2="121.92" y2="271.78" width="0.1524" layer="91"/>
-<junction x="129.54" y="271.78"/>
-<pinref part="C57" gate="G$1" pin="P$1"/>
-<junction x="139.7" y="271.78"/>
 </segment>
 </net>
 <net name="I2S_DATA2" class="0">
