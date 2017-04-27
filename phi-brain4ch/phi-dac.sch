@@ -434,6 +434,24 @@ package type SS</description>
 <rectangle x1="-2.2892" y1="-1.3208" x2="-1.6393" y2="1.3292" layer="51"/>
 <rectangle x1="1.651" y1="-1.3208" x2="2.2009" y2="1.3292" layer="51"/>
 </package>
+<package name="MURATA_OKR-T/10-W12-C">
+<description>Non-Isolated DC/DC Converters 12Vin 0.591-6Vout 10A 50W SIP</description>
+<pad name="P$1" x="-3.4036" y="0" drill="1.016" diameter="1.4224"/>
+<pad name="P$2" x="-1.7018" y="0" drill="1.016" diameter="1.4224"/>
+<pad name="P$3" x="0" y="0" drill="1.016" diameter="1.4224"/>
+<pad name="P$4" x="1.7018" y="0" drill="1.016" diameter="1.4224"/>
+<pad name="P$5" x="3.4036" y="0" drill="1.016" diameter="1.4224"/>
+<wire x1="-5.334" y1="4.318" x2="5.334" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="-3.81" x2="5.334" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="4.318" x2="-5.334" y2="-2.8448" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="-2.8448" x2="-5.334" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="5.334" y1="4.318" x2="5.334" y2="-2.8448" width="0.127" layer="21"/>
+<text x="-3.175" y="-5.715" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="5.334" y1="-2.8448" x2="5.334" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="-1.27" x2="5.334" y2="-1.27" width="0.127" layer="21" style="dashdot"/>
+<wire x1="-5.334" y1="-2.8448" x2="5.334" y2="-2.8448" width="0.127" layer="21" style="dashdot"/>
+<text x="-3.81" y="1.27" size="1.27" layer="21">1</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PCM1792A">
@@ -635,6 +653,19 @@ package type SS</description>
 <rectangle x1="-3.81" y1="1.524" x2="-1.27" y2="2.032" layer="94"/>
 <pin name="P$1" x="-2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="P$2" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="MURATA_OKR-T/10-W12-C">
+<pin name="IN" x="-17.78" y="0" length="middle"/>
+<pin name="OUT" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="TRIM" x="5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="REM" x="-5.08" y="-10.16" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.446" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.286" y="5.842" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -865,6 +896,25 @@ package type SS</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MURATA_OKR-T/10-W12-C" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MURATA_OKR-T/10-W12-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MURATA_OKR-T/10-W12-C">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="IN" pad="P$2"/>
+<connect gate="G$1" pin="OUT" pad="P$4"/>
+<connect gate="G$1" pin="REM" pad="P$1"/>
+<connect gate="G$1" pin="TRIM" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4801,6 +4851,85 @@ Low profile connectors, straight&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="bt_con-jst-xh">
+<description>&lt;b&gt;J.S.T. Connectors XH Family&lt;/b&gt;
+&lt;p&gt;Created by Michael Shimniok &lt;a href="http://www.bot-thoughts.com/"&gt;www.bot-thoughts.com&lt;/a&gt;&lt;/b&gt;</description>
+<packages>
+<package name="B4B-XH">
+<description>&lt;b&gt;JST XH Connector&lt;/b&gt;
+
+&lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
+
+&lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-6.26" y1="3.4" x2="6.26" y2="3.4" width="0.127" layer="21"/>
+<wire x1="6.26" y1="3.4" x2="6.26" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="6.26" y1="-2.35" x2="-6.26" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-6.26" y1="-2.35" x2="-6.26" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-5.56" y1="2.7" x2="5.56" y2="2.7" width="0.127" layer="21"/>
+<wire x1="5.56" y1="2.7" x2="5.56" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.56" y1="1.27" x2="5.56" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="5.56" y1="-1.65" x2="-5.56" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-5.56" y1="-1.65" x2="-5.56" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.56" y1="1.27" x2="-5.56" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-5.56" y1="1.27" x2="5.56" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8"/>
+<pad name="P$3" x="1.27" y="0" drill="0.8"/>
+<pad name="P$4" x="3.81" y="0" drill="0.8"/>
+<text x="-3.81" y="3.81" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="P-VN">
+<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="0.508" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="0.508" x2="-0.762" y2="0.762" width="0.2032" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.508" width="0.2032" layer="94"/>
+<wire x1="-0.508" y1="0.508" x2="0" y2="0.508" width="0.2032" layer="94"/>
+<wire x1="0" y1="0.508" x2="0.254" y2="0.762" width="0.2032" layer="94"/>
+<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-4.064" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
+</symbol>
+<symbol name="P-N">
+<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="0.508" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="0.508" x2="-0.762" y2="0.762" width="0.2032" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.508" width="0.2032" layer="94"/>
+<wire x1="-0.508" y1="0.508" x2="0" y2="0.508" width="0.2032" layer="94"/>
+<wire x1="0" y1="0.508" x2="0.254" y2="0.762" width="0.2032" layer="94"/>
+<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="04-JST" prefix="X">
+<description>&lt;b&gt;JST CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="P-VN" x="0" y="38.1" swaplevel="1"/>
+<gate name="-2" symbol="P-N" x="0" y="35.56" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="P-N" x="0" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="P-N" x="0" y="30.48" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-B4B-XH-A" package="B4B-XH">
+<connects>
+<connect gate="-1" pin="1" pad="P$1"/>
+<connect gate="-2" pin="1" pad="P$2"/>
+<connect gate="-3" pin="1" pad="P$3"/>
+<connect gate="-4" pin="1" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="B4B-XH-A(LF)(SN)" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4919,24 +5048,24 @@ Low profile connectors, straight&lt;p&gt;
 <part name="EN_DAC_VCC" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 <part name="C17" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="BLM31PG601SN1L"/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="U$15" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND22" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND23" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND24" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND25" library="microbuilder" deviceset="GND" device=""/>
 <part name="C18" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
-<part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="BLM31PG601SN1L"/>
+<part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
 <part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
-<part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="BLM31PG601SN1L"/>
+<part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
 <part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
 <part name="C22" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
-<part name="L4" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="BLM31PG601SN1L"/>
+<part name="L4" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
@@ -4969,7 +5098,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C35" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
 <part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-323"/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
-<part name="L5" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="BLM31PG601SN1L"/>
+<part name="L5" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="APWR_EN" library="jumper" deviceset="JP2QE" device=""/>
 <part name="U$28" library="microbuilder" deviceset="AVCC" device=""/>
 <part name="IC11" library="keves" deviceset="LM337" device=""/>
@@ -4981,7 +5110,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 <part name="C38" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
 <part name="D4" library="microbuilder" deviceset="DIODE" device="SOD-323"/>
-<part name="L6" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="BLM31PG601SN1L"/>
+<part name="L6" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
 <part name="U$30" library="microbuilder" deviceset="AVDD" device=""/>
 <part name="J5" library="keves" deviceset="DC21P" device=""/>
 <part name="U$32" library="microbuilder" deviceset="GND" device=""/>
@@ -5031,6 +5160,15 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$47" library="microbuilder" deviceset="GND" device=""/>
 <part name="R48" library="microbuilder" deviceset="RESISTOR" device="_0805" value="0"/>
+<part name="IC12" library="keves" deviceset="MURATA_OKR-T/10-W12-C" device=""/>
+<part name="X2" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
+<part name="X1" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
+<part name="U$48" library="microbuilder" deviceset="GND" device=""/>
+<part name="R49" library="microbuilder" deviceset="RESISTOR" device="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)"/>
+<part name="L7" library="SparkFun-Passives" deviceset="INDUCTOR" device="H*" technology="1206" value="ILHB1206ER601V"/>
+<part name="C56" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
+<part name="C57" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C58" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="22uF GRM21BR61E226ME44L"/>
 </parts>
 <sheets>
 <sheet>
@@ -5038,10 +5176,11 @@ Low profile connectors, straight&lt;p&gt;
 <text x="241.3" y="-7.62" size="1.778" layer="91">NEED TO VERIFY FOOTPRINT
 NEED TO VERIFY TIP/RING</text>
 <text x="241.3" y="-2.54" size="1.778" layer="91">NEED TO VERIFY LEFT/RIGHT</text>
-<text x="-17.78" y="96.52" size="1.778" layer="91">TODO:
+<text x="-60.96" y="124.46" size="1.778" layer="91">TODO:
 PCM5102?
 HEADPHONE AMP?
-2xCAN CONNECTORS</text>
+2xCAN CONNECTORS
+REVERSE POLARITY? FUSE?</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="81.28" y="121.92"/>
@@ -5273,6 +5412,21 @@ HEADPHONE AMP?
 <instance part="U$45" gate="G$1" x="-38.1" y="88.9" rot="R90"/>
 <instance part="U$47" gate="G$1" x="-38.1" y="78.74" rot="R270"/>
 <instance part="R48" gate="G$1" x="5.08" y="83.82"/>
+<instance part="IC12" gate="G$1" x="101.6" y="271.78"/>
+<instance part="X2" gate="-1" x="180.34" y="271.78"/>
+<instance part="X2" gate="-2" x="180.34" y="269.24"/>
+<instance part="X2" gate="-3" x="180.34" y="266.7"/>
+<instance part="X2" gate="-4" x="180.34" y="264.16"/>
+<instance part="X1" gate="-1" x="165.1" y="271.78"/>
+<instance part="X1" gate="-2" x="165.1" y="269.24"/>
+<instance part="X1" gate="-3" x="165.1" y="266.7"/>
+<instance part="X1" gate="-4" x="165.1" y="264.16"/>
+<instance part="U$48" gate="G$1" x="101.6" y="254"/>
+<instance part="R49" gate="G$1" x="114.3" y="261.62"/>
+<instance part="L7" gate="G$1" x="152.4" y="271.78" rot="R90"/>
+<instance part="C56" gate="G$1" x="129.54" y="266.7"/>
+<instance part="C57" gate="G$1" x="139.7" y="266.7"/>
+<instance part="C58" gate="G$1" x="63.5" y="264.16"/>
 </instances>
 <busses>
 </busses>
@@ -5680,6 +5834,34 @@ HEADPHONE AMP?
 <wire x1="-33.02" y1="78.74" x2="-35.56" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C52" gate="G$1" pin="P$2"/>
 <wire x1="-33.02" y1="81.28" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="154.94" y1="264.16" x2="160.02" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-4" pin="1"/>
+<wire x1="160.02" y1="264.16" x2="175.26" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-4" pin="1"/>
+<junction x="160.02" y="264.16"/>
+<wire x1="154.94" y1="264.16" x2="154.94" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="U$48" gate="G$1" pin="GND"/>
+<wire x1="154.94" y1="256.54" x2="139.7" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="IC12" gate="G$1" pin="GND"/>
+<wire x1="139.7" y1="256.54" x2="129.54" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="256.54" x2="119.38" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="256.54" x2="101.6" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="261.62" x2="101.6" y2="256.54" width="0.1524" layer="91"/>
+<junction x="101.6" y="256.54"/>
+<pinref part="R49" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="261.62" x2="119.38" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="C57" gate="G$1" pin="P$2"/>
+<wire x1="139.7" y1="264.16" x2="139.7" y2="256.54" width="0.1524" layer="91"/>
+<junction x="139.7" y="256.54"/>
+<pinref part="C56" gate="G$1" pin="P$2"/>
+<wire x1="129.54" y1="264.16" x2="129.54" y2="256.54" width="0.1524" layer="91"/>
+<junction x="129.54" y="256.54"/>
+<junction x="119.38" y="256.54"/>
+<pinref part="C58" gate="G$1" pin="P$2"/>
+<wire x1="63.5" y1="261.62" x2="63.5" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="256.54" x2="101.6" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6484,6 +6666,15 @@ HEADPHONE AMP?
 <wire x1="2.54" y1="180.34" x2="-5.08" y2="180.34" width="0.1524" layer="91"/>
 <label x="2.54" y="180.34" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="IC12" gate="G$1" pin="IN"/>
+<wire x1="83.82" y1="271.78" x2="63.5" y2="271.78" width="0.1524" layer="91"/>
+<label x="66.04" y="271.78" size="1.778" layer="95"/>
+<pinref part="C58" gate="G$1" pin="P$1"/>
+<wire x1="63.5" y1="271.78" x2="55.88" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="269.24" x2="63.5" y2="271.78" width="0.1524" layer="91"/>
+<junction x="63.5" y="271.78"/>
+</segment>
 </net>
 <net name="N$49" class="0">
 <segment>
@@ -6818,6 +7009,49 @@ HEADPHONE AMP?
 <pinref part="R48" gate="G$1" pin="1"/>
 <pinref part="OSC1" gate="G$1" pin="OUT"/>
 <wire x1="0" y1="83.82" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="X2" gate="-1" pin="1"/>
+<wire x1="160.02" y1="271.78" x2="175.26" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="1"/>
+<pinref part="L7" gate="G$1" pin="2"/>
+<junction x="160.02" y="271.78"/>
+</segment>
+</net>
+<net name="CAN_H" class="0">
+<segment>
+<wire x1="175.26" y1="266.7" x2="160.02" y2="266.7" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-3" pin="1"/>
+<pinref part="X1" gate="-3" pin="1"/>
+</segment>
+</net>
+<net name="CAN_L" class="0">
+<segment>
+<wire x1="175.26" y1="269.24" x2="160.02" y2="269.24" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="1"/>
+<pinref part="X1" gate="-2" pin="1"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="R49" gate="G$1" pin="1"/>
+<pinref part="IC12" gate="G$1" pin="TRIM"/>
+<wire x1="109.22" y1="261.62" x2="106.68" y2="261.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="L7" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="271.78" x2="139.7" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="IC12" gate="G$1" pin="OUT"/>
+<pinref part="C56" gate="G$1" pin="P$1"/>
+<wire x1="139.7" y1="271.78" x2="129.54" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="271.78" x2="121.92" y2="271.78" width="0.1524" layer="91"/>
+<junction x="129.54" y="271.78"/>
+<pinref part="C57" gate="G$1" pin="P$1"/>
+<junction x="139.7" y="271.78"/>
 </segment>
 </net>
 </nets>
