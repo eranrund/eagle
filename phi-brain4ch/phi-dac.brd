@@ -1470,17 +1470,17 @@ Please make sure your boards conform to these design rules.</description>
 <element name="OSC1" library="microbuilder" package="OSC_7X5MM" value="12.288MHz C3391-12.288" x="98.298" y="44.196" rot="R180"/>
 <element name="C52" library="microbuilder" package="0603" value="0.1uF" x="103.378" y="42.926" rot="R90"/>
 <element name="R48" library="microbuilder" package="_0805" value="0" x="94.742" y="39.624" rot="R180"/>
-<element name="IC12" library="keves" package="MURATA_OKR-T/10-W12-C" value="" x="17.653" y="38.1" rot="MR180"/>
+<element name="IC12" library="keves" package="MURATA_OKR-T/10-W12-C" value="" x="17.653" y="36.576" rot="MR180"/>
 <element name="X2" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="13.462" y="48.133" rot="R180">
 <attribute name="MPN" value="B4B-XH-A(LF)(SN)" x="13.462" y="38.227" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="X1" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="13.462" y="41.656" rot="R180">
 <attribute name="MPN" value="B4B-XH-A(LF)(SN)" x="13.462" y="51.562" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R49" library="microbuilder" package="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)" x="20.701" y="36.068" rot="R180"/>
+<element name="R49" library="microbuilder" package="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)" x="20.701" y="34.544" rot="R180"/>
 <element name="C56" library="microbuilder" package="1206" value="10uF" x="19.431" y="41.656" rot="R90"/>
 <element name="C57" library="microbuilder" package="0603" value="0.1uF" x="21.59" y="40.894" rot="R90"/>
-<element name="C58" library="microbuilder" package="_0805" value="22uF GRM21BR61E226ME44L" x="16.383" y="36.068"/>
+<element name="C58" library="microbuilder" package="_0805" value="22uF GRM21BR61E226ME44L" x="16.383" y="34.544"/>
 <element name="IC13" library="PCM5102" package="TSSOP20" value="PCM5102" x="42.545" y="36.195" rot="R270"/>
 <element name="C59" library="microbuilder" package="0603" value="0.1u" x="42.037" y="30.988" rot="R270"/>
 <element name="C60" library="microbuilder" package="1206" value="10uF" x="40.005" y="30.353" rot="R270"/>
@@ -2024,14 +2024,33 @@ Please make sure your boards conform to these design rules.</description>
 <via x="19.304" y="48.133" extent="1-16" drill="0.3302"/>
 <wire x1="19.304" y1="48.133" x2="19.177" y2="48.133" width="0.6096" layer="16"/>
 <wire x1="19.177" y1="48.133" x2="19.05" y2="48.26" width="0.6096" layer="16"/>
-<wire x1="19.685" y1="36.068" x2="17.399" y2="36.068" width="1.143" layer="1"/>
-<wire x1="17.653" y1="38.1" x2="17.653" y2="36.322" width="1.143" layer="1"/>
-<wire x1="17.653" y1="36.322" x2="17.399" y2="36.068" width="1.143" layer="1"/>
+<wire x1="19.685" y1="34.544" x2="17.399" y2="34.544" width="1.143" layer="1"/>
+<wire x1="17.653" y1="36.576" x2="17.653" y2="34.798" width="1.143" layer="1"/>
+<wire x1="17.653" y1="34.798" x2="17.399" y2="34.544" width="1.143" layer="1"/>
 <wire x1="21.59" y1="41.744" x2="20.743" y2="41.744" width="1.143" layer="1"/>
 <wire x1="20.743" y1="41.744" x2="19.431" y2="43.056" width="1.143" layer="1"/>
 <wire x1="19.431" y1="43.056" x2="19.431" y2="44.831" width="1.143" layer="1"/>
 <via x="19.431" y="44.831" extent="1-16" drill="0.3302"/>
 <wire x1="19.431" y1="44.831" x2="19.431" y2="45.212" width="1.143" layer="16"/>
+<polygon width="0.4064" layer="1" thermals="no">
+<vertex x="27.305" y="42.037"/>
+<vertex x="23.876" y="42.037"/>
+<vertex x="23.495" y="42.418"/>
+<vertex x="23.495" y="47.498"/>
+<vertex x="28.575" y="47.498"/>
+<vertex x="28.702" y="47.371"/>
+<vertex x="28.702" y="43.307"/>
+<vertex x="27.432" y="42.037"/>
+</polygon>
+<via x="26.416" y="44.196" extent="1-16" drill="0.3302"/>
+<via x="27.305" y="44.196" extent="1-16" drill="0.3302"/>
+<via x="27.305" y="45.085" extent="1-16" drill="0.3302"/>
+<via x="27.305" y="45.974" extent="1-16" drill="0.3302"/>
+<via x="26.416" y="45.974" extent="1-16" drill="0.3302"/>
+<via x="26.416" y="45.085" extent="1-16" drill="0.3302"/>
+<via x="25.527" y="45.085" extent="1-16" drill="0.3302"/>
+<via x="24.638" y="45.974" extent="1-16" drill="0.3302"/>
+<via x="25.527" y="45.974" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC2" pad="5"/>
@@ -2983,12 +3002,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="23.749" y1="49.657" x2="23.876" y2="49.784" width="0.6096" layer="1"/>
 <wire x1="23.749" y1="47.7774" x2="22.4146" y2="47.7774" width="0.6096" layer="1"/>
 <wire x1="22.4146" y1="47.7774" x2="22.313" y2="47.879" width="0.6096" layer="1"/>
-<wire x1="15.9512" y1="38.1" x2="15.9512" y2="36.6522" width="1.143" layer="1"/>
-<wire x1="15.9512" y1="36.6522" x2="15.367" y2="36.068" width="1.143" layer="1"/>
-<wire x1="15.367" y1="36.068" x2="14.986" y2="36.068" width="1.143" layer="1"/>
-<wire x1="14.986" y1="36.068" x2="12.7" y2="33.782" width="1.143" layer="1"/>
-<wire x1="12.7" y1="33.782" x2="12.306" y2="33.782" width="1.143" layer="1"/>
+<wire x1="15.9512" y1="36.576" x2="15.9512" y2="35.1282" width="1.143" layer="1"/>
+<wire x1="15.9512" y1="35.1282" x2="15.367" y2="34.544" width="1.143" layer="1"/>
 <wire x1="12.306" y1="33.782" x2="12.192" y2="33.896" width="1.143" layer="1"/>
+<wire x1="15.367" y1="34.544" x2="13.081" y2="34.544" width="1.143" layer="1"/>
+<wire x1="13.081" y1="34.544" x2="12.065" y2="35.56" width="1.143" layer="1"/>
 </signal>
 <signal name="N$49">
 <contactref element="IC9" pad="5"/>
@@ -3162,8 +3180,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="66.802" y="39.624"/>
 <vertex x="66.802" y="41.021"/>
 <vertex x="60.325" y="41.021"/>
-<vertex x="60.325" y="43.815"/>
-<vertex x="52.451" y="43.815"/>
+<vertex x="60.325" y="45.339"/>
+<vertex x="52.451" y="45.339"/>
 <vertex x="52.451" y="34.163"/>
 <vertex x="60.325" y="34.163"/>
 <vertex x="60.325" y="39.624"/>
@@ -3317,7 +3335,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C57" pad="1"/>
 <contactref element="C56" pad="1"/>
 <contactref element="IC12" pad="P$4"/>
-<wire x1="19.3548" y1="38.1" x2="19.3548" y2="40.1798" width="1.143" layer="1"/>
+<wire x1="19.3548" y1="36.576" x2="19.3548" y2="40.1798" width="1.143" layer="1"/>
 <wire x1="19.3548" y1="40.1798" x2="19.431" y2="40.256" width="1.143" layer="1"/>
 <wire x1="21.59" y1="40.044" x2="19.643" y2="40.044" width="1.143" layer="1"/>
 <wire x1="19.643" y1="40.044" x2="19.431" y2="40.256" width="1.143" layer="1"/>
@@ -3338,8 +3356,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$33">
 <contactref element="R49" pad="1"/>
 <contactref element="IC12" pad="P$5"/>
-<wire x1="21.717" y1="36.068" x2="21.717" y2="37.4396" width="1.143" layer="1"/>
-<wire x1="21.717" y1="37.4396" x2="21.0566" y2="38.1" width="1.143" layer="1"/>
+<wire x1="21.717" y1="34.544" x2="21.717" y2="35.9156" width="1.143" layer="1"/>
+<wire x1="21.717" y1="35.9156" x2="21.0566" y2="36.576" width="1.143" layer="1"/>
 </signal>
 <signal name="I2S_DATA2">
 <contactref element="SV1" pad="1"/>
