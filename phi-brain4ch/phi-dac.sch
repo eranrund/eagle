@@ -5308,6 +5308,16 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C74" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2nF"/>
 <part name="U$55" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$56" library="microbuilder" deviceset="GND" device=""/>
+<part name="X3" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
+<part name="U$57" library="microbuilder" deviceset="GND" device=""/>
+<part name="IC14" library="keves" deviceset="ADP3301" device="" value="ADP3301ARZ-3.3"/>
+<part name="U$58" library="microbuilder" deviceset="GND" device=""/>
+<part name="C75" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="2.2uF (EMK107BB7225KA-T)"/>
+<part name="U$59" library="microbuilder" deviceset="GND" device=""/>
+<part name="C76" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
+<part name="C77" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
+<part name="U$61" library="microbuilder" deviceset="GND" device=""/>
+<part name="HP_EN" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5587,6 +5597,19 @@ REVERSE POLARITY? FUSE?</text>
 <instance part="C74" gate="G$1" x="-129.54" y="160.02" rot="R180"/>
 <instance part="U$55" gate="G$1" x="-129.54" y="152.4"/>
 <instance part="U$56" gate="G$1" x="-129.54" y="175.26" rot="R180"/>
+<instance part="X3" gate="-1" x="-157.48" y="170.18" rot="MR0"/>
+<instance part="X3" gate="-2" x="-157.48" y="167.64" rot="MR0"/>
+<instance part="X3" gate="-3" x="-157.48" y="165.1" rot="MR0"/>
+<instance part="X3" gate="-4" x="-157.48" y="162.56" rot="MR0"/>
+<instance part="U$57" gate="G$1" x="-147.32" y="167.64" rot="R90"/>
+<instance part="IC14" gate="G$1" x="-139.7" y="185.42"/>
+<instance part="U$58" gate="G$1" x="-167.64" y="203.2" rot="R270"/>
+<instance part="C75" gate="G$1" x="-170.18" y="195.58" rot="R180"/>
+<instance part="U$59" gate="G$1" x="-170.18" y="185.42"/>
+<instance part="C76" gate="G$1" x="-129.54" y="203.2" rot="R90"/>
+<instance part="C77" gate="G$1" x="-127" y="195.58" rot="R180"/>
+<instance part="U$61" gate="G$1" x="-127" y="187.96"/>
+<instance part="HP_EN" gate="G$1" x="-101.6" y="200.66" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6084,6 +6107,25 @@ REVERSE POLARITY? FUSE?</text>
 <segment>
 <pinref part="C73" gate="G$1" pin="P$2"/>
 <pinref part="U$56" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-2" pin="1"/>
+<pinref part="U$57" gate="G$1" pin="GND"/>
+<wire x1="-149.86" y1="167.64" x2="-152.4" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC14" gate="G$1" pin="GND"/>
+<pinref part="U$58" gate="G$1" pin="GND"/>
+<wire x1="-165.1" y1="203.2" x2="-162.56" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C75" gate="G$1" pin="P$1"/>
+<pinref part="U$59" gate="G$1" pin="GND"/>
+<wire x1="-170.18" y1="187.96" x2="-170.18" y2="190.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C77" gate="G$1" pin="P$1"/>
+<pinref part="U$61" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6883,6 +6925,25 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="63.5" y1="269.24" x2="63.5" y2="271.78" width="0.1524" layer="91"/>
 <junction x="63.5" y="271.78"/>
 </segment>
+<segment>
+<pinref part="X3" gate="-1" pin="1"/>
+<wire x1="-152.4" y1="170.18" x2="-144.78" y2="170.18" width="0.1524" layer="91"/>
+<label x="-147.32" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC14" gate="G$1" pin="IN2"/>
+<pinref part="IC14" gate="G$1" pin="IN1"/>
+<wire x1="-162.56" y1="195.58" x2="-162.56" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="198.12" x2="-170.18" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C75" gate="G$1" pin="P$2"/>
+<wire x1="-170.18" y1="198.12" x2="-172.72" y2="198.12" width="0.1524" layer="91"/>
+<junction x="-170.18" y="198.12"/>
+<pinref part="IC14" gate="G$1" pin="SD"/>
+<wire x1="-162.56" y1="190.5" x2="-162.56" y2="195.58" width="0.1524" layer="91"/>
+<label x="-175.26" y="198.12" size="1.778" layer="95"/>
+<junction x="-162.56" y="195.58"/>
+<junction x="-162.56" y="198.12"/>
+</segment>
 </net>
 <net name="N$49" class="0">
 <segment>
@@ -7302,6 +7363,11 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="-91.44" y1="180.34" x2="-88.9" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="180.34" x2="-88.9" y2="170.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="HP_EN" gate="G$1" pin="2"/>
+<wire x1="-101.6" y1="198.12" x2="-86.36" y2="198.12" width="0.1524" layer="91"/>
+<label x="-91.44" y="198.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$43" class="0">
 <segment>
@@ -7384,8 +7450,9 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="-124.46" y1="154.94" x2="-124.46" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="162.56" x2="-129.54" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C74" gate="G$1" pin="P$2"/>
-<wire x1="-129.54" y1="162.56" x2="-134.62" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="162.56" x2="-152.4" y2="162.56" width="0.1524" layer="91"/>
 <junction x="-129.54" y="162.56"/>
+<pinref part="X3" gate="-4" pin="1"/>
 </segment>
 </net>
 <net name="N$70" class="0">
@@ -7395,8 +7462,31 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="-121.92" y1="157.48" x2="-121.92" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="165.1" x2="-129.54" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C73" gate="G$1" pin="P$1"/>
-<wire x1="-129.54" y1="165.1" x2="-134.62" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="165.1" x2="-152.4" y2="165.1" width="0.1524" layer="91"/>
 <junction x="-129.54" y="165.1"/>
+<pinref part="X3" gate="-3" pin="1"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="C76" gate="G$1" pin="P$1"/>
+<pinref part="IC14" gate="G$1" pin="NR"/>
+<wire x1="-134.62" y1="203.2" x2="-137.16" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$71" class="0">
+<segment>
+<pinref part="IC14" gate="G$1" pin="OUT1"/>
+<junction x="-137.16" y="198.12"/>
+<pinref part="IC14" gate="G$1" pin="OUT2"/>
+<wire x1="-137.16" y1="195.58" x2="-137.16" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C76" gate="G$1" pin="P$2"/>
+<wire x1="-127" y1="198.12" x2="-137.16" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-127" y1="203.2" x2="-127" y2="198.12" width="0.1524" layer="91"/>
+<junction x="-127" y="198.12"/>
+<pinref part="C77" gate="G$1" pin="P$2"/>
+<pinref part="HP_EN" gate="G$1" pin="1"/>
+<wire x1="-127" y1="198.12" x2="-104.14" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
