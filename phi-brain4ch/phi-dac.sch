@@ -7004,7 +7004,7 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="-99.06" y1="154.94" x2="-88.9" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$69" class="0">
+<net name="HP_R_OUT" class="0">
 <segment>
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="154.94" x2="-124.46" y2="154.94" width="0.1524" layer="91"/>
@@ -7018,7 +7018,7 @@ REVERSE POLARITY? FUSE?</text>
 <junction x="-129.54" y="162.56"/>
 </segment>
 </net>
-<net name="N$70" class="0">
+<net name="HP_L_OUT" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="157.48" x2="-121.92" y2="157.48" width="0.1524" layer="91"/>
