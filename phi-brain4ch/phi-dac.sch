@@ -4727,7 +4727,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="GND21" library="microbuilder" deviceset="GND" device=""/>
 <part name="IC8" library="keves" deviceset="ADP3301" device="" value="ADP3301ARZ-3.3"/>
 <part name="U$31" library="microbuilder" deviceset="GND" device=""/>
-<part name="C53" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="2.2uF"/>
+<part name="C53" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
 <part name="U$34" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$35" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="C54" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
@@ -4735,12 +4735,12 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$42" library="microbuilder" deviceset="GND" device=""/>
 <part name="EN_3.3" library="microbuilder" deviceset="HEADER-1X2" device=""/>
 <part name="IC7" library="burr-brown" deviceset="REG1117" device="" value="REG1117-5"/>
-<part name="C62" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C62" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C64" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
 <part name="C63" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
-<part name="C65" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C65" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="EN_DAC_VCC" library="microbuilder" deviceset="HEADER-1X2" device=""/>
-<part name="C17" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C17" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
 <part name="L1" library="microbuilder" deviceset="INDUCTOR" device="_0805" value="ILHB0805ER601V"/>
 <part name="U$15" library="microbuilder" deviceset="3.3V" device=""/>
@@ -4748,17 +4748,17 @@ Low profile connectors, straight&lt;p&gt;
 <part name="GND23" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND24" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND25" library="microbuilder" deviceset="GND" device=""/>
-<part name="C18" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C18" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="L2" library="microbuilder" deviceset="INDUCTOR" device="_0805" value="ILHB0805ER601V"/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="C19" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
-<part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="L3" library="microbuilder" deviceset="INDUCTOR" device="_0805" value="ILHB0805ER601V"/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
 <part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
-<part name="C22" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C22" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="L4" library="microbuilder" deviceset="INDUCTOR" device="_0805" value="ILHB0805ER601V"/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
@@ -4771,7 +4771,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="IC9" library="keves" deviceset="MURATA-MGJ2" device="" value="MGJ2D121515SC"/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="C26" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF (EEE-1EA101XP)"/>
-<part name="C27" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C27" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
 <part name="C28" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
 <part name="C29" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
@@ -4779,11 +4779,11 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C31" library="keves" deviceset="CAP-POL-1210" device="" value="TCJB106M025R0090"/>
 <part name="15V_EN" library="jumper" deviceset="JP2QE" device=""/>
 <part name="IC10" library="keves" deviceset="LM317" device=""/>
-<part name="C32" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="2.2uF X7R"/>
+<part name="C32" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
 <part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
 <part name="R39" library="microbuilder" deviceset="RESISTOR" device="_0805" value="240 0.1%"/>
 <part name="R40" library="microbuilder" deviceset="RESISTOR" device="_0805" value="2.2k 0.1%"/>
-<part name="C33" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C33" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C34" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
 <part name="C35" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
 <part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
@@ -4793,8 +4793,8 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$28" library="microbuilder" deviceset="AVCC" device=""/>
 <part name="IC11" library="keves" deviceset="LM337" device=""/>
 <part name="D3" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
-<part name="C36" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="2.2uF X7R"/>
-<part name="C37" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C36" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
+<part name="C37" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="R41" library="microbuilder" deviceset="RESISTOR" device="_0805" value="2.2k 0.1%"/>
 <part name="R42" library="microbuilder" deviceset="RESISTOR" device="_0805" value="240 0.1%"/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
@@ -4818,7 +4818,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="LED4" library="microbuilder" deviceset="LED" device="0805"/>
 <part name="U$40" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$39" library="microbuilder" deviceset="GND" device=""/>
-<part name="R47" library="microbuilder" deviceset="RESISTOR" device="_0805" value="1.0K"/>
+<part name="R47" library="microbuilder" deviceset="RESISTOR" device="_0805" value="1.0k"/>
 <part name="LED5" library="microbuilder" deviceset="LED" device="0805"/>
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
 <part name="SV1" library="con-harting-ml" deviceset="ML20" device=""/>
@@ -4845,7 +4845,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C50" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C51" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
 <part name="OSC1" library="microbuilder" deviceset="OSCILLATOR" device="" value="12.288MHz C3391-12.288"/>
-<part name="C52" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C52" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$47" library="microbuilder" deviceset="GND" device=""/>
 <part name="R48" library="microbuilder" deviceset="RESISTOR" device="_0805" value="0"/>
@@ -4855,7 +4855,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$48" library="microbuilder" deviceset="GND" device=""/>
 <part name="R49" library="microbuilder" deviceset="RESISTOR" device="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)"/>
 <part name="C56" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
-<part name="C57" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C57" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1u"/>
 <part name="C58" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="22uF GRM21BR61E226ME44L"/>
 <part name="IC13" library="PCM5102" deviceset="PCM5102" device=""/>
 <part name="U$44" library="microbuilder" deviceset="GND" device=""/>
@@ -4886,7 +4886,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="U$57" library="microbuilder" deviceset="GND" device=""/>
 <part name="IC14" library="keves" deviceset="ADP3301" device="" value="ADP3301ARZ-3.3"/>
 <part name="U$58" library="microbuilder" deviceset="GND" device=""/>
-<part name="C75" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="2.2uF"/>
+<part name="C75" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
 <part name="U$59" library="microbuilder" deviceset="GND" device=""/>
 <part name="C76" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.01uF"/>
 <part name="C77" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
