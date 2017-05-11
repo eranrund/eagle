@@ -70,6 +70,7 @@ void leds_sleep() {
         FastLED.show();
     }
     pinMode(LED1_PIN, INPUT);
+    pinMode(LED2_PIN, INPUT);
     digitalWrite(LED_EN_PIN, LOW);
 
     USBCON |= _BV(FRZCLK);  //freeze USB clock
@@ -92,6 +93,7 @@ void leds_sleep() {
     USBDevice.attach();
     delay(100);
     pinMode(LED1_PIN, OUTPUT);
+    pinMode(LED2_PIN, OUTPUT);
 
 
     memset(leds, 0, sizeof(leds));
@@ -146,6 +148,7 @@ void setup()
     memset(leds, 0, sizeof(leds));
 
     FastLED.addLeds<WS2812B, LED1_PIN, GRB>(leds, NUM_LEDS);
+    FastLED.addLeds<WS2812B, LED2_PIN, GRB>(leds, NUM_LEDS);
     FastLED.setMaxPowerInVoltsAndMilliamps(5, 1900);
     FastLED.show();
 

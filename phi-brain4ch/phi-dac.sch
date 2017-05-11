@@ -302,19 +302,19 @@ package type SS</description>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
 <package name="CUI-RCJ-2123">
-<pad name="P$1" x="7" y="-5.5" drill="2.6"/>
-<pad name="P$3" x="-7" y="-5.5" drill="2.6"/>
-<pad name="P$2" x="3" y="-10.25" drill="1.3"/>
-<pad name="P$4" x="-11" y="-10.25" drill="1.3"/>
-<wire x1="-10.8" y1="-3.3" x2="-13.5" y2="-3.3" width="0.127" layer="20"/>
-<wire x1="-13.5" y1="-3.3" x2="-13.5" y2="-7.7" width="0.127" layer="20"/>
-<wire x1="-13.5" y1="-7.7" x2="-10.8" y2="-7.7" width="0.127" layer="20"/>
-<wire x1="-10.8" y1="-7.7" x2="-10.8" y2="-3.3" width="0.127" layer="20"/>
+<pad name="R_GND" x="7" y="-5.5" drill="2.6"/>
+<pad name="L_GND" x="-7" y="-5.5" drill="2.6"/>
+<pad name="R_SIG" x="3" y="-10.25" drill="1.3"/>
+<pad name="L_SIG" x="-11" y="-10.25" drill="1.3"/>
+<wire x1="-10.9" y1="-3.4" x2="-13.4" y2="-3.4" width="0.127" layer="20"/>
+<wire x1="-13.4" y1="-3.4" x2="-13.4" y2="-7.6" width="0.127" layer="20"/>
+<wire x1="-13.4" y1="-7.6" x2="-10.9" y2="-7.6" width="0.127" layer="20"/>
+<wire x1="-10.9" y1="-7.6" x2="-10.9" y2="-3.4" width="0.127" layer="20"/>
 <hole x="-12.15" y="-5.5" drill="3"/>
-<wire x1="13.5" y1="-3.3" x2="10.8" y2="-3.3" width="0.127" layer="20"/>
-<wire x1="10.8" y1="-3.3" x2="10.8" y2="-7.7" width="0.127" layer="20"/>
-<wire x1="10.8" y1="-7.7" x2="13.5" y2="-7.7" width="0.127" layer="20"/>
-<wire x1="13.5" y1="-7.7" x2="13.5" y2="-3.3" width="0.127" layer="20"/>
+<wire x1="13.4" y1="-3.4" x2="10.9" y2="-3.4" width="0.127" layer="20"/>
+<wire x1="10.9" y1="-3.4" x2="10.9" y2="-7.6" width="0.127" layer="20"/>
+<wire x1="10.9" y1="-7.6" x2="13.4" y2="-7.6" width="0.127" layer="20"/>
+<wire x1="13.4" y1="-7.6" x2="13.4" y2="-3.4" width="0.127" layer="20"/>
 <hole x="12.15" y="-5.5" drill="3"/>
 <wire x1="-13.7" y1="0" x2="13.7" y2="0" width="0.127" layer="21"/>
 <wire x1="-13.7" y1="-11" x2="13.7" y2="-11" width="0.127" layer="21"/>
@@ -334,10 +334,10 @@ package type SS</description>
 <pad name="5" x="10.16" y="0" drill="1.2"/>
 <pad name="6" x="12.7" y="0" drill="1.2"/>
 <pad name="7" x="15.24" y="0" drill="1.2"/>
-<wire x1="20.32" y1="5.08" x2="20.32" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="20.32" y1="-7.62" x2="-5.08" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="5.08" x2="20.32" y2="5.08" width="0.127" layer="21"/>
+<wire x1="19.1" y1="2.54" x2="19.1" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="19.1" y1="-7.62" x2="-3.9" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="-7.62" x2="-3.9" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="2.54" x2="19.1" y2="2.54" width="0.127" layer="21"/>
 <text x="4.445" y="-9.525" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="4.445" y="-5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
@@ -555,10 +555,10 @@ package type SS</description>
 <wire x1="13.97" y1="7.62" x2="-3.81" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="-3.81" y1="7.62" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
 <text x="-3.81" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1-TIP" x="0" y="5.08" length="short" direction="pas" function="dot"/>
-<pin name="1-RING" x="0" y="2.54" length="short" direction="pas" function="dot"/>
-<pin name="2-TIP" x="0" y="0" length="short" direction="pas" function="dot"/>
-<pin name="2-RING" x="0" y="-2.54" length="short" direction="pas" function="dot"/>
+<pin name="L_SIG" x="0" y="5.08" length="short" direction="pas" function="dot"/>
+<pin name="L_GND" x="0" y="2.54" length="short" direction="pas" function="dot"/>
+<pin name="R_SIG" x="0" y="0" length="short" direction="pas" function="dot"/>
+<pin name="R_GND" x="0" y="-2.54" length="short" direction="pas" function="dot"/>
 </symbol>
 <symbol name="ADP3301">
 <pin name="IN1" x="-22.86" y="12.7" length="middle"/>
@@ -765,10 +765,10 @@ package type SS</description>
 <devices>
 <device name="" package="CUI-RCJ-2123">
 <connects>
-<connect gate="G$1" pin="1-RING" pad="P$2"/>
-<connect gate="G$1" pin="1-TIP" pad="P$1"/>
-<connect gate="G$1" pin="2-RING" pad="P$4"/>
-<connect gate="G$1" pin="2-TIP" pad="P$3"/>
+<connect gate="G$1" pin="L_GND" pad="L_GND"/>
+<connect gate="G$1" pin="L_SIG" pad="L_SIG"/>
+<connect gate="G$1" pin="R_GND" pad="R_GND"/>
+<connect gate="G$1" pin="R_SIG" pad="R_SIG"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3157,12 +3157,12 @@ grid 3.5 mm, diameter 10 mm</description>
 <wire x1="-11.684" y1="2.794" x2="-11.938" y2="3.048" width="0.127" layer="51"/>
 <wire x1="-11.938" y1="3.048" x2="-12.446" y2="3.556" width="0.127" layer="51"/>
 <wire x1="-11.938" y1="3.048" x2="-11.176" y2="3.556" width="0.127" layer="51"/>
-<pad name="R" x="0" y="8.115" drill="0.7"/>
-<pad name="RN" x="0" y="-8.115" drill="0.7"/>
-<pad name="SN" x="6.35" y="-8.115" drill="0.7"/>
-<pad name="TN" x="-6.35" y="-8.115" drill="0.7"/>
-<pad name="T" x="-6.35" y="8.115" drill="0.7"/>
-<pad name="S" x="6.35" y="8.115" drill="0.7"/>
+<pad name="R" x="0" y="8.115" drill="1.5"/>
+<pad name="RN" x="0" y="-8.115" drill="1.5"/>
+<pad name="SN" x="6.35" y="-8.115" drill="1.5"/>
+<pad name="TN" x="-6.35" y="-8.115" drill="1.5"/>
+<pad name="T" x="-6.35" y="8.115" drill="1.5"/>
+<pad name="S" x="6.35" y="8.115" drill="1.5"/>
 <text x="-6.35" y="5.715" size="1.27" layer="21" font="vector" ratio="12">T</text>
 <text x="0" y="5.715" size="1.27" layer="21" font="vector" ratio="12">R</text>
 <text x="6.35" y="5.715" size="1.27" layer="21" font="vector" ratio="12">S</text>
@@ -4806,8 +4806,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="C7" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF (EEE-1EA101XP)"/>
 <part name="C8" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF (EEE-1EA101XP)"/>
 <part name="J1" library="keves" deviceset="CUI-RCJ-2123" device=""/>
-<part name="GND10" library="microbuilder" deviceset="GND" device=""/>
-<part name="GND11" library="microbuilder" deviceset="GND" device=""/>
 <part name="IC4" library="keves" deviceset="OPA1632D" device=""/>
 <part name="GND12" library="microbuilder" deviceset="GND" device=""/>
 <part name="R17" library="microbuilder" deviceset="RESISTOR" device="_0805" value="750 0.1%"/>
@@ -5040,6 +5038,8 @@ Low profile connectors, straight&lt;p&gt;
 <part name="TP8" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
 <part name="TP19" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
 <part name="TP20" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
+<part name="GND10" library="microbuilder" deviceset="GND" device=""/>
+<part name="GND11" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5100,8 +5100,6 @@ REVERSE POLARITY? FUSE?</text>
 <instance part="C7" gate="G$1" x="53.34" y="71.12"/>
 <instance part="C8" gate="G$1" x="53.34" y="58.42"/>
 <instance part="J1" gate="G$1" x="246.38" y="-20.32"/>
-<instance part="GND10" gate="G$1" x="236.22" y="-17.78" rot="R270"/>
-<instance part="GND11" gate="G$1" x="236.22" y="-22.86" rot="R270"/>
 <instance part="IC4" gate="G$1" x="78.74" y="-53.34"/>
 <instance part="GND12" gate="G$1" x="63.5" y="-53.34" rot="R270"/>
 <instance part="R17" gate="G$1" x="76.2" y="-33.02"/>
@@ -5351,6 +5349,8 @@ REVERSE POLARITY? FUSE?</text>
 <instance part="TP8" gate="G$1" x="-30.48" y="226.06"/>
 <instance part="TP19" gate="G$1" x="-25.4" y="226.06"/>
 <instance part="TP20" gate="G$1" x="-20.32" y="226.06"/>
+<instance part="GND10" gate="G$1" x="238.76" y="-17.78" rot="R270"/>
+<instance part="GND11" gate="G$1" x="238.76" y="-22.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5417,16 +5417,6 @@ REVERSE POLARITY? FUSE?</text>
 <junction x="86.36" y="66.04"/>
 <pinref part="C45" gate="G$1" pin="P$2"/>
 <wire x1="86.36" y1="66.04" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="1-RING"/>
-<pinref part="GND10" gate="G$1" pin="GND"/>
-<wire x1="238.76" y1="-17.78" x2="246.38" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2-RING"/>
-<pinref part="GND11" gate="G$1" pin="GND"/>
-<wire x1="238.76" y1="-22.86" x2="246.38" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCOM"/>
@@ -5881,6 +5871,16 @@ REVERSE POLARITY? FUSE?</text>
 <junction x="-30.48" y="226.06"/>
 <junction x="-35.56" y="226.06"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="L_GND"/>
+<pinref part="GND10" gate="G$1" pin="GND"/>
+<wire x1="241.3" y1="-17.78" x2="246.38" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="R_GND"/>
+<pinref part="GND11" gate="G$1" pin="GND"/>
+<wire x1="241.3" y1="-22.86" x2="246.38" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -6022,10 +6022,10 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="210.82" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="30.48" x2="218.44" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="30.48" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1-TIP"/>
-<wire x1="246.38" y1="-15.24" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="TP12" gate="G$1" pin="P$1"/>
 <junction x="213.36" y="30.48"/>
+<pinref part="J1" gate="G$1" pin="L_SIG"/>
+<wire x1="246.38" y1="-15.24" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -6332,10 +6332,10 @@ REVERSE POLARITY? FUSE?</text>
 <wire x1="210.82" y1="-53.34" x2="213.36" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-53.34" x2="218.44" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="-53.34" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2-TIP"/>
-<wire x1="246.38" y1="-20.32" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="TP17" gate="G$1" pin="P$1"/>
 <junction x="213.36" y="-53.34"/>
+<pinref part="J1" gate="G$1" pin="R_SIG"/>
+<wire x1="246.38" y1="-20.32" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
