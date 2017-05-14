@@ -8,7 +8,7 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -177,6 +177,17 @@ ALL REGULATORS
 DC CONNECTOR POLARITY + SIZE
 RCA CONNECTOR + RED/WHITE
 PL CONNECTORS</text>
+<text x="110.236" y="22.225" size="0.6096" layer="21" font="vector">GND</text>
+<text x="110.617" y="9.144" size="0.6096" layer="21" font="vector">GND</text>
+<text x="110.744" y="30.099" size="0.6096" layer="21" font="vector">5V</text>
+<text x="111.125" y="16.891" size="0.6096" layer="21" font="vector">5V</text>
+<text x="31.75" y="43.942" size="0.6096" layer="21" font="vector">+12V</text>
+<text x="34.671" y="43.942" size="0.6096" layer="21" font="vector">GND</text>
+<text x="37.719" y="43.942" size="0.6096" layer="21" font="vector">R</text>
+<text x="40.386" y="43.942" size="0.6096" layer="21" font="vector">L</text>
+<text x="48.26" y="49.784" size="0.6096" layer="21" font="vector">phi-dac rev 1.0</text>
+<text x="48.26" y="48.768" size="0.6096" layer="21" font="vector">Eran Rundstein, 2017</text>
+<text x="48.26" y="47.752" size="0.6096" layer="21" font="vector">Pulsar Heavy Industries</text>
 </plain>
 <libraries>
 <library name="pl-jacks">
@@ -1314,262 +1325,781 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BAL_LEFT" library="pl-jacks" package="NMJ6HCD2" value="STEREOSW" x="95.25" y="10.414" rot="MR270"/>
-<element name="BAL_RIGHT" library="pl-jacks" package="NMJ6HCD2" value="STEREOSW" x="67.31" y="10.414" rot="MR270"/>
-<element name="C11" library="microbuilder" package="0603" value="0.1u" x="74.549" y="7.493" rot="R90"/>
-<element name="C12" library="microbuilder" package="0603" value="0.1u" x="74.549" y="13.208" rot="R90"/>
-<element name="C15" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="54.356" y="17.145" rot="MR270"/>
-<element name="C3" library="microbuilder" package="0603" value="0.1u" x="102.489" y="7.493" rot="R90"/>
-<element name="C4" library="microbuilder" package="0603" value="0.1u" x="102.616" y="13.462" rot="R90"/>
-<element name="C5" library="microbuilder" package="0603" value="0.1u" x="90.805" y="11.811" rot="R90"/>
-<element name="C6" library="microbuilder" package="0603" value="0.1u" x="90.805" y="8.255" rot="R90"/>
+<element name="BAL_LEFT" library="pl-jacks" package="NMJ6HCD2" value="STEREOSW" x="95.25" y="10.414" smashed="yes" rot="MR270">
+<attribute name="NAME" x="100.584" y="24.384" size="1.27" layer="26" ratio="12" rot="MR0"/>
+</element>
+<element name="BAL_RIGHT" library="pl-jacks" package="NMJ6HCD2" value="STEREOSW" x="67.31" y="10.414" smashed="yes" rot="MR270">
+<attribute name="NAME" x="69.342" y="24.257" size="1.27" layer="26" ratio="12" rot="MR0"/>
+</element>
+<element name="C11" library="microbuilder" package="0603" value="0.1u" x="74.549" y="7.493" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.2" y="5.588" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="75.311" y="9.271" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C12" library="microbuilder" package="0603" value="0.1u" x="74.549" y="13.208" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.2" y="13.335" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="75.311" y="14.986" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C15" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="54.356" y="17.145" smashed="yes" rot="MR270">
+<attribute name="NAME" x="55.4" y="21.606" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="58.674" y="20.193" size="0.4064" layer="28" ratio="10" rot="MR270"/>
+</element>
+<element name="C3" library="microbuilder" package="0603" value="0.1u" x="102.489" y="7.493" smashed="yes" rot="R90">
+<attribute name="NAME" x="104.267" y="6.731" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="103.251" y="9.271" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C4" library="microbuilder" package="0603" value="0.1u" x="102.616" y="13.462" smashed="yes" rot="R90">
+<attribute name="NAME" x="104.394" y="13.081" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="103.378" y="15.24" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C5" library="microbuilder" package="0603" value="0.1u" x="90.805" y="11.811" smashed="yes" rot="R90">
+<attribute name="NAME" x="89.916" y="10.414" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="91.567" y="13.589" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C6" library="microbuilder" package="0603" value="0.1u" x="90.805" y="8.255" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.456" y="5.715" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="91.567" y="10.033" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
 <element name="C7" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="81.28" y="15.113" rot="MR270"/>
 <element name="C8" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="81.153" y="5.715" rot="MR90"/>
-<element name="IC1" library="keves" package="SSOP28" value="PCM1792A" x="80.645" y="36.703" rot="R180"/>
-<element name="IC2" library="keves" package="SO08" value="OPA1632D" x="106.68" y="10.287" rot="R180"/>
-<element name="IC3" library="keves" package="SO08" value="OPA1632D" x="94.361" y="10.287" rot="R180"/>
-<element name="IC4" library="keves" package="SO08" value="OPA1632D" x="78.359" y="10.287" rot="R180"/>
-<element name="IC5" library="keves" package="SOIC8_150MIL" value="" x="48.006" y="21.717" rot="R270"/>
-<element name="IC6" library="keves" package="SO08" value="OPA1632D" x="66.421" y="10.287" rot="R180"/>
+<element name="IC1" library="keves" package="SSOP28" value="PCM1792A" x="80.645" y="36.703" smashed="yes" rot="R180">
+<attribute name="NAME" x="79.771" y="37.8089" size="0.6096" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="84.5449" y="37.383" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="IC2" library="keves" package="SO08" value="OPA1632D" x="106.68" y="10.287" smashed="yes" rot="R180">
+<attribute name="VALUE" x="102.743" y="12.319" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="109.601" y="13.208" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="IC3" library="keves" package="SO08" value="OPA1632D" x="94.361" y="10.287" smashed="yes" rot="R180">
+<attribute name="VALUE" x="90.424" y="12.319" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="93.472" y="11.557" size="0.6096" layer="25" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="IC4" library="keves" package="SO08" value="OPA1632D" x="78.359" y="10.287" smashed="yes" rot="R180">
+<attribute name="VALUE" x="74.422" y="12.319" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="81.28" y="12.192" size="0.6096" layer="25" ratio="10" rot="R270"/>
+</element>
+<element name="IC5" library="keves" package="SOIC8_150MIL" value="" x="48.006" y="21.717" smashed="yes" rot="R270">
+<attribute name="NAME" x="48.387" y="22.479" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="47.625" y="23.622" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="IC6" library="keves" package="SO08" value="OPA1632D" x="66.421" y="10.287" smashed="yes" rot="R180">
+<attribute name="VALUE" x="62.484" y="12.319" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
 <element name="J1" library="keves" package="CUI-RCJ-2123" value="CUI-RCJ-2123" x="43.18" y="0" rot="MR180"/>
-<element name="R1" library="microbuilder" package="_0805" value="750 0.1%" x="107.061" y="4.953" rot="R180"/>
-<element name="R10" library="microbuilder" package="_0805" value="2.2k 0.1%" x="50.546" y="17.145" rot="R90"/>
-<element name="R11" library="microbuilder" package="_0805" value="2.2k 0.1%" x="55.372" y="17.145" rot="R270"/>
-<element name="R12" library="microbuilder" package="_0805" value="2.2k 0.1%" x="53.086" y="21.463" rot="R90"/>
-<element name="R13" library="microbuilder" package="_0805" value="22 0.1%" x="54.737" y="25.019"/>
-<element name="R14" library="microbuilder" package="_0805" value="22 0.1%" x="89.662" y="2.159" rot="R180"/>
-<element name="R15" library="microbuilder" package="_0805" value="22 0.1%" x="89.789" y="18.161" rot="R270"/>
-<element name="R16" library="microbuilder" package="_0805" value="0" x="85.09" y="4.953" rot="R90"/>
-<element name="R17" library="microbuilder" package="_0805" value="750 0.1%" x="79.121" y="4.953" rot="R180"/>
-<element name="R18" library="microbuilder" package="_0805" value="750 0.1%" x="78.867" y="15.621" rot="R180"/>
-<element name="R19" library="microbuilder" package="_0805" value="390 0.1%" x="74.93" y="1.905" rot="R180"/>
-<element name="R2" library="microbuilder" package="_0805" value="750 0.1%" x="106.807" y="15.621" rot="R180"/>
-<element name="R20" library="microbuilder" package="_0805" value="390 0.1%" x="70.231" y="7.493" rot="R90"/>
-<element name="R21" library="microbuilder" package="_0805" value="390 0.1%" x="73.279" y="18.923" rot="R180"/>
-<element name="R22" library="microbuilder" package="_0805" value="390 0.1%" x="69.977" y="13.081" rot="R270"/>
-<element name="R23" library="microbuilder" package="_0805" value="356 0.1%" x="64.135" y="18.161" rot="R90"/>
-<element name="R24" library="microbuilder" package="_0805" value="356 0.1%" x="64.135" y="4.445" rot="R180"/>
-<element name="R25" library="microbuilder" package="_0805" value="2.2k 0.1%" x="43.18" y="19.431" rot="R90"/>
-<element name="R26" library="microbuilder" package="_0805" value="2.2k 0.1%" x="46.228" y="25.4" rot="R180"/>
-<element name="R27" library="microbuilder" package="_0805" value="2.2k 0.1%" x="40.767" y="19.304" rot="R270"/>
-<element name="R28" library="microbuilder" package="_0805" value="2.2k 0.1%" x="43.053" y="23.622" rot="R90"/>
-<element name="R29" library="microbuilder" package="_0805" value="22 0.1%" x="40.894" y="23.622" rot="R270"/>
-<element name="R3" library="microbuilder" package="_0805" value="390 0.1%" x="102.362" y="1.651" rot="R180"/>
-<element name="R30" library="microbuilder" package="_0805" value="22 0.1%" x="55.245" y="9.652" rot="R180"/>
-<element name="R31" library="microbuilder" package="_0805" value="22 0.1%" x="61.849" y="18.161" rot="R270"/>
-<element name="R32" library="microbuilder" package="_0805" value="0" x="64.135" y="2.159" rot="R180"/>
-<element name="R4" library="microbuilder" package="_0805" value="390 0.1%" x="98.171" y="7.493" rot="R90"/>
-<element name="R5" library="microbuilder" package="_0805" value="390 0.1%" x="99.822" y="16.383" rot="R180"/>
-<element name="R6" library="microbuilder" package="_0805" value="390 0.1%" x="98.171" y="13.081" rot="R270"/>
-<element name="R7" library="microbuilder" package="_0805" value="356 0.1%" x="93.98" y="16.256" rot="R180"/>
-<element name="R8" library="microbuilder" package="_0805" value="356 0.1%" x="92.075" y="4.445" rot="R180"/>
-<element name="R9" library="microbuilder" package="_0805" value="2.2k 0.1%" x="53.086" y="17.145" rot="R90"/>
-<element name="H3" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="2.54" y="48.26">
+<element name="R1" library="microbuilder" package="_0805" value="750 0.1%" x="107.061" y="4.953" smashed="yes" rot="R180">
+<attribute name="NAME" x="108.6485" y="3.683" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="108.6484" y="6.604" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R10" library="microbuilder" package="_0805" value="2.2k 0.1%" x="50.546" y="17.145" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.9905" y="14.732" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="52.197" y="15.5576" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R11" library="microbuilder" package="_0805" value="2.2k 0.1%" x="55.372" y="17.145" smashed="yes" rot="R270">
+<attribute name="NAME" x="55.4355" y="19.177" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="53.721" y="18.7324" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R12" library="microbuilder" package="_0805" value="2.2k 0.1%" x="53.086" y="21.463" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.991" y="20.8915" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="54.737" y="19.8756" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R13" library="microbuilder" package="_0805" value="22 0.1%" x="54.737" y="25.019" smashed="yes">
+<attribute name="NAME" x="56.007" y="26.2255" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="53.1496" y="23.368" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="R14" library="microbuilder" package="_0805" value="22 0.1%" x="89.662" y="2.159" smashed="yes" rot="R180">
+<attribute name="NAME" x="91.2495" y="0.889" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="91.2494" y="3.81" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R15" library="microbuilder" package="_0805" value="22 0.1%" x="89.789" y="18.161" smashed="yes" rot="R270">
+<attribute name="NAME" x="91.059" y="19.7485" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="88.138" y="19.7484" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R16" library="microbuilder" package="_0805" value="0" x="85.09" y="4.953" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.82" y="3.3655" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="86.741" y="3.3656" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R17" library="microbuilder" package="_0805" value="750 0.1%" x="79.121" y="4.953" smashed="yes" rot="R180">
+<attribute name="NAME" x="80.7085" y="3.683" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="80.7084" y="6.604" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R18" library="microbuilder" package="_0805" value="750 0.1%" x="78.867" y="15.621" smashed="yes" rot="R180">
+<attribute name="NAME" x="80.4545" y="14.351" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="80.4544" y="17.272" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R19" library="microbuilder" package="_0805" value="390 0.1%" x="74.93" y="1.905" smashed="yes" rot="R180">
+<attribute name="NAME" x="78.8035" y="1.905" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="76.5174" y="3.556" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R2" library="microbuilder" package="_0805" value="750 0.1%" x="106.807" y="15.621" smashed="yes" rot="R180">
+<attribute name="NAME" x="110.2995" y="16.129" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="108.3944" y="17.272" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R20" library="microbuilder" package="_0805" value="390 0.1%" x="70.231" y="7.493" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.0245" y="6.35" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="71.882" y="5.9056" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R21" library="microbuilder" package="_0805" value="390 0.1%" x="73.279" y="18.923" smashed="yes" rot="R180">
+<attribute name="NAME" x="74.8665" y="17.653" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="74.8664" y="20.574" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R22" library="microbuilder" package="_0805" value="390 0.1%" x="69.977" y="13.081" smashed="yes" rot="R270">
+<attribute name="NAME" x="66.8655" y="14.097" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="68.326" y="14.6684" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R23" library="microbuilder" package="_0805" value="356 0.1%" x="64.135" y="18.161" smashed="yes" rot="R90">
+<attribute name="NAME" x="66.04" y="18.3515" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="65.786" y="16.5736" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R24" library="microbuilder" package="_0805" value="356 0.1%" x="64.135" y="4.445" smashed="yes" rot="R180">
+<attribute name="NAME" x="61.214" y="5.1435" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="65.7224" y="6.096" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R25" library="microbuilder" package="_0805" value="2.2k 0.1%" x="43.18" y="19.431" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.799" y="15.6845" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="44.831" y="17.8436" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R26" library="microbuilder" package="_0805" value="2.2k 0.1%" x="46.228" y="25.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="47.0535" y="27.178" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="47.8154" y="27.051" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R27" library="microbuilder" package="_0805" value="2.2k 0.1%" x="40.767" y="19.304" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.624" y="19.8755" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="39.116" y="20.8914" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R28" library="microbuilder" package="_0805" value="2.2k 0.1%" x="43.053" y="23.622" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.7515" y="26.416" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="44.704" y="22.0346" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R29" library="microbuilder" package="_0805" value="22 0.1%" x="40.894" y="23.622" smashed="yes" rot="R270">
+<attribute name="NAME" x="40.0685" y="26.035" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="39.243" y="25.2094" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R3" library="microbuilder" package="_0805" value="390 0.1%" x="102.362" y="1.651" smashed="yes" rot="R180">
+<attribute name="NAME" x="105.9815" y="1.905" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="103.9494" y="3.302" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R30" library="microbuilder" package="_0805" value="22 0.1%" x="55.245" y="9.652" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.4195" y="11.684" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="56.8324" y="11.303" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R31" library="microbuilder" package="_0805" value="22 0.1%" x="61.849" y="18.161" smashed="yes" rot="R270">
+<attribute name="NAME" x="59.944" y="20.0025" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="60.198" y="19.7484" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R32" library="microbuilder" package="_0805" value="0" x="64.135" y="2.159" smashed="yes" rot="R180">
+<attribute name="NAME" x="65.7225" y="0.889" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="65.7224" y="3.81" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R4" library="microbuilder" package="_0805" value="390 0.1%" x="98.171" y="7.493" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.901" y="5.3975" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="99.822" y="5.9056" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R5" library="microbuilder" package="_0805" value="390 0.1%" x="99.822" y="16.383" smashed="yes" rot="R180">
+<attribute name="NAME" x="96.901" y="17.0815" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="101.4094" y="18.034" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R6" library="microbuilder" package="_0805" value="390 0.1%" x="98.171" y="13.081" smashed="yes" rot="R270">
+<attribute name="NAME" x="96.393" y="15.0495" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="96.52" y="14.6684" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R7" library="microbuilder" package="_0805" value="356 0.1%" x="93.98" y="16.256" smashed="yes" rot="R180">
+<attribute name="NAME" x="95.5675" y="14.986" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="95.5674" y="17.907" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R8" library="microbuilder" package="_0805" value="356 0.1%" x="92.075" y="4.445" smashed="yes" rot="R180">
+<attribute name="NAME" x="89.8525" y="4.318" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="93.6624" y="6.096" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R9" library="microbuilder" package="_0805" value="2.2k 0.1%" x="53.086" y="17.145" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.6575" y="14.859" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="54.737" y="15.5576" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="H3" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="2.54" y="48.26" smashed="yes">
 <attribute name="POPULATE" value="0" x="2.54" y="57.15" size="1.778" layer="27" display="off"/>
 </element>
-<element name="H4" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="116.84" y="48.26">
+<element name="H4" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="116.84" y="48.26" smashed="yes">
 <attribute name="POPULATE" value="0" x="107.95" y="48.26" size="1.778" layer="27" display="off"/>
 </element>
-<element name="H1" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="2.54" y="2.54">
+<element name="H1" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="2.54" y="2.54" smashed="yes">
 <attribute name="POPULATE" value="0" x="2.54" y="-15.24" size="1.778" layer="27" display="off"/>
 </element>
-<element name="H2" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="116.84" y="2.54">
+<element name="H2" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="116.84" y="2.54" smashed="yes">
 <attribute name="POPULATE" value="0" x="107.95" y="-24.13" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1" library="jumper" package="JP4Q" value="" x="81.153" y="21.717"/>
-<element name="R33" library="microbuilder" package="_0805" value="10K 0.1% or better" x="74.295" y="36.703" rot="R90"/>
-<element name="IC8" library="keves" package="SO08" value="ADP3301ARZ-3.3" x="60.833" y="29.718" rot="R90"/>
-<element name="C53" library="microbuilder" package="_0805" value="2.2uF" x="58.801" y="25.908" rot="R180"/>
-<element name="C54" library="microbuilder" package="0603" value="0.01uF" x="66.04" y="30.48" rot="R90"/>
-<element name="C55" library="microbuilder" package="0805" value="10uF" x="68.072" y="31.369" rot="R270"/>
-<element name="EN_3.3" library="microbuilder" package="1X02_OVAL" value="" x="67.818" y="27.813"/>
-<element name="IC7" library="burr-brown" package="SOT223" value="REG1117-5" x="59.055" y="40.894" rot="R90">
+<element name="JP1" library="jumper" package="JP4Q" value="" x="81.153" y="21.717" smashed="yes">
+<attribute name="VALUE" x="76.073" y="16.002" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R33" library="microbuilder" package="_0805" value="10K 0.1% or better" x="74.295" y="36.703" smashed="yes" rot="R90">
+<attribute name="NAME" x="75.2475" y="39.497" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="75.946" y="35.1156" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="IC8" library="keves" package="SO08" value="ADP3301ARZ-3.3" x="60.833" y="29.718" smashed="yes" rot="R90">
+<attribute name="VALUE" x="62.865" y="33.655" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C53" library="microbuilder" package="_0805" value="2.2uF" x="58.801" y="25.908" smashed="yes" rot="R180">
+<attribute name="NAME" x="60.3885" y="24.638" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="60.3884" y="27.559" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C54" library="microbuilder" package="0603" value="0.01uF" x="66.04" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="66.167" y="32.258" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="66.802" y="32.258" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C55" library="microbuilder" package="0805" value="10uF" x="68.072" y="31.369" smashed="yes" rot="R270">
+<attribute name="NAME" x="66.929" y="33.528" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="67.31" y="29.337" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="EN_3.3" library="microbuilder" package="1X02_OVAL" value="" x="67.818" y="27.813" smashed="yes">
+<attribute name="NAME" x="70.0532" y="28.8798" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="65.278" y="24.638" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="IC7" library="burr-brown" package="SOT223" value="REG1117-5" x="59.055" y="40.894" smashed="yes" rot="R90">
 <attribute name="OC_FARNELL" value="1097566" x="64.135" y="-11.176" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="64.135" y="-11.176" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="REG1117" x="64.135" y="-11.176" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="14P6981" x="64.135" y="-11.176" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="56.896" y="42.926" size="0.6096" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="64.897" y="38.1" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C62" library="microbuilder" package="0603" value="0.1u" x="64.516" y="44.069" rot="R90"/>
-<element name="C64" library="microbuilder" package="0805" value="10uF" x="64.389" y="40.132" rot="R270"/>
-<element name="C63" library="microbuilder" package="0805" value="10uF" x="66.675" y="44.069" rot="R270"/>
-<element name="C65" library="microbuilder" package="0603" value="0.1u" x="66.421" y="40.132" rot="R270"/>
-<element name="EN_DAC_VCC" library="microbuilder" package="1X02_OVAL" value="" x="68.834" y="42.799" rot="R90"/>
-<element name="C17" library="microbuilder" package="0603" value="0.1u" x="79.121" y="42.672"/>
-<element name="L1" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="74.803" y="43.18"/>
-<element name="C18" library="microbuilder" package="0603" value="0.1u" x="74.422" y="32.893" rot="R270"/>
-<element name="L2" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="72.136" y="34.417" rot="R90"/>
-<element name="C19" library="microbuilder" package="0805" value="10uF" x="70.231" y="37.592"/>
-<element name="C20" library="microbuilder" package="0603" value="0.1u" x="87.63" y="32.766"/>
-<element name="L3" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="91.313" y="29.845"/>
-<element name="C21" library="microbuilder" package="0805" value="10uF" x="96.012" y="35.052" rot="R180"/>
-<element name="C22" library="microbuilder" package="0603" value="0.1u" x="86.995" y="35.814" rot="R90"/>
-<element name="L4" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="90.297" y="34.925"/>
-<element name="C23" library="microbuilder" package="0805" value="10uF" x="92.329" y="32.639"/>
-<element name="C24" library="microbuilder" package="PANASONIC_C" value="47uF (EEE-HA1C470WR)" x="84.201" y="27.94"/>
-<element name="C25" library="microbuilder" package="PANASONIC_C" value="47uF (EEE-HA1C470WR)" x="77.216" y="27.94" rot="R180"/>
-<element name="R34" library="microbuilder" package="_0805" value="1.0k" x="73.914" y="40.767"/>
+<element name="C62" library="microbuilder" package="0603" value="0.1u" x="64.516" y="44.069" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.643" y="45.847" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="65.278" y="45.847" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C64" library="microbuilder" package="0805" value="10uF" x="64.389" y="40.132" smashed="yes" rot="R270">
+<attribute name="NAME" x="64.262" y="38.1" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="63.627" y="38.1" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C63" library="microbuilder" package="0805" value="10uF" x="66.675" y="44.069" smashed="yes" rot="R270">
+<attribute name="NAME" x="66.548" y="42.037" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="65.913" y="42.037" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C65" library="microbuilder" package="0603" value="0.1u" x="66.421" y="40.132" smashed="yes" rot="R270">
+<attribute name="NAME" x="66.294" y="38.354" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="65.659" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="EN_DAC_VCC" library="microbuilder" package="1X02_OVAL" value="" x="68.834" y="42.799" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.0052" y="40.1828" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="72.009" y="40.259" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C17" library="microbuilder" package="0603" value="0.1u" x="79.121" y="42.672" smashed="yes">
+<attribute name="NAME" x="80.899" y="42.545" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="80.899" y="41.91" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="L1" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="74.803" y="43.18" smashed="yes">
+<attribute name="NAME" x="73.2155" y="44.45" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="73.2156" y="41.529" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C18" library="microbuilder" package="0603" value="0.1u" x="74.422" y="32.893" smashed="yes" rot="R270">
+<attribute name="NAME" x="73.152" y="30.988" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="73.66" y="31.115" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="L2" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="72.136" y="34.417" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.882" y="30.7975" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="73.787" y="32.8296" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C19" library="microbuilder" package="0805" value="10uF" x="70.231" y="37.592" smashed="yes">
+<attribute name="NAME" x="72.263" y="37.465" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="72.263" y="36.83" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C20" library="microbuilder" package="0603" value="0.1u" x="87.63" y="32.766" smashed="yes">
+<attribute name="NAME" x="89.408" y="32.639" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="89.408" y="32.004" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="L3" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="91.313" y="29.845" smashed="yes">
+<attribute name="NAME" x="89.7255" y="31.115" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="89.7256" y="28.194" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C21" library="microbuilder" package="0805" value="10uF" x="96.012" y="35.052" smashed="yes" rot="R180">
+<attribute name="NAME" x="93.98" y="35.179" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="93.98" y="35.814" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C22" library="microbuilder" package="0603" value="0.1u" x="86.995" y="35.814" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.122" y="37.592" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="87.757" y="37.592" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="L4" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="90.297" y="34.925" smashed="yes">
+<attribute name="NAME" x="88.7095" y="36.195" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="88.7096" y="33.274" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C23" library="microbuilder" package="0805" value="10uF" x="92.329" y="32.639" smashed="yes">
+<attribute name="NAME" x="94.361" y="32.512" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="94.361" y="31.877" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C24" library="microbuilder" package="PANASONIC_C" value="47uF (EEE-HA1C470WR)" x="84.201" y="27.94" smashed="yes">
+<attribute name="NAME" x="81.661" y="30.734" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="81.661" y="24.257" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C25" library="microbuilder" package="PANASONIC_C" value="47uF (EEE-HA1C470WR)" x="77.216" y="27.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="78.105" y="31.496" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="79.756" y="31.623" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R34" library="microbuilder" package="_0805" value="1.0k" x="73.914" y="40.767" smashed="yes">
+<attribute name="NAME" x="71.882" y="41.0845" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="72.3266" y="39.116" size="0.4064" layer="27" ratio="10"/>
+</element>
 <element name="IC9" library="keves" package="MURATA-MGJ2" value="MGJ2D121515SC" x="5.334" y="32.639" rot="MR270"/>
-<element name="C26" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="3.302" y="31.115" rot="R90"/>
-<element name="C27" library="microbuilder" package="0603" value="0.1u" x="7.62" y="31.369" rot="R270"/>
-<element name="C28" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="11.557" y="17.145" rot="R270"/>
-<element name="C29" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="11.43" y="22.606" rot="R270"/>
-<element name="C30" library="keves" package="1210POL" value="TCJB106M025R0090" x="8.509" y="16.383" rot="R270"/>
-<element name="C31" library="keves" package="1210POL" value="TCJB106M025R0090" x="8.509" y="23.368" rot="R270"/>
-<element name="15V_EN" library="jumper" package="JP2Q" value="" x="15.621" y="19.939"/>
-<element name="IC10" library="keves" package="SOT223" value="LM317" x="25.908" y="11.811" rot="R180"/>
-<element name="C32" library="microbuilder" package="_0805" value="2.2uF" x="19.558" y="16.002" rot="R270"/>
-<element name="D1" library="microbuilder" package="SOD-123" value="" x="28.829" y="19.304"/>
-<element name="R39" library="microbuilder" package="_0805" value="240 0.1%" x="29.718" y="17.272" rot="R180"/>
-<element name="R40" library="microbuilder" package="_0805" value="2.2k 0.1%" x="31.242" y="14.859" rot="R180"/>
-<element name="C33" library="microbuilder" package="0603" value="0.1u" x="21.59" y="15.875" rot="R90"/>
-<element name="C34" library="microbuilder" package="0805" value="10uF" x="33.02" y="18.415" rot="R270"/>
-<element name="C35" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="21.082" y="10.414" rot="R270"/>
-<element name="D2" library="microbuilder" package="SOD-123" value="" x="25.146" y="17.272"/>
-<element name="L5" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="33.909" y="12.7"/>
-<element name="APWR_EN" library="jumper" package="JP2Q" value="" x="36.576" y="16.51"/>
-<element name="IC11" library="keves" package="SOT223" value="LM337" x="26.797" y="26.416"/>
-<element name="D3" library="microbuilder" package="SOD-123" value="" x="24.13" y="31.115" rot="R270"/>
-<element name="C36" library="microbuilder" package="_0805" value="2.2uF" x="19.558" y="22.225" rot="R90"/>
-<element name="C37" library="microbuilder" package="0603" value="0.1u" x="21.463" y="22.098" rot="R270"/>
-<element name="R41" library="microbuilder" package="_0805" value="2.2k 0.1%" x="18.542" y="28.067" rot="R180"/>
-<element name="R42" library="microbuilder" package="_0805" value="240 0.1%" x="22.098" y="26.67" rot="R270"/>
-<element name="C38" library="microbuilder" package="0805" value="10uF" x="17.907" y="31.877"/>
-<element name="D4" library="microbuilder" package="SOD-123" value="" x="20.701" y="29.845"/>
-<element name="L6" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="33.909" y="22.352" rot="R270"/>
-<element name="J5" library="keves" package="CUI-PJ-102AH" value="DC21P" x="7.62" y="10.16" rot="MR180"/>
-<element name="R45" library="microbuilder" package="_0805" value="330" x="69.469" y="47.244" rot="R270"/>
-<element name="LED3" library="microbuilder" package="CHIPLED_0805" value="" x="66.294" y="48.26" rot="R90"/>
-<element name="R43" library="microbuilder" package="_0805" value="120" x="67.945" y="25.908"/>
-<element name="LED1" library="microbuilder" package="CHIPLED_0805" value="" x="63.754" y="25.908" rot="R90"/>
-<element name="R44" library="microbuilder" package="_0805" value="1.5k" x="16.383" y="14.986" rot="R90"/>
-<element name="LED2" library="microbuilder" package="CHIPLED_0805" value="" x="14.224" y="14.986"/>
-<element name="R46" library="microbuilder" package="_0805" value="1.5k" x="16.51" y="24.892" rot="R270"/>
-<element name="LED4" library="microbuilder" package="CHIPLED_0805" value="" x="14.351" y="24.892" rot="R180"/>
-<element name="R47" library="microbuilder" package="_0805" value="1.0k" x="3.937" y="9.652" rot="R90"/>
-<element name="LED5" library="microbuilder" package="CHIPLED_0805" value="" x="1.778" y="9.652"/>
-<element name="SV1" library="con-harting-ml" package="ML20" value="" x="104.521" y="34.29" rot="R270">
+<element name="C26" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="3.302" y="31.115" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.75" y="27.448" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="7.62" y="28.067" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C27" library="microbuilder" package="0603" value="0.1u" x="7.62" y="31.369" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.763" y="32.512" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="6.858" y="29.591" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="C28" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="11.557" y="17.145" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.43" y="14.605" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="10.922" y="14.605" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C29" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="11.43" y="22.606" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.541" y="26.67" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="10.795" y="20.066" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C30" library="keves" package="1210POL" value="TCJB106M025R0090" x="8.509" y="16.383" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="12.1285" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="6.35" y="19.05" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C31" library="keves" package="1210POL" value="TCJB106M025R0090" x="8.509" y="23.368" smashed="yes" rot="R270">
+<attribute name="NAME" x="9.144" y="26.9875" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="6.35" y="26.035" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="15V_EN" library="jumper" package="JP2Q" value="" x="15.621" y="19.939" smashed="yes">
+<attribute name="NAME" x="16.637" y="20.066" size="0.6096" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="20.066" y="17.399" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="IC10" library="keves" package="SOT223" value="LM317" x="25.908" y="11.811" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.4005" y="9.3345" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="26.9875" y="12.0015" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C32" library="microbuilder" package="_0805" value="2.2uF" x="19.558" y="16.002" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.4945" y="18.161" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="17.907" y="17.5894" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="D1" library="microbuilder" package="SOD-123" value="" x="28.829" y="19.304" smashed="yes">
+<attribute name="NAME" x="27.559" y="20.32" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="27.559" y="17.526" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="R39" library="microbuilder" package="_0805" value="240 0.1%" x="29.718" y="17.272" smashed="yes" rot="R180">
+<attribute name="NAME" x="27.178" y="17.8435" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="31.3054" y="18.923" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R40" library="microbuilder" package="_0805" value="2.2k 0.1%" x="31.242" y="14.859" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.1785" y="13.589" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="32.8294" y="16.51" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C33" library="microbuilder" package="0603" value="0.1u" x="21.59" y="15.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.733" y="17.78" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="22.352" y="17.653" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C34" library="microbuilder" package="0805" value="10uF" x="33.02" y="18.415" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.893" y="16.383" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="32.258" y="16.383" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C35" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="21.082" y="10.414" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.701" y="7.112" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="20.447" y="7.874" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="D2" library="microbuilder" package="SOD-123" value="" x="25.146" y="17.272" smashed="yes">
+<attribute name="NAME" x="23.876" y="18.288" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="23.876" y="15.494" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="L5" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="33.909" y="12.7" smashed="yes">
+<attribute name="NAME" x="34.0995" y="11.049" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="32.3216" y="11.049" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="APWR_EN" library="jumper" package="JP2Q" value="" x="36.576" y="16.51" smashed="yes">
+<attribute name="NAME" x="35.052" y="19.304" size="0.6096" layer="25" ratio="10"/>
+<attribute name="VALUE" x="41.021" y="13.97" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="IC11" library="keves" package="SOT223" value="LM337" x="26.797" y="26.416" smashed="yes">
+<attribute name="NAME" x="29.0195" y="28.8925" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="25.7175" y="26.2255" size="0.4064" layer="27"/>
+</element>
+<element name="D3" library="microbuilder" package="SOD-123" value="" x="24.13" y="31.115" smashed="yes" rot="R270">
+<attribute name="NAME" x="25.146" y="32.385" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="22.352" y="32.385" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C36" library="microbuilder" package="_0805" value="2.2uF" x="19.558" y="22.225" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.2565" y="19.812" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="21.209" y="20.6376" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C37" library="microbuilder" package="0603" value="0.1u" x="21.463" y="22.098" smashed="yes" rot="R270">
+<attribute name="NAME" x="22.479" y="21.971" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="20.701" y="20.32" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="R41" library="microbuilder" package="_0805" value="2.2k 0.1%" x="18.542" y="28.067" smashed="yes" rot="R180">
+<attribute name="NAME" x="20.1295" y="26.797" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="20.1294" y="29.718" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R42" library="microbuilder" package="_0805" value="240 0.1%" x="22.098" y="26.67" smashed="yes" rot="R270">
+<attribute name="NAME" x="22.5425" y="28.829" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="20.447" y="28.2574" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C38" library="microbuilder" package="0805" value="10uF" x="17.907" y="31.877" smashed="yes">
+<attribute name="NAME" x="18.034" y="33.147" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="19.939" y="31.115" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="D4" library="microbuilder" package="SOD-123" value="" x="20.701" y="29.845" smashed="yes">
+<attribute name="NAME" x="21.082" y="30.861" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="19.431" y="28.067" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="L6" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="33.909" y="22.352" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.179" y="21.7805" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="32.258" y="23.9394" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="J5" library="keves" package="CUI-PJ-102AH" value="DC21P" x="7.62" y="10.16" smashed="yes" rot="MR180">
+<attribute name="NAME" x="16.939" y="4.787" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="16.89" y="-2.96" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R45" library="microbuilder" package="_0805" value="330" x="69.469" y="47.244" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.739" y="48.8315" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="67.818" y="48.8314" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="LED3" library="microbuilder" package="CHIPLED_0805" value="" x="66.294" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="68.072" y="47.244" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="68.072" y="49.657" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R43" library="microbuilder" package="_0805" value="120" x="67.945" y="25.908" smashed="yes">
+<attribute name="NAME" x="67.2465" y="23.749" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="66.3576" y="24.257" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="LED1" library="microbuilder" package="CHIPLED_0805" value="" x="63.754" y="25.908" smashed="yes" rot="R90">
+<attribute name="NAME" x="65.532" y="24.892" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="65.532" y="27.305" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R44" library="microbuilder" package="_0805" value="1.5k" x="16.383" y="14.986" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.0815" y="12.827" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="18.034" y="13.3986" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="LED2" library="microbuilder" package="CHIPLED_0805" value="" x="14.224" y="14.986" smashed="yes">
+<attribute name="NAME" x="15.113" y="12.7" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="15.621" y="13.208" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="R46" library="microbuilder" package="_0805" value="1.5k" x="16.51" y="24.892" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.653" y="24.3205" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="14.859" y="26.4794" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="LED4" library="microbuilder" package="CHIPLED_0805" value="" x="14.351" y="24.892" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.097" y="28.956" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="12.954" y="26.67" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="R47" library="microbuilder" package="_0805" value="1.0k" x="3.937" y="9.652" smashed="yes" rot="R90">
+<attribute name="NAME" x="5.715" y="9.9695" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="5.588" y="8.0646" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="LED5" library="microbuilder" package="CHIPLED_0805" value="" x="1.778" y="9.652" smashed="yes">
+<attribute name="NAME" x="0.762" y="7.874" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="3.175" y="7.874" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="SV1" library="con-harting-ml" package="ML20" value="" x="104.521" y="34.29" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="unknown" x="104.521" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="104.521" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="104.521" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="104.521" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="109.601" y="50.8" size="0.6096" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="109.601" y="33.02" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C41" library="microbuilder" package="0603" value="0.1u" x="50.927" y="25.019"/>
-<element name="C42" library="microbuilder" package="0603" value="0.1u" x="46.228" y="18.415" rot="R180"/>
-<element name="C39" library="microbuilder" package="_0805" value="2.2uF" x="50.673" y="27.051"/>
-<element name="C40" library="microbuilder" package="_0805" value="2.2uF" x="46.228" y="16.383" rot="R180"/>
-<element name="C43" library="microbuilder" package="_0805" value="2.2uF" x="89.916" y="14.605"/>
-<element name="C44" library="microbuilder" package="_0805" value="2.2uF" x="88.773" y="7.874" rot="R90"/>
-<element name="C45" library="microbuilder" package="_0805" value="2.2uF" x="100.711" y="13.081" rot="R90"/>
-<element name="C46" library="microbuilder" package="_0805" value="2.2uF" x="100.457" y="8.001" rot="R90"/>
-<element name="C1" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="97.155" y="3.429" rot="R180"/>
-<element name="C2" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="95.885" y="19.05"/>
-<element name="C9" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="69.215" y="3.429" rot="R180"/>
-<element name="C10" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="69.342" y="18.288" rot="R270"/>
-<element name="C16" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="47.371" y="15.748" rot="MR90"/>
-<element name="C13" library="microbuilder" package="_0805" value="2.2uF" x="72.517" y="12.573" rot="R90"/>
-<element name="C14" library="microbuilder" package="_0805" value="2.2uF" x="72.517" y="7.493" rot="R90"/>
-<element name="C47" library="microbuilder" package="_0805" value="2.2uF" x="61.087" y="13.081" rot="R90"/>
-<element name="C48" library="microbuilder" package="_0805" value="2.2uF" x="59.817" y="7.493"/>
-<element name="C49" library="microbuilder" package="0603" value="0.1u" x="62.865" y="8.255" rot="R90"/>
-<element name="C50" library="microbuilder" package="0603" value="0.1u" x="62.865" y="11.811" rot="R90"/>
-<element name="C51" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="31.623" y="24.765" rot="R270"/>
-<element name="OSC1" library="microbuilder" package="OSC_7X5MM" value="12.288MHz C3391-12.288" x="89.535" y="43.434"/>
-<element name="C52" library="microbuilder" package="0603" value="0.1u" x="84.455" y="44.704" rot="R270"/>
-<element name="R48" library="microbuilder" package="_0805" value="0" x="88.138" y="38.862" rot="R180"/>
-<element name="IC12" library="keves" package="MURATA_OKR-T/10-W12-C" value="" x="114.935" y="38.608" rot="MR270"/>
-<element name="X2" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="115.443" y="26.67" rot="R270">
+<element name="C41" library="microbuilder" package="0603" value="0.1u" x="50.927" y="25.019" smashed="yes">
+<attribute name="NAME" x="49.149" y="24.511" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="52.705" y="24.257" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="C42" library="microbuilder" package="0603" value="0.1u" x="46.228" y="18.415" smashed="yes" rot="R180">
+<attribute name="NAME" x="48.006" y="19.177" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="44.45" y="19.177" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
+</element>
+<element name="C39" library="microbuilder" package="_0805" value="2.2uF" x="50.673" y="27.051" smashed="yes">
+<attribute name="NAME" x="51.1175" y="28.448" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="49.0856" y="25.4" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C40" library="microbuilder" package="_0805" value="2.2uF" x="46.228" y="16.383" smashed="yes" rot="R180">
+<attribute name="NAME" x="47.8155" y="15.113" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="47.8154" y="18.034" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C43" library="microbuilder" package="_0805" value="2.2uF" x="89.916" y="14.605" smashed="yes">
+<attribute name="NAME" x="91.8845" y="14.224" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="88.3286" y="12.954" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C44" library="microbuilder" package="_0805" value="2.2uF" x="88.773" y="7.874" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.503" y="6.2865" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="90.424" y="6.2866" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C45" library="microbuilder" package="_0805" value="2.2uF" x="100.711" y="13.081" smashed="yes" rot="R90">
+<attribute name="NAME" x="101.4095" y="11.049" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="102.362" y="11.4936" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C46" library="microbuilder" package="_0805" value="2.2uF" x="100.457" y="8.001" smashed="yes" rot="R90">
+<attribute name="NAME" x="101.473" y="3.8735" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="102.108" y="6.4136" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C1" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="97.155" y="3.429" smashed="yes" rot="R180">
+<attribute name="NAME" x="98.552" y="1.5875" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="99.822" y="5.588" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C2" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="95.885" y="19.05" smashed="yes">
+<attribute name="NAME" x="93.345" y="20.8915" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="93.218" y="16.891" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C9" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="69.215" y="3.429" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.755" y="1.5875" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="71.882" y="5.588" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="C10" library="keves" package="1210" value="15nF ECH-U1H153GX5" x="69.342" y="18.288" smashed="yes" rot="R270">
+<attribute name="NAME" x="66.7385" y="19.558" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="67.183" y="20.955" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C16" library="microbuilder" package="PANASONIC_D" value="100uF (EEE-1EA101XP)" x="47.371" y="15.748" smashed="yes" rot="MR90">
+<attribute name="NAME" x="49.756" y="19.669" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="VALUE" x="43.053" y="12.7" size="0.4064" layer="28" ratio="10" rot="MR90"/>
+</element>
+<element name="C13" library="microbuilder" package="_0805" value="2.2uF" x="72.517" y="12.573" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.4695" y="15.748" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="74.168" y="10.9856" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C14" library="microbuilder" package="_0805" value="2.2uF" x="72.517" y="7.493" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.4695" y="10.287" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="74.168" y="5.9056" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C47" library="microbuilder" package="_0805" value="2.2uF" x="61.087" y="13.081" smashed="yes" rot="R90">
+<attribute name="NAME" x="59.944" y="13.0175" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="62.738" y="11.4936" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C48" library="microbuilder" package="_0805" value="2.2uF" x="59.817" y="7.493" smashed="yes">
+<attribute name="NAME" x="58.7375" y="5.715" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="58.2296" y="5.842" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C49" library="microbuilder" package="0603" value="0.1u" x="62.865" y="8.255" smashed="yes" rot="R90">
+<attribute name="NAME" x="65.659" y="6.731" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="63.627" y="10.033" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C50" library="microbuilder" package="0603" value="0.1u" x="62.865" y="11.811" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.389" y="14.351" size="0.6096" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="63.627" y="13.589" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C51" library="microbuilder" package="1206" value="1uF 12065C105M4Z2A" x="31.623" y="24.765" smashed="yes" rot="R270">
+<attribute name="NAME" x="31.496" y="22.225" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="30.988" y="22.225" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="OSC1" library="microbuilder" package="OSC_7X5MM" value="12.288MHz C3391-12.288" x="89.535" y="43.434" smashed="yes">
+<attribute name="NAME" x="88.011" y="43.307" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="88.011" y="42.672" size="0.6096" layer="25" ratio="10"/>
+</element>
+<element name="C52" library="microbuilder" package="0603" value="0.1u" x="84.455" y="44.704" smashed="yes" rot="R270">
+<attribute name="NAME" x="84.328" y="42.926" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="83.693" y="42.926" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="R48" library="microbuilder" package="_0805" value="0" x="88.138" y="38.862" smashed="yes" rot="R180">
+<attribute name="NAME" x="89.7255" y="37.592" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="89.7254" y="40.513" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="IC12" library="keves" package="MURATA_OKR-T/10-W12-C" value="" x="114.935" y="38.608" smashed="yes" rot="MR270">
+<attribute name="NAME" x="110.109" y="40.005" size="1.27" layer="22" rot="MR270"/>
+</element>
+<element name="X2" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="115.443" y="26.67" smashed="yes" rot="R270">
 <attribute name="MPN" value="B4B-XH-A(LF)(SN)" x="125.349" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X1" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="115.57" y="13.589" rot="R270">
+<element name="X1" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="115.57" y="13.589" smashed="yes" rot="R270">
 <attribute name="MPN" value="B4B-XH-A(LF)(SN)" x="105.664" y="13.589" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R49" library="microbuilder" package="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)" x="117.221" y="36.703" rot="R90"/>
-<element name="C56" library="microbuilder" package="0805" value="10uF" x="110.998" y="35.687" rot="R270"/>
-<element name="C57" library="microbuilder" package="0603" value="0.1u" x="113.157" y="35.814" rot="R270"/>
-<element name="C58" library="microbuilder" package="_0805" value="22uF GRM21BR61E226ME44L" x="112.776" y="39.878" rot="R270"/>
-<element name="IC13" library="PCM5102" package="TSSOP20" value="PCM5102" x="42.418" y="37.592" rot="R270"/>
-<element name="C59" library="microbuilder" package="0603" value="0.1u" x="41.91" y="32.385" rot="R270"/>
-<element name="C60" library="microbuilder" package="0805" value="10uF" x="39.878" y="32.258" rot="R270"/>
-<element name="L8" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="36.195" y="33.401"/>
-<element name="C61" library="microbuilder" package="0603" value="0.1u" x="43.688" y="42.926" rot="R90"/>
-<element name="C66" library="microbuilder" package="0805" value="10uF" x="45.593" y="43.18" rot="R90"/>
-<element name="C67" library="microbuilder" package="0805" value="10uF" x="49.403" y="40.894" rot="R270"/>
-<element name="C68" library="microbuilder" package="0603" value="0.1u" x="47.498" y="40.132" rot="R270"/>
-<element name="C69" library="microbuilder" package="0603" value="0.1u" x="37.465" y="41.275" rot="R270"/>
-<element name="C70" library="microbuilder" package="0805" value="10uF" x="35.56" y="41.529" rot="R270"/>
-<element name="C71" library="microbuilder" package="_0805" value="2.2uF" x="40.386" y="41.91"/>
-<element name="C72" library="microbuilder" package="_0805" value="2.2uF" x="36.703" y="38.481"/>
-<element name="R35" library="microbuilder" package="_0805" value="470" x="32.512" y="37.719"/>
-<element name="R36" library="microbuilder" package="_0805" value="470" x="32.512" y="35.687"/>
-<element name="C73" library="microbuilder" package="_0805" value="2.2nF" x="30.353" y="41.021" rot="R90"/>
-<element name="C74" library="microbuilder" package="_0805" value="2.2nF" x="28.829" y="36.703" rot="R270"/>
-<element name="HP" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="36.576" y="47.117">
+<element name="R49" library="microbuilder" package="_0805" value="270 270ohms 25ppm 0.5%  (ERA-6AED271V)" x="117.221" y="36.703" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.951" y="35.1155" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="118.872" y="35.1156" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C56" library="microbuilder" package="0805" value="10uF" x="110.998" y="35.687" smashed="yes" rot="R270">
+<attribute name="NAME" x="110.871" y="33.655" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="110.236" y="33.655" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C57" library="microbuilder" package="0603" value="0.1u" x="113.157" y="35.814" smashed="yes" rot="R270">
+<attribute name="NAME" x="113.03" y="34.036" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="112.395" y="34.036" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="C58" library="microbuilder" package="_0805" value="22uF GRM21BR61E226ME44L" x="112.776" y="39.878" smashed="yes" rot="R270">
+<attribute name="NAME" x="114.046" y="41.4655" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="111.125" y="41.4654" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="IC13" library="PCM5102" package="TSSOP20" value="PCM5102" x="42.418" y="37.592" smashed="yes" rot="R270">
+<attribute name="NAME" x="41.2242" y="35.9306" size="0.6096" layer="25" ratio="10"/>
+<attribute name="VALUE" x="40.3352" y="33.0558" size="1.016" layer="27" ratio="10"/>
+</element>
+<element name="C59" library="microbuilder" package="0603" value="0.1u" x="41.91" y="32.385" smashed="yes" rot="R270">
+<attribute name="NAME" x="41.783" y="30.607" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="41.148" y="30.607" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="C60" library="microbuilder" package="0805" value="10uF" x="39.878" y="32.258" smashed="yes" rot="R270">
+<attribute name="NAME" x="39.751" y="30.226" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="39.116" y="30.226" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="L8" library="microbuilder" package="_0805" value="ILHB0805ER601V" x="36.195" y="33.401" smashed="yes">
+<attribute name="NAME" x="34.6075" y="34.671" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="34.6076" y="31.75" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C61" library="microbuilder" package="0603" value="0.1u" x="43.688" y="42.926" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.815" y="44.704" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="44.45" y="44.704" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C66" library="microbuilder" package="0805" value="10uF" x="45.593" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="47.371" y="43.561" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="46.355" y="45.212" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C67" library="microbuilder" package="0805" value="10uF" x="49.403" y="40.894" smashed="yes" rot="R270">
+<attribute name="NAME" x="50.673" y="40.767" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="48.641" y="38.862" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C68" library="microbuilder" package="0603" value="0.1u" x="47.498" y="40.132" smashed="yes" rot="R270">
+<attribute name="NAME" x="47.371" y="38.354" size="0.6096" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="46.736" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="C69" library="microbuilder" package="0603" value="0.1u" x="37.465" y="41.275" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.957" y="43.053" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="36.703" y="39.497" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="C70" library="microbuilder" package="0805" value="10uF" x="35.56" y="41.529" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.782" y="43.18" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="34.798" y="39.497" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="C71" library="microbuilder" package="_0805" value="2.2uF" x="40.386" y="41.91" smashed="yes">
+<attribute name="NAME" x="38.7985" y="43.18" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="38.7986" y="40.259" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C72" library="microbuilder" package="_0805" value="2.2uF" x="36.703" y="38.481" smashed="yes">
+<attribute name="NAME" x="35.1155" y="36.576" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="35.1156" y="36.83" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="R35" library="microbuilder" package="_0805" value="470" x="32.512" y="37.719" smashed="yes">
+<attribute name="NAME" x="31.6865" y="38.862" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="30.9246" y="36.068" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="R36" library="microbuilder" package="_0805" value="470" x="32.512" y="35.687" smashed="yes">
+<attribute name="NAME" x="31.9405" y="33.782" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="30.9246" y="34.036" size="0.4064" layer="27" ratio="10"/>
+</element>
+<element name="C73" library="microbuilder" package="_0805" value="2.2nF" x="30.353" y="41.021" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.131" y="41.5925" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="32.004" y="39.4336" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C74" library="microbuilder" package="_0805" value="2.2nF" x="28.829" y="36.703" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.051" y="36.0045" size="0.6096" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="27.178" y="38.2904" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="HP" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="36.576" y="47.117" smashed="yes">
 <attribute name="MPN" value="B4B-XH-A(LF)(SN)" x="36.576" y="47.117" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="32.766" y="50.927" size="0.6096" layer="21"/>
 </element>
-<element name="IC14" library="keves" package="SO08" value="ADP3301ARZ-3.3" x="21.336" y="46.355" rot="R90"/>
-<element name="C75" library="microbuilder" package="_0805" value="2.2uF" x="15.748" y="44.45" rot="R90"/>
-<element name="C76" library="microbuilder" package="0603" value="0.01uF" x="26.924" y="47.244" rot="R270"/>
-<element name="C77" library="microbuilder" package="0805" value="10uF" x="26.797" y="42.545" rot="R90"/>
-<element name="HP_EN" library="microbuilder" package="1X02_OVAL" value="" x="28.829" y="46.101" rot="R90"/>
-<element name="TP1" library="microbuilder" package="1X01_ROUND" value="" x="18.542" y="2.667">
+<element name="IC14" library="keves" package="SO08" value="ADP3301ARZ-3.3" x="21.336" y="46.355" smashed="yes" rot="R90">
+<attribute name="VALUE" x="23.368" y="50.292" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="23.241" y="43.434" size="0.6096" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="C75" library="microbuilder" package="_0805" value="2.2uF" x="15.748" y="44.45" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.478" y="42.8625" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="17.399" y="42.8626" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C76" library="microbuilder" package="0603" value="0.01uF" x="26.924" y="47.244" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.289" y="49.022" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="26.162" y="45.466" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="C77" library="microbuilder" package="0805" value="10uF" x="26.797" y="42.545" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.432" y="40.513" size="0.6096" layer="25" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="27.559" y="44.577" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="HP_EN" library="microbuilder" package="1X02_OVAL" value="" x="28.829" y="46.101" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.0482" y="47.4218" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="32.004" y="43.561" size="0.4064" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="TP1" library="microbuilder" package="1X01_ROUND" value="" x="18.542" y="2.667" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="18.542" y="2.667" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18.0848" y="3.7338" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="17.272" y="-0.508" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP2" library="microbuilder" package="1X01_ROUND" value="" x="3.048" y="39.497">
+<element name="TP2" library="microbuilder" package="1X01_ROUND" value="" x="3.048" y="39.497" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="3.048" y="39.497" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.7018" y="41.3258" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="1.778" y="36.322" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP3" library="microbuilder" package="1X01_ROUND" value="" x="70.104" y="39.751">
+<element name="TP3" library="microbuilder" package="1X01_ROUND" value="" x="70.104" y="39.751" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="70.104" y="39.751" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="70.5612" y="40.9448" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="68.834" y="36.576" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP4" library="microbuilder" package="1X01_ROUND" value="" x="70.993" y="25.273">
+<element name="TP4" library="microbuilder" package="1X01_ROUND" value="" x="70.993" y="25.273" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="70.993" y="25.273" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="71.8312" y="26.3398" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="69.723" y="22.098" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP5" library="microbuilder" package="1X01_ROUND" value="" x="18.542" y="12.954">
+<element name="TP5" library="microbuilder" package="1X01_ROUND" value="" x="18.542" y="12.954" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="18.542" y="12.954" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.9578" y="11.2268" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="17.272" y="9.779" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP6" library="microbuilder" package="1X01_ROUND" value="" x="12.192" y="26.416">
+<element name="TP6" library="microbuilder" package="1X01_ROUND" value="" x="12.192" y="26.416" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="12.192" y="26.416" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.8458" y="28.2448" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="10.922" y="23.241" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP7" library="microbuilder" package="1X01_ROUND" value="" x="90.932" y="23.114">
+<element name="TP7" library="microbuilder" package="1X01_ROUND" value="" x="90.932" y="23.114" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="90.932" y="23.114" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="89.5858" y="24.9428" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="89.662" y="19.939" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP9" library="microbuilder" package="1X01_ROUND" value="" x="88.646" y="23.114">
+<element name="TP9" library="microbuilder" package="1X01_ROUND" value="" x="88.646" y="23.114" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="88.646" y="23.114" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="87.2998" y="24.9428" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="87.376" y="19.939" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP10" library="microbuilder" package="1X01_ROUND" value="" x="85.217" y="2.159">
+<element name="TP10" library="microbuilder" package="1X01_ROUND" value="" x="85.217" y="2.159" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="85.217" y="2.159" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="81.9658" y="0.8128" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="83.947" y="-1.016" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP11" library="microbuilder" package="1X01_ROUND" value="" x="87.122" y="14.097">
+<element name="TP11" library="microbuilder" package="1X01_ROUND" value="" x="87.122" y="14.097" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="87.122" y="14.097" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="85.5218" y="11.9888" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="85.852" y="10.922" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP12" library="microbuilder" package="1X01_ROUND" value="" x="36.449" y="22.606">
+<element name="TP12" library="microbuilder" package="1X01_ROUND" value="" x="36.449" y="22.606" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="36.449" y="22.606" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="36.6522" y="23.7998" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="35.179" y="19.431" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP13" library="microbuilder" package="1X01_ROUND" value="" x="74.549" y="21.463">
+<element name="TP13" library="microbuilder" package="1X01_ROUND" value="" x="74.549" y="21.463" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="74.549" y="21.463" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="74.7522" y="22.5298" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="73.279" y="18.288" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP14" library="microbuilder" package="1X01_ROUND" value="" x="72.517" y="21.844">
+<element name="TP14" library="microbuilder" package="1X01_ROUND" value="" x="72.517" y="21.844" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="72.517" y="21.844" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="72.9742" y="22.7838" size="0.6096" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="71.247" y="18.669" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP15" library="microbuilder" package="1X01_ROUND" value="" x="58.674" y="21.717">
+<element name="TP15" library="microbuilder" package="1X01_ROUND" value="" x="58.674" y="21.717" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="58.674" y="21.717" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.4078" y="21.8948" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="57.404" y="18.542" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP16" library="microbuilder" package="1X01_ROUND" value="" x="56.388" y="12.192">
+<element name="TP16" library="microbuilder" package="1X01_ROUND" value="" x="56.388" y="12.192" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="56.388" y="12.192" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="54.7878" y="13.3858" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="55.118" y="9.017" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP17" library="microbuilder" package="1X01_ROUND" value="" x="38.608" y="22.606">
+<element name="TP17" library="microbuilder" package="1X01_ROUND" value="" x="38.608" y="22.606" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="38.608" y="22.606" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="38.4302" y="23.6728" size="0.6096" layer="25" ratio="18" rot="R90"/>
+<attribute name="VALUE" x="37.338" y="19.431" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP18" library="microbuilder" package="1X01_ROUND" value="" x="47.117" y="33.782">
+<element name="TP18" library="microbuilder" package="1X01_ROUND" value="" x="47.117" y="33.782" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="47.117" y="33.782" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.7708" y="35.6108" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="45.847" y="30.607" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP8" library="microbuilder" package="1X01_ROUND" value="" x="47.244" y="31.496">
+<element name="TP8" library="microbuilder" package="1X01_ROUND" value="" x="47.244" y="31.496" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="47.244" y="31.496" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.8978" y="33.3248" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="45.974" y="28.321" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP19" library="microbuilder" package="1X01_ROUND" value="" x="90.932" y="25.4">
+<element name="TP19" library="microbuilder" package="1X01_ROUND" value="" x="90.932" y="25.4" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="90.932" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="89.5858" y="27.2288" size="0.6096" layer="25" ratio="18"/>
+<attribute name="VALUE" x="89.662" y="22.225" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="TP20" library="microbuilder" package="1X01_ROUND" value="" x="61.087" y="21.717">
+<element name="TP20" library="microbuilder" package="1X01_ROUND" value="" x="61.087" y="21.717" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="61.087" y="21.717" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.4078" y="20.7518" size="0.6096" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="59.817" y="18.542" size="0.4064" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -3350,9 +3880,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LED5" pad="A"/>
 <wire x1="1.778" y1="8.602" x2="3.903" y2="8.602" width="0.4064" layer="1"/>
 <wire x1="3.903" y1="8.602" x2="3.937" y2="8.636" width="0.4064" layer="1"/>
-</signal>
-<signal name="N$63">
-<wire x1="6.35" y1="0" x2="6.35" y2="-3" width="0.4064" layer="16"/>
 </signal>
 <signal name="IN_L_PP">
 <contactref element="IC2" pad="8"/>
