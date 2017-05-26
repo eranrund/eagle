@@ -1,12 +1,16 @@
 [Eagle]
-Version="07 05 00"
+Version="07 03 00"
 Platform="Mac OS X"
-Serial="62191E841E-LSR-WLM-1EL"
+Serial="722FEEC08C-LSR-WLM-5CP"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Users/eran/Projects/eagle/libs/adafruit.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/keves.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-Electromechanical.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-LED.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/41xx.lbr"
@@ -346,19 +350,6 @@ UsedLibrary="/Applications/EAGLE-7.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.5.0/lbr/zilog.lbr"
-UsedLibrary="/Users/eran/Downloads/Teensy 1.1 lbr/Teensy_3_and_LC_Series_Boards_v1.1.lbr"
-UsedLibrary="/Users/eran/Projects/eagle/libs/keves.lbr"
-UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-LED.lbr"
-UsedLibrary="/Users/eran/Downloads/HD44780LCD.lbr"
-UsedLibrary="/Users/eran/Projects/eagle/libs/SparkFun-Eagle-Libraries-master/SparkFun-Electromechanical.lbr"
-UsedLibrary="/Users/eran/Projects/eagle/libs/adafruit.lbr"
-
-[Win_1]
-Type="Control Panel"
-Loc="0 -22 599 377"
-State=2
-Number=0
 
 [Desktop]
 Screen="2560 1440"
-Window="Win_1"
