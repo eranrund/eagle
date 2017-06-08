@@ -2973,6 +2973,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
+<text x="96.52" y="172.72" size="1.778" layer="91">TODO:
+- Verify USB connection
+- Add MIDI IN/OUT
+- Add user LEDs
+- Verify xtal is solderable
+- Add I2S+SPI connector
+- Add control interface connector (LCD + ROT ENCS + SPI? + CAN?)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="99.06" y="81.28"/>
@@ -3599,4 +3606,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
