@@ -410,9 +410,9 @@ package type SS</description>
 <wire x1="5.27" y1="12.62" x2="4.77" y2="13.12" width="0.1016" layer="21"/>
 <wire x1="4.77" y1="13.12" x2="3.77" y2="13.12" width="0.1016" layer="21"/>
 <wire x1="3.77" y1="13.12" x2="3.27" y2="12.62" width="0.1016" layer="21"/>
-<pad name="-" x="4.7" y="6" drill="0.8128" diameter="2.54" shape="long" rot="R180"/>
-<pad name="+" x="4.7" y="0" drill="0.8128" diameter="2.54" shape="long" rot="R180"/>
-<pad name="C" x="0" y="3" drill="0.8128" diameter="2.54" shape="long" rot="R270"/>
+<pad name="-" x="4.7" y="6" drill="1.524" diameter="2.54" shape="long" rot="R180"/>
+<pad name="+" x="4.7" y="0" drill="1.524" diameter="2.54" shape="long" rot="R180"/>
+<pad name="C" x="0" y="3" drill="1.524" diameter="2.54" shape="long" rot="R270"/>
 <text x="-1.73" y="13.12" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="9.27" y="13.12" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>

@@ -4908,8 +4908,7 @@ Source: HCPL7221.pdf</description>
 <plain>
 <text x="96.52" y="172.72" size="1.778" layer="91">TODO:
 - Connect CTRL connector: ROT*, LCD_D*
-- Validate I2S pins compared to current setup
-- Validate PA5&lt;=&gt;MCK connection</text>
+</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="99.06" y="81.28"/>
