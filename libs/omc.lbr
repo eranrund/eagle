@@ -4153,7 +4153,7 @@ Proven footprint and schematic for single axis MEMs gyroscope. Spark Fun Electro
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN65HVD230" prefix="D">
+<deviceset name="SN65HVD230" prefix="U">
 <description>&lt;h4&gt;SN65HVD230 - 3.3V CAN Transceiver&lt;/h4&gt;
 
 &lt;p&gt;

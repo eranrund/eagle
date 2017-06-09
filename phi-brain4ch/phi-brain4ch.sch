@@ -911,7 +911,7 @@ Source: STM32F42x_43x_LQFP100.bsd</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIDIJACK">
+<deviceset name="MIDIJACK" prefix="X">
 <description>&lt;b&gt;DIN 5 jack also known as MIDI jack&lt;/b&gt;
 A modification of conn-hirshman:MAB5SH with two options for the grounding 'teeth'</description>
 <gates>
@@ -1960,7 +1960,7 @@ Epson Toyocom FCC-255</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND">
+<deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;GND&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="GND" x="0" y="0"/>
@@ -2378,7 +2378,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="5.0V">
+<deviceset name="5.0V" prefix="5.0V">
 <description>&lt;b&gt;5.0V Supply&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="5.0V" x="0" y="0"/>
@@ -2386,7 +2386,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULATE" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3574,7 +3576,7 @@ Visit www.openmulticopter.org for more information on our project.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SN65HVD230" prefix="D">
+<deviceset name="SN65HVD230" prefix="U">
 <description>&lt;h4&gt;SN65HVD230 - 3.3V CAN Transceiver&lt;/h4&gt;
 
 &lt;p&gt;
@@ -4776,8 +4778,6 @@ Source: HCPL7221.pdf</description>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="H5" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="-NL"/>
 <part name="U$55" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$59" library="microbuilder" deviceset="GND" device=""/>
@@ -4820,7 +4820,7 @@ Source: HCPL7221.pdf</description>
 <part name="GND38" library="microbuilder" deviceset="GND" device=""/>
 <part name="U2" library="Volks73-NXPSemiconductors" deviceset="PRTR5V0U2X?" device=""/>
 <part name="GND33" library="microbuilder" deviceset="GND" device=""/>
-<part name="D1" library="omc" deviceset="SN65HVD230" device="" value="SN65HVD230"/>
+<part name="U5" library="omc" deviceset="SN65HVD230" device="" value="SN65HVD230"/>
 <part name="GND12" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND22" library="microbuilder" deviceset="GND" device=""/>
 <part name="3.3V8" library="microbuilder" deviceset="3.3V" device=""/>
@@ -4881,7 +4881,7 @@ Source: HCPL7221.pdf</description>
 <part name="MIDI_IN" library="keves" deviceset="MIDIJACK" device=""/>
 <part name="MIDI_OUT" library="keves" deviceset="MIDIJACK" device=""/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="R5" library="microbuilder" deviceset="RESISTOR" device="_0603" value="220"/>
+<part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
 <part name="IC2" library="6n138" deviceset="6N138" device="SMD" value="6N138S-TA1"/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="0805" value="10k"/>
@@ -4916,8 +4916,6 @@ Source: HCPL7221.pdf</description>
 <instance part="H4" gate="G$1" x="-68.58" y="142.24"/>
 <instance part="H1" gate="G$1" x="-73.66" y="147.32"/>
 <instance part="H2" gate="G$1" x="-73.66" y="142.24"/>
-<instance part="H5" gate="G$1" x="-73.66" y="137.16"/>
-<instance part="H6" gate="G$1" x="-68.58" y="139.7"/>
 <instance part="TC1" gate="A" x="-7.62" y="142.24" rot="R180"/>
 <instance part="U$55" gate="G$1" x="-20.32" y="147.32" rot="R90"/>
 <instance part="U$59" gate="G$1" x="-20.32" y="144.78" rot="R270"/>
@@ -4962,7 +4960,7 @@ Source: HCPL7221.pdf</description>
 <instance part="U2" gate="U$1" x="2.54" y="114.3" rot="R90"/>
 <instance part="U2" gate="-SUPPLY" x="-22.86" y="114.3" rot="R270"/>
 <instance part="GND33" gate="G$1" x="-35.56" y="106.68"/>
-<instance part="D1" gate="G$1" x="-30.48" y="20.32"/>
+<instance part="U5" gate="G$1" x="-30.48" y="20.32"/>
 <instance part="GND12" gate="G$1" x="-48.26" y="10.16" rot="R270"/>
 <instance part="GND22" gate="G$1" x="-15.24" y="30.48" rot="R90"/>
 <instance part="3.3V8" gate="G$1" x="-45.72" y="30.48" rot="R90"/>
@@ -5117,7 +5115,7 @@ Source: HCPL7221.pdf</description>
 <wire x1="132.08" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="VCC"/>
+<pinref part="U5" gate="G$1" pin="VCC"/>
 <pinref part="3.3V8" gate="G$1" pin="3.3V"/>
 <pinref part="C13" gate="G$1" pin="P$1"/>
 <wire x1="-35.56" y1="35.56" x2="-43.18" y2="35.56" width="0.1524" layer="91"/>
@@ -5287,7 +5285,7 @@ Source: HCPL7221.pdf</description>
 <wire x1="-35.56" y1="114.3" x2="-35.56" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
 <pinref part="GND22" gate="G$1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="P$2"/>
 <wire x1="-27.94" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
@@ -5324,7 +5322,7 @@ Source: HCPL7221.pdf</description>
 <wire x1="40.64" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="RS"/>
+<pinref part="U5" gate="G$1" pin="RS"/>
 <wire x1="-45.72" y1="10.16" x2="-43.18" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="G$1" pin="GND"/>
 </segment>
@@ -5598,7 +5596,7 @@ Source: HCPL7221.pdf</description>
 </net>
 <net name="CAN_H" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="CANH"/>
+<pinref part="U5" gate="G$1" pin="CANH"/>
 <wire x1="-17.78" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="22.86" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
@@ -5618,7 +5616,7 @@ Source: HCPL7221.pdf</description>
 </net>
 <net name="CAN_L" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="CANL"/>
+<pinref part="U5" gate="G$1" pin="CANL"/>
 <wire x1="-17.78" y1="17.78" x2="-10.16" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="17.78" x2="-10.16" y2="2.54" width="0.1524" layer="91"/>
 <label x="10.16" y="2.54" size="1.778" layer="95"/>
@@ -5640,7 +5638,7 @@ Source: HCPL7221.pdf</description>
 <net name="CAN_TX" class="0">
 <segment>
 <label x="-58.42" y="22.86" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="TXD"/>
+<pinref part="U5" gate="G$1" pin="TXD"/>
 <wire x1="-53.34" y1="22.86" x2="-43.18" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5652,7 +5650,7 @@ Source: HCPL7221.pdf</description>
 <net name="CAN_RX" class="0">
 <segment>
 <label x="-58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="RXD"/>
+<pinref part="U5" gate="G$1" pin="RXD"/>
 <wire x1="-43.18" y1="17.78" x2="-53.34" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5723,7 +5721,7 @@ Source: HCPL7221.pdf</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="VREF"/>
+<pinref part="U5" gate="G$1" pin="VREF"/>
 <wire x1="-17.78" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="10.16" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
