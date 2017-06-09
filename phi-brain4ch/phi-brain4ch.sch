@@ -5108,6 +5108,8 @@ Source: HCPL7221.pdf</description>
 <junction x="152.4" y="127"/>
 <junction x="147.32" y="127"/>
 <junction x="142.24" y="127"/>
+<pinref part="IC1" gate="G$1" pin="VREF_PLUS"/>
+<wire x1="129.54" y1="129.54" x2="129.54" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VBAT"/>
@@ -5230,9 +5232,6 @@ Source: HCPL7221.pdf</description>
 <junction x="129.54" y="137.16"/>
 <pinref part="IC1" gate="G$1" pin="VSS@1"/>
 <junction x="129.54" y="134.62"/>
-<pinref part="IC1" gate="G$1" pin="VREF_PLUS"/>
-<wire x1="129.54" y1="129.54" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
-<junction x="129.54" y="132.08"/>
 <pinref part="C10" gate="G$1" pin="P$2"/>
 <wire x1="172.72" y1="137.16" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="P$2"/>
