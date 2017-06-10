@@ -5879,6 +5879,11 @@ Source: HCPL7221.pdf</description>
 <wire x1="27.94" y1="-20.32" x2="17.78" y2="-20.32" width="0.1524" layer="91"/>
 <label x="12.7" y="-20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA7"/>
+<wire x1="68.58" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
+<label x="53.34" y="96.52" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ROT1_SW" class="0">
 <segment>
@@ -5886,12 +5891,22 @@ Source: HCPL7221.pdf</description>
 <wire x1="27.94" y1="-22.86" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
 <label x="12.7" y="-22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC5"/>
+<wire x1="68.58" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<label x="50.8" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ROT2_A" class="0">
 <segment>
 <pinref part="CTRL" gate="1" pin="10"/>
 <wire x1="27.94" y1="-25.4" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
 <label x="12.7" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB1"/>
+<wire x1="68.58" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="53.34" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_D0" class="0">
@@ -5913,9 +5928,9 @@ Source: HCPL7221.pdf</description>
 <label x="12.7" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PE10"/>
-<wire x1="129.54" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
-<label x="142.24" y="71.12" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PE9"/>
+<wire x1="129.54" y1="68.58" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+<label x="142.24" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_D4" class="0">
@@ -5949,9 +5964,9 @@ Source: HCPL7221.pdf</description>
 <label x="142.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CTRL" gate="1" pin="2"/>
-<wire x1="27.94" y1="-35.56" x2="17.78" y2="-35.56" width="0.1524" layer="91"/>
-<label x="12.7" y="-35.56" size="1.778" layer="95"/>
+<pinref part="CTRL" gate="1" pin="1"/>
+<wire x1="43.18" y1="-35.56" x2="53.34" y2="-35.56" width="0.1524" layer="91"/>
+<label x="50.8" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI4_MISO" class="0">
@@ -5961,9 +5976,9 @@ Source: HCPL7221.pdf</description>
 <label x="142.24" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CTRL" gate="1" pin="1"/>
-<wire x1="43.18" y1="-35.56" x2="53.34" y2="-35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="-35.56" size="1.778" layer="95"/>
+<pinref part="CTRL" gate="1" pin="2"/>
+<wire x1="27.94" y1="-35.56" x2="17.78" y2="-35.56" width="0.1524" layer="91"/>
+<label x="12.7" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_D3" class="0">
@@ -5973,9 +5988,9 @@ Source: HCPL7221.pdf</description>
 <label x="50.8" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PE9"/>
-<wire x1="129.54" y1="68.58" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
-<label x="142.24" y="68.58" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PE10"/>
+<wire x1="129.54" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
+<label x="142.24" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_D1" class="0">
@@ -5996,6 +6011,11 @@ Source: HCPL7221.pdf</description>
 <wire x1="43.18" y1="-25.4" x2="53.34" y2="-25.4" width="0.1524" layer="91"/>
 <label x="50.8" y="-25.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB2"/>
+<wire x1="68.58" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<label x="53.34" y="73.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ROT2_SW" class="0">
 <segment>
@@ -6003,12 +6023,22 @@ Source: HCPL7221.pdf</description>
 <wire x1="43.18" y1="-22.86" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
 <label x="50.8" y="-22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB0"/>
+<wire x1="68.58" y1="78.74" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
+<label x="53.34" y="78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ROT1_B" class="0">
 <segment>
 <pinref part="CTRL" gate="1" pin="13"/>
 <wire x1="43.18" y1="-20.32" x2="53.34" y2="-20.32" width="0.1524" layer="91"/>
 <label x="50.8" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC4"/>
+<wire x1="68.58" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<label x="50.8" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">
