@@ -1832,6 +1832,55 @@ Epson Toyocom FCC-255</description>
 <text x="-2.946" y="2.846" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.946" y="-3.238" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="TESTPOINT_SMT">
+<description>Surface Mount Test Point - Compact SMT</description>
+<wire x1="-2.75" y1="2" x2="2.75" y2="2" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="2" x2="2.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="-2" x2="-2.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-2.75" y1="-2" x2="-2.75" y2="2" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="4.7" dy="3.4" layer="1"/>
+<text x="3.048" y="-1.143" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="3.048" y="-1.778" size="0.4064" layer="25" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TESTPOINT_PAD_2MM">
+<description>Testpoint - Pad</description>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
+<text x="-1.016" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.016" y="-0.508" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TESTPOINT_ROUND_2MM">
+<description>Testpoint - Round 2mm</description>
+<circle x="0" y="0" radius="1.3029" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
+<text x="1.651" y="0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.651" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="1X01_ROUND">
+<pad name="1" x="0" y="0" drill="1.2446" diameter="1.6764" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="PAD-1.5X2.0">
+<description>1.5 x 2.0mm SMT pad (no solder paste)</description>
+<smd name="P$1" x="0" y="0" dx="1.5" dy="2" layer="1" cream="no"/>
+</package>
+<package name="TESTPOINT_ROUND_1MM">
+<circle x="0" y="0" radius="0.7" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="1.143" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.143" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TESTPOINT_ROUND_0.5MM">
+<circle x="0" y="0" radius="0.45" width="0.2032" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
+<text x="0.889" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="0.889" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="3.3V">
@@ -1942,6 +1991,12 @@ Epson Toyocom FCC-255</description>
 <wire x1="1.27" y1="0.3175" x2="2.54" y2="0.3175" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="0.3175" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0.3175" x2="2.54" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TESTPOINT">
+<circle x="0" y="3.81" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="5.715" size="1.27" layer="95">&gt;VALUE</text>
+<pin name="P$1" x="0" y="0" visible="off" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3004,6 +3059,78 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPOINT" prefix="TP" uservalue="yes">
+<description>&lt;b&gt;Test Point&lt;/b&gt;
+&lt;p&gt;Various test points for characterisation and PCB testing&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;TESTPOINT_SMT&lt;/b&gt; - Compact Surface Mount Test Point [Digikey: 5016KTR-ND]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TESTPOINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TESTPOINT_SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PAD" package="TESTPOINT_PAD_2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND2MM" package="TESTPOINT_ROUND_2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0.1&quot;" package="1X01_ROUND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1.5X2.0MM_NOCREAM" package="PAD-1.5X2.0">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND1MM" package="TESTPOINT_ROUND_1MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ROUND0.5MM" package="TESTPOINT_ROUND_0.5MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4871,12 +4998,7 @@ Source: HCPL7221.pdf</description>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="0805" value="330">
 <attribute name="MPN" value="MF-RES-0603-330"/>
 </part>
-<part name="R3" library="microbuilder" deviceset="RESISTOR" device="0805" value="330">
-<attribute name="MPN" value="MF-RES-0603-330"/>
-</part>
 <part name="LED2" library="microbuilder" deviceset="LED" device="0805"/>
-<part name="LED3" library="microbuilder" deviceset="LED" device="0805"/>
-<part name="GND1" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND2" library="microbuilder" deviceset="GND" device=""/>
 <part name="MIDI_IN" library="keves" deviceset="MIDIJACK" device=""/>
 <part name="MIDI_OUT" library="keves" deviceset="MIDIJACK" device=""/>
@@ -4902,6 +5024,11 @@ Source: HCPL7221.pdf</description>
 <part name="L2" library="microbuilder" deviceset="INDUCTOR" device="0805"/>
 <part name="L3" library="microbuilder" deviceset="INDUCTOR" device="0805"/>
 <part name="L5" library="microbuilder" deviceset="INDUCTOR" device="0805"/>
+<part name="TP1" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
+<part name="U$60" library="microbuilder" deviceset="GND" device=""/>
+<part name="TP8" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
+<part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="0.1&quot;"/>
+<part name="U$21" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5014,16 +5141,11 @@ Source: HCPL7221.pdf</description>
 <instance part="Y1" gate="G$1" x="134.62" y="93.98" rot="R90"/>
 <instance part="C14" gate="G$1" x="86.36" y="-22.86"/>
 <instance part="C15" gate="G$1" x="109.22" y="-22.86"/>
-<instance part="R2" gate="G$1" x="142.24" y="27.94" rot="R180">
-<attribute name="MPN" x="142.24" y="27.94" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="R2" gate="G$1" x="60.96" y="109.22">
+<attribute name="MPN" x="60.96" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R3" gate="G$1" x="142.24" y="25.4" rot="R180">
-<attribute name="MPN" x="142.24" y="25.4" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="LED2" gate="G$1" x="157.48" y="27.94"/>
-<instance part="LED3" gate="G$1" x="157.48" y="25.4"/>
-<instance part="GND1" gate="G$1" x="165.1" y="25.4" rot="R90"/>
-<instance part="GND2" gate="G$1" x="165.1" y="27.94" rot="R90"/>
+<instance part="LED2" gate="G$1" x="45.72" y="109.22" rot="R180"/>
+<instance part="GND2" gate="G$1" x="38.1" y="109.22" rot="R270"/>
 <instance part="MIDI_IN" gate="G$1" x="304.8" y="142.24" rot="R270"/>
 <instance part="MIDI_OUT" gate="G$1" x="302.26" y="91.44" rot="R270"/>
 <instance part="R4" gate="G$1" x="281.94" y="124.46"/>
@@ -5048,6 +5170,11 @@ Source: HCPL7221.pdf</description>
 <instance part="L2" gate="G$1" x="294.64" y="124.46" rot="R180"/>
 <instance part="L3" gate="G$1" x="292.1" y="106.68"/>
 <instance part="L5" gate="G$1" x="299.72" y="71.12" rot="R270"/>
+<instance part="TP1" gate="G$1" x="200.66" y="86.36"/>
+<instance part="U$60" gate="G$1" x="200.66" y="83.82"/>
+<instance part="TP8" gate="G$1" x="205.74" y="86.36"/>
+<instance part="TP2" gate="G$1" x="213.36" y="86.36"/>
+<instance part="U$21" gate="G$1" x="213.36" y="81.28" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5172,6 +5299,11 @@ Source: HCPL7221.pdf</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="48.26" x2="299.72" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$19" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
+<pinref part="U$21" gate="G$1" pin="3.3V"/>
+<wire x1="213.36" y1="83.82" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5379,14 +5511,9 @@ Source: HCPL7221.pdf</description>
 <pinref part="U$11" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="GND1" gate="G$1" pin="GND"/>
-<wire x1="162.56" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND2" gate="G$1" pin="GND"/>
-<wire x1="162.56" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -5412,6 +5539,13 @@ Source: HCPL7221.pdf</description>
 <pinref part="C21" gate="G$1" pin="P$2"/>
 <pinref part="U$20" gate="G$1" pin="GND"/>
 <wire x1="287.02" y1="78.74" x2="287.02" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
+<pinref part="U$60" gate="G$1" pin="GND"/>
+<wire x1="200.66" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="TP8" gate="G$1" pin="P$1"/>
+<junction x="200.66" y="86.36"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -6045,14 +6179,7 @@ Source: HCPL7221.pdf</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="152.4" y1="27.94" x2="147.32" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="152.4" y1="25.4" x2="147.32" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MIDI_OUT" class="0">
@@ -6178,6 +6305,19 @@ Source: HCPL7221.pdf</description>
 <pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="124.46" x2="287.02" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PA3"/>
+<wire x1="68.58" y1="106.68" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
