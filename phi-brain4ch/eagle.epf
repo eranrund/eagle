@@ -380,6 +380,7 @@ UsedLibrary="/Users/eran/Downloads/opl_package_1204/OPL-new/Seeed-IC-2016.lbr"
 UsedLibrary="/Users/eran/Downloads/opl_package_1204/OPL-new/Seeed-Diode-2016.lbr"
 UsedLibrary="/Users/eran/Downloads/opl_package_1204/OPL-new/Seeed-Switch-2016.lbr"
 UsedLibrary="/Users/eran/Downloads/opl_package_1204/OPL-new/Seeed-Transistor-2016.lbr"
+UsedLibrary="/Users/eran/Projects/eagle/libs/NHD-C0220AA-FSW-FTW.lbr"
 
 [Desktop]
-Screen="4000 1440"
+Screen="2560 1440"
