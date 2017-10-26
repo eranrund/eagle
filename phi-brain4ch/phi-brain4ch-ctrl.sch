@@ -2635,7 +2635,7 @@ www.newhavendisplay.com</description>
 <part name="JP1" library="pinhead+" deviceset="PINHD-1X3" device=""/>
 <part name="3.3V9" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="5.0V3" library="microbuilder" deviceset="5.0V" device=""/>
-<part name="R10" library="microbuilder" deviceset="RESISTOR" device="_0805" value="220"/>
+<part name="R10" library="microbuilder" deviceset="RESISTOR" device="_0805" value="750"/>
 <part name="3.3V3" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="_0805" value="5"/>
 <part name="GND5" library="microbuilder" deviceset="GND" device=""/>
