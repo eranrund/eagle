@@ -150,9 +150,9 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="keves-ng">
+<library name="keves-ng" urn="urn:adsk.eagle:library:1429743">
 <packages>
-<package name="BOURNS-PTL45">
+<package name="BOURNS-PTL45" urn="urn:adsk.eagle:footprint:1429745/1" library_version="1">
 <pad name="1" x="-27.5" y="1.25" drill="1.1176"/>
 <pad name="2" x="-27.5" y="3.75" drill="1.1176"/>
 <pad name="L" x="-27.5" y="-1.25" drill="1.1176"/>
@@ -165,7 +165,7 @@
 <wire x1="30" y1="-4.5" x2="30" y2="4.5" width="0.127" layer="21"/>
 <text x="30.48" y="2.54" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 </package>
-<package name="KEYSTONE-3557-2">
+<package name="KEYSTONE-3557-2" urn="urn:adsk.eagle:footprint:1429747/1" library_version="1">
 <pad name="L1" x="-6.731" y="1.7018" drill="1.6256"/>
 <pad name="L2" x="-6.731" y="-1.7018" drill="1.6256"/>
 <pad name="R1" x="6.731" y="1.7018" drill="1.6256"/>
@@ -177,8 +177,14 @@
 <text x="-2.54" y="-5.08" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="BOURNS-PTL45" urn="urn:adsk.eagle:package:1429786/2" type="model" library_version="3">
+</package3d>
+<package3d name="KEYSTONE-3557-2" urn="urn:adsk.eagle:package:1429787/2" type="model" library_version="3">
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="POT-WITH-LED">
+<symbol name="POT-WITH-LED" urn="urn:adsk.eagle:symbol:1429744/1" library_version="1">
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="-4.572" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-4.572" x2="6.604" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="6.604" y1="-3.81" x2="8.89" y2="-2.54" width="0.254" layer="94"/>
@@ -196,11 +202,6 @@
 <wire x1="9.652" y1="-2.159" x2="10.287" y2="-3.429" width="0.1524" layer="94"/>
 <wire x1="10.287" y1="-3.429" x2="9.017" y2="-3.429" width="0.1524" layer="94"/>
 <wire x1="9.017" y1="-3.429" x2="9.652" y2="-2.159" width="0.1524" layer="94"/>
-<text x="-5.08" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="A" x="7.62" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="E" x="7.62" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="12.7" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="3.81" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="2.54" width="0.254" layer="94"/>
 <wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -210,6 +211,11 @@
 <wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.508" y1="1.778" x2="-0.889" y2="0.381" width="0.1524" layer="94"/>
 <wire x1="0.635" y1="0.635" x2="-0.762" y2="-0.762" width="0.1524" layer="94"/>
+<text x="-5.08" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="7.62" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="7.62" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="12.7" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="LED-" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="LED+" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <polygon width="0.1524" layer="94">
@@ -223,7 +229,7 @@
 <vertex x="0.127" y="-0.381"/>
 </polygon>
 </symbol>
-<symbol name="FUSE">
+<symbol name="FUSE" urn="urn:adsk.eagle:symbol:1429746/1" library_version="1">
 <wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
@@ -236,7 +242,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PTL45" prefix="X">
+<deviceset name="PTL45" urn="urn:adsk.eagle:component:1429788/2" prefix="X" library_version="3">
 <gates>
 <gate name="G$1" symbol="POT-WITH-LED" x="0" y="0"/>
 </gates>
@@ -249,13 +255,16 @@
 <connect gate="G$1" pin="LED-" pad="E"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:1429786/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KEYSTONE-3557-2" prefix="F">
+<deviceset name="KEYSTONE-3557-2" urn="urn:adsk.eagle:component:1429789/2" prefix="F" library_version="3">
 <description>THM 2 in 1 Auto Blade Holder P/N 3557-2
 &lt;br&gt;
 Fuse Reference: Littelfuse ATO 257 series / Bussmann  ATC series / APR / Littelfuse 891,897 series / Bussmann ATM-LP series / APS or equivalent
@@ -270,6 +279,9 @@ http://www.keyelco.com/product.cfm/product_id/296</description>
 <connect gate="G$1" pin="1" pad="L1 L2"/>
 <connect gate="G$1" pin="2" pad="R1 R2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:1429787/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7770,8 +7782,10 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </class>
 </classes>
 <parts>
-<part name="CH1" library="keves-ng" deviceset="PTL45" device=""/>
-<part name="CH2" library="keves-ng" deviceset="PTL45" device=""/>
+<part name="CH1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PTL45" device="" package3d_urn="urn:adsk.eagle:package:1429786/2">
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="CH2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PTL45" device="" package3d_urn="urn:adsk.eagle:package:1429786/2"/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="GND9" library="microbuilder" deviceset="GND" device=""/>
 <part name="3.3V6" library="microbuilder" deviceset="3.3V" device=""/>
@@ -7805,7 +7819,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
 <part name="R9" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
 <part name="R8" library="microbuilder" deviceset="RESISTOR" device="0805" value="220"/>
-<part name="F1" library="keves-ng" deviceset="KEYSTONE-3557-2" device=""/>
+<part name="F1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="KEYSTONE-3557-2" device="" package3d_urn="urn:adsk.eagle:package:1429787/2"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780" value="DN2625K4-G"/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="0805" value="100k"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="ZD-5" package3d_urn="urn:adsk.eagle:package:43412/1" value="17V (1N5247B)"/>
