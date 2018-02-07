@@ -13,7 +13,7 @@ uint8_t faders[2];
 //
 
 // Single radio pipe address for the 2 nodes to communicate.
-const uint64_t pipe = 0xE8E8F0F0E1LL;
+const uint64_t pipe = 0xDA53F0F0E1LL;
 
 //
 // Setup
@@ -34,6 +34,7 @@ pinMode(10, OUTPUT);
   //
 
   radio.begin();
+  radio.setPALevel(RF24_PA_MAX);
 
     radio.openReadingPipe(1,pipe);
 
@@ -50,6 +51,7 @@ pinMode(10, OUTPUT);
 void loop(void)
 {
   //
+  uint8_t buf[4];
 
     // if there is data ready
     if ( radio.available() )
@@ -58,12 +60,17 @@ void loop(void)
       while (radio.available())
       {
         // Fetch the payload, and see if this was the last one.
-        radio.read( faders, 2 );
+        radio.read( buf, 4 );
 
         // Spew it
-        printf("Got buttons %d %d\n\r", faders[0], faders[1]);
-        analogWrite(9, faders[0]);
-        analogWrite(10, faders[1]);
+        printf("Got buttons %d %d %d %d\n\r", buf[0], buf[1], buf[2], buf[3]);
+        if ((buf[0] == 0x13) && (buf[1] == 0x37)) {
+          faders[0] = buf[2];
+          faders[1] = buf[3];
+          
+          analogWrite(9, faders[0]);
+          analogWrite(10, faders[1]);
+        }
       }
     }
 }

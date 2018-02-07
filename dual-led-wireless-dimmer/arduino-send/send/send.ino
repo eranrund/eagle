@@ -11,7 +11,7 @@ RF24 radio(4,3);
 //
 
 // Single radio pipe address for the 2 nodes to communicate.
-const uint64_t pipe = 0xE8E8F0F0E1LL;
+const uint64_t pipe = 0xDA53F0F0E1LL;
 
 //
 // Role management
@@ -41,7 +41,7 @@ void setup(void)
   //
 
   radio.begin();
-
+  radio.setPALevel(RF24_PA_MAX);
   //
   // Open pipes to other nodes for communication
   //
@@ -58,14 +58,20 @@ void loop(void)
 {
   uint8_t f0 = analogRead(A0) >> 2;
   uint8_t f1 = analogRead(A1) >> 2;
+  uint8_t buf[4];
 
   if ((faders[0] != f0) || (faders[1] != f1))
   {
     faders[0] = f0;
     faders[1] = f1;
        printf("Now sending...");
+
+    buf[0] = 0x13;
+    buf[1] = 0x37;
+    buf[2] = faders[0];
+    buf[3] = faders[1];
   
-      bool ok = radio.write( faders, 2 );
+      bool ok = radio.write( buf, 4 );
       if (ok)
         printf("ok\n\r");
       else
