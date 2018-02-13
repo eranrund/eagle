@@ -4,7 +4,7 @@
 #include "RF24.h"
 #include "printf.h"
 
-RF24 radio(3,4);
+RF24 radio(4,3);
 
 uint8_t faders[2];
 
