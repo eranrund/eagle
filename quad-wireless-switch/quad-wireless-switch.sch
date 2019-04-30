@@ -2390,6 +2390,50 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <rectangle x1="1.746" y1="-0.254" x2="2.254" y2="0.254" layer="51"/>
 <rectangle x1="3.746" y1="-0.254" x2="4.254" y2="0.254" layer="51"/>
 </package>
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90" urn="urn:adsk.eagle:footprint:22310/1" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X05" urn="urn:adsk.eagle:package:22469/2" type="model" library_version="3">
@@ -2410,6 +2454,18 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <packageinstance name="1_05X2MM"/>
 </packageinstances>
 </package3d>
+<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02"/>
+</packageinstances>
+</package3d>
+<package3d name="1X02/90" urn="urn:adsk.eagle:package:22437/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02/90"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="PINHD5" urn="urn:adsk.eagle:symbol:22353/1" library_version="3">
@@ -2424,6 +2480,16 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="5" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="PINHD2" urn="urn:adsk.eagle:symbol:22308/1" library_version="3">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2473,6 +2539,38 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22466/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-1X2" urn="urn:adsk.eagle:component:22516/3" prefix="JP" uservalue="yes" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22435/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22437/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -7014,6 +7112,9 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <part name="GND32" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND33" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND34" library="microbuilder" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="GND2" library="microbuilder" deviceset="GND" device=""/>
+<part name="3.3V1" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7475,6 +7576,16 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <instance part="GND34" gate="G$1" x="149.86" y="17.78" smashed="yes">
 <attribute name="VALUE" x="148.336" y="15.24" size="1.27" layer="96"/>
 </instance>
+<instance part="JP1" gate="G$1" x="83.82" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="90.17" y="83.185" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="90.17" y="93.98" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND2" gate="G$1" x="96.52" y="86.36" smashed="yes" rot="R90">
+<attribute name="VALUE" x="99.06" y="84.836" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="3.3V1" gate="G$1" x="96.52" y="88.9" smashed="yes" rot="R270">
+<attribute name="VALUE" x="97.536" y="90.424" size="1.27" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7658,6 +7769,11 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="GND34" gate="G$1" pin="GND"/>
 <wire x1="149.86" y1="22.86" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="GND2" gate="G$1" pin="GND"/>
+<wire x1="93.98" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -7704,6 +7820,11 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="JP3" gate="A" pin="5"/>
 <pinref part="3.3V12" gate="G$1" pin="3.3V"/>
 <wire x1="190.5" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="3.3V1" gate="G$1" pin="3.3V"/>
+<wire x1="93.98" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">

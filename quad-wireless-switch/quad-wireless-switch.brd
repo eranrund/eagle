@@ -175,7 +175,7 @@
 <wire x1="38.1" y1="0" x2="38.1" y2="107.95" width="0" layer="20"/>
 <wire x1="38.1" y1="107.95" x2="0" y2="107.95" width="0" layer="20"/>
 <wire x1="0" y1="107.95" x2="0" y2="0" width="0" layer="20"/>
-<text x="0.508" y="11.176" size="1.778" layer="25">Quad Wireless Switch
+<text x="0.508" y="11.176" size="1.524" layer="25">Quad Wireless Switch
 Rev A / Eran Rundstein, Apr 2019</text>
 <text x="13.208" y="6.604" size="0.889" layer="25">+12V</text>
 <text x="8.89" y="6.604" size="0.889" layer="25">GND</text>
@@ -189,6 +189,8 @@ Rev A / Eran Rundstein, Apr 2019</text>
 <text x="27.686" y="82.804" size="1.016" layer="21">12V</text>
 <text x="27.686" y="65.786" size="1.016" layer="21">12V</text>
 <text x="27.94" y="49.022" size="1.016" layer="21">12V</text>
+<text x="29.972" y="1.524" size="1.016" layer="21" rot="R90">3.3v</text>
+<text x="27.686" y="1.27" size="1.016" layer="21" rot="R90">GND</text>
 </plain>
 <libraries>
 <library name="keves-ng" urn="urn:adsk.eagle:library:1429743">
@@ -533,12 +535,42 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 </package>
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X05" urn="urn:adsk.eagle:package:22469/2" type="model" library_version="3">
 <description>PIN HEADER</description>
 <packageinstances>
 <packageinstance name="1X05"/>
+</packageinstances>
+</package3d>
+<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1408,6 +1440,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="SJ6" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="23.368" y="40.386" smashed="yes" rot="MR0">
 <attribute name="NAME" x="25.292" y="40.132" size="0.4064" layer="26" rot="MR0"/>
 </element>
+<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="28.702" y="6.096" smashed="yes">
+<attribute name="NAME" x="26.0858" y="7.9248" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="26.162" y="2.921" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1460,6 +1496,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="SJ4" pad="1"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C12" pad="2"/>
+<contactref element="JP1" pad="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="IC1" pad="3"/>
@@ -1522,6 +1559,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="5.08" y="51.562" extent="1-16" drill="0.35"/>
 <via x="5.842" y="51.562" extent="1-16" drill="0.35"/>
 <via x="6.604" y="51.562" extent="1-16" drill="0.35"/>
+<contactref element="JP1" pad="2"/>
 </signal>
 <signal name="N$11">
 <contactref element="R1" pad="1"/>
