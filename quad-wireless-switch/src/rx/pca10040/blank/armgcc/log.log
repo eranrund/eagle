@@ -1,0 +1,178 @@
+2019-May-26 11:55:02  --------------------------------------------------------------------------------
+2019-May-26 11:55:02  nrfjprog -f nrf52 --program _build/nrf52832_xxaa.hex --sectorerase --log
+2019-May-26 11:55:02  nrfjprog version 9.8.1
+2019-May-26 11:55:02  --------------------------------------------------------------------------------
+2019-May-26 11:55:03  nRF_open_dll
+2019-May-26 11:55:03  . nRF52_open_dll
+2019-May-26 11:55:03  . . nRF52_dll_version
+2019-May-26 11:55:03  nRF_enum_emu_snr
+2019-May-26 11:55:03  . nRF52_enum_emu_snr
+2019-May-26 11:55:03  . . nRF52_enum_emu_snr
+2019-May-26 11:55:03  nRF_enum_emu_snr
+2019-May-26 11:55:03  . nRF52_enum_emu_snr
+2019-May-26 11:55:03  . . nRF52_enum_emu_snr
+2019-May-26 11:55:03  nRF_connect_to_emu_with_snr
+2019-May-26 11:55:03  . nRF52_connect_to_emu_with_snr
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu
+2019-May-26 11:55:03  . . nRF52_enum_emu_snr
+2019-May-26 11:55:03  . . nRF52_connect_to_emu_with_snr
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 Firmware: J-Link V10 compiled May 17 2019 09:51:10
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 Hardware: V10.10
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 S/N: 260104452
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 OEM: SEGGER-EDU
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 Feature(s): FlashBP, GDB
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 TELNET listener socket opened on port 19021
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	WEBSRV  Starting webserver
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0027ms, 0033ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:008 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	WEBSRV Webserver running on local port 19080
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0027ms, 0033ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:008 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns O.K.
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0028ms, 0034ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:036 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_GetHWStatus(...)
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x00
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0000ms, 0034ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	There is no generic nRF52 device in J-Link, so we select NRF52832_xxAA.
+
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:036 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_ExecCommand("Device = NRF52832_xxAA", ...). 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	XML file found at: /Applications/SEGGER/JLink//JLinkDevices.xml
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0001ms, 0035ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:036 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	/Applications/SEGGER/JLink/JLinkDevices.xml evaluated successfully.
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	Device "NRF52832_XXAA" selected.
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	Device "NRF52832_XXAA" selected.
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x00
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0036ms, 0070ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:073 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_ExecCommand("SetRestartOnClose = 0", ...). 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x01
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0000ms, 0071ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:073 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_ExecCommand("DisableFlashDL", ...). 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x00
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0000ms, 0071ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:073 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_ExecCommand("SetDbgPowerDownOnClose = 1", ...). 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x01
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0000ms, 0071ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:073 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_ExecCommand("ExcludeFlashCacheRange 0x0-0xFFFFFFFF", ...). 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x00
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0000ms, 0071ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:074 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_TIF_Select(JLINKARM_TIF_SWD)
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	  returns 0x00
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0002ms, 0074ms total)  
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	T93895C0 000:076 
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	JLINK_SetSpeed(2000)
+2019-May-26 11:55:03  . . . nRF52_connect_to_emu_without_snr:	JLink:	 (0000ms, 0074ms total)  
+2019-May-26 11:55:03  nRF_read_device_version
+2019-May-26 11:55:03  . nRF52_read_device_version
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	T93895C0 000:077 
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	JLINK_IsOpen()
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	  returns 0x01
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	 (0000ms, 0074ms total)  
+2019-May-26 11:55:03  . . nRF52_is_connected_to_device
+2019-May-26 11:55:03  . . nRF52_is_connected_to_device:	JLink:	T93895C0 000:078 
+2019-May-26 11:55:03  . . nRF52_is_connected_to_device:	JLink:	JLINK_IsConnected()
+2019-May-26 11:55:03  . . nRF52_is_connected_to_device:	JLink:	  returns FALSE
+2019-May-26 11:55:03  . . nRF52_is_connected_to_device:	JLink:	 (0000ms, 0075ms total)  
+2019-May-26 11:55:03  . . nRF52_readback_status
+2019-May-26 11:55:03  . . . nRF52_is_ctrl_ap_available
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register
+2019-May-26 11:55:03  . . . . . nRF52_coresight_configure
+2019-May-26 11:55:03  . . . . . nRF52_coresight_configure:	JLink:	T93895C0 000:078 
+2019-May-26 11:55:03  . . . . . nRF52_coresight_configure:	JLink:	JLINK_CORESIGHT_Configure()
+2019-May-26 11:55:03  . . . . . nRF52_coresight_configure:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . . nRF52_coresight_configure:	JLink:	 (0001ms, 0076ms total)  
+2019-May-26 11:55:03  . . . . . nRF52_power_debug_and_system_regions
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	T93895C0 000:079 
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x00000000)
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	 (0000ms, 0076ms total)  
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	T93895C0 000:079 
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x01, 0x50000000)
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . . . nRF52_write_debug_port_register:	JLink:	 (0001ms, 0077ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:080 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x010000F0)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0000ms, 0077ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:080 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_ReadAPDPReg(AP reg 0x03)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 -- Value=0x02880000
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0001ms, 0078ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:081 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x010000F0)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0000ms, 0078ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:081 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_ReadAPDPReg(AP reg 0x03)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 -- Value=0x02880000
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0001ms, 0079ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:082 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x010000F0)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0000ms, 0079ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:082 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_ReadAPDPReg(AP reg 0x03)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 -- Value=0x82880000
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0001ms, 0080ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:083 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x010000F0)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0001ms, 0081ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	T93895C0 000:084 
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	JLINK_CORESIGHT_ReadAPDPReg(AP reg 0x03)
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 -- failed
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	  returns -1
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLink:	 (0000ms, 0081ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_access_port_register:	JLinkARM.dll CORESIGHT_ReadAPDPReg returned error -1.
+
+2019-May-26 11:55:03  nRF_close_dll
+2019-May-26 11:55:03  . nRF52_close_dll
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	T93895C0 000:084 
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	JLINK_IsOpen()
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	  returns 0x01
+2019-May-26 11:55:03  . . nRF52_is_connected_to_emu:	JLink:	 (0000ms, 0081ms total)  
+2019-May-26 11:55:03  . . nRF52_disconnect_from_emu
+2019-May-26 11:55:03  . . . nRF52_is_connected_to_device
+2019-May-26 11:55:03  . . . nRF52_is_connected_to_device:	JLink:	T93895C0 000:085 
+2019-May-26 11:55:03  . . . nRF52_is_connected_to_device:	JLink:	JLINK_IsConnected()
+2019-May-26 11:55:03  . . . nRF52_is_connected_to_device:	JLink:	  returns FALSE
+2019-May-26 11:55:03  . . . nRF52_is_connected_to_device:	JLink:	 (0000ms, 0082ms total)  
+2019-May-26 11:55:03  . . . nRF52_unpower_debug_and_system_regions
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	T93895C0 000:085 
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x00000000)
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	 (0000ms, 0082ms total)  
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	T93895C0 000:085 
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x01, 0x00000000)
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_write_debug_port_register:	JLink:	 (0000ms, 0082ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	T93895C0 000:086 
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	JLINK_CORESIGHT_WriteAPDPReg(DP reg 0x02, 0x00000000)
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	 (0000ms, 0083ms total)  
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	T93895C0 000:086 
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	JLINK_CORESIGHT_ReadAPDPReg(DP reg 0x01)
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	 -- Value=0x00000000
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	  returns 0
+2019-May-26 11:55:03  . . . . nRF52_read_debug_port_register:	JLink:	 (0000ms, 0083ms total)  
+2019-May-26 11:55:03  . . nRF52_disconnect_from_emu:	JLink:	T93895C0 000:094 
+2019-May-26 11:55:03  . . nRF52_disconnect_from_emu:	JLink:	JLINK_Close()
