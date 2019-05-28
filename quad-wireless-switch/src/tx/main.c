@@ -58,10 +58,10 @@
 #define BTN_PRESSED     0                       /**< Value of a pressed button. */
 #define BTN_RELEASED    1                       /**< Value of a released button. */
 
-#define BUTTON1      13
-#define BUTTON2      14
-#define BUTTON3      15
-#define BUTTON4      16
+#define BUTTON1      10
+#define BUTTON2      9
+#define BUTTON3      17
+#define BUTTON4      19
 
 
 //#define NRF_ESB_LEGACY

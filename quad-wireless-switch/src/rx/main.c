@@ -27,6 +27,8 @@ const uint8_t input_pins[] = {5, 26, 27, 28};
 
 uint8_t is_pressed[] = {0, 0, 0, 0};
 uint8_t rf_is_pressed[] = {0, 0, 0, 0};
+uint8_t press_cnt[] = {0, 0, 0, 0};
+uint8_t press_cnt2[] = {0, 0, 0, 0};
 
 
 APP_TIMER_DEF(rx_timer);
@@ -62,8 +64,15 @@ void nrf_esb_event_handler(nrf_esb_evt_t const * p_event)
             {
                 for (int i=0; i<4; i++) {
                     int cur_pressed = rx_payload.data[4] & (1 << i);
+
+                    if (!cur_pressed) {
+                        press_cnt[i] = 0;
+                    } else {
+                        press_cnt[i] += 1;
+                    }
+
                     NRF_LOG_DEBUG("%d: %d %d %d", i, cur_pressed, rf_is_pressed[i], state[i]);
-                    if (cur_pressed && !rf_is_pressed[i]) {
+                    if (cur_pressed && !rf_is_pressed[i] && press_cnt[i] > 3) {
                         state[i] = !state[i];
                         rf_is_pressed[i] = 1;
                     } else if (!cur_pressed) {
@@ -85,7 +94,12 @@ static void m_timer_handler(void * context) {
     }*/
     for (int i = 0; i < sizeof(input_pins) / sizeof(input_pins[0]); ++i) {
         int cur_pressed = !nrf_gpio_pin_read(input_pins[i]);
-        if (cur_pressed && !is_pressed[i]) {
+        if (!cur_pressed) {
+            press_cnt2[i] = 0;
+        } else {
+            press_cnt2[i]++;
+        }
+        if (cur_pressed && !is_pressed[i] && press_cnt2[i] > 5) {
             state[i] = !state[i];
             is_pressed[i] = 1;
         } else if (!cur_pressed) {
