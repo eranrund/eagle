@@ -156,7 +156,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWI1OThm" projecturn="a.cGVyc29uYWw6dWUyYWI1OThmIzIwMTcxMjE5MTA5MDk2NTMx" f3durn="urn:adsk.wipprod:dm.lineage:dPDaYTIuTSaw8R-kJKUvxw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="06cfb45c-e1e1-4064-9228-40380acd08d9" lastsyncedrevisionid="06cfb45c-e1e1-4064-9228-40380acd08d9" lastboardhashguid="220e832f-fae6-bee8-9588-4af5f7a2d4c0" lastpushedtime="2020-10-01T05:54:21Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWI1OThm" projecturn="a.cGVyc29uYWw6dWUyYWI1OThmIzIwMTcxMjE5MTA5MDk2NTMx" f3durn="urn:adsk.wipprod:dm.lineage:dPDaYTIuTSaw8R-kJKUvxw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="2bfa379d-0845-40e6-9a2c-5c4f82db5340" lastsyncedrevisionid="2bfa379d-0845-40e6-9a2c-5c4f82db5340" lastboardhashguid="3970fd73-d5e0-074c-82da-6535a2a9eb59" lastpushedtime="2020-10-01T06:45:23Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="148.59" y2="0" width="0" layer="20"/>
 <wire x1="148.59" y1="0" x2="148.59" y2="101.6" width="0" layer="20"/>
@@ -617,8 +617,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="137.537" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
 <attribute name="VALUE" x="137.537" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
-<element name="LED1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="WP934SALILYLGD" package3d_urn="urn:adsk.eagle:package:23642565/2" value="WP934SA_LILYLGDLED" x="27.432" y="93.218" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.162" y="102.108" size="1.27" layer="25" rot="R180" align="center"/>
+<element name="LED1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="WP934SALILYLGD" package3d_urn="urn:adsk.eagle:package:23642565/2" value="WP934SA_LILYLGDLED" x="23.368" y="99.822" smashed="yes" rot="R270">
+<attribute name="NAME" x="24.638" y="90.932" size="1.27" layer="25" align="center"/>
 </element>
 <element name="PWR_IN" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="CUI_PJ-102AH" package3d_urn="urn:adsk.eagle:package:23642611/2" value="PJ-102AH" x="12.7" y="96.901" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="CUI INC" x="86.36" y="168.021" size="1.778" layer="27" rot="R90" display="off"/>
@@ -627,14 +627,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="STANDARD" value="Manufacturer recommendations" x="86.36" y="168.021" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="19.11615" y="89.7041" size="1.27121875" layer="27" rot="R90"/>
 </element>
-<element name="USB_FS" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="TE-292304-1" package3d_urn="urn:adsk.eagle:package:15137482/2" value="" x="91.44" y="95.25" smashed="yes">
-<attribute name="MPN" value="292304-1 " x="146.05" y="17.78" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="85.344" y="101.346" size="1.27" layer="25"/>
-<attribute name="VALUE" x="99.06" y="86.36" size="1.27" layer="27" rot="R90"/>
+<element name="USB_FS" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="TE-292304-1" package3d_urn="urn:adsk.eagle:package:15137482/2" value="" x="91.44" y="93.98" smashed="yes" rot="R180">
+<attribute name="MPN" value="292304-1 " x="36.83" y="171.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="97.536" y="87.884" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="83.82" y="102.87" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="USB_HS" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="FCI-73725-0110BLF" package3d_urn="urn:adsk.eagle:package:23642581/2" value="FCI-73725-0110BLF" x="118.11" y="99.06" smashed="yes">
-<attribute name="NAME" x="115.11" y="102.06" size="1.27" layer="25"/>
-<attribute name="VALUE" x="115.11" y="104.06" size="1.27" layer="27"/>
+<element name="USB_HS" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="FCI-73725-0110BLF" package3d_urn="urn:adsk.eagle:package:23642581/2" value="FCI-73725-0110BLF" x="118.11" y="86.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="121.11" y="83.36" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="121.11" y="81.36" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="WBL2UOAGQ" package3d_urn="urn:adsk.eagle:package:23643294/4" value="WBL2UOAGQR05CLR" x="36.83" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.74" y="60.16" size="1.27" layer="25"/>
