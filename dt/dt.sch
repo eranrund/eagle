@@ -18490,8 +18490,8 @@ http://www.tag-connect.com</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB" width="0.254" drill="0">
-<clearance class="1" value="0.254"/>
+<class number="1" name="USB" width="0.2286" drill="0">
+<clearance class="1" value="0.1397"/>
 </class>
 </classes>
 <parts>
@@ -19164,7 +19164,6 @@ http://www.tag-connect.com</description>
 <part name="+3V14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND78" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP8" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
-<part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP9" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
 <part name="JP10" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
 <part name="R83" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
@@ -19184,6 +19183,11 @@ http://www.tag-connect.com</description>
 <part name="R91" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
 <part name="GND84" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND85" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R92" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7k"/>
+<part name="R93" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7k"/>
+<part name="+3V16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19357,9 +19361,9 @@ isolated DC DC to GND?</text>
 <attribute name="NAME" x="207.01" y="-39.37" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="204.47" y="-36.83" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="U4" gate="A" x="68.58" y="144.78" smashed="yes">
-<attribute name="NAME" x="76.0476" y="150.5966" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="65.7606" y="131.0386" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U4" gate="A" x="68.58" y="139.7" smashed="yes" rot="MR180">
+<attribute name="NAME" x="76.0476" y="133.8834" size="2.0828" layer="95" ratio="6" rot="SMR180"/>
+<attribute name="VALUE" x="65.7606" y="153.4414" size="2.0828" layer="96" ratio="6" rot="SMR180"/>
 </instance>
 <instance part="GND56" gate="1" x="66.04" y="142.24" smashed="yes" rot="R270">
 <attribute name="VALUE" x="63.5" y="144.78" size="1.778" layer="96" rot="R270"/>
@@ -19684,24 +19688,10 @@ isolated DC DC to GND?</text>
 <net name="USB_DEV_P" class="1">
 <segment>
 <wire x1="109.22" y1="142.24" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="I/O2"/>
-<wire x1="109.22" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R62" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="USB_FS_N" class="1">
-<segment>
-<pinref part="U4" gate="A" pin="I/O1_2"/>
-<wire x1="71.12" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
-<label x="50.8" y="144.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB_FS_P" class="1">
-<segment>
-<pinref part="U4" gate="A" pin="I/O2_2"/>
-<wire x1="71.12" y1="139.7" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
-<label x="50.8" y="139.7" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="I/O1"/>
+<wire x1="109.22" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -19758,18 +19748,11 @@ isolated DC DC to GND?</text>
 <wire x1="139.7" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_DEV_CONN_P" class="0">
+<net name="USB_DEV_CONN_P" class="1">
 <segment>
 <pinref part="USB_FS" gate="_CONN" pin="3"/>
 <pinref part="R62" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="USB_DEV_N" class="1">
-<segment>
-<pinref part="R61" gate="G$1" pin="1"/>
-<pinref part="U4" gate="A" pin="I/O1"/>
-<wire x1="116.84" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_HOST_N" class="1">
@@ -19802,6 +19785,27 @@ isolated DC DC to GND?</text>
 <pinref part="U5" gate="A" pin="I/O1_2"/>
 <wire x1="104.14" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
 <label x="81.28" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB_DEV_N" class="1">
+<segment>
+<pinref part="R61" gate="G$1" pin="1"/>
+<pinref part="U4" gate="A" pin="I/O2"/>
+<wire x1="116.84" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_FS_N" class="1">
+<segment>
+<pinref part="U4" gate="A" pin="I/O2_2"/>
+<wire x1="71.12" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<label x="50.8" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB_FS_P" class="1">
+<segment>
+<pinref part="U4" gate="A" pin="I/O1_2"/>
+<wire x1="71.12" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
+<label x="50.8" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -21800,6 +21804,20 @@ isolated DC DC to GND?</text>
 <attribute name="NAME" x="243.84" y="90.932" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="243.84" y="85.725" size="1.27" layer="96" font="vector"/>
 </instance>
+<instance part="R92" gate="G$1" x="-7.62" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="-9.652" y="78.74" size="1.27" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-4.445" y="78.74" size="1.27" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="R93" gate="G$1" x="0" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="-2.032" y="78.74" size="1.27" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="3.175" y="78.74" size="1.27" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="+3V16" gate="G$1" x="-7.62" y="91.44" smashed="yes">
+<attribute name="VALUE" x="-10.16" y="86.36" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V17" gate="G$1" x="0" y="91.44" smashed="yes">
+<attribute name="VALUE" x="-2.54" y="86.36" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22082,6 +22100,16 @@ isolated DC DC to GND?</text>
 <wire x1="157.48" y1="137.16" x2="157.48" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R55" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="134.62" x2="154.94" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R92" gate="G$1" pin="2"/>
+<pinref part="+3V16" gate="G$1" pin="+3V3"/>
+<wire x1="-7.62" y1="88.9" x2="-7.62" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R93" gate="G$1" pin="2"/>
+<pinref part="+3V17" gate="G$1" pin="+3V3"/>
+<wire x1="0" y1="88.9" x2="0" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -22366,6 +22394,28 @@ isolated DC DC to GND?</text>
 <label x="259.08" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="I2C_SCL" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PB8"/>
+<wire x1="27.94" y1="71.12" x2="0" y2="71.12" width="0.1524" layer="91"/>
+<label x="-25.4" y="71.12" size="1.778" layer="95"/>
+<pinref part="R93" gate="G$1" pin="1"/>
+<wire x1="0" y1="71.12" x2="-25.4" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="0" y1="76.2" x2="0" y2="71.12" width="0.1524" layer="91"/>
+<junction x="0" y="71.12"/>
+</segment>
+</net>
+<net name="I2C_SDA" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PB7"/>
+<wire x1="27.94" y1="73.66" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
+<label x="-25.4" y="73.66" size="1.778" layer="95"/>
+<pinref part="R92" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="73.66" x2="-25.4" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="76.2" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-7.62" y="73.66"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -22374,7 +22424,7 @@ isolated DC DC to GND?</text>
 <text x="45.72" y="248.92" size="1.778" layer="97">I2C Addr 0</text>
 <text x="-20.32" y="180.34" size="1.778" layer="97" rot="R180">I2C control mode</text>
 <text x="-20.32" y="60.96" size="1.778" layer="97" rot="R180">SPI control mode</text>
-<text x="45.72" y="111.76" size="1.778" layer="97">I2C Addr 0</text>
+<text x="45.72" y="111.76" size="1.778" layer="97">I2C Addr 1</text>
 <text x="-20.32" y="43.18" size="1.778" layer="97" rot="R180">I2C control mode</text>
 </plain>
 <instances>
@@ -22625,9 +22675,6 @@ isolated DC DC to GND?</text>
 <attribute name="NAME" x="36.83" y="111.76" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.355" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND79" gate="1" x="55.88" y="109.22" smashed="yes" rot="R90">
-<attribute name="VALUE" x="58.42" y="106.68" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP9" gate="1" x="-35.56" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="-35.56" y="74.93" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-35.56" y="84.455" size="1.778" layer="96" rot="R180"/>
@@ -22677,6 +22724,9 @@ isolated DC DC to GND?</text>
 </instance>
 <instance part="GND85" gate="1" x="-12.7" y="83.82" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-15.24" y="86.36" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="+3V15" gate="G$1" x="63.5" y="109.22" smashed="yes" rot="R270">
+<attribute name="VALUE" x="58.42" y="111.76" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -22760,6 +22810,11 @@ isolated DC DC to GND?</text>
 <pinref part="JP7" gate="1" pin="3"/>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
 <wire x1="-17.78" y1="60.96" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="1" pin="3"/>
+<wire x1="43.18" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -22881,11 +22936,6 @@ isolated DC DC to GND?</text>
 <pinref part="JP7" gate="1" pin="1"/>
 <pinref part="GND78" gate="1" pin="GND"/>
 <wire x1="-17.78" y1="50.8" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP8" gate="1" pin="3"/>
-<wire x1="43.18" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="GND79" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R83" gate="G$1" pin="1"/>
