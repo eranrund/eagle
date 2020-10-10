@@ -19402,15 +19402,15 @@ isolated DC DC to GND?</text>
 <instance part="P+6" gate="1" x="172.72" y="116.84" smashed="yes">
 <attribute name="VALUE" x="170.18" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U5" gate="A" x="101.6" y="104.14" smashed="yes">
-<attribute name="NAME" x="109.0676" y="109.9566" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="98.7806" y="90.3986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U5" gate="A" x="101.6" y="99.06" smashed="yes" rot="MR180">
+<attribute name="NAME" x="109.0676" y="93.2434" size="2.0828" layer="95" ratio="6" rot="SMR180"/>
+<attribute name="VALUE" x="98.7806" y="112.8014" size="2.0828" layer="96" ratio="6" rot="SMR180"/>
 </instance>
 <instance part="GND61" gate="1" x="99.06" y="101.6" smashed="yes" rot="R270">
 <attribute name="VALUE" x="96.52" y="104.14" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+7" gate="1" x="144.78" y="101.6" smashed="yes" rot="R270">
-<attribute name="VALUE" x="139.7" y="104.14" size="1.778" layer="96"/>
+<attribute name="VALUE" x="144.78" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="R59" gate="G$1" x="160.02" y="106.68" smashed="yes">
 <attribute name="NAME" x="157.48" y="108.712" size="1.27" layer="95" font="vector"/>
@@ -19737,38 +19737,6 @@ isolated DC DC to GND?</text>
 <junction x="185.42" y="88.9"/>
 </segment>
 </net>
-<net name="USB_HOST_N" class="1">
-<segment>
-<wire x1="142.24" y1="106.68" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U5" gate="A" pin="I/O1"/>
-<wire x1="142.24" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R59" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="106.68" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="USB_HOST_P" class="1">
-<segment>
-<pinref part="U5" gate="A" pin="I/O2"/>
-<wire x1="139.7" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="99.06" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R60" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="USB_HS_N" class="1">
-<segment>
-<pinref part="U5" gate="A" pin="I/O1_2"/>
-<wire x1="104.14" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
-<label x="86.36" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB_HS_P" class="1">
-<segment>
-<pinref part="U5" gate="A" pin="I/O2_2"/>
-<wire x1="104.14" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-<label x="86.36" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="USB_HOST_CONN_N" class="1">
 <segment>
 <pinref part="R59" gate="G$1" pin="2"/>
@@ -19802,6 +19770,38 @@ isolated DC DC to GND?</text>
 <pinref part="R61" gate="G$1" pin="1"/>
 <pinref part="U4" gate="A" pin="I/O1"/>
 <wire x1="116.84" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_HOST_N" class="1">
+<segment>
+<pinref part="R59" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="106.68" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U5" gate="A" pin="I/O2"/>
+<wire x1="147.32" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_HOST_P" class="1">
+<segment>
+<pinref part="R60" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="104.14" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U5" gate="A" pin="I/O1"/>
+<wire x1="149.86" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_HS_N" class="1">
+<segment>
+<pinref part="U5" gate="A" pin="I/O2_2"/>
+<wire x1="104.14" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<label x="81.28" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB_HS_P" class="1">
+<segment>
+<pinref part="U5" gate="A" pin="I/O1_2"/>
+<wire x1="104.14" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<label x="81.28" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
