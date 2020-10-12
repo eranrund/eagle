@@ -20671,6 +20671,10 @@ chip</description>
 <part name="P-7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="P-8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="P-9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
+<part name="R98" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="R99" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="R100" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21023,6 +21027,21 @@ isolated DC DC to GND?</text>
 <instance part="P-3" gate="1" x="243.84" y="-182.88" smashed="yes" rot="R90">
 <attribute name="VALUE" x="246.38" y="-185.42" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R98" gate="G$1" x="129.54" y="81.28" smashed="yes">
+<attribute name="NAME" x="127" y="83.312" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="127" y="78.105" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="R99" gate="G$1" x="129.54" y="76.2" smashed="yes">
+<attribute name="NAME" x="127" y="78.232" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="127" y="73.025" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="R100" gate="G$1" x="129.54" y="71.12" smashed="yes">
+<attribute name="NAME" x="127" y="73.152" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="127" y="67.945" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="GND79" gate="1" x="104.14" y="66.04" smashed="yes">
+<attribute name="VALUE" x="101.6" y="63.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21032,13 +21051,6 @@ isolated DC DC to GND?</text>
 <pinref part="PL1" gate="G$1" pin="TT"/>
 <wire x1="27.94" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
 <label x="38.1" y="149.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="EXT_OUT2" class="0">
-<segment>
-<pinref part="PL1" gate="G$1" pin="RT"/>
-<wire x1="27.94" y1="147.32" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
-<label x="38.1" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -21166,6 +21178,20 @@ isolated DC DC to GND?</text>
 <wire x1="198.12" y1="-157.48" x2="205.74" y2="-157.48" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="-157.48" x2="205.74" y2="-167.64" width="0.1524" layer="91"/>
 <junction x="198.12" y="-157.48"/>
+</segment>
+<segment>
+<pinref part="GND79" gate="1" pin="GND"/>
+<pinref part="LED1" gate="G$1" pin="K_1"/>
+<wire x1="104.14" y1="68.58" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="K_2"/>
+<wire x1="109.22" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="K_3"/>
+<wire x1="109.22" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<junction x="104.14" y="76.2"/>
+<junction x="104.14" y="71.12"/>
 </segment>
 </net>
 <net name="N$49" class="0">
@@ -21580,6 +21606,125 @@ isolated DC DC to GND?</text>
 <pinref part="APWR_EN" gate="-2" pin="2"/>
 <pinref part="L6" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="-182.88" x2="220.98" y2="-182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_OUT3" class="0">
+<segment>
+<pinref part="PL2" gate="G$1" pin="TT"/>
+<wire x1="27.94" y1="111.76" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
+<label x="38.1" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT5" class="0">
+<segment>
+<pinref part="PL3" gate="G$1" pin="TT"/>
+<wire x1="27.94" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<label x="38.1" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT2" class="0">
+<segment>
+<pinref part="PL1" gate="G$1" pin="TB"/>
+<wire x1="27.94" y1="139.7" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
+<label x="35.56" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT4" class="0">
+<segment>
+<pinref part="PL2" gate="G$1" pin="TB"/>
+<wire x1="27.94" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
+<label x="38.1" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT6" class="0">
+<segment>
+<pinref part="PL3" gate="G$1" pin="TB"/>
+<wire x1="27.94" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
+<label x="38.1" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT7" class="0">
+<segment>
+<pinref part="PL4" gate="G$1" pin="TT"/>
+<wire x1="27.94" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<label x="38.1" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT8" class="0">
+<segment>
+<pinref part="PL4" gate="G$1" pin="TB"/>
+<wire x1="27.94" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
+<label x="35.56" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT9" class="0">
+<segment>
+<pinref part="PL5" gate="G$1" pin="TT"/>
+<wire x1="27.94" y1="-2.54" x2="38.1" y2="-2.54" width="0.1524" layer="91"/>
+<label x="35.56" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT10" class="0">
+<segment>
+<pinref part="PL5" gate="G$1" pin="TB"/>
+<wire x1="27.94" y1="-12.7" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
+<label x="35.56" y="-12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT11" class="0">
+<segment>
+<pinref part="PL6" gate="G$1" pin="TT"/>
+<wire x1="27.94" y1="-40.64" x2="38.1" y2="-40.64" width="0.1524" layer="91"/>
+<label x="38.1" y="-40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_OUT12" class="0">
+<segment>
+<pinref part="PL6" gate="G$1" pin="TB"/>
+<wire x1="27.94" y1="-50.8" x2="38.1" y2="-50.8" width="0.1524" layer="91"/>
+<label x="38.1" y="-50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$96" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A_2"/>
+<pinref part="R99" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$119" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A_3"/>
+<pinref part="R100" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$120" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A_1"/>
+<pinref part="R98" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED1" class="0">
+<segment>
+<pinref part="R98" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="81.28" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="142.24" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED2" class="0">
+<segment>
+<pinref part="R99" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="76.2" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
+<label x="142.24" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED3" class="0">
+<segment>
+<pinref part="R100" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
+<label x="142.24" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -24207,6 +24352,27 @@ isolated DC DC to GND?</text>
 <label x="114.3" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="LED2" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PC11"/>
+<wire x1="99.06" y1="20.32" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+<label x="109.22" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED3" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PC10"/>
+<wire x1="99.06" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
+<label x="109.22" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED1" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PC12"/>
+<wire x1="99.06" y1="17.78" x2="109.22" y2="17.78" width="0.1524" layer="91"/>
+<label x="109.22" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -25008,30 +25174,16 @@ isolated DC DC to GND?</text>
 </net>
 <net name="DAC_OUT9" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="VOUT1"/>
-<wire x1="119.38" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
-<label x="127" y="76.2" size="1.778" layer="95"/>
+<pinref part="U7" gate="A" pin="VOUT4"/>
+<wire x1="119.38" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<label x="127" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_OUT10" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="VOUT2"/>
-<wire x1="119.38" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
-<label x="127" y="78.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DAC_OUT11" class="0">
-<segment>
 <pinref part="U7" gate="A" pin="VOUT3"/>
 <wire x1="119.38" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
 <label x="127" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DAC_OUT12" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="VOUT4"/>
-<wire x1="119.38" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
-<label x="127" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -25249,6 +25401,20 @@ isolated DC DC to GND?</text>
 <pinref part="U6" gate="A" pin="VOUT1"/>
 <wire x1="119.38" y1="213.36" x2="127" y2="213.36" width="0.1524" layer="91"/>
 <label x="127" y="213.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DAC_OUT11" class="0">
+<segment>
+<pinref part="U7" gate="A" pin="VOUT2"/>
+<wire x1="119.38" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<label x="127" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DAC_OUT12" class="0">
+<segment>
+<pinref part="U7" gate="A" pin="VOUT1"/>
+<wire x1="119.38" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
+<label x="127" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
