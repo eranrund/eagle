@@ -21455,6 +21455,7 @@ isolated DC DC to GND?</text>
 <wire x1="106.68" y1="12.7" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
 <junction x="106.68" y="15.24"/>
 <label x="91.44" y="15.24" size="1.778" layer="95"/>
+<junction x="114.3" y="15.24"/>
 </segment>
 </net>
 </nets>
@@ -24185,6 +24186,18 @@ isolated DC DC to GND?</text>
 <label x="10.16" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="SPI_CS_FLASH" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PC4"/>
+<wire x1="99.06" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
+<label x="111.76" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="G$1" pin="!CS"/>
+<wire x1="139.7" y1="0" x2="116.84" y2="0" width="0.1524" layer="91"/>
+<label x="111.76" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -25232,6 +25245,77 @@ isolated DC DC to GND?</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,63.5,561.34,IC1P,V+,+12V,,,"/>
+<approved hash="104,2,63.5,546.1,IC1P,V-,-12V,,,"/>
+<approved hash="104,2,63.5,497.84,IC2P,V+,+12V,,,"/>
+<approved hash="104,2,63.5,482.6,IC2P,V-,-12V,,,"/>
+<approved hash="104,2,63.5,434.34,IC3P,V+,+12V,,,"/>
+<approved hash="104,2,63.5,419.1,IC3P,V-,-12V,,,"/>
+<approved hash="104,2,60.96,370.84,IC4P,V+,+12V,,,"/>
+<approved hash="104,2,60.96,355.6,IC4P,V-,-12V,,,"/>
+<approved hash="104,2,60.96,307.34,IC5P,V+,+12V,,,"/>
+<approved hash="104,2,60.96,292.1,IC5P,V-,-12V,,,"/>
+<approved hash="104,2,60.96,243.84,IC6P,V+,+12V,,,"/>
+<approved hash="104,2,60.96,228.6,IC6P,V-,-12V,,,"/>
+<approved hash="104,1,172.72,-30.48,U2,COMMON,N$53,,,"/>
+<approved hash="104,3,187.96,-35.56,U3C,PDR_ON,N$59,,,"/>
+<approved hash="104,3,187.96,-40.64,U3C,VBAT,+3V3,,,"/>
+<approved hash="104,3,187.96,-45.72,U3C,VCAP_1,N$57,,,"/>
+<approved hash="104,3,187.96,-48.26,U3C,VCAP_2,N$58,,,"/>
+<approved hash="104,3,187.96,-53.34,U3C,VDD_2,+3V3,,,"/>
+<approved hash="104,3,187.96,-55.88,U3C,VDD_3,+3V3,,,"/>
+<approved hash="104,3,187.96,-58.42,U3C,VDD_4,+3V3,,,"/>
+<approved hash="104,3,187.96,-63.5,U3C,VDD_6,+3V3,,,"/>
+<approved hash="104,3,187.96,-66.04,U3C,VDD_7,+3V3,,,"/>
+<approved hash="104,3,187.96,-68.58,U3C,VDD_8,+3V3,,,"/>
+<approved hash="104,3,187.96,-71.12,U3C,VDD_9,+3V3,,,"/>
+<approved hash="104,3,187.96,-73.66,U3C,VDD_10,+3V3,,,"/>
+<approved hash="104,3,187.96,-76.2,U3C,VDD,+3V3,,,"/>
+<approved hash="104,3,187.96,-88.9,U3C,VDDA,+3V3,,,"/>
+<approved hash="104,3,238.76,-63.5,U3C,VDD12-OTGHS,N$62,,,"/>
+<approved hash="104,3,187.96,-78.74,U3C,VDDUSB,+3V3,,,"/>
+<approved hash="104,3,187.96,-81.28,U3C,VDDSDMMC,+3V3,,,"/>
+<approved hash="104,3,187.96,-91.44,U3C,VREF+,+3V3,,,"/>
+<approved hash="104,3,238.76,-33.02,U3C,VSS_2,GND,,,"/>
+<approved hash="104,3,238.76,-35.56,U3C,VSS_3,GND,,,"/>
+<approved hash="104,3,238.76,-38.1,U3C,VSS_4,GND,,,"/>
+<approved hash="104,3,238.76,-40.64,U3C,VSS_5,GND,,,"/>
+<approved hash="104,3,238.76,-43.18,U3C,VSS_6,GND,,,"/>
+<approved hash="104,3,238.76,-45.72,U3C,VSS_7,GND,,,"/>
+<approved hash="104,3,238.76,-48.26,U3C,VSS_8,GND,,,"/>
+<approved hash="104,3,238.76,-50.8,U3C,VSS_9,GND,,,"/>
+<approved hash="104,3,238.76,-53.34,U3C,VSS,GND,,,"/>
+<approved hash="104,3,238.76,-55.88,U3C,VSSA,GND,,,"/>
+<approved hash="104,3,121.92,134.62,OSC1,VCC,+3V3,,,"/>
+<approved hash="104,1,139.7,101.6,U5,VBUS,+5V,,,"/>
+<approved hash="104,4,66.04,162.56,U6B,VCC1,N$80,,,"/>
+<approved hash="104,4,66.04,160.02,U6B,VCC2,N$80,,,"/>
+<approved hash="104,4,66.04,154.94,U6B,VCOM,N$79,,,"/>
+<approved hash="104,4,66.04,149.86,U6B,VDD,+3V3,,,"/>
+<approved hash="104,4,101.6,160.02,U6B,AGND1,GND,,,"/>
+<approved hash="104,4,101.6,157.48,U6B,AGND2,GND,,,"/>
+<approved hash="104,4,101.6,154.94,U6B,DGND,GND,,,"/>
+<approved hash="104,4,66.04,25.4,U7B,VCC1,N$104,,,"/>
+<approved hash="104,4,66.04,22.86,U7B,VCC2,N$104,,,"/>
+<approved hash="104,4,66.04,17.78,U7B,VCOM,N$103,,,"/>
+<approved hash="104,4,66.04,12.7,U7B,VDD,+3V3,,,"/>
+<approved hash="104,4,101.6,22.86,U7B,AGND1,GND,,,"/>
+<approved hash="104,4,101.6,20.32,U7B,AGND2,GND,,,"/>
+<approved hash="104,4,101.6,17.78,U7B,DGND,GND,,,"/>
+<approved hash="104,3,162.56,10.16,IC7,VCC,+3V3,,,"/>
+<approved hash="113,1,175.555,-56.8214,JP1,,,,,"/>
+<approved hash="113,1,105.41,-18.8622,JP6,,,,,"/>
+<approved hash="113,4,-19.3786,192.065,JP2,,,,,"/>
+<approved hash="113,4,39.6646,247.979,JP3,,,,,"/>
+<approved hash="113,4,-34.6186,214.925,JP4,,,,,"/>
+<approved hash="113,4,-19.3786,161.585,JP5,,,,,"/>
+<approved hash="113,4,-19.3786,54.9046,JP7,,,,,"/>
+<approved hash="113,4,39.6646,110.819,JP8,,,,,"/>
+<approved hash="113,4,-34.6186,77.7646,JP9,,,,,"/>
+<approved hash="113,4,-20.0882,24.4246,JP10,,,,,"/>
+<approved hash="113,1,230.845,-112.551,APWR_EN,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
