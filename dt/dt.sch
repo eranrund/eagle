@@ -20341,6 +20341,15 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND90" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="P+19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R102" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="R103" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="R104" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="R105" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k"/>
+<part name="GND91" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND92" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND93" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND94" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20725,6 +20734,9 @@ isolated DC DC to GND?</text>
 <instance part="GND88" gate="1" x="106.68" y="0" smashed="yes">
 <attribute name="VALUE" x="104.14" y="-2.54" size="1.778" layer="96"/>
 </instance>
+<instance part="P+19" gate="1" x="111.76" y="142.24" smashed="yes" rot="R270">
+<attribute name="VALUE" x="106.68" y="144.78" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20940,6 +20952,11 @@ isolated DC DC to GND?</text>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="142.24" y1="101.6" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U4" gate="A" pin="VBUS"/>
+<pinref part="P+19" gate="1" pin="+5V"/>
+<wire x1="109.22" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$50" class="0">
 <segment>
@@ -21016,11 +21033,11 @@ isolated DC DC to GND?</text>
 </net>
 <net name="USB_DEV_P" class="1">
 <segment>
-<wire x1="109.22" y1="142.24" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="142.24" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R62" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="I/O1"/>
-<wire x1="109.22" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -24510,6 +24527,34 @@ isolated DC DC to GND?</text>
 <instance part="+3V15" gate="G$1" x="63.5" y="109.22" smashed="yes" rot="R270">
 <attribute name="VALUE" x="58.42" y="111.76" size="1.778" layer="96"/>
 </instance>
+<instance part="R102" gate="G$1" x="132.08" y="86.36" smashed="yes">
+<attribute name="NAME" x="129.54" y="88.392" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="129.54" y="83.185" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="R103" gate="G$1" x="132.08" y="88.9" smashed="yes">
+<attribute name="NAME" x="129.54" y="90.932" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="129.54" y="85.725" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="R104" gate="G$1" x="132.08" y="91.44" smashed="yes">
+<attribute name="NAME" x="129.54" y="93.472" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="129.54" y="88.265" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="R105" gate="G$1" x="132.08" y="93.98" smashed="yes">
+<attribute name="NAME" x="129.54" y="96.012" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="129.54" y="90.805" size="1.27" layer="96" font="vector"/>
+</instance>
+<instance part="GND91" gate="1" x="142.24" y="93.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="144.78" y="91.44" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND92" gate="1" x="142.24" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="144.78" y="88.9" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND93" gate="1" x="142.24" y="88.9" smashed="yes" rot="R90">
+<attribute name="VALUE" x="144.78" y="86.36" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND94" gate="1" x="142.24" y="86.36" smashed="yes" rot="R90">
+<attribute name="VALUE" x="144.78" y="83.82" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24748,6 +24793,26 @@ isolated DC DC to GND?</text>
 <pinref part="R77" gate="G$1" pin="1"/>
 <pinref part="GND85" gate="1" pin="GND"/>
 <wire x1="-10.16" y1="83.82" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R105" gate="G$1" pin="2"/>
+<pinref part="GND91" gate="1" pin="GND"/>
+<wire x1="139.7" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R104" gate="G$1" pin="2"/>
+<pinref part="GND92" gate="1" pin="GND"/>
+<wire x1="139.7" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R103" gate="G$1" pin="2"/>
+<pinref part="GND93" gate="1" pin="GND"/>
+<wire x1="139.7" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R102" gate="G$1" pin="2"/>
+<pinref part="GND94" gate="1" pin="GND"/>
+<wire x1="139.7" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$79" class="0">
@@ -25015,24 +25080,28 @@ isolated DC DC to GND?</text>
 <segment>
 <pinref part="U7" gate="A" pin="VOUT5"/>
 <wire x1="119.38" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R102" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$98" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="VOUT6"/>
 <wire x1="119.38" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R103" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$99" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="VOUT7"/>
 <wire x1="119.38" y1="91.44" x2="127" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R104" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$100" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="VOUT8"/>
 <wire x1="119.38" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R105" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$101" class="0">
