@@ -18333,7 +18333,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="8" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
 <smd name="10" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
 <smd name="9" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<rectangle x1="-2.54" y1="-0.635" x2="2.54" y2="0.635" layer="41"/>
 <hole x="-3.81" y="0" drill="0.9906"/>
 <hole x="3.81" y="1.016" drill="0.9906"/>
 <hole x="3.81" y="-1.016" drill="0.9906"/>
