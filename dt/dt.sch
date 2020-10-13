@@ -20026,7 +20026,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 </part>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="LM1117" device="TO252" package3d_urn="urn:adsk.eagle:package:23807383/2"/>
+<part name="U1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="LM1117" device="TO252" package3d_urn="urn:adsk.eagle:package:23807383/2" value="LM1117DTX-3.3">
+<attribute name="PARTNO" value="LM1117DTX-3.3/NOPB"/>
+</part>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -20154,7 +20156,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C75" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7uF"/>
-<part name="OSC1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="OSCILLATOR" device="" package3d_urn="urn:adsk.eagle:package:23815268/1"/>
+<part name="OSC1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="OSCILLATOR" device="" package3d_urn="urn:adsk.eagle:package:23815268/1" value="12.288MHz">
+<attribute name="PARTNO" value="C3391-12.288"/>
+</part>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C76" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n">
@@ -20282,27 +20286,27 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <attribute name="PARTNO" value="LM317MBSTT3G"/>
 </part>
 <part name="C94" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
-<part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
+<part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-123" value="MBR120LSFT3G"/>
 <part name="R94" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="240 0.1%"/>
 <part name="R95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="2.2k 0.1%"/>
 <part name="C95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0.1u"/>
 <part name="C96" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
 <part name="C97" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
-<part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
+<part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-123" value="MBR120LSFT3G"/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
 <part name="L5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="_0603" package3d_urn="urn:adsk.eagle:package:23799135/2" value="ILHB0805ER601V"/>
 <part name="APWR_EN" library="jumper" deviceset="JP2QE" device=""/>
 <part name="IC11" library="keves" deviceset="LM337" device="">
 <attribute name="PARTNO" value="LM337IMPX/NOPB"/>
 </part>
-<part name="D3" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
+<part name="D3" library="microbuilder" deviceset="DIODE" device="SOD-123" value="MBR120LSFT3G"/>
 <part name="C98" library="microbuilder" deviceset="CAP_CERAMIC" device="_0805" value="2.2uF"/>
 <part name="C99" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0.1u"/>
 <part name="R96" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="2.2k 0.1%"/>
 <part name="R97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="240 0.1%"/>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 <part name="C100" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
-<part name="D4" library="microbuilder" deviceset="DIODE" device="SOD-123"/>
+<part name="D4" library="microbuilder" deviceset="DIODE" device="SOD-123" value="MBR120LSFT3G"/>
 <part name="L6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="_0603" package3d_urn="urn:adsk.eagle:package:23799135/2" value="ILHB0805ER601V"/>
 <part name="C101" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="1uF 12065C105M4Z2A"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
@@ -20402,6 +20406,7 @@ isolated DC DC to GND?</text>
 <instance part="U1" gate="G$1" x="152.4" y="-58.42" smashed="yes">
 <attribute name="NAME" x="147.32" y="-54.864" size="1.27" layer="95"/>
 <attribute name="VALUE" x="153.416" y="-66.04" size="1.27" layer="96"/>
+<attribute name="PARTNO" x="152.4" y="-58.42" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+1" gate="1" x="129.54" y="-58.42" smashed="yes" rot="R90">
 <attribute name="VALUE" x="134.62" y="-60.96" size="1.778" layer="96" rot="R180"/>
@@ -23404,6 +23409,7 @@ isolated DC DC to GND?</text>
 <instance part="OSC1" gate="G$1" x="132.08" y="129.54" smashed="yes">
 <attribute name="NAME" x="124.46" y="137.795" size="1.27" layer="95"/>
 <attribute name="VALUE" x="124.46" y="119.38" size="1.27" layer="96"/>
+<attribute name="PARTNO" x="132.08" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND55" gate="1" x="114.3" y="121.92" smashed="yes">
 <attribute name="VALUE" x="111.76" y="119.38" size="1.778" layer="96"/>
@@ -23896,6 +23902,11 @@ isolated DC DC to GND?</text>
 <wire x1="55.88" y1="134.62" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
 <label x="60.96" y="134.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="A" pin="PD6"/>
+<wire x1="27.94" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<label x="10.16" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
@@ -23914,6 +23925,11 @@ isolated DC DC to GND?</text>
 <pinref part="TC1" gate="A" pin="7"/>
 <wire x1="40.64" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="27.94" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="PD5"/>
+<wire x1="27.94" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<label x="10.16" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -25357,6 +25373,7 @@ isolated DC DC to GND?</text>
 <approved hash="104,3,238.76,-53.34,U3C,VSS,GND,,,"/>
 <approved hash="104,3,238.76,-55.88,U3C,VSSA,GND,,,"/>
 <approved hash="104,3,121.92,134.62,OSC1,VCC,+3V3,,,"/>
+<approved hash="104,1,106.68,142.24,U4,VBUS,+5V,,,"/>
 <approved hash="104,1,139.7,101.6,U5,VBUS,+5V,,,"/>
 <approved hash="104,4,66.04,162.56,U6B,VCC1,N$80,,,"/>
 <approved hash="104,4,66.04,160.02,U6B,VCC2,N$80,,,"/>
@@ -25373,12 +25390,16 @@ isolated DC DC to GND?</text>
 <approved hash="104,4,101.6,20.32,U7B,AGND2,GND,,,"/>
 <approved hash="104,4,101.6,17.78,U7B,DGND,GND,,,"/>
 <approved hash="104,3,162.56,10.16,IC7,VCC,+3V3,,,"/>
+<approved hash="113,1,173.042,-77.47,LED2,,,,,"/>
 <approved hash="113,1,175.555,-56.8214,JP1,,,,,"/>
+<approved hash="113,1,190.5,-57.1754,L1,,,,,"/>
 <approved hash="113,1,105.41,-18.8622,JP6,,,,,"/>
+<approved hash="113,4,30.48,179.045,L3,,,,,"/>
 <approved hash="113,4,-19.3786,192.065,JP2,,,,,"/>
 <approved hash="113,4,39.6646,247.979,JP3,,,,,"/>
 <approved hash="113,4,-34.6186,214.925,JP4,,,,,"/>
 <approved hash="113,4,-19.3786,161.585,JP5,,,,,"/>
+<approved hash="113,4,27.94,41.8846,L4,,,,,"/>
 <approved hash="113,4,-19.3786,54.9046,JP7,,,,,"/>
 <approved hash="113,4,39.6646,110.819,JP8,,,,,"/>
 <approved hash="113,4,-34.6186,77.7646,JP9,,,,,"/>
