@@ -1015,22 +1015,6 @@ TS-003</description>
 <vertex x="-1.6" y="-1.8"/>
 </polygon>
 </package>
-<package name="_0603" urn="urn:adsk.eagle:footprint:23807533/1" library_version="33">
-<description>&lt;b&gt;0603&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.306" x2="0.432" y2="-0.306" width="0.1016" layer="51"/>
-<wire x1="0.432" y1="0.306" x2="-0.432" y2="0.306" width="0.1016" layer="51"/>
-<wire x1="-1.4605" y1="0.635" x2="1.4605" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.4605" y1="0.635" x2="1.4605" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="1.4605" y1="-0.635" x2="-1.4605" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.4605" y1="-0.635" x2="-1.4605" y2="0.635" width="0.2032" layer="21"/>
-<smd name="1" x="-0.762" y="0" dx="0.9" dy="0.8" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="0.9" dy="0.8" layer="1"/>
-<text x="-1.27" y="0.9525" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.27" y="-1.4923" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4" x2="0.8382" y2="0.4" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4" x2="-0.4318" y2="0.4" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
 <package name="PHI-LOGO" urn="urn:adsk.eagle:footprint:24014367/1" library_version="41">
 <rectangle x1="-10.0838" y1="0.4318" x2="-5.2578" y2="0.4572" layer="25" rot="R270"/>
 <rectangle x1="-10.0457" y1="0.4191" x2="-5.2451" y2="0.4445" layer="25" rot="R270"/>
@@ -2482,12 +2466,6 @@ TS-003</description>
 <packageinstance name="PANASONIC_C"/>
 </packageinstances>
 </package3d>
-<package3d name="_0603" urn="urn:adsk.eagle:package:23799135/2" type="box" library_version="33">
-<description>&lt;b&gt;0603&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="_0603"/>
-</packageinstances>
-</package3d>
 <package3d name="PHI-LOGO" urn="urn:adsk.eagle:package:24014368/1" type="empty" library_version="41">
 <packageinstances>
 <packageinstance name="PHI-LOGO"/>
@@ -3608,6 +3586,18 @@ grid 2.032 mm, diameter 5 mm</description>
 <text x="2.54" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
 </package>
+<package name="L1812" urn="urn:adsk.eagle:footprint:23000/1" library_version="11">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
+<wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
+<smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
+<smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
+<rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="E2-5" urn="urn:adsk.eagle:package:23346/2" type="model" library_version="11">
@@ -3615,6 +3605,13 @@ grid 2.032 mm, diameter 5 mm</description>
 grid 2.032 mm, diameter 5 mm</description>
 <packageinstances>
 <packageinstance name="E2-5"/>
+</packageinstances>
+</package3d>
+<package3d name="L1812" urn="urn:adsk.eagle:package:23494/2" type="model" library_version="11">
+<description>INDUCTOR
+chip</description>
+<packageinstances>
+<packageinstance name="L1812"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -4156,6 +4153,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MOUSER_PART_NUMBER" value="568-NSJ12HF-1" x="0" y="-34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Neutrik/NSJ12HF-1?qs=43pPWqpsSNuxu1dXwKXeEA%3D%3D" x="0" y="-34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="10.537" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="PARTNO" value="NSJ12HF-1" x="5.08" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="10.537" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="PL2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="NSJ12HF1" package3d_urn="urn:adsk.eagle:package:23639874/2" value="NSJ12HF-1" x="30.48" y="25.4" smashed="yes" rot="R270">
@@ -4166,6 +4164,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MOUSER_PART_NUMBER" value="568-NSJ12HF-1" x="0" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Neutrik/NSJ12HF-1?qs=43pPWqpsSNuxu1dXwKXeEA%3D%3D" x="0" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="35.937" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="PARTNO" value="NSJ12HF-1" x="30.48" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="35.937" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="PL3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="NSJ12HF1" package3d_urn="urn:adsk.eagle:package:23639874/2" value="NSJ12HF-1" x="55.88" y="25.4" smashed="yes" rot="R270">
@@ -4176,6 +4175,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MOUSER_PART_NUMBER" value="568-NSJ12HF-1" x="25.4" y="-50.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Neutrik/NSJ12HF-1?qs=43pPWqpsSNuxu1dXwKXeEA%3D%3D" x="25.4" y="-50.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="61.337" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="PARTNO" value="NSJ12HF-1" x="55.88" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="61.337" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="PL4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="NSJ12HF1" package3d_urn="urn:adsk.eagle:package:23639874/2" value="NSJ12HF-1" x="81.28" y="25.4" smashed="yes" rot="R270">
@@ -4186,6 +4186,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MOUSER_PART_NUMBER" value="568-NSJ12HF-1" x="30.48" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Neutrik/NSJ12HF-1?qs=43pPWqpsSNuxu1dXwKXeEA%3D%3D" x="30.48" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="86.737" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="PARTNO" value="NSJ12HF-1" x="81.28" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="86.737" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="PL5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="NSJ12HF1" package3d_urn="urn:adsk.eagle:package:23639874/2" value="NSJ12HF-1" x="106.68" y="25.4" smashed="yes" rot="R270">
@@ -4196,6 +4197,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MOUSER_PART_NUMBER" value="568-NSJ12HF-1" x="55.88" y="-50.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Neutrik/NSJ12HF-1?qs=43pPWqpsSNuxu1dXwKXeEA%3D%3D" x="55.88" y="-50.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="112.137" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="PARTNO" value="NSJ12HF-1" x="106.68" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="112.137" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="PL6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="NSJ12HF1" package3d_urn="urn:adsk.eagle:package:23639874/2" value="NSJ12HF-1" x="132.08" y="25.4" smashed="yes" rot="R270">
@@ -4206,22 +4208,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MOUSER_PART_NUMBER" value="568-NSJ12HF-1" x="60.96" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Neutrik/NSJ12HF-1?qs=43pPWqpsSNuxu1dXwKXeEA%3D%3D" x="60.96" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="137.537" y="13.26" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="PARTNO" value="NSJ12HF-1" x="132.08" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="137.537" y="13.26" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="LED1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="WP934SALILYLGD" package3d_urn="urn:adsk.eagle:package:23642565/2" value="WP934SA_LILYLGDLED" x="18.288" y="99.822" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.558" y="90.932" size="1.27" layer="25" align="center"/>
+<attribute name="PARTNO" value="WP934SA/LILYLGD" x="18.288" y="99.822" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="USB_FS" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="TE-292304-1" package3d_urn="urn:adsk.eagle:package:15137482/2" value="" x="107.696" y="94.996" smashed="yes" rot="R180">
 <attribute name="MPN" value="292304-1 " x="53.086" y="172.466" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="107.696" y="88.9" size="1.27" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="292304-1" x="107.696" y="94.996" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="100.076" y="103.886" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="USB_HS" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="FCI-73725-0110BLF" package3d_urn="urn:adsk.eagle:package:23642581/2" value="FCI-73725-0110BLF" x="125.222" y="86.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="128.222" y="83.36" size="1.27" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="73725-0110BLF" x="125.222" y="86.36" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="128.222" y="81.36" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="WBL2UOAGQ" package3d_urn="urn:adsk.eagle:package:23643294/4" value="WBL2UOAGQR05CLR" x="7.62" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.832" y="69.812" size="1.27" layer="25"/>
+<attribute name="PARTNO" value="WBL2UOAGQR05CLR" x="7.62" y="76.2" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" package="SO08" package3d_urn="urn:adsk.eagle:package:16404/2" value="TL072D" x="12.446" y="36.322" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.525" y="38.989" size="1.27" layer="25"/>
@@ -4326,22 +4333,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R9" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="28.194" y="33.528" smashed="yes">
 <attribute name="NAME" x="26.416" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="28.194" y="33.528" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="28.194" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="29.972" y="32.766" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R10" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="29.464" y="37.846" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.956" y="39.751" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="29.464" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="29.464" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="28.702" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R11" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="27.432" y="37.846" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.194" y="40.513" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="27.432" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="27.432" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="28.194" y="39.624" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R12" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="28.194" y="35.306" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.384" y="34.925" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="28.194" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="28.194" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="26.416" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C10" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="31.496" y="34.544" smashed="yes" rot="R270">
@@ -4368,17 +4375,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R13" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="43.18" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.418" y="38.481" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="43.18" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="43.18" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="43.942" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R14" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="45.212" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.736" y="39.243" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="45.212" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="45.212" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="45.974" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R15" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="43.942" y="33.782" smashed="yes">
 <attribute name="NAME" x="48.006" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="43.942" y="33.782" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="43.942" y="33.782" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="45.72" y="33.02" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C14" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="41.148" y="33.02" smashed="yes" rot="R270">
@@ -4395,7 +4402,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R16" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="43.942" y="32.004" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.974" y="31.623" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="43.942" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="43.942" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="42.164" y="32.766" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C16" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="34.544" y="33.274" smashed="yes" rot="R180">
@@ -4416,22 +4423,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R17" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="53.594" y="33.528" smashed="yes">
 <attribute name="NAME" x="51.816" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="53.594" y="33.528" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="53.594" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="55.372" y="32.766" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R18" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="54.864" y="37.846" smashed="yes" rot="R270">
 <attribute name="NAME" x="53.594" y="39.751" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="54.864" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="54.864" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="54.102" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R19" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="52.832" y="37.846" smashed="yes" rot="R90">
 <attribute name="NAME" x="53.34" y="40.513" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="52.832" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="52.832" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="53.594" y="39.624" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R20" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="53.594" y="35.306" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.53" y="34.925" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="53.594" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="53.594" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="51.816" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C18" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="56.896" y="34.544" smashed="yes" rot="R270">
@@ -4458,17 +4465,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R21" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="68.58" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.072" y="38.481" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="68.58" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="68.58" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="69.342" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R22" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="70.612" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="72.39" y="39.243" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="70.612" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="70.612" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="71.374" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R23" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="69.342" y="33.782" smashed="yes">
 <attribute name="NAME" x="73.152" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="69.342" y="33.782" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="69.342" y="33.782" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="71.12" y="33.02" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C22" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="66.548" y="33.02" smashed="yes" rot="R270">
@@ -4485,7 +4492,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R24" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="69.342" y="32.004" smashed="yes" rot="R180">
 <attribute name="NAME" x="71.374" y="31.623" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="69.342" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="69.342" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="67.564" y="32.766" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C24" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="59.944" y="33.274" smashed="yes" rot="R180">
@@ -4506,22 +4513,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R25" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="78.994" y="33.528" smashed="yes">
 <attribute name="NAME" x="77.216" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="78.994" y="33.528" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="78.994" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="80.772" y="32.766" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R26" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="80.264" y="37.846" smashed="yes" rot="R270">
 <attribute name="NAME" x="79.248" y="39.751" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="80.264" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="80.264" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="79.502" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R27" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="78.232" y="37.846" smashed="yes" rot="R90">
 <attribute name="NAME" x="78.486" y="40.513" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="78.232" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="78.232" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="78.994" y="39.624" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R28" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="78.994" y="35.306" smashed="yes" rot="R180">
 <attribute name="NAME" x="75.184" y="34.925" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="78.994" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="78.994" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="77.216" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C26" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="82.296" y="34.544" smashed="yes" rot="R270">
@@ -4548,17 +4555,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R29" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="93.98" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="93.218" y="38.481" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="93.98" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="93.98" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="94.742" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R30" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="96.012" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.536" y="39.243" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="96.012" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="96.012" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="96.774" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R31" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="94.742" y="33.782" smashed="yes">
 <attribute name="NAME" x="98.806" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="94.742" y="33.782" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="94.742" y="33.782" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="96.52" y="33.02" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C30" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="91.948" y="33.02" smashed="yes" rot="R270">
@@ -4575,7 +4582,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R32" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="94.742" y="32.004" smashed="yes" rot="R180">
 <attribute name="NAME" x="96.774" y="31.623" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="94.742" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="94.742" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="92.964" y="32.766" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C32" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="85.344" y="33.274" smashed="yes" rot="R180">
@@ -4596,22 +4603,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R33" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="104.394" y="33.528" smashed="yes">
 <attribute name="NAME" x="102.616" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="104.394" y="33.528" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="104.394" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="106.172" y="32.766" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R34" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="105.664" y="37.846" smashed="yes" rot="R270">
 <attribute name="NAME" x="104.648" y="39.751" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="105.664" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="105.664" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="104.902" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R35" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="103.632" y="37.846" smashed="yes" rot="R90">
 <attribute name="NAME" x="104.14" y="40.513" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="103.632" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="103.632" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="104.394" y="39.624" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R36" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="104.394" y="35.306" smashed="yes" rot="R180">
 <attribute name="NAME" x="100.584" y="34.925" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="104.394" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="104.394" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="102.616" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C34" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="107.696" y="34.544" smashed="yes" rot="R270">
@@ -4638,17 +4645,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R37" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="119.38" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="118.872" y="38.481" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="119.38" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="119.38" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="120.142" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R38" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="121.412" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="123.19" y="39.243" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="121.412" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="121.412" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="122.174" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R39" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="120.142" y="33.782" smashed="yes">
 <attribute name="NAME" x="123.952" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="120.142" y="33.782" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="120.142" y="33.782" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="121.92" y="33.02" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C38" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="117.348" y="33.02" smashed="yes" rot="R270">
@@ -4665,7 +4672,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R40" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="120.142" y="32.004" smashed="yes" rot="R180">
 <attribute name="NAME" x="122.174" y="31.623" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="120.142" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="120.142" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="118.364" y="32.766" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C40" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="110.744" y="33.274" smashed="yes" rot="R180">
@@ -4686,22 +4693,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R41" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="128.524" y="33.528" smashed="yes">
 <attribute name="NAME" x="126.746" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="128.524" y="33.528" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="128.524" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="130.302" y="32.766" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R42" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="129.794" y="37.846" smashed="yes" rot="R270">
 <attribute name="NAME" x="128.778" y="39.751" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="129.794" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="129.794" y="37.846" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="129.032" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R43" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="127.762" y="37.846" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.016" y="40.513" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="127.762" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="127.762" y="37.846" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="128.524" y="39.624" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R44" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="128.524" y="35.306" smashed="yes" rot="R180">
 <attribute name="NAME" x="124.714" y="34.925" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="128.524" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="128.524" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="126.746" y="36.068" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C42" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="131.826" y="34.544" smashed="yes" rot="R270">
@@ -4728,17 +4735,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R45" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="560" x="143.51" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="142.748" y="38.481" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="RC0603FR-07560RL " x="143.51" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="143.51" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="144.272" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R46" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k" x="145.542" y="36.576" smashed="yes" rot="R90">
 <attribute name="NAME" x="147.066" y="39.243" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="ERJ-3EKF8201V " x="145.542" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="ERJ-3EKF8201V" x="145.542" y="36.576" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="146.304" y="38.354" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R47" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k" x="144.272" y="33.782" smashed="yes">
 <attribute name="NAME" x="148.082" y="33.909" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
-<attribute name="PARTNO" value="CRCW06035K10FKEAC " x="144.272" y="33.782" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="CRCW06035K10FKEAC" x="144.272" y="33.782" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="146.05" y="33.02" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C46" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="141.478" y="33.02" smashed="yes" rot="R270">
@@ -4755,7 +4762,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R48" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="47" x="144.272" y="32.004" smashed="yes" rot="R180">
 <attribute name="NAME" x="146.304" y="31.623" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="PARTNO" value="CRCW060347R0FKEAC " x="144.272" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="CRCW060347R0FKEAC" x="144.272" y="32.004" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="142.494" y="32.766" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C48" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="135.128" y="33.02" smashed="yes" rot="R180">
@@ -4780,46 +4787,47 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="" x="65.024" y="94.488" smashed="yes">
 <attribute name="NAME" x="63.754" y="93.218" size="1.27" layer="25" rot="R90"/>
+<attribute name="PARTNO" value="AP2012HD" x="65.024" y="94.488" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="68" x="65.024" y="94.488" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="67.564" y="93.218" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R49" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="67.056" y="94.488" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.183" y="96.266" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="67.056" y="94.488" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="67.818" y="96.266" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP1" package3d_urn="urn:adsk.eagle:package:15455/1" value="" x="79.756" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.407" y="96.52" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="PARTNO" value="G800W306018EU" x="79.756" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="61" x="79.756" y="93.98" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="76.835" y="96.52" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="P1-20" package3d_urn="urn:adsk.eagle:package:27950/1" value="TPPAD1-20" x="80.01" y="89.154" smashed="yes">
 <attribute name="NAME" x="78.486" y="90.932" size="1.27" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="*" x="80.01" y="89.154" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="0" x="80.01" y="89.154" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="80.01" y="89.154" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="80.01" y="89.154" size="0.0254" layer="27"/>
 </element>
 <element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="P1-20" package3d_urn="urn:adsk.eagle:package:27950/1" value="TPPAD1-20" x="80.01" y="84.582" smashed="yes">
 <attribute name="NAME" x="78.486" y="86.36" size="1.27" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="*" x="80.01" y="84.582" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="0" x="80.01" y="84.582" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="80.01" y="84.582" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="80.01" y="84.582" size="0.0254" layer="27"/>
 </element>
-<element name="U2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="CONV_PCN2-S5-D12-S" package3d_urn="urn:adsk.eagle:package:23798928/2" value="PCN2-S5-D12-S" x="141.986" y="66.548" smashed="yes" rot="R90">
+<element name="U2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="CONV_PCN2-S5-D12-S" package3d_urn="urn:adsk.eagle:package:23798928/2" value="PCN2-S5-D15-S" x="141.986" y="66.548" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="CUI INC" x="141.986" y="66.548" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="144.23441875" y="85.88581875" size="1.271240625" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="PCN2-S5-D15-S" x="141.986" y="66.548" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTREV" value="1.0" x="141.986" y="66.548" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="STANDARD" value="MANUFACTURER RECOMMENDATIONS" x="141.986" y="66.548" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="149.24726875" y="64.044109375" size="1.27196875" layer="27" rot="R90"/>
 </element>
-<element name="L1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="" x="83.566" y="87.884" smashed="yes" rot="R270">
+<element name="L1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="600ohm @ 100MHz" x="83.566" y="87.884" smashed="yes" rot="R270">
 <attribute name="NAME" x="83.439" y="86.106" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PARTNO" value="BLM18KG601SN1D" x="83.566" y="87.884" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="82.804" y="86.106" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
-</element>
-<element name="L2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.6uH" x="138.43" y="65.532" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.303" y="63.5" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
-<attribute name="PATRNO" value="MLF1608E5R6KTA00" x="138.43" y="65.532" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="137.668" y="63.754" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="C51" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u" x="137.414" y="68.834" smashed="yes">
 <attribute name="NAME" x="136.779" y="65.024" size="0.8128" layer="25" ratio="18" rot="R90"/>
@@ -4838,23 +4846,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="P1-20" package3d_urn="urn:adsk.eagle:package:27950/1" value="TPPAD1-20" x="130.81" y="82.804" smashed="yes" rot="R90">
 <attribute name="NAME" x="131.318" y="84.836" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="130.81" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="130.81" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="130.81" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="130.81" y="82.804" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" package="P1-20" package3d_urn="urn:adsk.eagle:package:27950/1" value="TPPAD1-20" x="137.922" y="82.804" smashed="yes" rot="R90">
 <attribute name="NAME" x="138.43" y="84.836" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="137.922" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="137.922" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="137.922" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="137.922" y="82.804" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="JP6" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP4Q" package3d_urn="urn:adsk.eagle:package:15451/1" value="" x="136.906" y="75.438" smashed="yes" rot="R90">
 <attribute name="NAME" x="135.128" y="66.802" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="136.906" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="136.906" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="142.621" y="70.358" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="P1-20" package3d_urn="urn:adsk.eagle:package:27950/1" value="TPPAD1-20" x="134.366" y="82.804" smashed="yes" rot="R90">
 <attribute name="NAME" x="134.62" y="85.09" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="134.366" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="134.366" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="134.366" y="82.804" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="134.366" y="82.804" size="0.0254" layer="27" rot="R90"/>
@@ -4863,6 +4875,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="COPYRIGHT" value="Copyright (C) 2016 Accelerated Designs. All rights reserved" x="97.028" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="STM32F7X3ZXT" x="97.028" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="93.7514" y="66.675" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="PARTNO" value="STM32F733ZXT" x="97.028" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="90.2208" y="64.897" size="1.27" layer="21" ratio="6" rot="SR0"/>
 <attribute name="VENDOR" value="STMicroelectronics" x="97.028" y="67.31" size="1.778" layer="27" display="off"/>
 </element>
@@ -4953,14 +4966,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R50" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="10k" x="88.9" y="81.788" smashed="yes" rot="R270">
 <attribute name="NAME" x="88.773" y="80.01" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060310K0JNEBC" x="88.9" y="81.788" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="88.138" y="80.01" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R51" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="10k DNP" x="91.948" y="82.804" smashed="yes">
 <attribute name="NAME" x="93.726" y="82.677" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="*" x="91.948" y="82.804" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="93.726" y="82.042" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R52" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="10k" x="91.948" y="81.026" smashed="yes">
 <attribute name="NAME" x="93.726" y="80.899" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW060310K0JNEBC" x="91.948" y="81.026" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="93.726" y="80.264" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C71" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="92.456" y="98.552" smashed="yes">
@@ -4970,14 +4986,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R53" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="10k DNP" x="92.456" y="100.33" smashed="yes">
 <attribute name="NAME" x="94.234" y="100.203" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="*" x="92.456" y="100.33" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="94.234" y="99.568" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="TC1" library="TagConnect" package="TC2050-IDC-NL" value="TC2050-IDC-NL" x="93.726" y="96.012" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="*" x="93.726" y="96.012" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULATE" value="0" x="93.726" y="96.012" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="98.171" y="99.187" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R54" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="3k 1%" x="112.522" y="56.642" smashed="yes">
 <attribute name="NAME" x="111.252" y="54.737" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="AF0603FR-073KL" x="112.522" y="56.642" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="114.3" y="55.88" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C72" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="2.2u" x="113.284" y="58.674" smashed="yes" rot="R180">
@@ -4987,18 +5006,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="Y1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="ABLS7M225000MHZD2YT" package3d_urn="urn:adsk.eagle:package:23814721/2" value="ABLS7M2-25.000MHZ-D2Y-T" x="75.946" y="64.262" smashed="yes" rot="R270">
 <attribute name="NAME" x="75.184" y="70.612" size="1.27" layer="25" align="center"/>
+<attribute name="PARTNO" value="ABLS7M2-25.000MHZ-D2Y-T" x="75.946" y="64.262" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="75.946" y="64.262" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="C73" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="18pF" x="71.882" y="66.294" smashed="yes" rot="R270">
 <attribute name="NAME" x="71.501" y="70.358" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="06035A180JAT2A" x="71.882" y="66.294" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="71.12" y="64.516" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="C74" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="18pF" x="71.882" y="62.484" smashed="yes" rot="R270">
 <attribute name="NAME" x="71.755" y="60.198" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="06035A180JAT2A" x="71.882" y="62.484" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="71.12" y="60.706" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="C75" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7u" x="97.79" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.917" y="55.118" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="GRM188Z71A475ME15D" x="97.79" y="53.34" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="98.552" y="55.118" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="OSC1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="OSC_7X5MM" package3d_urn="urn:adsk.eagle:package:23815268/1" value="12.288MHz" x="119.126" y="74.168" smashed="yes" rot="R180">
@@ -5013,60 +5036,73 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R55" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="10k" x="120.904" y="78.994" smashed="yes" rot="R180">
 <attribute name="NAME" x="119.126" y="79.121" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060310K0JNEBC" x="120.904" y="78.994" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="119.126" y="79.756" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R56" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="111.76" y="71.628" smashed="yes" rot="R180">
 <attribute name="NAME" x="113.538" y="73.279" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="111.76" y="71.628" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="109.982" y="72.39" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="U4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/1" value="USBLC6-2SC6YSOT23-6L_STM-M" x="114.046" y="80.772" smashed="yes" rot="R90">
 <attribute name="BUILT_BY" value="EMA_UL_Team" x="114.046" y="80.772" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="USBLC6-2SC6Y" x="114.046" y="80.772" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="117.221" y="79.5274" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="PARTNO" value="USBLC6-2SC6Y" x="114.046" y="80.772" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SOURCELIBRARY" value="StMicro_2015-03-30" x="114.046" y="80.772" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VENDOR" value="STMicroelectronics" x="114.046" y="80.772" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C77" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_D" package3d_urn="urn:adsk.eagle:package:23799140/1" value="100u" x="73.66" y="83.312" smashed="yes">
 <attribute name="NAME" x="70.64" y="86.852" size="0.8128" layer="25" ratio="18"/>
+<attribute name="PARTNO" value="EEE-HAV101XAP" x="73.66" y="83.312" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="70.612" y="78.994" size="0.4064" layer="27" ratio="10"/>
 </element>
 <element name="R57" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1M" x="117.094" y="96.012" smashed="yes" rot="R270">
 <attribute name="NAME" x="116.967" y="94.234" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="AC0603FR-131ML" x="117.094" y="96.012" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="116.332" y="94.234" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="C78" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7nF" x="118.872" y="96.012" smashed="yes" rot="R270">
+<element name="C78" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="118.872" y="96.012" smashed="yes" rot="R270">
 <attribute name="NAME" x="118.745" y="94.234" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="GRM1885C1H472JA01D" x="118.872" y="96.012" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="118.11" y="94.234" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R58" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1M" x="131.318" y="89.916" smashed="yes" rot="R270">
 <attribute name="NAME" x="130.683" y="93.98" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="AC0603FR-131ML" x="131.318" y="89.916" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="130.556" y="88.138" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="C79" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7nF" x="129.54" y="89.916" smashed="yes" rot="R270">
+<element name="C79" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF" x="129.54" y="89.916" smashed="yes" rot="R270">
 <attribute name="NAME" x="129.413" y="93.98" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="GRM1885C1H472JA01D" x="129.54" y="89.916" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="128.778" y="88.138" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="U5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/1" value="USBLC6-2SC6YSOT23-6L_STM-M" x="125.73" y="75.438" smashed="yes" rot="R90">
 <attribute name="BUILT_BY" value="EMA_UL_Team" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="USBLC6-2SC6Y" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="128.905" y="74.4474" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="PARTNO" value="USBLC6-2SC6Y" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SOURCELIBRARY" value="StMicro_2015-03-30" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VENDOR" value="STMicroelectronics" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R59" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="126.492" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="127.762" y="79.375" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="126.492" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="127.254" y="83.058" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R60" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="124.714" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="124.968" y="79.121" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="124.714" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="125.476" y="83.058" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R61" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="115.062" y="85.09" smashed="yes" rot="R90">
 <attribute name="NAME" x="115.189" y="86.868" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="115.062" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="115.824" y="86.868" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R62" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="113.03" y="85.09" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.157" y="86.868" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="113.03" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="113.792" y="86.868" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="U6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/3" value="PCM1681PWPPWP28_6P46X2P4-M" x="14.351" y="52.705" smashed="yes" rot="R180">
@@ -5079,104 +5115,127 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MANUFACTURER_PART_NUMBER" value="PCM1681PWP" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="18.034" y="50.6476" size="1.27" layer="25" ratio="6" rot="SR270"/>
 <attribute name="PACKAGE_DESIGNATOR" value="PWP" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="PCM1681PWP" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PIN_COUNT" value="28" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VENDOR" value="Texas Instruments" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C80" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic" x="20.955" y="54.483" smashed="yes">
 <attribute name="NAME" x="22.733" y="54.356" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="GMK107AB7105KAHT" x="20.955" y="54.483" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="22.733" y="53.721" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C81" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="54.61" y="58.674" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.404" y="61.214" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="54.61" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="50.927" y="61.214" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C82" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="14.224" y="44.704" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.16" y="45.466" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="14.224" y="44.704" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="16.764" y="48.387" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="L3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="" x="2.159" y="53.721" smashed="yes">
+<element name="L3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="600ohm @ 100MHz" x="2.159" y="53.721" smashed="yes">
 <attribute name="NAME" x="3.937" y="53.594" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="PARTNO" value="BLM18KG601SN1D" x="2.159" y="53.721" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.937" y="52.959" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C83" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="4.191" y="57.912" smashed="yes" rot="R90">
 <attribute name="NAME" x="1.397" y="55.372" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="4.191" y="57.912" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="7.874" y="55.372" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C84" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic" x="8.001" y="55.753" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.128" y="57.531" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="GMK107AB7105KAHT" x="8.001" y="55.753" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.763" y="57.531" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="C85" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic" x="6.985" y="50.673" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.112" y="52.451" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="GMK107AB7105KAHT" x="6.985" y="50.673" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="7.747" y="52.451" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R63" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="22.225" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.844" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="22.225" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="21.463" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R64" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="24.003" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.622" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="24.003" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="23.241" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R65" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="18.669" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.288" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="18.669" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="17.907" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R66" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="20.447" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.066" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="20.447" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="19.685" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R67" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="25.781" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="25.4" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="25.781" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="25.019" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R69" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="26.543" y="48.641" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.765" y="48.768" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="26.543" y="48.641" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="24.765" y="49.403" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R70" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="26.543" y="50.419" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.765" y="50.546" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="26.543" y="50.419" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="24.765" y="51.181" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R71" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="26.543" y="52.197" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.765" y="52.324" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="26.543" y="52.197" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="24.765" y="52.959" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="11.938" y="59.69" smashed="yes">
 <attribute name="NAME" x="12.446" y="61.087" size="1.27" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="*" x="11.938" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="34" x="11.938" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="8.382" y="55.372" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="29.21" y="57.404" smashed="yes">
 <attribute name="NAME" x="33.909" y="56.134" size="0.762" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="29.21" y="57.404" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="34" x="29.21" y="57.404" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="25.654" y="53.086" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP4" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="29.337" y="54.229" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.274" y="54.737" size="0.762" layer="25" ratio="10" rot="R270"/>
+<attribute name="PARTNO" value="*" x="29.337" y="54.229" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="34" x="29.337" y="54.229" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="32.893" y="58.547" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="JP5" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="29.21" y="60.706" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.147" y="61.468" size="0.762" layer="25" ratio="10" rot="R270"/>
+<attribute name="PARTNO" value="*" x="29.21" y="60.706" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="34" x="29.21" y="60.706" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="32.766" y="65.024" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R68" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="16.891" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.51" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="16.891" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="16.129" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R72" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="15.113" y="64.389" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.732" y="68.961" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="15.113" y="64.389" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="14.351" y="62.611" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R73" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="26.543" y="46.863" smashed="yes">
 <attribute name="NAME" x="28.321" y="46.736" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="26.543" y="46.863" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="28.321" y="46.101" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R74" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="9.906" y="46.99" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.128" y="47.117" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="9.906" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="8.128" y="47.752" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="U7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/3" value="PCM1681PWPPWP28_6P46X2P4-M" x="47.244" y="52.578" smashed="yes" rot="R180">
@@ -5189,140 +5248,172 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MANUFACTURER_PART_NUMBER" value="PCM1681PWP" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="49.2506" y="59.563" size="1.27" layer="25" ratio="6" rot="SR180"/>
 <attribute name="PACKAGE_DESIGNATOR" value="PWP" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="PCM1681PWP" x="47.244" y="52.578" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PIN_COUNT" value="28" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VENDOR" value="Texas Instruments" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C86" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic" x="54.102" y="54.102" smashed="yes">
 <attribute name="NAME" x="55.88" y="53.975" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="GMK107AB7105KAHT" x="54.102" y="54.102" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="55.88" y="53.34" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="C87" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="21.717" y="58.801" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.161" y="61.341" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="21.717" y="58.801" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="18.034" y="61.341" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C88" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="46.863" y="44.196" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.403" y="41.402" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="46.863" y="44.196" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="49.403" y="47.879" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="L4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="" x="38.1" y="53.594" smashed="yes" rot="R180">
+<element name="L4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="600ohm @ 100MHz" x="38.1" y="53.594" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.322" y="53.721" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="PARTNO" value="BLM18KG601SN1D" x="88.9" y="18.034" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="36.322" y="54.356" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C89" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="36.83" y="48.768" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.036" y="46.228" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="36.83" y="48.768" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="40.513" y="46.228" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C90" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic" x="41.91" y="55.626" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.18" y="58.293" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="GMK107AB7105KAHT" x="41.91" y="55.626" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="42.672" y="57.404" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="C91" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic" x="40.894" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.545" y="49.784" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="GMK107AB7105KAHT" x="40.894" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="41.656" y="52.578" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R75" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="58.674" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.293" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="58.674" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="57.912" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R76" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="60.452" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="60.071" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="60.452" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="59.69" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R77" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="55.118" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.737" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="55.118" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="54.356" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R78" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="56.896" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.515" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="56.896" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="56.134" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R79" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="62.23" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="61.849" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="62.23" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="61.468" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R80" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="61.976" y="50.292" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.198" y="50.419" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="61.976" y="50.292" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="60.198" y="51.054" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R81" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="61.976" y="52.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.198" y="52.197" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="61.976" y="52.07" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="60.198" y="52.832" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R82" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="61.976" y="53.848" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.198" y="53.975" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06030000Z0EBC" x="61.976" y="53.848" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="60.198" y="54.61" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="JP7" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="46.99" y="59.69" smashed="yes">
 <attribute name="NAME" x="46.736" y="61.341" size="1.27" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="*" x="46.99" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="34" x="-16.51" y="53.34" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="43.434" y="55.372" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP8" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="67.056" y="59.436" smashed="yes">
 <attribute name="NAME" x="63.119" y="57.912" size="0.762" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="67.056" y="59.436" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="34" x="17.526" y="63.246" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="63.5" y="55.118" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP9" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="67.056" y="56.134" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.357" y="56.896" size="0.762" layer="25" ratio="10" rot="R270"/>
+<attribute name="PARTNO" value="*" x="67.056" y="56.134" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="34" x="134.366" y="52.324" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="70.612" y="60.452" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="JP10" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP2" package3d_urn="urn:adsk.eagle:package:15452/1" value="" x="67.056" y="62.484" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.865" y="60.452" size="0.762" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="*" x="67.056" y="62.484" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="34" x="152.146" y="58.674" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="70.612" y="66.802" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R83" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="53.34" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="52.959" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="53.34" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="52.578" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R84" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="51.562" y="64.516" smashed="yes" rot="R270">
 <attribute name="NAME" x="51.181" y="68.834" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="51.562" y="64.516" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="50.8" y="62.738" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R85" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="61.976" y="48.514" smashed="yes">
 <attribute name="NAME" x="63.754" y="48.387" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="61.976" y="48.514" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="63.754" y="47.752" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R86" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="42.672" y="46.99" smashed="yes" rot="R180">
 <attribute name="NAME" x="41.148" y="47.879" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="42.672" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="40.894" y="47.752" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C92" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="36.83" y="57.912" smashed="yes" rot="R270">
 <attribute name="NAME" x="36.068" y="61.214" size="0.8128" layer="25" ratio="18"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="36.83" y="57.912" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="33.147" y="60.452" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C93" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte" x="3.175" y="49.276" smashed="yes" rot="R90">
 <attribute name="NAME" x="0.381" y="46.736" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="EEEHA1V100R" x="3.175" y="49.276" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="6.858" y="46.736" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R87" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="67.818" y="75.692" smashed="yes" rot="R180">
 <attribute name="NAME" x="66.04" y="75.819" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="67.818" y="75.692" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="66.04" y="76.454" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R88" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="67.818" y="73.914" smashed="yes" rot="R180">
 <attribute name="NAME" x="66.04" y="74.041" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="67.818" y="73.914" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="66.04" y="74.676" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R89" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="67.818" y="72.136" smashed="yes" rot="R180">
 <attribute name="NAME" x="66.04" y="72.263" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="67.818" y="72.136" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="66.04" y="72.898" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R90" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="67.818" y="70.358" smashed="yes" rot="R180">
 <attribute name="NAME" x="66.04" y="70.485" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="67.818" y="70.358" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="66.04" y="71.12" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R91" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22" x="67.818" y="68.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="66.04" y="68.707" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW060322R0FKEAC" x="67.818" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="66.04" y="69.342" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R92" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7k" x="83.185" y="79.248" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.407" y="79.375" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06034K70FKEA" x="83.185" y="79.248" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="81.407" y="80.01" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R93" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7k" x="83.185" y="77.47" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.407" y="77.597" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06034K70FKEA" x="83.185" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="81.407" y="78.232" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="IC10" library="keves" package="SOT223" value="LM317" x="140.208" y="58.166" smashed="yes">
@@ -5332,42 +5423,52 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="C94" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="2.2u" x="146.812" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="146.2405" y="58.42" size="0.8128" layer="25" ratio="18"/>
+<attribute name="PARTNO" value="UMK212BB7225KG-T" x="146.812" y="56.134" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="145.161" y="57.7214" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOD-123" value="MBR120LSFT3G" x="139.954" y="50.546" smashed="yes" rot="R180">
 <attribute name="NAME" x="141.732" y="51.562" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="MBR120LSFT3G" x="139.954" y="50.546" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="141.224" y="52.324" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R94" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="240 0.1%" x="139.192" y="52.578" smashed="yes">
 <attribute name="NAME" x="141.986" y="51.7525" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="ERA-3AEB241V" x="139.192" y="52.578" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="137.6046" y="50.927" size="0.4064" layer="27" ratio="10"/>
 </element>
 <element name="R95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="2.2k 0.1%" x="135.636" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="135.89" y="58.3565" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="ERA-3VEB2201V" x="135.636" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="133.985" y="57.4674" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="144.526" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="144.653" y="57.658" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CC0603KRX7R9BB104" x="144.526" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="145.288" y="57.658" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="C96" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u" x="135.89" y="51.562" smashed="yes" rot="R270">
 <attribute name="NAME" x="133.985" y="53.086" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CL21A106KAYNNNE" x="135.89" y="51.562" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="135.128" y="49.53" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u 12065C105M4Z2A" x="141.478" y="48.26" smashed="yes">
+<element name="C97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u" x="141.478" y="48.26" smashed="yes">
 <attribute name="NAME" x="144.018" y="48.133" size="0.8128" layer="25" ratio="18"/>
+<attribute name="PARTNO" value="12065C105M4Z2A" x="141.478" y="48.26" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="144.018" y="47.625" size="0.4064" layer="27" ratio="10"/>
 </element>
 <element name="D2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOD-123" value="MBR120LSFT3G" x="144.526" y="52.578" smashed="yes" rot="R180">
 <attribute name="NAME" x="145.796" y="51.562" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="MBR120LSFT3G" x="144.526" y="52.578" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="145.796" y="54.356" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="L5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="_0603" package3d_urn="urn:adsk.eagle:package:23799135/2" value="ILHB0805ER601V" x="136.652" y="48.26" smashed="yes" rot="R180">
+<element name="L5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="600ohm @ 100MHz" x="136.652" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="137.7315" y="46.99" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="BLM18KG601SN1D" x="136.652" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="138.2394" y="49.911" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="APWR_EN" library="jumper" package="JP2Q" value="" x="133.35" y="44.196" smashed="yes" rot="R90">
 <attribute name="NAME" x="134.874" y="47.752" size="0.762" layer="25" ratio="10" rot="R180"/>
+<attribute name="PARTNO" value="*" x="133.35" y="44.196" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="135.89" y="48.641" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="IC11" library="keves" package="SOT223" value="LM337" x="124.206" y="58.166" smashed="yes">
@@ -5377,58 +5478,72 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="D3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOD-123" value="MBR120LSFT3G" x="128.016" y="52.324" smashed="yes" rot="R180">
 <attribute name="NAME" x="129.286" y="51.308" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="MBR120LSFT3G" x="128.016" y="52.324" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="129.286" y="54.102" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C98" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="2.2u" x="122.936" y="50.546" smashed="yes" rot="R180">
 <attribute name="NAME" x="124.5235" y="49.276" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="UMK212BB7225KG-T" x="122.936" y="50.546" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="124.5234" y="52.197" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C99" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="123.19" y="52.578" smashed="yes">
 <attribute name="NAME" x="120.777" y="52.07" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CC0603KRX7R9BB104" x="123.19" y="52.578" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="124.968" y="51.816" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R96" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="2.2k 0.1%" x="128.778" y="60.198" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.016" y="61.1505" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="ERA-3VEB2201V" x="128.778" y="60.198" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="130.429" y="58.6106" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="240 0.1%" x="128.778" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.8575" y="54.102" size="0.8128" layer="25" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="ERA-3AEB241V" x="128.778" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="130.429" y="54.2926" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C100" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u" x="131.064" y="61.722" smashed="yes" rot="R270">
 <attribute name="NAME" x="132.207" y="63.5" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="CL21A106KAYNNNE" x="131.064" y="61.722" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="130.302" y="59.69" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOD-123" value="MBR120LSFT3G" x="130.81" y="56.642" smashed="yes" rot="R270">
 <attribute name="NAME" x="130.556" y="54.356" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="MBR120LSFT3G" x="130.81" y="56.642" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="129.032" y="57.912" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="L6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="_0603" package3d_urn="urn:adsk.eagle:package:23799135/2" value="ILHB0805ER601V" x="132.842" y="51.816" smashed="yes" rot="R270">
+<element name="L6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="600ohm @ 100MHz" x="132.842" y="51.816" smashed="yes" rot="R270">
 <attribute name="NAME" x="131.7625" y="49.276" size="0.8128" layer="25" ratio="18"/>
+<attribute name="PARTNO" value="BLM18KG601SN1D" x="132.842" y="51.816" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="131.191" y="53.4034" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u 12065C105M4Z2A" x="132.842" y="56.388" smashed="yes" rot="R270">
+<element name="C101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u" x="132.842" y="56.388" smashed="yes" rot="R270">
 <attribute name="NAME" x="132.715" y="53.848" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="PARTNO" value="12065C105M4Z2A" x="132.842" y="56.388" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="132.207" y="53.848" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R98" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="25.146" y="94.742" smashed="yes">
 <attribute name="NAME" x="26.924" y="94.615" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="25.146" y="94.742" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.924" y="93.98" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R99" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="25.146" y="97.282" smashed="yes">
 <attribute name="NAME" x="26.924" y="97.155" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="25.146" y="97.282" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.924" y="96.52" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R100" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="25.146" y="99.822" smashed="yes">
 <attribute name="NAME" x="26.924" y="99.695" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="25.146" y="99.822" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.924" y="99.06" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="R101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="14.478" y="82.55" smashed="yes" rot="R180">
 <attribute name="NAME" x="19.05" y="82.931" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="14.478" y="82.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="12.7" y="83.312" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="C102" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n" x="17.78" y="79.248" smashed="yes">
 <attribute name="NAME" x="19.558" y="79.121" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="PARTNO" value="CC0603KRX7R9BB104" x="17.78" y="79.248" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="19.558" y="78.486" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="IC7" library="atmel" library_urn="urn:adsk.eagle:library:105" package="8S2" package3d_urn="urn:adsk.eagle:package:4359/1" value="AT45DB161D-SU" x="82.55" y="51.816" smashed="yes" rot="R90">
@@ -5436,6 +5551,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="AT45DB161D-SU" x="82.55" y="51.816" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="84.709" y="48.9585" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="1455040" x="82.55" y="51.816" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PARTNO" value="AT45DB161D-SU" x="82.55" y="51.816" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="82.55" y="51.816" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="84.709" y="55.88" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -5446,21 +5562,34 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R102" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="40.386" y="60.706" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.513" y="62.484" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="40.386" y="60.706" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="41.148" y="62.484" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R103" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="42.164" y="60.706" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.291" y="62.484" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="42.164" y="60.706" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="42.926" y="62.484" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R104" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="45.466" y="64.77" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.593" y="66.548" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="45.466" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="46.228" y="66.548" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R105" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k" x="43.688" y="64.77" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.815" y="66.548" size="0.8128" layer="25" font="vector" ratio="18" rot="R90"/>
+<attribute name="PARTNO" value="CRCW06031K00FKEAC" x="43.688" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="44.45" y="66.548" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="U$2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PHI-LOGO" package3d_urn="urn:adsk.eagle:package:24014368/1" value="PHI-LOGO" x="32.512" y="86.106" smashed="yes" rot="R90"/>
+<element name="U$2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PHI-LOGO" package3d_urn="urn:adsk.eagle:package:24014368/1" value="PHI-LOGO" x="32.512" y="86.106" smashed="yes" rot="R90">
+<attribute name="PARTNO" value="*" x="32.512" y="86.106" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="L7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="L1812" package3d_urn="urn:adsk.eagle:package:23494/2" value="5.6uH" x="137.16" y="65.532" smashed="yes">
+<attribute name="NAME" x="135.255" y="67.437" size="1.27" layer="25"/>
+<attribute name="PARTNO" value="PM1812-5R6J-RC" x="137.16" y="65.532" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="3" x="137.16" y="65.532" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="L" x="137.16" y="65.532" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="135.255" y="62.357" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -6974,12 +7103,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="83.566" y1="88.734" x2="80.43" y2="88.734" width="1.016" layer="1"/>
 <wire x1="80.43" y1="88.734" x2="80.01" y2="89.154" width="1.016" layer="1"/>
 </signal>
-<signal name="N$52">
-<contactref element="U2" pad="1"/>
-<contactref element="L2" pad="2"/>
-<wire x1="141.986" y1="66.548" x2="140.12" y2="64.682" width="0.508" layer="1"/>
-<wire x1="140.12" y1="64.682" x2="138.43" y2="64.682" width="0.508" layer="1"/>
-</signal>
 <signal name="N$53">
 <contactref element="U2" pad="5"/>
 <contactref element="JP6" pad="5"/>
@@ -6991,13 +7114,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="141.986" y1="79.248" x2="138.176" y2="79.248" width="0.508" layer="1"/>
 </signal>
 <signal name="N$56">
-<contactref element="L2" pad="1"/>
 <contactref element="C51" pad="2"/>
 <contactref element="JP6" pad="1"/>
-<wire x1="138.43" y1="66.382" x2="138.364" y2="66.448" width="0.508" layer="1"/>
-<wire x1="138.364" y1="66.448" x2="138.364" y2="68.834" width="0.508" layer="1"/>
 <wire x1="138.364" y1="68.834" x2="138.364" y2="71.44" width="0.508" layer="1"/>
 <wire x1="138.364" y1="71.44" x2="138.176" y2="71.628" width="0.508" layer="1"/>
+<contactref element="L7" pad="1"/>
+<wire x1="136.3304" y1="66.6524" x2="135.21" y2="65.532" width="0.508" layer="1"/>
+<wire x1="136.9243875" y1="66.6524" x2="136.3304" y2="66.6524" width="0.508" layer="1"/>
+<wire x1="138.364" y1="68.834" x2="138.364" y2="68.0920125" width="0.508" layer="1"/>
+<wire x1="138.364" y1="68.0920125" x2="136.9243875" y2="66.6524" width="0.508" layer="1"/>
 </signal>
 <signal name="N$55">
 <contactref element="U2" pad="4"/>
@@ -8184,18 +8309,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="142.5566" y1="55.03" x2="142.5194" y2="55.0672" width="0.508" layer="1"/>
 <wire x1="135.636" y1="79.248" x2="135.636" y2="78.2166875" width="0.508" layer="1"/>
 <wire x1="135.636" y1="78.2166875" x2="136.7028" y2="77.1498875" width="0.508" layer="1"/>
-<wire x1="136.7028" y1="71.0116125" x2="135.433" y2="69.7418125" width="0.508" layer="1"/>
-<wire x1="136.7028" y1="77.1498875" x2="136.7028" y2="71.0116125" width="0.508" layer="1"/>
+<wire x1="136.7028" y1="71.0116125" x2="136.7028" y2="77.1498875" width="0.508" layer="1"/>
 <wire x1="142.748" y1="62.484" x2="141.986" y2="63.246" width="0.508" layer="1"/>
 <wire x1="142.748" y1="55.2214" x2="142.5566" y2="55.03" width="0.508" layer="1"/>
 <wire x1="142.748" y1="62.484" x2="142.748" y2="55.2214" width="0.508" layer="1"/>
-<wire x1="137.16" y1="63.246" x2="135.433" y2="64.973" width="0.508" layer="1"/>
-<wire x1="141.986" y1="63.246" x2="137.16" y2="63.246" width="0.508" layer="1"/>
-<wire x1="135.433" y1="69.7418125" x2="135.433" y2="64.973" width="0.508" layer="1"/>
 <wire x1="135.636" y1="79.248" x2="133.284" y2="79.248" width="0.508" layer="1"/>
 <wire x1="133.284" y1="79.248" x2="133.096" y2="79.436" width="0.508" layer="1"/>
 <wire x1="133.096" y1="79.436" x2="130.81" y2="81.722" width="0.508" layer="1"/>
 <wire x1="130.81" y1="81.722" x2="130.81" y2="82.804" width="0.508" layer="1"/>
+<wire x1="134.3071875" y1="63.246" x2="133.879" y2="63.6741875" width="0.508" layer="1"/>
+<wire x1="133.879" y1="63.6741875" x2="133.879" y2="68.1878125" width="0.508" layer="1"/>
+<wire x1="141.986" y1="63.246" x2="134.3071875" y2="63.246" width="0.508" layer="1"/>
+<wire x1="133.879" y1="68.1878125" x2="136.7028" y2="71.0116125" width="0.508" layer="1"/>
 </signal>
 <signal name="-15V">
 <contactref element="IC11" pad="2"/>
@@ -8242,7 +8367,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="142.676" y1="51.418" x2="141.804" y2="50.546" width="0.508" layer="1"/>
 <wire x1="141.804" y1="50.546" x2="141.804" y2="49.986" width="0.508" layer="1"/>
 <wire x1="141.804" y1="49.986" x2="140.078" y2="48.26" width="0.508" layer="1"/>
-<wire x1="140.078" y1="48.26" x2="137.414" y2="48.26" width="0.508" layer="1"/>
+<wire x1="140.078" y1="48.26" x2="137.502" y2="48.26" width="0.508" layer="1"/>
 <wire x1="140.208" y1="55.0672" x2="140.208" y2="61.265" width="0.508" layer="1"/>
 <wire x1="142.676" y1="52.578" x2="140.042" y2="52.578" width="0.508" layer="1"/>
 <wire x1="140.208" y1="55.0672" x2="140.208" y2="52.744" width="0.508" layer="1"/>
@@ -8280,7 +8405,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="128.7408" y1="55.0672" x2="128.778" y2="55.03" width="0.508" layer="1"/>
 <wire x1="128.778" y1="55.03" x2="130.39" y2="55.03" width="0.508" layer="1"/>
 <wire x1="130.39" y1="55.03" x2="130.719" y2="54.701" width="0.508" layer="1"/>
-<wire x1="132.842" y1="52.578" x2="132.842" y2="54.988" width="0.508" layer="1"/>
+<wire x1="132.842" y1="52.666" x2="132.842" y2="54.988" width="0.508" layer="1"/>
 </signal>
 <signal name="N$88">
 <contactref element="IC11" pad="1"/>
@@ -8421,13 +8546,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$74">
 <contactref element="APWR_EN" pad="2"/>
 <contactref element="L5" pad="2"/>
-<wire x1="135.89" y1="48.26" x2="135.636" y2="46.482" width="0.508" layer="1"/>
+<wire x1="135.802" y1="48.26" x2="135.636" y2="46.482" width="0.508" layer="1"/>
 <wire x1="135.636" y1="46.482" x2="134.62" y2="45.466" width="0.508" layer="1"/>
 </signal>
 <signal name="N$90">
 <contactref element="APWR_EN" pad="4"/>
 <contactref element="L6" pad="2"/>
-<wire x1="132.842" y1="51.054" x2="132.842" y2="46.228" width="0.508" layer="1"/>
+<wire x1="132.842" y1="50.966" x2="132.842" y2="46.228" width="0.508" layer="1"/>
 <wire x1="132.842" y1="46.228" x2="132.08" y2="45.466" width="0.508" layer="1"/>
 </signal>
 <signal name="N$96">
@@ -8545,6 +8670,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="91.1341125" y1="58.039" x2="87.88306875" y2="58.039" width="0.254" layer="1"/>
 <wire x1="87.88306875" y1="58.039" x2="86.8454" y2="57.00133125" width="0.254" layer="1"/>
 <wire x1="86.8454" y1="57.00133125" x2="86.8454" y2="54.6024" width="0.254" layer="1"/>
+</signal>
+<signal name="N$52">
+<contactref element="U2" pad="1"/>
+<contactref element="L7" pad="2"/>
+<wire x1="139.11" y1="65.532" x2="140.126" y2="66.548" width="0.508" layer="1"/>
+<wire x1="140.126" y1="66.548" x2="141.986" y2="66.548" width="0.508" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
