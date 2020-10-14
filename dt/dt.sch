@@ -21094,7 +21094,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="C74" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="18pF"/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C75" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7uF"/>
+<part name="C75" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4.7u"/>
 <part name="OSC1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="OSCILLATOR" device="" package3d_urn="urn:adsk.eagle:package:23815268/1" value="12.288MHz">
 <attribute name="PARTNO" value="C3391-12.288"/>
 </part>
@@ -21129,21 +21129,21 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="R61" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0"/>
 <part name="R62" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0"/>
 <part name="U6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCM1681PWP" device="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/3"/>
-<part name="C80" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1uF Ceramic"/>
+<part name="C80" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic"/>
 <part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND62" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C81" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C81" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="GND63" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C82" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C82" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="L3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3">
 <attribute name="PARTNO" value="BLM18KG601SN1D"/>
 </part>
-<part name="C83" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C83" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="GND65" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C84" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1uF Ceramic"/>
-<part name="C85" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1uF Ceramic"/>
+<part name="C84" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic"/>
+<part name="C85" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic"/>
 <part name="R63" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0"/>
 <part name="R64" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0"/>
 <part name="R65" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
@@ -21169,21 +21169,21 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND71" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCM1681PWP" device="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/3"/>
-<part name="C86" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1uF Ceramic"/>
+<part name="C86" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic"/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND73" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C87" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C87" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="GND74" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C88" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C88" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="L4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3">
 <attribute name="PARTNO" value="BLM18KG601SN1D"/>
 </part>
-<part name="C89" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C89" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C90" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1uF Ceramic"/>
-<part name="C91" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1uF Ceramic"/>
+<part name="C90" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic"/>
+<part name="C91" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic"/>
 <part name="R75" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0"/>
 <part name="R76" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0"/>
 <part name="R77" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
@@ -21207,8 +21207,8 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="R86" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
 <part name="GND82" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND83" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C92" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
-<part name="C93" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10uF Electrolyte"/>
+<part name="C92" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
+<part name="C93" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" package3d_urn="urn:adsk.eagle:package:23799139/1" value="10u Electrolyte"/>
 <part name="R87" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
 <part name="R88" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
 <part name="R89" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="22"/>
@@ -21230,7 +21230,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="R95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="2.2k 0.1%"/>
 <part name="C95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n"/>
 <part name="C96" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u"/>
-<part name="C97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1uF 12065C105M4Z2A"/>
+<part name="C97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u 12065C105M4Z2A"/>
 <part name="D2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="DIODE" device="SOD-123" value="MBR120LSFT3G"/>
 <part name="U$27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="_0603" package3d_urn="urn:adsk.eagle:package:23799135/2" value="ILHB0805ER601V"/>
@@ -21247,7 +21247,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="C100" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u"/>
 <part name="D4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="DIODE" device="SOD-123" value="MBR120LSFT3G"/>
 <part name="L6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="_0603" package3d_urn="urn:adsk.eagle:package:23799135/2" value="ILHB0805ER601V"/>
-<part name="C101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1uF 12065C105M4Z2A"/>
+<part name="C101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u 12065C105M4Z2A"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
