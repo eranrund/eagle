@@ -23161,7 +23161,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <attribute name="PARTNO" value="WBL2UOAGQR05CLR"/>
 </part>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL072" device="D" package3d_urn="urn:adsk.eagle:package:16404/2">
-<attribute name="PARTNO" value="TL072"/>
+<attribute name="PARTNO" value="TL072SG-13"/>
 </part>
 <part name="C1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="470pF">
 <attribute name="PARTNO" value="C0603C471J5GACTU"/>
@@ -23230,7 +23230,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL072" device="D" package3d_urn="urn:adsk.eagle:package:16404/2">
-<attribute name="PARTNO" value="TL072"/>
+<attribute name="PARTNO" value="TL072SG-13"/>
 </part>
 <part name="C9" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="470pF">
 <attribute name="PARTNO" value="C0603C471J5GACTU"/>
@@ -23299,7 +23299,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL072" device="D" package3d_urn="urn:adsk.eagle:package:16404/2">
-<attribute name="PARTNO" value="TL072"/>
+<attribute name="PARTNO" value="TL072SG-13"/>
 </part>
 <part name="C17" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="470pF">
 <attribute name="PARTNO" value="C0603C471J5GACTU"/>
@@ -23368,7 +23368,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC4" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL072" device="D" package3d_urn="urn:adsk.eagle:package:16404/2">
-<attribute name="PARTNO" value="TL072"/>
+<attribute name="PARTNO" value="TL072SG-13"/>
 </part>
 <part name="C25" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="470pF">
 <attribute name="PARTNO" value="C0603C471J5GACTU"/>
@@ -23437,7 +23437,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC5" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL072" device="D" package3d_urn="urn:adsk.eagle:package:16404/2">
-<attribute name="PARTNO" value="TL072"/>
+<attribute name="PARTNO" value="TL072SG-13"/>
 </part>
 <part name="C33" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="470pF">
 <attribute name="PARTNO" value="C0603C471J5GACTU"/>
@@ -23506,7 +23506,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC6" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL072" device="D" package3d_urn="urn:adsk.eagle:package:16404/2">
-<attribute name="PARTNO" value="TL072"/>
+<attribute name="PARTNO" value="TL072SG-13"/>
 </part>
 <part name="C41" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="470pF">
 <attribute name="PARTNO" value="C0603C471J5GACTU"/>
@@ -23597,10 +23597,10 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <attribute name="PARTNO" value="G800W306018EU"/>
 </part>
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1">
-<attribute name="PARTNO" value="*"/>
+<attribute name="PARTNO" value="KEYSTONE 5001"/>
 </part>
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1">
-<attribute name="PARTNO" value="*"/>
+<attribute name="PARTNO" value="KEYSTONE 5001"/>
 </part>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCN2-S5-D12-S" device="" package3d_urn="urn:adsk.eagle:package:23798928/2" value="PCN2-S5-D15-S">
@@ -23623,19 +23623,19 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 </part>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1">
-<attribute name="PARTNO" value="*"/>
+<attribute name="PARTNO" value="KEYSTONE 5001"/>
 </part>
 <part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1">
-<attribute name="PARTNO" value="*"/>
+<attribute name="PARTNO" value="KEYSTONE 5001"/>
 </part>
 <part name="JP6" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4QE" device="" package3d_urn="urn:adsk.eagle:package:15451/1">
 <attribute name="PARTNO" value="*"/>
 </part>
 <part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1">
-<attribute name="PARTNO" value="*"/>
+<attribute name="PARTNO" value="KEYSTONE 5001"/>
 </part>
 <part name="U3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="STM32F7X3ZXT" device="" package3d_urn="urn:adsk.eagle:package:23618880/2">
-<attribute name="PARTNO" value="STM32F733ZXT"/>
+<attribute name="PARTNO" value="STM32F733ZET6"/>
 </part>
 <part name="C54" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n">
 <attribute name="PARTNO" value="CC0603KRX7R9BB104"/>
