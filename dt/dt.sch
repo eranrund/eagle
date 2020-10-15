@@ -1656,7 +1656,7 @@ grid 3.5 mm, diameter 10 mm</description>
 <text x="-3.81" y="4.3942" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
-<package name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:footprint:23798892/3" library_version="47">
+<package name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:footprint:23798892/4" library_version="59">
 <smd name="1" x="-2.9718" y="4.225075" dx="1.778" dy="0.3556" layer="1"/>
 <smd name="2" x="-2.9718" y="3.5750625" dx="1.778" dy="0.3556" layer="1"/>
 <smd name="3" x="-2.9718" y="2.92505" dx="1.778" dy="0.3556" layer="1"/>
@@ -1810,9 +1810,8 @@ grid 3.5 mm, diameter 10 mm</description>
 <wire x1="0.3048" y1="4.9022" x2="-0.3048" y2="4.9022" width="0.1524" layer="51"/>
 <wire x1="-0.3048" y1="4.9022" x2="-2.2352" y2="4.9022" width="0.1524" layer="51"/>
 <wire x1="-2.2352" y1="4.9022" x2="-2.2352" y2="-4.9022" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="4.9022" x2="-0.3048" y2="4.9022" width="0.1524" layer="51" curve="-180"/>
+<wire x1="0.3048" y1="4.9022" x2="-0.3048" y2="4.9022" width="0.1524" layer="21" curve="-180"/>
 <text x="-2.9972" y="5.715" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-2.5654" y="3.302" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-2.0066" y="-6.985" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <polygon width="0.0254" layer="31">
 <vertex x="-1.1" y="3.13"/>
@@ -1844,8 +1843,8 @@ grid 3.5 mm, diameter 10 mm</description>
 <vertex x="1.1" y="-3.13"/>
 <vertex x="1.1" y="-2.038"/>
 </polygon>
-<pad name="30" x="0" y="0" drill="1.016"/>
-<circle x="-1.778" y="4.191" radius="0.127" width="0.127" layer="21"/>
+<pad name="30" x="0" y="0" drill="1.524"/>
+<circle x="-1.524" y="4.318" radius="0.381" width="0.127" layer="21"/>
 </package>
 <package name="PWP28_6P46X2P4-L" urn="urn:adsk.eagle:footprint:23798891/1" library_version="39">
 <smd name="1" x="-2.8702" y="4.225075" dx="1.1684" dy="0.3048" layer="1"/>
@@ -3426,33 +3425,6 @@ grid 3.5 mm, diameter 10 mm</description>
 <vertex x="0.2" y="-0.2"/>
 </polygon>
 </package>
-<package name="SMADIODE" urn="urn:adsk.eagle:footprint:24063793/1" library_version="42">
-<description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
-<wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.2032" layer="51"/>
-<wire x1="2.15" y1="1.3" x2="2.15" y2="-1.3" width="0.2032" layer="51"/>
-<wire x1="2.15" y1="-1.3" x2="-2.15" y2="-1.3" width="0.2032" layer="51"/>
-<wire x1="-2.15" y1="-1.3" x2="-2.15" y2="1.3" width="0.2032" layer="51"/>
-<wire x1="-3.789" y1="-1.394" x2="-3.789" y2="-1.146" width="0.127" layer="21"/>
-<wire x1="-3.789" y1="-1.146" x2="-3.789" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="-3.789" y1="1.6" x2="3.816" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="3.816" y1="1.6" x2="3.816" y2="1.394" width="0.2032" layer="21"/>
-<wire x1="3.816" y1="1.394" x2="3.816" y2="1.3365" width="0.127" layer="21"/>
-<wire x1="3.816" y1="1.394" x2="3.816" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="3.816" y1="-1.6" x2="-3.789" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-3.789" y1="-1.6" x2="-3.789" y2="-1.146" width="0.2032" layer="21"/>
-<wire x1="0.254" y1="0.762" x2="0.254" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="0.254" y1="-0.762" x2="-0.508" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.508" y1="0" x2="0.254" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-0.508" y1="0.762" x2="-0.508" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.762" width="0.2032" layer="21"/>
-<smd name="C" x="-2.3495" y="0" dx="2.54" dy="2.54" layer="1"/>
-<smd name="A" x="2.3495" y="0" dx="2.54" dy="2.54" layer="1" rot="R180"/>
-<text x="-2.54" y="1.905" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-2.286" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.825" y1="-1.1" x2="-2.175" y2="1.1" layer="51"/>
-<rectangle x1="2.175" y1="-1.1" x2="2.825" y2="1.1" layer="51" rot="R180"/>
-<rectangle x1="-1.75" y1="-1.225" x2="-1.075" y2="1.225" layer="51"/>
-</package>
 <package name="DO-1N4148" urn="urn:adsk.eagle:footprint:24063794/1" library_version="42">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
@@ -3636,13 +3608,18 @@ NS Package M08A</description>
 <rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
 <rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
 </package>
-<package name="CHIPLED_0805" urn="urn:adsk.eagle:footprint:1429774/2" library_version="50">
+<package name="CHIPLED_0805" urn="urn:adsk.eagle:footprint:1429774/3" library_version="59">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
 Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <wire x1="-0.35" y1="0.925" x2="0.35" y2="0.925" width="0.1016" layer="51" curve="162.394521"/>
 <wire x1="-0.35" y1="-0.925" x2="0.35" y2="-0.925" width="0.1016" layer="51" curve="-162.394521"/>
 <wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
 <wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
+<wire x1="0.762" y1="-0.381" x2="-0.762" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="-0.762" y1="-0.381" x2="0" y2="0.381" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.381" x2="0.762" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="0.762" y1="0.381" x2="0" y2="0.381" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.381" x2="-0.762" y2="0.381" width="0.2032" layer="21"/>
 <circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
 <smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
 <smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
@@ -4257,6 +4234,33 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <text x="-1.016" y="-1.143" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
+<package name="SMADIODE" urn="urn:adsk.eagle:footprint:24063793/2" library_version="59">
+<description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
+<wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="1.3" x2="2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="-1.3" x2="-2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="-2.15" y1="-1.3" x2="-2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="-3.789" y1="-1.394" x2="-3.789" y2="-1.146" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="-1.146" x2="-3.789" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-3.789" y1="1.6" x2="3.816" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="3.816" y1="1.6" x2="3.816" y2="1.394" width="0.2032" layer="21"/>
+<wire x1="3.816" y1="1.394" x2="3.816" y2="1.3365" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.394" x2="3.816" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="3.816" y1="-1.6" x2="-3.789" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.789" y1="-1.6" x2="-3.789" y2="-1.146" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="0.762" x2="0.254" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="-0.762" x2="-0.508" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="0" x2="0.254" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="0.762" x2="-0.508" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.762" width="0.2032" layer="21"/>
+<smd name="C" x="-2.3495" y="0" dx="2.54" dy="2.54" layer="1"/>
+<smd name="A" x="2.3495" y="0" dx="2.54" dy="2.54" layer="1" rot="R180"/>
+<text x="-2.54" y="1.905" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.286" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.825" y1="-1.1" x2="-2.175" y2="1.1" layer="51"/>
+<rectangle x1="2.175" y1="-1.1" x2="2.825" y2="1.1" layer="51" rot="R180"/>
+<rectangle x1="-1.75" y1="-1.225" x2="-1.075" y2="1.225" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="NSJ12HF1" urn="urn:adsk.eagle:package:23639874/2" type="model" library_version="12" library_locally_modified="yes">
@@ -4512,7 +4516,7 @@ grid 3.5 mm, diameter 10 mm</description>
 <packageinstance name="PWP28_6P46X2P4"/>
 </packageinstances>
 </package3d>
-<package3d name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:package:23798895/4" type="model" library_version="47">
+<package3d name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:package:23798895/5" type="model" library_version="59">
 <packageinstances>
 <packageinstance name="PWP28_6P46X2P4-M"/>
 </packageinstances>
@@ -4532,12 +4536,6 @@ grid 3.5 mm, diameter 10 mm</description>
 &lt;p&gt;Source: http://www.diodes.com/datasheets/ds30139.pdf&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOD-123"/>
-</packageinstances>
-</package3d>
-<package3d name="SMADIODE" urn="urn:adsk.eagle:package:24063800/1" type="box" library_version="42">
-<description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="SMADIODE"/>
 </packageinstances>
 </package3d>
 <package3d name="DO-1N4148" urn="urn:adsk.eagle:package:24063801/1" type="box" library_version="42">
@@ -4611,7 +4609,7 @@ NS Package M08A</description>
 <packageinstance name="SOT23-WIDE"/>
 </packageinstances>
 </package3d>
-<package3d name="CHIPLED_0805" urn="urn:adsk.eagle:package:15137317/2" type="model" library_version="50">
+<package3d name="CHIPLED_0805" urn="urn:adsk.eagle:package:15137317/3" type="model" library_version="59">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
 Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <packageinstances>
@@ -4905,6 +4903,12 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP20SQ"/>
+</packageinstances>
+</package3d>
+<package3d name="SMADIODE" urn="urn:adsk.eagle:package:24063800/2" type="box" library_version="59">
+<description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SMADIODE"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -7454,7 +7458,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCM1681PWP" urn="urn:adsk.eagle:component:23798896/4" prefix="U" library_version="47">
+<deviceset name="PCM1681PWP" urn="urn:adsk.eagle:component:23798896/5" prefix="U" library_version="59">
 <gates>
 <gate name="A" symbol="PCM1681_PWP_28" x="0" y="0"/>
 <gate name="B" symbol="PCM1681_PWP_28_A" x="89.916" y="0"/>
@@ -7543,7 +7547,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="B" pin="VDD" pad="9"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23798895/4"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23798895/5"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -7627,7 +7631,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE" urn="urn:adsk.eagle:component:24063807/3" prefix="D" uservalue="yes" library_version="55">
+<deviceset name="DIODE" urn="urn:adsk.eagle:component:24063807/4" prefix="D" uservalue="yes" library_version="59">
 <description>&lt;b&gt;Diode&lt;/b&gt;
 &lt;p&gt;
 &lt;h3&gt;SMA&lt;/h3&gt;
@@ -7827,7 +7831,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24063800/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24063800/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -7980,7 +7984,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" urn="urn:adsk.eagle:component:24103578/1" prefix="LED" uservalue="yes" library_version="50">
+<deviceset name="LED" urn="urn:adsk.eagle:component:24103578/2" prefix="LED" uservalue="yes" library_version="59">
 <description>&lt;p&gt;&lt;b&gt;LED&lt;/b&gt;&lt;/p&gt;
 &lt;b&gt;0603&lt;/b&gt; - 0603 Surface Mount Package
 &lt;hr&gt;
@@ -8038,7 +8042,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15137317/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15137317/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -21927,7 +21931,7 @@ http://www.tag-connect.com</description>
 <part name="C50" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
-<part name="LED2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="LED" device="0805" package3d_urn="urn:adsk.eagle:package:15137317/2">
+<part name="LED2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="LED" device="0805" package3d_urn="urn:adsk.eagle:package:15137317/3">
 <attribute name="PARTNO" value="AP2012HD"/>
 </part>
 <part name="R49" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k">
@@ -22057,7 +22061,7 @@ http://www.tag-connect.com</description>
 </part>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="-NL">
+<part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="-NL" override_package3d_urn="urn:adsk.eagle:package:24105082/2" override_package_urn="urn:adsk.eagle:footprint:24105083/1">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="DNP" value="T"/>
 </part>
@@ -22146,7 +22150,7 @@ http://www.tag-connect.com</description>
 <part name="R62" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0">
 <attribute name="PARTNO" value="CRCW06030000Z0EBC"/>
 </part>
-<part name="U6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCM1681PWP" device="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/4">
+<part name="U6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCM1681PWP" device="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/5">
 <attribute name="PARTNO" value="PCM1681PWP"/>
 </part>
 <part name="C80" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic">
@@ -22232,7 +22236,7 @@ http://www.tag-connect.com</description>
 </part>
 <part name="GND71" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCM1681PWP" device="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/4">
+<part name="U7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="PCM1681PWP" device="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/5">
 <attribute name="PARTNO" value="PCM1681PWP"/>
 </part>
 <part name="C86" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1u Ceramic">
@@ -27806,6 +27810,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
