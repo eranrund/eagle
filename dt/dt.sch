@@ -25655,7 +25655,7 @@ isolated DC DC to GND?</text>
 <attribute name="VALUE" x="114.3" y="76.2" size="1.778" layer="96"/>
 </instance>
 <instance part="P+8" gate="1" x="7.62" y="58.42" smashed="yes" rot="R90">
-<attribute name="VALUE" x="12.7" y="55.88" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="11.938" y="62.484" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R87" gate="G$1" x="246.38" y="99.06" smashed="yes">
 <attribute name="NAME" x="243.84" y="101.092" size="1.27" layer="95" font="vector"/>
@@ -25721,7 +25721,7 @@ isolated DC DC to GND?</text>
 <attribute name="VALUE" x="137.16" y="15.24" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V20" gate="G$1" x="129.54" y="5.08" smashed="yes" rot="R90">
-<attribute name="VALUE" x="134.62" y="2.54" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="129.032" y="6.35" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
