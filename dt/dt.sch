@@ -22497,6 +22497,20 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 </spice>
 <attribute name="PARTNO" value="PM1812-5R6J-RC"/>
 </part>
+<part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP13" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP14" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP15" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP16" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP17" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TP18" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="GND95" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25652,7 +25666,7 @@ isolated DC DC to GND?</text>
 <attribute name="PARTNO" x="160.02" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+5" gate="1" x="119.38" y="73.66" smashed="yes" rot="R270">
-<attribute name="VALUE" x="114.3" y="76.2" size="1.778" layer="96"/>
+<attribute name="VALUE" x="114.3" y="73.66" size="1.778" layer="96"/>
 </instance>
 <instance part="P+8" gate="1" x="7.62" y="58.42" smashed="yes" rot="R90">
 <attribute name="VALUE" x="11.938" y="62.484" size="1.778" layer="96" rot="R180"/>
@@ -25722,6 +25736,61 @@ isolated DC DC to GND?</text>
 </instance>
 <instance part="+3V20" gate="G$1" x="129.54" y="5.08" smashed="yes" rot="R90">
 <attribute name="VALUE" x="129.032" y="6.35" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="TP6" gate="G$1" x="259.08" y="101.6" smashed="yes">
+<attribute name="NAME" x="257.81" y="102.87" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="260.35" y="100.33" size="1.778" layer="97"/>
+</instance>
+<instance part="TP7" gate="G$1" x="261.62" y="99.06" smashed="yes">
+<attribute name="NAME" x="260.35" y="100.33" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="262.89" y="97.79" size="1.778" layer="97"/>
+</instance>
+<instance part="TP8" gate="G$1" x="264.16" y="96.52" smashed="yes">
+<attribute name="NAME" x="262.89" y="97.79" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="265.43" y="95.25" size="1.778" layer="97"/>
+</instance>
+<instance part="TP9" gate="G$1" x="266.7" y="93.98" smashed="yes">
+<attribute name="NAME" x="265.43" y="95.25" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="267.97" y="92.71" size="1.778" layer="97"/>
+</instance>
+<instance part="TP10" gate="G$1" x="269.24" y="91.44" smashed="yes">
+<attribute name="NAME" x="267.97" y="92.71" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="270.51" y="90.17" size="1.778" layer="97"/>
+</instance>
+<instance part="TP11" gate="G$1" x="104.14" y="91.44" smashed="yes">
+<attribute name="NAME" x="102.87" y="92.71" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="105.41" y="90.17" size="1.778" layer="97"/>
+</instance>
+<instance part="TP12" gate="G$1" x="106.68" y="88.9" smashed="yes">
+<attribute name="NAME" x="105.41" y="90.17" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="107.95" y="87.63" size="1.778" layer="97"/>
+</instance>
+<instance part="TP13" gate="G$1" x="109.22" y="86.36" smashed="yes">
+<attribute name="NAME" x="107.95" y="87.63" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="110.49" y="85.09" size="1.778" layer="97"/>
+</instance>
+<instance part="TP14" gate="G$1" x="111.76" y="83.82" smashed="yes">
+<attribute name="NAME" x="110.49" y="85.09" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="113.03" y="82.55" size="1.778" layer="97"/>
+</instance>
+<instance part="TP15" gate="G$1" x="114.3" y="81.28" smashed="yes">
+<attribute name="NAME" x="113.03" y="82.55" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="115.57" y="80.01" size="1.778" layer="97"/>
+</instance>
+<instance part="TP16" gate="G$1" x="22.86" y="-10.16" smashed="yes">
+<attribute name="NAME" x="21.59" y="-8.89" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="24.13" y="-11.43" size="1.778" layer="97"/>
+</instance>
+<instance part="TP17" gate="G$1" x="27.94" y="-10.16" smashed="yes">
+<attribute name="NAME" x="26.67" y="-8.89" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="29.21" y="-11.43" size="1.778" layer="97"/>
+</instance>
+<instance part="TP18" gate="G$1" x="33.02" y="-10.16" smashed="yes">
+<attribute name="NAME" x="31.75" y="-8.89" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="34.29" y="-11.43" size="1.778" layer="97"/>
+</instance>
+<instance part="GND95" gate="1" x="22.86" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="20.32" y="-20.32" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -25879,6 +25948,17 @@ isolated DC DC to GND?</text>
 <pinref part="IC7" gate="G$1" pin="GND"/>
 <pinref part="GND90" gate="1" pin="GND"/>
 <wire x1="170.18" y1="0" x2="162.56" y2="0" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TP18" gate="G$1" pin="TP"/>
+<pinref part="TP16" gate="G$1" pin="TP"/>
+<wire x1="33.02" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="GND95" gate="1" pin="GND"/>
+<wire x1="27.94" y1="-12.7" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-12.7" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="22.86" y="-12.7"/>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<junction x="27.94" y="-12.7"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -26278,8 +26358,11 @@ isolated DC DC to GND?</text>
 <net name="SAI_MCLK" class="0">
 <segment>
 <pinref part="R87" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
-<label x="259.08" y="99.06" size="1.778" layer="95"/>
+<wire x1="251.46" y1="99.06" x2="259.08" y2="99.06" width="0.1524" layer="91"/>
+<label x="274.32" y="99.06" size="1.778" layer="95"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="259.08" y1="99.06" x2="279.4" y2="99.06" width="0.1524" layer="91"/>
+<junction x="259.08" y="99.06"/>
 </segment>
 </net>
 <net name="N$66" class="0">
@@ -26292,8 +26375,11 @@ isolated DC DC to GND?</text>
 <net name="SAI_DATA2" class="0">
 <segment>
 <pinref part="R88" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="96.52" x2="264.16" y2="96.52" width="0.1524" layer="91"/>
-<label x="259.08" y="96.52" size="1.778" layer="95"/>
+<wire x1="251.46" y1="96.52" x2="261.62" y2="96.52" width="0.1524" layer="91"/>
+<label x="274.32" y="96.52" size="1.778" layer="95"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<wire x1="261.62" y1="96.52" x2="279.4" y2="96.52" width="0.1524" layer="91"/>
+<junction x="261.62" y="96.52"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -26307,7 +26393,10 @@ isolated DC DC to GND?</text>
 <segment>
 <pinref part="R89" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="93.98" x2="264.16" y2="93.98" width="0.1524" layer="91"/>
-<label x="259.08" y="93.98" size="1.778" layer="95"/>
+<label x="274.32" y="93.98" size="1.778" layer="95"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="264.16" y1="93.98" x2="279.4" y2="93.98" width="0.1524" layer="91"/>
+<junction x="264.16" y="93.98"/>
 </segment>
 </net>
 <net name="N$70" class="0">
@@ -26320,8 +26409,11 @@ isolated DC DC to GND?</text>
 <net name="SAI_BCK" class="0">
 <segment>
 <pinref part="R90" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="91.44" x2="264.16" y2="91.44" width="0.1524" layer="91"/>
-<label x="259.08" y="91.44" size="1.778" layer="95"/>
+<wire x1="251.46" y1="91.44" x2="266.7" y2="91.44" width="0.1524" layer="91"/>
+<label x="274.32" y="91.44" size="1.778" layer="95"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="266.7" y1="91.44" x2="279.4" y2="91.44" width="0.1524" layer="91"/>
+<junction x="266.7" y="91.44"/>
 </segment>
 </net>
 <net name="N$71" class="0">
@@ -26334,8 +26426,11 @@ isolated DC DC to GND?</text>
 <net name="SAI_DATA1" class="0">
 <segment>
 <pinref part="R91" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="88.9" x2="264.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="259.08" y="88.9" size="1.778" layer="95"/>
+<wire x1="251.46" y1="88.9" x2="269.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="274.32" y="88.9" size="1.778" layer="95"/>
+<pinref part="TP10" gate="G$1" pin="TP"/>
+<wire x1="269.24" y1="88.9" x2="279.4" y2="88.9" width="0.1524" layer="91"/>
+<junction x="269.24" y="88.9"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
@@ -26363,8 +26458,11 @@ isolated DC DC to GND?</text>
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PA5"/>
-<wire x1="99.06" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<label x="114.3" y="83.82" size="1.778" layer="95"/>
+<wire x1="99.06" y1="83.82" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
+<label x="124.46" y="83.82" size="1.778" layer="95"/>
+<pinref part="TP13" gate="G$1" pin="TP"/>
+<wire x1="109.22" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<junction x="109.22" y="83.82"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="SCK"/>
@@ -26375,8 +26473,11 @@ isolated DC DC to GND?</text>
 <net name="SPI_MISO" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PA6"/>
-<wire x1="99.06" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
-<label x="114.3" y="81.28" size="1.778" layer="95"/>
+<wire x1="99.06" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+<label x="124.46" y="81.28" size="1.778" layer="95"/>
+<pinref part="TP14" gate="G$1" pin="TP"/>
+<wire x1="111.76" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<junction x="111.76" y="81.28"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="SO"/>
@@ -26387,8 +26488,11 @@ isolated DC DC to GND?</text>
 <net name="SPI_MOSI" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PA7"/>
-<wire x1="99.06" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
-<label x="114.3" y="78.74" size="1.778" layer="95"/>
+<wire x1="99.06" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<label x="124.46" y="78.74" size="1.778" layer="95"/>
+<pinref part="TP15" gate="G$1" pin="TP"/>
+<wire x1="114.3" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<junction x="114.3" y="78.74"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="SI"/>
@@ -26399,15 +26503,21 @@ isolated DC DC to GND?</text>
 <net name="SPI_CS_DAC2" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PA4"/>
-<wire x1="99.06" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
-<label x="114.3" y="86.36" size="1.778" layer="95"/>
+<wire x1="99.06" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<label x="124.46" y="86.36" size="1.778" layer="95"/>
+<pinref part="TP12" gate="G$1" pin="TP"/>
+<wire x1="106.68" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<junction x="106.68" y="86.36"/>
 </segment>
 </net>
 <net name="SPI_CS_DAC1" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PA3"/>
-<wire x1="99.06" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
-<label x="114.3" y="88.9" size="1.778" layer="95"/>
+<wire x1="99.06" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
+<label x="124.46" y="88.9" size="1.778" layer="95"/>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<wire x1="104.14" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
+<junction x="104.14" y="88.9"/>
 </segment>
 </net>
 <net name="LED2" class="0">
@@ -27668,16 +27778,12 @@ isolated DC DC to GND?</text>
 <approved hash="104,4,101.6,20.32,U7B,AGND2,GND,,,"/>
 <approved hash="104,4,101.6,17.78,U7B,DGND,GND,,,"/>
 <approved hash="104,3,162.56,10.16,IC7,VCC,+3V3,,,"/>
-<approved hash="113,1,173.042,-77.47,LED2,,,,,"/>
 <approved hash="113,1,175.555,-56.8214,JP1,,,,,"/>
-<approved hash="113,1,190.5,-57.1754,L1,,,,,"/>
 <approved hash="113,1,105.41,-18.8622,JP6,,,,,"/>
-<approved hash="113,4,30.48,179.045,L3,,,,,"/>
 <approved hash="113,4,-19.3786,192.065,JP2,,,,,"/>
 <approved hash="113,4,39.6646,247.979,JP3,,,,,"/>
 <approved hash="113,4,-34.6186,214.925,JP4,,,,,"/>
 <approved hash="113,4,-19.3786,161.585,JP5,,,,,"/>
-<approved hash="113,4,27.94,41.8846,L4,,,,,"/>
 <approved hash="113,4,-19.3786,54.9046,JP7,,,,,"/>
 <approved hash="113,4,39.6646,110.819,JP8,,,,,"/>
 <approved hash="113,4,-34.6186,77.7646,JP9,,,,,"/>
