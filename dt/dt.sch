@@ -3636,28 +3636,18 @@ NS Package M08A</description>
 <rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
 <rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
 </package>
-<package name="CHIPLED_0805" library_version="49" library_locally_modified="yes">
-<description>&lt;b&gt;CHIPLED 0805&lt;/b&gt;</description>
+<package name="CHIPLED_0805" urn="urn:adsk.eagle:footprint:1429774/2" library_version="50">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <wire x1="-0.35" y1="0.925" x2="0.35" y2="0.925" width="0.1016" layer="51" curve="162.394521"/>
 <wire x1="-0.35" y1="-0.925" x2="0.35" y2="-0.925" width="0.1016" layer="51" curve="-162.394521"/>
 <wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
 <wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
-<wire x1="-0.4" y1="0.2" x2="0" y2="0.2" width="0.2032" layer="21"/>
-<wire x1="0" y1="0.2" x2="0.4" y2="0.2" width="0.2032" layer="21"/>
-<wire x1="0" y1="0.2" x2="-0.4" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="-0.4" y1="-0.2" x2="0.4" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="0.4" y1="-0.2" x2="0" y2="0.2" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="-1.9" x2="-0.85" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="-1.9" x2="-0.85" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="1.9" x2="0.85" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="1.9" x2="0.85" y2="-1.9" width="0.2032" layer="21"/>
-<circle x="-0.45" y="0.85" radius="0.103" width="0.0762" layer="51"/>
+<circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
 <smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
 <smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.016" y="-1.778" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="1.397" y="-1.778" size="0.4064" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-0.1" y="-1.4" size="0.254" layer="51">A</text>
-<text x="-0.1" y="1.2" size="0.254" layer="51">C</text>
+<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
 <rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
 <rectangle x1="0.175" y1="0.5" x2="0.325" y2="0.75" layer="51"/>
@@ -3667,10 +3657,11 @@ NS Package M08A</description>
 <rectangle x1="0.175" y1="-0.75" x2="0.325" y2="-0.5" layer="51"/>
 <rectangle x1="-0.325" y1="-0.75" x2="-0.175" y2="-0.5" layer="51"/>
 <rectangle x1="-0.2" y1="-0.675" x2="0.2" y2="-0.5" layer="51"/>
-<rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.762" layer="51"/>
+<rectangle x1="-0.1" y1="0" x2="0.1" y2="0.2" layer="21"/>
+<rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
 <rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="51"/>
 </package>
-<package name="CHIPLED_1206" library_version="49" library_locally_modified="yes">
+<package name="CHIPLED_1206" urn="urn:adsk.eagle:footprint:24103570/1" library_version="50">
 <description>&lt;b&gt;CHIPLED 1206&lt;/b&gt;</description>
 <wire x1="-0.4" y1="1.6" x2="0.4" y2="1.6" width="0.1016" layer="51" curve="172.619069"/>
 <wire x1="-0.8" y1="-0.95" x2="-0.8" y2="0.95" width="0.1016" layer="51"/>
@@ -3700,7 +3691,7 @@ NS Package M08A</description>
 <rectangle x1="-0.85" y1="0.95" x2="0.85" y2="1.25" layer="51"/>
 <rectangle x1="-0.85" y1="-1.65" x2="0.85" y2="-0.95" layer="51"/>
 </package>
-<package name="CHIPLED_0603" library_version="49" library_locally_modified="yes">
+<package name="CHIPLED_0603" urn="urn:adsk.eagle:footprint:24103571/1" library_version="50">
 <description>&lt;b&gt;CHIPLED 0603&lt;/b&gt;</description>
 <wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
 <wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
@@ -3731,7 +3722,7 @@ NS Package M08A</description>
 <rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
 <rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
 </package>
-<package name="CHIPLED_0603_NOOUTLINE" library_version="49" library_locally_modified="yes">
+<package name="CHIPLED_0603_NOOUTLINE" urn="urn:adsk.eagle:footprint:24103573/1" library_version="50">
 <wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
 <wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
 <wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
@@ -3758,7 +3749,7 @@ NS Package M08A</description>
 <vertex x="0.254" y="-0.1778"/>
 </polygon>
 </package>
-<package name="CHIPLED_0805_NOOUTLINE" library_version="49" library_locally_modified="yes">
+<package name="CHIPLED_0805_NOOUTLINE" urn="urn:adsk.eagle:footprint:24103574/1" library_version="50">
 <wire x1="-0.35" y1="0.925" x2="0.35" y2="0.925" width="0.1016" layer="51" curve="162.394521"/>
 <wire x1="-0.35" y1="-0.925" x2="0.35" y2="-0.925" width="0.1016" layer="51" curve="-162.394521"/>
 <wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
@@ -3816,12 +3807,6 @@ NS Package M08A</description>
 <package3d name="WBL2UOAGQ" urn="urn:adsk.eagle:package:23643294/4" type="model" library_version="22">
 <packageinstances>
 <packageinstance name="WBL2UOAGQ"/>
-</packageinstances>
-</package3d>
-<package3d name="1206" urn="urn:adsk.eagle:package:23799125/1" type="box" library_version="28">
-<description>1206 (3216 Metric)</description>
-<packageinstances>
-<packageinstance name="1206"/>
 </packageinstances>
 </package3d>
 <package3d name="0603" urn="urn:adsk.eagle:package:23799129/3" type="model" library_version="33">
@@ -3882,12 +3867,6 @@ TS-003</description>
 <package3d name="CONV_PCN2-S5-D12-S" urn="urn:adsk.eagle:package:23798928/2" type="model" library_version="31">
 <packageinstances>
 <packageinstance name="CONV_PCN2-S5-D12-S"/>
-</packageinstances>
-</package3d>
-<package3d name="0805" urn="urn:adsk.eagle:package:23799128/2" type="box" library_version="33">
-<description>0805 (2012 Metric)</description>
-<packageinstances>
-<packageinstance name="0805"/>
 </packageinstances>
 </package3d>
 <package3d name="_0402" urn="urn:adsk.eagle:package:23799133/2" type="box" library_version="33">
@@ -4019,19 +3998,9 @@ Epson Toyocom FCC-255</description>
 <packageinstance name="OSC_3.2X2.5MM"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT23-6L_STM" urn="urn:adsk.eagle:package:23818378/1" type="box" library_version="39">
-<packageinstances>
-<packageinstance name="SOT23-6L_STM"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT23-6L_STM-M" urn="urn:adsk.eagle:package:23818380/3" type="box" library_version="47">
+<package3d name="SOT23-6L_STM-M" urn="urn:adsk.eagle:package:23818380/4" type="model" library_version="50">
 <packageinstances>
 <packageinstance name="SOT23-6L_STM-M"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT23-6L_STM-L" urn="urn:adsk.eagle:package:23818379/1" type="box" library_version="39">
-<packageinstances>
-<packageinstance name="SOT23-6L_STM-L"/>
 </packageinstances>
 </package3d>
 <package3d name="PANASONIC_C" urn="urn:adsk.eagle:package:23799139/2" type="model" library_version="42">
@@ -4098,12 +4067,6 @@ grid 3.5 mm, diameter 10 mm</description>
 <packageinstance name="DO-1N4148"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT23-R" urn="urn:adsk.eagle:package:24063802/1" type="box" library_version="42">
-<description>&lt;b&gt;SOT23&lt;/b&gt; - Reflow soldering</description>
-<packageinstances>
-<packageinstance name="SOT23-R"/>
-</packageinstances>
-</package3d>
 <package3d name="SOD-523" urn="urn:adsk.eagle:package:24063803/1" type="box" library_version="42">
 <description>SOD-523 (0.8x1.2mm)
 
@@ -4116,11 +4079,6 @@ grid 3.5 mm, diameter 10 mm</description>
 <description>&lt;b&gt;SOD323&lt;/b&gt; (2.5x1.2mm)</description>
 <packageinstances>
 <packageinstance name="SOD-323"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT23-WIDE" urn="urn:adsk.eagle:package:24063806/1" type="box" library_version="42">
-<packageinstances>
-<packageinstance name="SOT23-WIDE"/>
 </packageinstances>
 </package3d>
 <package3d name="SO08" urn="urn:adsk.eagle:package:24102588/2" type="model" library_version="49">
@@ -4140,6 +4098,68 @@ NS Package M08A</description>
 <description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="JP2"/>
+</packageinstances>
+</package3d>
+<package3d name="0805" urn="urn:adsk.eagle:package:23799128/3" type="model" library_version="50">
+<description>0805 (2012 Metric)</description>
+<packageinstances>
+<packageinstance name="0805"/>
+</packageinstances>
+</package3d>
+<package3d name="1206" urn="urn:adsk.eagle:package:23799125/2" type="model" library_version="50">
+<description>1206 (3216 Metric)</description>
+<packageinstances>
+<packageinstance name="1206"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-6L_STM" urn="urn:adsk.eagle:package:23818378/2" type="model" library_version="50">
+<packageinstances>
+<packageinstance name="SOT23-6L_STM"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-6L_STM-L" urn="urn:adsk.eagle:package:23818379/2" type="model" library_version="50">
+<packageinstances>
+<packageinstance name="SOT23-6L_STM-L"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-R" urn="urn:adsk.eagle:package:24063802/2" type="model" library_version="50">
+<description>&lt;b&gt;SOT23&lt;/b&gt; - Reflow soldering</description>
+<packageinstances>
+<packageinstance name="SOT23-R"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-WIDE" urn="urn:adsk.eagle:package:24063806/2" type="model" library_version="50">
+<packageinstances>
+<packageinstance name="SOT23-WIDE"/>
+</packageinstances>
+</package3d>
+<package3d name="CHIPLED_0805" urn="urn:adsk.eagle:package:15137317/2" type="model" library_version="50">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
+<packageinstances>
+<packageinstance name="CHIPLED_0805"/>
+</packageinstances>
+</package3d>
+<package3d name="CHIPLED_1206" urn="urn:adsk.eagle:package:15137316/2" type="box" library_version="50">
+<description>&lt;b&gt;CHIPLED 1206&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="CHIPLED_1206"/>
+</packageinstances>
+</package3d>
+<package3d name="CHIPLED_0603" urn="urn:adsk.eagle:package:15137315/2" type="box" library_version="50">
+<description>&lt;b&gt;CHIPLED 0603&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="CHIPLED_0603"/>
+</packageinstances>
+</package3d>
+<package3d name="CHIPLED_0603_NOOUTLINE" urn="urn:adsk.eagle:package:24103576/1" type="box" library_version="50">
+<packageinstances>
+<packageinstance name="CHIPLED_0603_NOOUTLINE"/>
+</packageinstances>
+</package3d>
+<package3d name="CHIPLED_0805_NOOUTLINE" urn="urn:adsk.eagle:package:24103577/1" type="box" library_version="50">
+<packageinstances>
+<packageinstance name="CHIPLED_0805_NOOUTLINE"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5217,7 +5237,7 @@ NS Package M08A</description>
 <pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
-<symbol name="LED-1" library_version="49" library_locally_modified="yes">
+<symbol name="LED-1" urn="urn:adsk.eagle:symbol:24103569/1" library_version="50">
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
@@ -5381,7 +5401,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/SPEC/WP934SA-LIL
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP_CERAMIC" urn="urn:adsk.eagle:component:23799153/3" prefix="C" uservalue="yes" library_version="33">
+<deviceset name="CAP_CERAMIC" urn="urn:adsk.eagle:component:23799153/4" prefix="C" uservalue="yes" library_version="50">
 <description>&lt;p&gt;&lt;b&gt;Ceramic Capacitors&lt;/b&gt;&lt;/p&gt;
 &lt;b&gt;0402&lt;/b&gt; - 0402 Surface Mount Capacitors
 &lt;ul&gt;
@@ -5438,7 +5458,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/SPEC/WP934SA-LIL
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23799128/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23799128/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -5450,7 +5470,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/SPEC/WP934SA-LIL
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23799125/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23799125/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -5578,7 +5598,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/SPEC/WP934SA-LIL
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR" urn="urn:adsk.eagle:component:23799154/3" prefix="R" uservalue="yes" library_version="33">
+<deviceset name="RESISTOR" urn="urn:adsk.eagle:component:23799154/4" prefix="R" uservalue="yes" library_version="50">
 <description>&lt;p&gt;&lt;b&gt;Resistors&lt;/b&gt;&lt;/p&gt;
 &lt;b&gt;0402&lt;/b&gt; - 0402 Surface Mount Package
 &lt;ul&gt;
@@ -5654,7 +5674,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/SPEC/WP934SA-LIL
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23799128/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23799128/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -5666,7 +5686,7 @@ Source: &lt;a href="http://www.kingbrightusa.com/images/catalog/SPEC/WP934SA-LIL
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23799125/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23799125/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -5899,7 +5919,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="INDUCTOR" urn="urn:adsk.eagle:component:23807549/1" prefix="L" uservalue="yes" library_version="33">
+<deviceset name="INDUCTOR" urn="urn:adsk.eagle:component:23807549/2" prefix="L" uservalue="yes" library_version="50">
 <description>&lt;b&gt;Inductors&lt;/b&gt;
 &lt;p&gt;0603:&lt;/p&gt;
 &lt;ul&gt;
@@ -5970,7 +5990,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23799128/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23799128/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -6454,7 +6474,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="USBLC6-2SC6Y" urn="urn:adsk.eagle:component:23818381/3" prefix="U" library_version="47">
+<deviceset name="USBLC6-2SC6Y" urn="urn:adsk.eagle:component:23818381/4" prefix="U" library_version="50">
 <gates>
 <gate name="A" symbol="USBLC6-2SC6" x="0" y="0"/>
 </gates>
@@ -6469,7 +6489,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="A" pin="VBUS" pad="5"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23818378/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23818378/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -6490,7 +6510,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="A" pin="VBUS" pad="5"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23818380/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23818380/4"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -6511,7 +6531,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="A" pin="VBUS" pad="5"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23818379/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23818379/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -6771,7 +6791,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE" urn="urn:adsk.eagle:component:24063807/1" prefix="D" uservalue="yes" library_version="42">
+<deviceset name="DIODE" urn="urn:adsk.eagle:component:24063807/2" prefix="D" uservalue="yes" library_version="50">
 <description>&lt;b&gt;Diode&lt;/b&gt;
 &lt;p&gt;
 &lt;h3&gt;SMA&lt;/h3&gt;
@@ -6995,7 +7015,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="C" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24063802/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24063802/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -7043,7 +7063,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="C" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24063806/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24063806/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -7124,7 +7144,7 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes" library_version="49" library_locally_modified="yes">
+<deviceset name="LED" urn="urn:adsk.eagle:component:24103578/1" prefix="LED" uservalue="yes" library_version="50">
 <description>&lt;p&gt;&lt;b&gt;LED&lt;/b&gt;&lt;/p&gt;
 &lt;b&gt;0603&lt;/b&gt; - 0603 Surface Mount Package
 &lt;hr&gt;
@@ -7169,6 +7189,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15137316/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7178,6 +7201,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15137317/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7187,6 +7213,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15137315/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MPN" value="MF-LED-0603-GREEN" constant="no"/>
@@ -7198,6 +7227,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24103576/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7207,6 +7239,9 @@ LM1117 5.0V Voltage regulator [AP1117E50GDIDKR-ND]&lt;br&gt;&lt;/p&gt;
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24103577/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -21926,13 +21961,13 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C49" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C49" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
-<part name="C50" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C50" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
-<part name="LED2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="LED" device="0805">
+<part name="LED2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="LED" device="0805" package3d_urn="urn:adsk.eagle:package:15137317/2">
 <attribute name="PARTNO" value="AP2012HD"/>
 </part>
 <part name="R49" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="1k">
@@ -21957,14 +21992,14 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 </part>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C51" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C51" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C52" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C52" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
-<part name="C53" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C53" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -21991,10 +22026,10 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C55" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="2.2u">
+<part name="C55" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/2" value="2.2u">
 <attribute name="PARTNO" value="CL31B225KBHNNNE"/>
 </part>
-<part name="C56" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="2.2u">
+<part name="C56" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/2" value="2.2u">
 <attribute name="PARTNO" value="CL31B225KBHNNNE"/>
 </part>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22074,7 +22109,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <attribute name="PARTNO" value="AF0603FR-073KL"/>
 </part>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C72" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="2.2u">
+<part name="C72" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/2" value="2.2u">
 <attribute name="PARTNO" value="CL31B225KBHNNNE"/>
 </part>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22107,7 +22142,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="R56" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0">
 <attribute name="PARTNO" value="CRCW06030000Z0EBC"/>
 </part>
-<part name="U4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="USBLC6-2SC6Y" device="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/3">
+<part name="U4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="USBLC6-2SC6Y" device="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/4">
 <attribute name="PARTNO" value="USBLC6-2SC6Y"/>
 </part>
 <part name="GND56" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22133,7 +22168,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="GND59" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND60" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="USBLC6-2SC6Y" device="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/3">
+<part name="U5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="USBLC6-2SC6Y" device="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/4">
 <attribute name="PARTNO" value="USBLC6-2SC6Y"/>
 </part>
 <part name="GND61" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22357,7 +22392,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="IC10" library="keves" deviceset="LM317" device="">
 <attribute name="PARTNO" value="LM317MBSTT3G"/>
 </part>
-<part name="C94" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="2.2u">
+<part name="C94" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="2.2u">
 <attribute name="PARTNO" value="UMK212BB7225KG-T"/>
 </part>
 <part name="D1" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="DIODE" device="SOD-123" package3d_urn="urn:adsk.eagle:package:24063805/1" value="MBR120LSFT3G">
@@ -22372,10 +22407,10 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="C95" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n">
 <attribute name="PARTNO" value="CC0603KRX7R9BB104"/>
 </part>
-<part name="C96" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C96" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
-<part name="C97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u">
+<part name="C97" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/2" value="1u">
 <attribute name="PARTNO" value="12065C105M4Z2A"/>
 </part>
 <part name="D2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="DIODE" device="SOD-123" package3d_urn="urn:adsk.eagle:package:24063805/1" value="MBR120LSFT3G">
@@ -22394,7 +22429,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="D3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="DIODE" device="SOD-123" package3d_urn="urn:adsk.eagle:package:24063805/1" value="MBR120LSFT3G">
 <attribute name="PARTNO" value="MBR120LSFT3G"/>
 </part>
-<part name="C98" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="2.2u">
+<part name="C98" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="2.2u">
 <attribute name="PARTNO" value="UMK212BB7225KG-T"/>
 </part>
 <part name="C99" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="100n">
@@ -22407,7 +22442,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <attribute name="PARTNO" value="ERA-3AEB241V"/>
 </part>
 <part name="U$29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C100" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/2" value="10u">
+<part name="C100" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0805" package3d_urn="urn:adsk.eagle:package:23799128/3" value="10u">
 <attribute name="PARTNO" value="CL21A106KAYNNNE"/>
 </part>
 <part name="D4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="DIODE" device="SOD-123" package3d_urn="urn:adsk.eagle:package:24063805/1" value="MBR120LSFT3G">
@@ -22416,7 +22451,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <part name="L6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="INDUCTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="600ohm @ 100MHz">
 <attribute name="PARTNO" value="BLM18KG601SN1D"/>
 </part>
-<part name="C101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/1" value="1u">
+<part name="C101" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="1206" package3d_urn="urn:adsk.eagle:package:23799125/2" value="1u">
 <attribute name="PARTNO" value="12065C105M4Z2A"/>
 </part>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
