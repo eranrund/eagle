@@ -795,7 +795,7 @@ TS-003</description>
 <vertex x="-2.15" y="2.1"/>
 </polygon>
 </package>
-<package name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:footprint:23798892/4" library_version="59">
+<package name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:footprint:23798892/5" library_version="60">
 <smd name="1" x="-2.9718" y="4.225075" dx="1.778" dy="0.3556" layer="1"/>
 <smd name="2" x="-2.9718" y="3.5750625" dx="1.778" dy="0.3556" layer="1"/>
 <smd name="3" x="-2.9718" y="2.92505" dx="1.778" dy="0.3556" layer="1"/>
@@ -982,7 +982,6 @@ TS-003</description>
 <vertex x="1.1" y="-3.13"/>
 <vertex x="1.1" y="-2.038"/>
 </polygon>
-<pad name="30" x="0" y="0" drill="1.524"/>
 <circle x="-1.524" y="4.318" radius="0.381" width="0.127" layer="21"/>
 </package>
 <package name="PANASONIC_C" urn="urn:adsk.eagle:footprint:23799113/1" library_version="39">
@@ -2730,7 +2729,7 @@ TS-003</description>
 <packageinstance name="PANASONIC_D"/>
 </packageinstances>
 </package3d>
-<package3d name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:package:23798895/5" type="model" library_version="59">
+<package3d name="PWP28_6P46X2P4-M" urn="urn:adsk.eagle:package:23798895/6" type="model" library_version="60">
 <packageinstances>
 <packageinstance name="PWP28_6P46X2P4-M"/>
 </packageinstances>
@@ -3940,8 +3939,8 @@ chip</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB" width="0.2286" drill="0">
-<clearance class="1" value="0.1397"/>
+<class number="1" name="USB" width="0.1524" drill="0">
+<clearance class="1" value="0.1524"/>
 </class>
 </classes>
 <designrules name="oshpark-4layer *">
@@ -5056,21 +5055,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PARTNO" value="GRM1885C1H472JA01D" x="129.54" y="89.916" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="128.778" y="88.138" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="U5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/4" value="USBLC6-2SC6YSOT23-6L_STM-M" x="125.73" y="75.438" smashed="yes" rot="R90">
-<attribute name="BUILT_BY" value="EMA_UL_Team" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="USBLC6-2SC6Y" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="128.905" y="74.4474" size="1.27" layer="25" ratio="6" rot="SR90"/>
-<attribute name="PARTNO" value="USBLC6-2SC6Y" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SOURCELIBRARY" value="StMicro_2015-03-30" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VENDOR" value="STMicroelectronics" x="125.73" y="75.438" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U5" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="SOT23-6L_STM-M" package3d_urn="urn:adsk.eagle:package:23818380/4" value="USBLC6-2SC6YSOT23-6L_STM-M" x="125.73" y="77.216" smashed="yes" rot="R90">
+<attribute name="BUILT_BY" value="EMA_UL_Team" x="125.73" y="77.216" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="USBLC6-2SC6Y" x="125.73" y="77.216" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="128.905" y="76.2254" size="1.27" layer="25" ratio="6" rot="SR90"/>
+<attribute name="PARTNO" value="USBLC6-2SC6Y" x="125.73" y="77.216" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SOURCELIBRARY" value="StMicro_2015-03-30" x="125.73" y="77.216" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VENDOR" value="STMicroelectronics" x="125.73" y="77.216" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R59" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="126.492" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="127.762" y="79.375" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="NAME" x="127.381" y="82.042" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PARTNO" value="CRCW06030000Z0EBC" x="126.492" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="127.254" y="83.058" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R60" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="0" x="124.714" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="124.968" y="79.121" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="NAME" x="123.063" y="82.804" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="PARTNO" value="CRCW06030000Z0EBC" x="124.714" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="125.476" y="83.058" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
@@ -5084,7 +5083,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PARTNO" value="CRCW06030000Z0EBC" x="113.03" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="113.792" y="86.868" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="U6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/5" value="PCM1681PWPPWP28_6P46X2P4-M" x="14.351" y="52.705" smashed="yes" rot="R180">
+<element name="U6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/6" value="PCM1681PWPPWP28_6P46X2P4-M" x="14.351" y="52.705" smashed="yes" rot="R180">
 <attribute name="DATASHEET_URL" value="http://www.ti.com/lit/gpn/PCM1681" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="105dB SNR 8-Channel Audio DAC with TDM Mode" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="FAMILY_NAME" value="DIGITAL TO ANALOG" x="14.351" y="52.705" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5217,7 +5216,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PARTNO" value="CRCW060322R0FKEAC" x="9.906" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="8.128" y="47.752" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="U7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/5" value="PCM1681PWPPWP28_6P46X2P4-M" x="47.244" y="52.578" smashed="yes" rot="R180">
+<element name="U7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" package="PWP28_6P46X2P4-M" package3d_urn="urn:adsk.eagle:package:23798895/6" value="PCM1681PWPPWP28_6P46X2P4-M" x="47.244" y="52.578" smashed="yes" rot="R180">
 <attribute name="DATASHEET_URL" value="http://www.ti.com/lit/gpn/PCM1681" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value="105dB SNR 8-Channel Audio DAC with TDM Mode" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="FAMILY_NAME" value="DIGITAL TO ANALOG" x="57.404" y="37.338" size="1.778" layer="27" rot="R180" display="off"/>
@@ -6001,7 +6000,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="71.882" y1="63.334" x2="72.986" y2="63.334" width="0.3556" layer="1"/>
 <wire x1="72.986" y1="63.334" x2="73.152" y2="63.5" width="0.3556" layer="1"/>
 <via x="73.152" y="63.5" extent="1-16" drill="0.35"/>
-<via x="125.984" y="75.184" extent="1-16" drill="0.35"/>
+<via x="125.984" y="76.962" extent="1-16" drill="0.35"/>
 <wire x1="133.096" y1="77.536" x2="133.03" y2="77.47" width="0.3556" layer="1"/>
 <wire x1="133.03" y1="77.47" x2="131.572" y2="77.47" width="0.3556" layer="1"/>
 <via x="131.572" y="77.47" extent="1-16" drill="0.35"/>
@@ -6162,8 +6161,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="4.191" y1="55.862" x2="4.173" y2="55.88" width="0.3556" layer="1"/>
 <wire x1="4.173" y1="55.88" x2="2.794" y2="55.88" width="0.3556" layer="1"/>
 <via x="2.794" y="55.88" extent="1-16" drill="0.35"/>
-<wire x1="125.73" y1="73.97115" x2="125.73" y2="74.93" width="0.3556" layer="1"/>
-<wire x1="125.73" y1="74.93" x2="125.984" y2="75.184" width="0.3556" layer="1"/>
+<wire x1="125.73" y1="75.74915" x2="125.73" y2="76.708" width="0.3556" layer="1"/>
+<wire x1="125.73" y1="76.708" x2="125.984" y2="76.962" width="0.3556" layer="1"/>
 <wire x1="17.3228" y1="54.330028125" x2="17.475771875" y2="54.483" width="0.3556" layer="1"/>
 <wire x1="17.475771875" y1="54.483" x2="20.105" y2="54.483" width="0.3556" layer="1"/>
 <wire x1="20.105" y1="54.483" x2="20.105" y2="55.4905" width="0.3556" layer="1"/>
@@ -7121,13 +7120,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="78.232" y="81.28" extent="1-16" drill="0.254"/>
 <wire x1="135.636" y1="71.628" x2="125.476" y2="71.628" width="1.016" layer="15"/>
 <wire x1="125.476" y1="71.628" x2="122.428" y2="71.628" width="1.016" layer="15"/>
-<wire x1="125.73" y1="76.90485" x2="125.73" y2="75.946" width="0.254" layer="1"/>
-<wire x1="125.73" y1="75.946" x2="125.222" y2="75.438" width="0.254" layer="1"/>
-<via x="125.222" y="75.438" extent="1-16" drill="0.254"/>
-<wire x1="125.222" y1="75.438" x2="123.952" y2="75.438" width="0.254" layer="15"/>
-<wire x1="123.952" y1="75.438" x2="123.444" y2="74.93" width="0.254" layer="15"/>
+<wire x1="125.73" y1="78.68285" x2="125.73" y2="77.724" width="0.254" layer="1"/>
+<wire x1="125.73" y1="77.724" x2="125.222" y2="77.216" width="0.254" layer="1"/>
+<via x="125.222" y="77.216" extent="1-16" drill="0.254"/>
+<wire x1="125.222" y1="77.216" x2="123.952" y2="77.216" width="0.254" layer="15"/>
+<wire x1="123.952" y1="77.216" x2="123.444" y2="76.708" width="0.254" layer="15"/>
 <wire x1="123.444" y1="72.644" x2="122.428" y2="71.628" width="0.254" layer="15"/>
-<wire x1="123.444" y1="74.93" x2="123.444" y2="72.644" width="0.254" layer="15"/>
+<wire x1="123.444" y1="76.708" x2="123.444" y2="72.644" width="0.254" layer="15"/>
 <wire x1="125.222" y1="92.36" x2="113.634" y2="80.772" width="1.016" layer="15"/>
 <wire x1="113.634" y1="80.772" x2="107.95" y2="80.772" width="1.016" layer="15"/>
 <wire x1="107.95" y1="80.772" x2="114.808" y2="73.914" width="1.016" layer="15"/>
@@ -7634,26 +7633,30 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="USB_DEV_P" class="1">
 <contactref element="R62" pad="1"/>
 <contactref element="U4" pad="6"/>
-<wire x1="113.03" y1="84.24" x2="113.096" y2="84.174" width="0.3556" layer="1"/>
-<wire x1="113.096" y1="84.174" x2="113.096" y2="82.23885" width="0.3556" layer="1"/>
+<wire x1="113.096" y1="84.174" x2="113.03" y2="84.24" width="0.3556" layer="1"/>
+<wire x1="113.096" y1="82.23885" x2="113.096" y2="84.174" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_FS_N" class="1">
 <contactref element="U3" pad="103"/>
 <contactref element="U4" pad="3"/>
-<wire x1="114.996" y1="79.30515" x2="114.996" y2="78.2574" width="0.2286" layer="1"/>
-<wire x1="114.996" y1="78.2574" x2="114.23015" y2="77.49155" width="0.2286" layer="1"/>
-<wire x1="112.9428625" y1="73.56" x2="107.653" y2="73.56" width="0.2286" layer="1"/>
-<wire x1="114.23015" y1="77.49155" x2="114.23015" y2="74.8472875" width="0.2286" layer="1"/>
-<wire x1="114.23015" y1="74.8472875" x2="112.9428625" y2="73.56" width="0.2286" layer="1"/>
+<wire x1="114.996" y1="79.30515" x2="114.996" y2="78.4098" width="0.1524" layer="1"/>
+<wire x1="114.996" y1="78.4098" x2="114.1984" y2="77.6122" width="0.1524" layer="1"/>
+<wire x1="114.1984" y1="77.6122" x2="114.1984" y2="75.1593375" width="0.1524" layer="1"/>
+<wire x1="114.1984" y1="75.1593375" x2="112.6482625" y2="73.6092" width="0.1524" layer="1"/>
+<wire x1="107.7022" y1="73.6092" x2="107.653" y2="73.56" width="0.1524" layer="1"/>
+<wire x1="112.6482625" y1="73.6092" x2="107.7022" y2="73.6092" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_FS_P" class="1">
 <contactref element="U3" pad="104"/>
 <contactref element="U4" pad="1"/>
-<wire x1="113.096" y1="79.30515" x2="113.096" y2="78.2574" width="0.2286" layer="1"/>
-<wire x1="113.096" y1="78.2574" x2="113.86185" y2="77.49155" width="0.2286" layer="1"/>
-<wire x1="112.922" y1="74.06" x2="107.653" y2="74.06" width="0.2286" layer="1"/>
-<wire x1="113.86185" y1="77.49155" x2="113.86185" y2="74.99985" width="0.2286" layer="1"/>
-<wire x1="113.86185" y1="74.99985" x2="112.922" y2="74.06" width="0.2286" layer="1"/>
+<wire x1="113.096" y1="79.30515" x2="113.096" y2="78.4098" width="0.1524" layer="1"/>
+<wire x1="113.096" y1="78.4098" x2="113.8936" y2="77.6122" width="0.1524" layer="1"/>
+<wire x1="113.8936" y1="75.2856" x2="112.522" y2="73.914" width="0.1524" layer="1"/>
+<wire x1="113.8936" y1="77.6122" x2="113.8936" y2="75.2856" width="0.1524" layer="1"/>
+<wire x1="108.4731875" y1="73.914" x2="108.4207875" y2="73.9664" width="0.1524" layer="1"/>
+<wire x1="108.4207875" y1="73.9664" x2="107.7466" y2="73.9664" width="0.1524" layer="1"/>
+<wire x1="107.7466" y1="73.9664" x2="107.653" y2="74.06" width="0.1524" layer="1"/>
+<wire x1="112.522" y1="73.914" x2="108.4731875" y2="73.914" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$67">
 <contactref element="USB_FS" pad="P$2"/>
@@ -7688,67 +7691,88 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="USB_HS_N" class="1">
 <contactref element="U3" pad="77"/>
 <contactref element="U5" pad="3"/>
-<wire x1="107.653" y1="60.56" x2="111.8808625" y2="60.56" width="0.2286" layer="1"/>
-<wire x1="117.3608625" y1="66.04" x2="111.8808625" y2="60.56" width="0.2286" layer="1"/>
-<wire x1="124.09264375" y1="66.04" x2="125.91415" y2="67.86150625" width="0.2286" layer="1"/>
-<wire x1="126.68" y1="73.66" x2="126.68" y2="73.97115" width="0.2286" layer="1"/>
-<wire x1="124.09264375" y1="66.04" x2="117.3608625" y2="66.04" width="0.2286" layer="1"/>
-<wire x1="125.91415" y1="67.86150625" x2="125.91415" y2="72.898" width="0.2286" layer="1"/>
-<wire x1="125.91415" y1="72.898" x2="126.67615" y2="73.66" width="0.2286" layer="1"/>
-<wire x1="126.67615" y1="73.66" x2="126.68" y2="73.66" width="0.2286" layer="1"/>
+<wire x1="126.68" y1="75.438" x2="126.68" y2="75.74915" width="0.2286" layer="1"/>
+<wire x1="126.67615" y1="75.438" x2="126.68" y2="75.438" width="0.2286" layer="1"/>
+<wire x1="123.06225625" y1="66.548" x2="125.9078" y2="69.39354375" width="0.1524" layer="1"/>
+<wire x1="125.9078" y1="69.39354375" x2="125.9078" y2="74.295" width="0.1524" layer="1"/>
+<wire x1="123.06225625" y1="66.548" x2="119.3030625" y2="66.548" width="0.1524" layer="1"/>
+<wire x1="126.68" y1="75.74915" x2="126.68" y2="75.0672" width="0.1524" layer="1"/>
+<wire x1="126.68" y1="75.0672" x2="125.9078" y2="74.295" width="0.1524" layer="1"/>
+<wire x1="119.3030625" y1="66.548" x2="113.4102625" y2="60.6552" width="0.1524" layer="1"/>
+<wire x1="108.458" y1="60.6552" x2="113.4102625" y2="60.6552" width="0.1524" layer="1"/>
+<wire x1="107.653" y1="60.56" x2="108.3628" y2="60.56" width="0.1524" layer="1"/>
+<wire x1="108.3628" y1="60.56" x2="108.458" y2="60.6552" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_HS_P" class="1">
 <contactref element="U3" pad="78"/>
 <contactref element="U5" pad="1"/>
-<wire x1="107.653" y1="61.06" x2="111.86" y2="61.06" width="0.2286" layer="1"/>
-<wire x1="117.2083" y1="66.4083" x2="111.86" y2="61.06" width="0.2286" layer="1"/>
-<wire x1="123.94008125" y1="66.4083" x2="125.54585" y2="68.01406875" width="0.2286" layer="1"/>
-<wire x1="123.94008125" y1="66.4083" x2="117.2083" y2="66.4083" width="0.2286" layer="1"/>
-<wire x1="125.54585" y1="68.01406875" x2="125.54585" y2="72.82815" width="0.2286" layer="1"/>
-<wire x1="124.78" y1="73.594" x2="124.78" y2="73.97115" width="0.2286" layer="1"/>
-<wire x1="125.54585" y1="72.82815" x2="124.78" y2="73.594" width="0.2286" layer="1"/>
+<wire x1="124.78" y1="75.372" x2="124.78" y2="75.692" width="0.2286" layer="1"/>
+<wire x1="124.78" y1="75.692" x2="124.78" y2="75.74915" width="0.2286" layer="1"/>
+<wire x1="122.936" y1="66.8528" x2="119.1768" y2="66.8528" width="0.1524" layer="1"/>
+<wire x1="122.936" y1="66.8528" x2="125.603" y2="69.5198" width="0.1524" layer="1"/>
+<wire x1="125.603" y1="69.5198" x2="125.603" y2="74.422" width="0.1524" layer="1"/>
+<wire x1="125.603" y1="74.422" x2="124.78" y2="75.245" width="0.1524" layer="1"/>
+<wire x1="124.78" y1="75.245" x2="124.78" y2="75.692" width="0.1524" layer="1"/>
+<wire x1="119.1768" y1="66.8528" x2="113.284" y2="60.96" width="0.1524" layer="1"/>
+<wire x1="108.458" y1="60.96" x2="113.284" y2="60.96" width="0.1524" layer="1"/>
+<wire x1="107.653" y1="61.06" x2="108.358" y2="61.06" width="0.1524" layer="1"/>
+<wire x1="108.358" y1="61.06" x2="108.458" y2="60.96" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_HOST_CONN_N" class="1">
 <contactref element="R59" pad="2"/>
 <contactref element="USB_HS" pad="P$2"/>
-<wire x1="126.5343" y1="89.0477" x2="125.222" y2="90.36" width="0.2286" layer="1"/>
-<wire x1="126.5343" y1="83.82076875" x2="126.5343" y2="89.0477" width="0.2286" layer="1"/>
-<wire x1="126.131784375" y1="83.418253125" x2="126.5343" y2="83.82076875" width="0.2286" layer="1"/>
-<wire x1="126.131784375" y1="83.319465625" x2="126.131784375" y2="83.418253125" width="0.2286" layer="1"/>
-<wire x1="126.492" y1="82.95925" x2="126.131784375" y2="83.319465625" width="0.2286" layer="1"/>
-<wire x1="126.492" y1="82.13" x2="126.492" y2="82.95925" width="0.2286" layer="1"/>
+<wire x1="125.90705625" y1="89.662" x2="125.73" y2="89.662" width="0.1524" layer="1"/>
+<wire x1="125.73" y1="89.662" x2="125.222" y2="90.17" width="0.1524" layer="1"/>
+<wire x1="125.222" y1="90.17" x2="125.222" y2="90.36" width="0.1524" layer="1"/>
+<wire x1="125.90705625" y1="89.662" x2="126.7009" y2="88.86815625" width="0.1524" layer="1"/>
+<wire x1="126.7009" y1="84.1058375" x2="125.69153125" y2="83.09646875" width="0.1524" layer="1"/>
+<wire x1="126.7009" y1="88.86815625" x2="126.7009" y2="84.1058375" width="0.1524" layer="1"/>
+<wire x1="125.69153125" y1="83.09646875" x2="125.69153125" y2="82.84246875" width="0.1524" layer="1"/>
+<wire x1="126.404" y1="82.13" x2="126.492" y2="82.13" width="0.1524" layer="1"/>
+<wire x1="125.69153125" y1="82.84246875" x2="126.404" y2="82.13" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_HOST_CONN_P" class="1">
 <contactref element="USB_HS" pad="P$3"/>
 <contactref element="R60" pad="2"/>
-<wire x1="124.714" y1="82.13" x2="124.968" y2="82.384" width="0.3556" layer="1"/>
-<wire x1="126.166" y1="87.416" x2="125.222" y2="88.36" width="0.2286" layer="1"/>
-<wire x1="126.166" y1="83.97333125" x2="126.166" y2="87.416" width="0.2286" layer="1"/>
-<wire x1="124.968" y1="82.77533125" x2="126.166" y2="83.97333125" width="0.2286" layer="1"/>
-<wire x1="124.968" y1="82.384" x2="124.968" y2="82.77533125" width="0.2286" layer="1"/>
+<wire x1="124.968" y1="82.384" x2="124.714" y2="82.13" width="0.3556" layer="1"/>
+<wire x1="125.984" y1="89.154" x2="126.3961" y2="88.7419" width="0.1524" layer="1"/>
+<wire x1="125.984" y1="89.154" x2="125.73" y2="89.154" width="0.1524" layer="1"/>
+<wire x1="125.222" y1="88.646" x2="125.222" y2="88.36" width="0.1524" layer="1"/>
+<wire x1="125.73" y1="89.154" x2="125.222" y2="88.646" width="0.1524" layer="1"/>
+<wire x1="126.3961" y1="88.7419" x2="126.3961" y2="84.2321" width="0.1524" layer="1"/>
+<wire x1="124.968" y1="82.804" x2="124.968" y2="82.384" width="0.1524" layer="1"/>
+<wire x1="126.3961" y1="84.2321" x2="124.968" y2="82.804" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_DEV_CONN_N" class="1">
 <contactref element="USB_FS" pad="2"/>
 <contactref element="R61" pad="2"/>
 <wire x1="115.062" y1="85.94" x2="115.062" y2="85.99" width="0.3556" layer="1"/>
-<wire x1="115.062" y1="85.99" x2="113.5617" y2="87.4903" width="0.2286" layer="1"/>
-<wire x1="113.5617" y1="87.4903" x2="109.474" y2="87.4903" width="0.2286" layer="1"/>
-<wire x1="109.474" y1="87.4903" x2="107.95" y2="89.0143" width="0.2286" layer="1"/>
-<wire x1="107.95" y1="90.424" x2="108.712" y2="91.186" width="0.2286" layer="1"/>
-<wire x1="107.95" y1="89.0143" x2="107.95" y2="90.424" width="0.2286" layer="1"/>
-<wire x1="108.712" y1="91.186" x2="108.946" y2="90.952" width="0.2286" layer="1"/>
-<wire x1="108.946" y1="90.952" x2="108.946" y2="90.286" width="0.2286" layer="1"/>
+<wire x1="108.946" y1="90.286" x2="108.946" y2="90.6456" width="0.1524" layer="1"/>
+<wire x1="108.946" y1="90.6456" x2="108.458" y2="91.1336" width="0.1524" layer="1"/>
+<wire x1="108.458" y1="91.1336" x2="107.95" y2="90.6256" width="0.1524" layer="1"/>
+<wire x1="107.95" y1="90.6256" x2="107.95" y2="88.9" width="0.1524" layer="1"/>
+<wire x1="107.95" y1="88.9" x2="108.458" y2="88.392" width="0.1524" layer="1"/>
+<wire x1="113.41025625" y1="88.392" x2="114.0968" y2="87.70545625" width="0.1524" layer="1"/>
+<wire x1="114.0968" y1="87.70545625" x2="114.0968" y2="86.614" width="0.1524" layer="1"/>
+<wire x1="108.458" y1="88.392" x2="113.41025625" y2="88.392" width="0.1524" layer="1"/>
+<wire x1="114.0968" y1="86.614" x2="114.7708" y2="85.94" width="0.1524" layer="1"/>
+<wire x1="114.7708" y1="85.94" x2="115.062" y2="85.94" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_DEV_CONN_P" class="1">
 <contactref element="USB_FS" pad="3"/>
 <contactref element="R62" pad="2"/>
-<wire x1="113.03" y1="85.94" x2="113.03" y2="85.99" width="0.3556" layer="1"/>
-<wire x1="113.03" y1="85.99" x2="111.898" y2="87.122" width="0.2286" layer="1"/>
-<wire x1="109.32144375" y1="87.122" x2="107.5817" y2="88.86174375" width="0.2286" layer="1"/>
-<wire x1="111.898" y1="87.122" x2="109.32144375" y2="87.122" width="0.2286" layer="1"/>
-<wire x1="107.5817" y1="88.86174375" x2="107.5817" y2="90.5765625" width="0.2286" layer="1"/>
-<wire x1="108.946" y1="91.9408625" x2="108.946" y2="92.286" width="0.2286" layer="1"/>
-<wire x1="107.5817" y1="90.5765625" x2="108.946" y2="91.9408625" width="0.2286" layer="1"/>
+<wire x1="113.03" y1="85.99" x2="113.03" y2="85.94" width="0.3556" layer="1"/>
+<wire x1="108.946" y1="92.286" x2="108.946" y2="91.9264" width="0.1524" layer="1"/>
+<wire x1="108.946" y1="91.9264" x2="108.458" y2="91.4384" width="0.1524" layer="1"/>
+<wire x1="108.458" y1="91.4384" x2="108.33174375" y2="91.4384" width="0.1524" layer="1"/>
+<wire x1="108.33174375" y1="91.4384" x2="107.6452" y2="90.75185625" width="0.1524" layer="1"/>
+<wire x1="107.6452" y1="88.77374375" x2="108.33174375" y2="88.0872" width="0.1524" layer="1"/>
+<wire x1="108.33174375" y1="88.0872" x2="113.284" y2="88.0872" width="0.1524" layer="1"/>
+<wire x1="113.284" y1="88.0872" x2="113.792" y2="87.5792" width="0.1524" layer="1"/>
+<wire x1="113.792" y1="87.5792" x2="113.792" y2="86.614" width="0.1524" layer="1"/>
+<wire x1="107.6452" y1="90.75185625" x2="107.6452" y2="88.77374375" width="0.1524" layer="1"/>
+<wire x1="113.792" y1="86.614" x2="113.168" y2="85.99" width="0.1524" layer="1"/>
+<wire x1="113.168" y1="85.99" x2="113.03" y2="85.99" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$75">
 <contactref element="U6" pad="1"/>
@@ -8394,25 +8418,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="USB_HOST_N" class="1">
 <contactref element="R59" pad="1"/>
 <contactref element="U5" pad="4"/>
-<wire x1="126.68" y1="76.90485" x2="126.68" y2="77.9526" width="0.2286" layer="1"/>
-<wire x1="126.68" y1="77.9526" x2="125.91415" y2="78.71845" width="0.2286" layer="1"/>
-<wire x1="125.91415" y1="79.85215" x2="126.492" y2="80.43" width="0.2286" layer="1"/>
-<wire x1="125.91415" y1="78.71845" x2="125.91415" y2="79.85215" width="0.2286" layer="1"/>
+<wire x1="126.68" y1="78.68285" x2="126.68" y2="80.242" width="0.1524" layer="1"/>
+<wire x1="126.68" y1="80.242" x2="126.492" y2="80.43" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_HOST_P" class="1">
 <contactref element="R60" pad="1"/>
 <contactref element="U5" pad="6"/>
-<wire x1="124.78" y1="76.90485" x2="124.78" y2="77.9526" width="0.2286" layer="1"/>
-<wire x1="124.78" y1="77.9526" x2="125.54585" y2="78.71845" width="0.2286" layer="1"/>
-<wire x1="125.54585" y1="78.71845" x2="125.54585" y2="79.756" width="0.2286" layer="1"/>
-<wire x1="125.54585" y1="79.756" x2="124.87185" y2="80.43" width="0.2286" layer="1"/>
 <wire x1="124.87185" y1="80.43" x2="124.714" y2="80.43" width="0.2286" layer="1"/>
+<wire x1="124.714" y1="80.43" x2="124.78" y2="80.364" width="0.1524" layer="1"/>
+<wire x1="124.78" y1="80.364" x2="124.78" y2="78.68285" width="0.1524" layer="1"/>
 </signal>
 <signal name="USB_DEV_N" class="1">
 <contactref element="R61" pad="1"/>
 <contactref element="U4" pad="4"/>
-<wire x1="115.062" y1="84.24" x2="114.996" y2="84.174" width="0.3556" layer="1"/>
-<wire x1="114.996" y1="84.174" x2="114.996" y2="82.23885" width="0.3556" layer="1"/>
+<wire x1="114.996" y1="84.174" x2="115.062" y2="84.24" width="0.3556" layer="1"/>
+<wire x1="114.996" y1="82.23885" x2="114.996" y2="84.174" width="0.1524" layer="1"/>
 </signal>
 <signal name="SPI_MISO">
 <contactref element="U3" pad="42"/>
