@@ -21476,6 +21476,351 @@ http://www.tag-connect.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="holes" urn="urn:adsk.eagle:library:237">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="2,8" urn="urn:adsk.eagle:footprint:14239/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 2.8 mm with drill center</description>
+<wire x1="-1.778" y1="0" x2="0" y2="-1.778" width="2.286" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="1.778" x2="1.778" y2="0" width="2.286" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="0.635" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="2.921" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="2.8"/>
+</package>
+<package name="3,0" urn="urn:adsk.eagle:footprint:14240/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.0 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.6" width="0.2032" layer="21"/>
+<text x="-1.27" y="-3.81" size="1.27" layer="48">3,0</text>
+<hole x="0" y="0" drill="3"/>
+</package>
+<package name="3,3" urn="urn:adsk.eagle:footprint:14241/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.3 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.54" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.54" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.3"/>
+</package>
+<package name="3,6" urn="urn:adsk.eagle:footprint:14242/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.7686" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.7686" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.9" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.6"/>
+</package>
+<package name="4,1" urn="urn:adsk.eagle:footprint:14243/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.1 mm with drill center</description>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="39"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="40"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="2.15" width="0.1524" layer="21"/>
+<hole x="0" y="0" drill="4.1"/>
+</package>
+<package name="4,5" urn="urn:adsk.eagle:footprint:14244/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.5 mm with drill center</description>
+<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
+<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="3.8184" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="2.35" width="0.1524" layer="21"/>
+<text x="-1.27" y="-4.445" size="1.27" layer="48">4,5</text>
+<hole x="0" y="0" drill="4.5"/>
+</package>
+<package name="5,0" urn="urn:adsk.eagle:footprint:14245/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 5.0 mm with drill center</description>
+<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
+<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="2.6" width="0.1524" layer="21"/>
+<text x="-1.27" y="-4.445" size="1.27" layer="48">5,0</text>
+<hole x="0" y="0" drill="5"/>
+</package>
+<package name="3,2" urn="urn:adsk.eagle:footprint:14246/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.2"/>
+</package>
+<package name="4,3" urn="urn:adsk.eagle:footprint:14247/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.3 mm with drill center</description>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="3.8184" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="2.25" width="0.1524" layer="21"/>
+<hole x="0" y="0" drill="4.3"/>
+</package>
+<package name="5,5" urn="urn:adsk.eagle:footprint:14248/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 5.5 mm with drill center</description>
+<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
+<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="2.85" width="0.1524" layer="21"/>
+<hole x="0" y="0" drill="5.5"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="2,8" urn="urn:adsk.eagle:package:14271/1" type="box" library_version="2">
+<description>MOUNTING HOLE 2.8 mm with drill center</description>
+<packageinstances>
+<packageinstance name="2,8"/>
+</packageinstances>
+</package3d>
+<package3d name="3,0" urn="urn:adsk.eagle:package:14277/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.0 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,0"/>
+</packageinstances>
+</package3d>
+<package3d name="3,3" urn="urn:adsk.eagle:package:14278/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.3 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,3"/>
+</packageinstances>
+</package3d>
+<package3d name="3,6" urn="urn:adsk.eagle:package:14272/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.6 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,6"/>
+</packageinstances>
+</package3d>
+<package3d name="4,1" urn="urn:adsk.eagle:package:14273/1" type="box" library_version="2">
+<description>MOUNTING HOLE 4.1 mm with drill center</description>
+<packageinstances>
+<packageinstance name="4,1"/>
+</packageinstances>
+</package3d>
+<package3d name="4,5" urn="urn:adsk.eagle:package:14274/1" type="box" library_version="2">
+<description>MOUNTING HOLE 4.5 mm with drill center</description>
+<packageinstances>
+<packageinstance name="4,5"/>
+</packageinstances>
+</package3d>
+<package3d name="5,0" urn="urn:adsk.eagle:package:14276/1" type="box" library_version="2">
+<description>MOUNTING HOLE 5.0 mm with drill center</description>
+<packageinstances>
+<packageinstance name="5,0"/>
+</packageinstances>
+</package3d>
+<package3d name="3,2" urn="urn:adsk.eagle:package:14275/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.2 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,2"/>
+</packageinstances>
+</package3d>
+<package3d name="4,3" urn="urn:adsk.eagle:package:14289/1" type="box" library_version="2">
+<description>MOUNTING HOLE 4.3 mm with drill center</description>
+<packageinstances>
+<packageinstance name="4,3"/>
+</packageinstances>
+</package3d>
+<package3d name="5,5" urn="urn:adsk.eagle:package:14279/1" type="box" library_version="2">
+<description>MOUNTING HOLE 5.5 mm with drill center</description>
+<packageinstances>
+<packageinstance name="5,5"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MOUNT-HOLE" urn="urn:adsk.eagle:symbol:14238/1" library_version="2">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOUNT-HOLE" urn="urn:adsk.eagle:component:14301/2" prefix="H" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; with drill center marker</description>
+<gates>
+<gate name="G$1" symbol="MOUNT-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2.8" package="2,8">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14271/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="15" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.0" package="3,0">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14277/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.3" package="3,3">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14278/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.6" package="3,6">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14272/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4.1" package="4,1">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14273/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4.5" package="4,5">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14274/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5.0" package="5,0">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14276/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.2" package="3,2">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14275/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="7" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4.3" package="4,3">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14289/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5.5" package="5,5">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14279/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22471,13 +22816,27 @@ http://www.tag-connect.com</description>
 </spice>
 <attribute name="PARTNO" value="PM1812-5R6J-RC"/>
 </part>
-<part name="TP7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
-<part name="TP8" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
-<part name="TP9" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
-<part name="TP10" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
-<part name="TP16" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
-<part name="TP17" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
-<part name="TP18" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13"/>
+<part name="TP7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
+<part name="TP8" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
+<part name="TP9" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
+<part name="TP10" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
+<part name="TP16" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
+<part name="TP17" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
+<part name="TP18" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:24104776/2" value="TPPAD1-13">
+<attribute name="PARTNO" value="5001"/>
+</part>
 <part name="GND95" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND96" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND97" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22507,6 +22866,27 @@ http://www.tag-connect.com</description>
 <part name="+3V14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND78" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND67" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="H7" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1">
+<attribute name="PARTNO" value="*"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -25864,33 +26244,75 @@ isolated DC DC to GND?</text>
 <instance part="TP7" gate="G$1" x="261.62" y="99.06" smashed="yes">
 <attribute name="NAME" x="260.35" y="100.33" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="262.89" y="97.79" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="261.62" y="99.06" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP8" gate="G$1" x="264.16" y="96.52" smashed="yes">
 <attribute name="NAME" x="262.89" y="97.79" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="265.43" y="95.25" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="264.16" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP9" gate="G$1" x="266.7" y="93.98" smashed="yes">
 <attribute name="NAME" x="265.43" y="95.25" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="267.97" y="92.71" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="266.7" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP10" gate="G$1" x="269.24" y="91.44" smashed="yes">
 <attribute name="NAME" x="267.97" y="92.71" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="270.51" y="90.17" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="269.24" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP16" gate="G$1" x="22.86" y="-10.16" smashed="yes">
 <attribute name="NAME" x="21.59" y="-8.89" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="24.13" y="-11.43" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="22.86" y="-10.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP17" gate="G$1" x="27.94" y="-10.16" smashed="yes">
 <attribute name="NAME" x="26.67" y="-8.89" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="29.21" y="-11.43" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="27.94" y="-10.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="TP18" gate="G$1" x="33.02" y="-10.16" smashed="yes">
 <attribute name="NAME" x="31.75" y="-8.89" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="34.29" y="-11.43" size="1.778" layer="97"/>
+<attribute name="PARTNO" x="33.02" y="-10.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND95" gate="1" x="22.86" y="-17.78" smashed="yes">
 <attribute name="VALUE" x="20.32" y="-20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="H1" gate="G$1" x="256.54" y="193.04" smashed="yes">
+<attribute name="NAME" x="258.572" y="193.6242" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="190.5762" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="193.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H2" gate="G$1" x="256.54" y="185.42" smashed="yes">
+<attribute name="NAME" x="258.572" y="186.0042" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="182.9562" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="185.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H3" gate="G$1" x="256.54" y="177.8" smashed="yes">
+<attribute name="NAME" x="258.572" y="178.3842" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="175.3362" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="177.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H4" gate="G$1" x="256.54" y="170.18" smashed="yes">
+<attribute name="NAME" x="258.572" y="170.7642" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="167.7162" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="170.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H5" gate="G$1" x="256.54" y="162.56" smashed="yes">
+<attribute name="NAME" x="258.572" y="163.1442" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="160.0962" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H6" gate="G$1" x="256.54" y="154.94" smashed="yes">
+<attribute name="NAME" x="258.572" y="155.5242" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="152.4762" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H7" gate="G$1" x="256.54" y="147.32" smashed="yes">
+<attribute name="NAME" x="258.572" y="147.9042" size="1.778" layer="95"/>
+<attribute name="VALUE" x="258.572" y="144.8562" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="256.54" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
