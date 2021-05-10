@@ -21879,8 +21879,8 @@ http://www.tag-connect.com</description>
 <part name="R3" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R4" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C2" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -21908,8 +21908,8 @@ http://www.tag-connect.com</description>
 <part name="R6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R7" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C6" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -21948,8 +21948,8 @@ http://www.tag-connect.com</description>
 <part name="R11" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R12" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R12" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C10" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -21977,8 +21977,8 @@ http://www.tag-connect.com</description>
 <part name="R14" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R15" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R15" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C14" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22017,8 +22017,8 @@ http://www.tag-connect.com</description>
 <part name="R19" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R20" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R20" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C18" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22046,8 +22046,8 @@ http://www.tag-connect.com</description>
 <part name="R22" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R23" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R23" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C22" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22086,8 +22086,8 @@ http://www.tag-connect.com</description>
 <part name="R27" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R28" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R28" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C26" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22115,8 +22115,8 @@ http://www.tag-connect.com</description>
 <part name="R30" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R31" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R31" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C30" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22155,8 +22155,8 @@ http://www.tag-connect.com</description>
 <part name="R35" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R36" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R36" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C34" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22184,8 +22184,8 @@ http://www.tag-connect.com</description>
 <part name="R38" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R39" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R39" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C38" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22224,8 +22224,8 @@ http://www.tag-connect.com</description>
 <part name="R43" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R44" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R44" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C42" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
@@ -22253,8 +22253,8 @@ http://www.tag-connect.com</description>
 <part name="R46" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="8.2k">
 <attribute name="PARTNO" value="ERJ-3EKF8201V"/>
 </part>
-<part name="R47" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="5.1k">
-<attribute name="PARTNO" value="CRCW06035K10FKEAC"/>
+<part name="R47" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="51k">
+<attribute name="PARTNO" value="RC0603FR-0751KL"/>
 </part>
 <part name="C46" library="keves-ng" library_urn="urn:adsk.eagle:library:1429743" deviceset="CAP_CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:23799129/3" value="4700pF">
 <attribute name="PARTNO" value="GRM1885C1H472JA01D"/>
